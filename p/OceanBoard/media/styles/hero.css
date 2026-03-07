@@ -1,0 +1,102 @@
+/* === Hero Section === */
+.ob-hero {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.ob-hero-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.ob-hero-content {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	max-width: 800px;
+	padding: 0 24px;
+}
+
+.ob-hero-title {
+	font-family: 'Dosis', sans-serif;
+	font-size: 72px;
+	font-weight: 700;
+	color: var(--ob-accent);
+	margin-bottom: 24px;
+	text-shadow: 0 4px 20px rgba(255, 128, 170, 0.5);
+	animation: fadeInUp 1s ease-out;
+}
+
+.ob-hero-subtitle {
+	font-size: 20px;
+	line-height: 1.6;
+	color: var(--ob-text-dim);
+	margin-bottom: 40px;
+	animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.ob-hero-buttons {
+	display: flex;
+	gap: 16px;
+	justify-content: center;
+	animation: fadeInUp 1s ease-out 0.4s backwards;
+}
+
+.ob-hero-btn {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 16px 32px;
+	border-radius: 12px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 18px;
+	transition: all 0.3s;
+}
+
+.ob-hero-btn.primary {
+	background: var(--ob-accent);
+	color: var(--ob-bg);
+	transition: all 0.2s;
+}
+
+.ob-hero-btn.primary:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 30px rgba(255, 128, 170, 0.5);
+	transition: all 0.2s;
+}
+
+.ob-hero-btn.secondary {
+	background: transparent;
+	color: var(--ob-accent);
+	border: 2px solid var(--ob-accent);
+	transition: all 0.2s;
+}
+
+.ob-hero-btn.secondary:hover {
+	background: var(--ob-accent-dim);
+	transform: translateY(-4px);
+	transition: all 0.2s;
+}
+
+.ob-hero-scroll {
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+	animation: bounce 2s infinite;
+	cursor: pointer;
+}
+
+.ob-hero-scroll .material-icons-round {
+	font-size: 48px;
+	color: var(--ob-accent);
+}

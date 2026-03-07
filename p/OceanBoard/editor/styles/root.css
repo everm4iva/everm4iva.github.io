@@ -1,0 +1,64 @@
+/* ===### Imports ###=== */
+@import url("./layout/general.css");
+@import url("./layout/responsive.css");
+@import url("./animations/effects.css");
+@import url("./animations/helpers.css");
+@import url("./files/modal.css");
+@import url("./files/feedback.css");
+@import url("./files/shortcuts.css");
+@import url("./files/mobile-context.css");
+
+/* ===### Root Variables & Base Styles ###=== */
+
+:root {
+	--ob-color-main: #e43967;
+	--ob-color-main-light: #ffa9c0;
+	--ob-color-main-dark: #80203a;
+	--ob-color-bg: #232323;
+	--ob-color-bg-light: rgb(74, 53, 66);
+	--ob-color-sidebar: #1a1a1a;
+	--ob-color-header: #232323;
+	--ob-color-text: #f5f5f5;
+	--ob-color-muted: #bdbdbd;
+	--ob-radius: 12px;
+	--ob-sidebar-width: 340px;
+	--ob-sidebar-bar-width: 72px;
+	--ob-header-height: 40px;
+	--ob-font-main: "Pacifico", cursive;
+	--ob-font-ui: "Outfit", "Dosis", Arial, sans-serif;
+	--ob-font-mono: "Source Code Pro", monospace;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: var(--ob-color-bg);
+	color: var(--ob-color-text);
+	font-family: var(--ob-font-ui);
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 99vh;
+	min-width: 99vw;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 2px;
+	border-color: var(--ob-color-main);
+	border-radius: 0;
+}
+
+::selection {
+	background-color: black;
+	color: var(--ob-color-main);
+}
+
+/* ===### Material Icons ###=== */
+.material-icons-round {
+	font-family: "Material Icons Round", "Material Icons", sans-serif;
+	font-size: 1.3em;
+	vertical-align: middle;
+	user-select: none;
+}

@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OceanBoard - Documentation</title>
+		<meta
+			name="robots"
+			content="index, follow, archive, snippet, translate"
+		/>
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dosis:wght@400;700&family=Outfit:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./styles/docs.css" />
+
+		<link
+			rel="shortcut icon"
+			href="../media/icons/Icon-Pink-E.png"
+			type="image/png"
+		/>
+		<meta
+			name="description"
+			content="How does it work? Need help? Just curious? Everything is here."
+		/>
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="ob-docs-nav">
+			<a href="../" class="ob-docs-back no-select">
+				<span class="material-icons-round no-select" translate="no"
+					>arrow_back</span
+				>
+				Back to Home
+			</a>
+			<div class="ob-docs-logo">
+				<span>OceanBoard Docs</span>
+			</div>
+			<a href="../editor/" class="ob-docs-launch no-select">
+				Editor
+				<span class="material-icons-round no-select" translate="no"
+					>open_in_new</span
+				>
+			</a>
+		</nav>
+
+		<div class="ob-docs-container">
+			<!-- Sidebar -->
+			<aside class="ob-docs-sidebar">
+				<div class="ob-docs-sidebar-section">
+					<h3 class="ob-docs-sidebar-title">Getting Started</h3>
+					<a href="#introduction" class="ob-docs-sidebar-link active"
+						>Introduction</a
+					>
+					<a href="#quick-start" class="ob-docs-sidebar-link"
+						>Quick Start</a
+					>
+					<a href="#interface" class="ob-docs-sidebar-link"
+						>Interface Overview</a
+					>
+				</div>
+
+				<div class="ob-docs-sidebar-section">
+					<h3 class="ob-docs-sidebar-title">Core Concepts</h3>
+					<a href="#series" class="ob-docs-sidebar-link"
+						>Series & Seasons</a
+					>
+					<a href="#files" class="ob-docs-sidebar-link">File Types</a>
+					<a href="#special-files" class="ob-docs-sidebar-link"
+						>Special Files</a
+					>
+					<a href="#attributes" class="ob-docs-sidebar-link"
+						>Attributes & Mentions</a
+					>
+				</div>
+
+				<div class="ob-docs-sidebar-section">
+					<h3 class="ob-docs-sidebar-title">Features</h3>
+					<a href="#markdown" class="ob-docs-sidebar-link"
+						>Markdown Editor</a
+					>
+					<a href="#import-export" class="ob-docs-sidebar-link"
+						>Import & Export</a
+					>
+					<a href="#settings" class="ob-docs-sidebar-link"
+						>Settings</a
+					>
+					<a href="#command-palette" class="ob-docs-sidebar-link"
+						>Command Palette</a
+					>
+				</div>
+
+				<div class="ob-docs-sidebar-section">
+					<h3 class="ob-docs-sidebar-title">Advanced</h3>
+					<a href="#keyboard-shortcuts" class="ob-docs-sidebar-link"
+						>Keyboard Shortcuts</a
+					>
+					<a href="#file-linking" class="ob-docs-sidebar-link"
+						>File Linking</a
+					>
+					<a href="#workflows" class="ob-docs-sidebar-link"
+						>Workflows</a
+					>
+					<a href="#morehelp" class="ob-docs-sidebar-link"
+						>More Help</a
+					>
+				</div>
+			</aside>
+
+			<!-- Content -->
+			<main class="ob-docs-content">
+				<!-- Introduction -->
+				<section id="introduction" class="ob-docs-section">
+					<h1 class="ob-docs-heading">Welcome to OceanBoard</h1>
+					<p class="ob-docs-text">
+						OceanBoard is a beautiful, powerful creative writing
+						tool designed for authors, worldbuilders, and
+						storytellers. It helps you organize your characters,
+						locations, episodes, and creative content with an
+						intuitive markdown editor and smart file management.
+					</p>
+
+					<div class="ob-docs-highlight">
+						<div class="ob-docs-highlight-icon">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>info</span
+							>
+						</div>
+						<div>
+							<strong>Local-First</strong>
+							<p>
+								Everything is stored locally in your browser. No
+								accounts, no cloud, no tracking.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<!-- Quick Start -->
+				<section id="quick-start" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Quick Start</h2>
+					<p class="ob-docs-text">
+						Get started with OceanBoard in just a few steps:
+					</p>
+
+					<div class="ob-docs-steps">
+						<div class="ob-docs-step">
+							<div class="ob-docs-step-number no-select">1</div>
+							<div class="ob-docs-step-content">
+								<h3>Create a Series</h3>
+								<p>
+									Click the <strong>+</strong> button in the
+									sidebar to create your first series. Think
+									of series as your main projects or story
+									collections.
+								</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-step">
+							<div class="ob-docs-step-number no-select">2</div>
+							<div class="ob-docs-step-content">
+								<h3>Add Seasons</h3>
+								<p>
+									Right-click your series and select
+									<strong>Add Season</strong>. Seasons help
+									organize different parts of your story or
+									project phases.
+								</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-step">
+							<div class="ob-docs-step-number no-select">3</div>
+							<div class="ob-docs-step-content">
+								<h3>Create Files</h3>
+								<p>
+									Right-click a season and add episodes or
+									special files. Start writing in the
+									beautiful markdown editor!
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Interface Overview -->
+				<section id="interface" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Interface Overview</h2>
+					<p class="ob-docs-text">
+						OceanBoard's interface is designed to be intuitive and
+						distraction-free:
+					</p>
+
+					<div class="ob-docs-interface-grid">
+						<div class="ob-docs-interface-item">
+							<div class="ob-docs-interface-icon">
+								<span
+									class="material-icons-round no-select"
+									translate="no"
+									>menu_open</span
+								>
+							</div>
+							<h4>Sidebar</h4>
+							<p>
+								Navigate between series, seasons, and files.
+								Drag to reorder, right-click for options.
+							</p>
+						</div>
+
+						<div class="ob-docs-interface-item">
+							<div class="ob-docs-interface-icon">
+								<span
+									class="material-icons-round no-select"
+									translate="no"
+									>tab</span
+								>
+							</div>
+							<h4>Tab Bar</h4>
+							<p>
+								Keep multiple files open. Click tabs to switch,
+								close button to dismiss.
+							</p>
+						</div>
+
+						<div class="ob-docs-interface-item">
+							<div class="ob-docs-interface-icon">
+								<span
+									class="material-icons-round no-select"
+									translate="no"
+									>edit_note</span
+								>
+							</div>
+							<h4>Editor</h4>
+							<p>
+								Split-view markdown editor. Write on the left,
+								see formatted preview on the right.
+							</p>
+						</div>
+
+						<div class="ob-docs-interface-item">
+							<div class="ob-docs-interface-icon">
+								<span
+									class="material-icons-round no-select"
+									translate="no"
+									>settings</span
+								>
+							</div>
+							<h4>Settings</h4>
+							<p>
+								Customize font size, line height, word wrap, and
+								more. Access via settings icon.
+							</p>
+						</div>
+					</div>
+
+					<!-- IMAGE PLACEHOLDER -->
+					<div class="ob-docs-image-placeholder no-select">
+						<img
+							src="../media/images/fullscreenshot.png"
+							alt="Interface Overview"
+							class="no-select"
+						/>
+						<p class="ob-docs-image-caption">
+							The OceanBoard interface layout
+						</p>
+					</div>
+				</section>
+
+				<!-- Series & Seasons -->
+				<section id="series" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Series & Seasons</h2>
+					<p class="ob-docs-text">
+						OceanBoard uses a hierarchical structure to organize
+						your creative work:
+					</p>
+
+					<div class="ob-docs-hierarchy no-select">
+						<div class="ob-docs-hierarchy-level">
+							<strong>Series</strong> - Your main project or story
+							collection
+						</div>
+						<div class="ob-docs-hierarchy-arrow">
+							<span class="material-icons-round"
+								>arrow_downward</span
+							>
+						</div>
+						<div class="ob-docs-hierarchy-level">
+							<strong>Seasons</strong> - Chapters, volumes, or
+							story arcs
+						</div>
+						<div class="ob-docs-hierarchy-arrow">
+							<span class="material-icons-round"
+								>arrow_downward</span
+							>
+						</div>
+						<div class="ob-docs-hierarchy-level">
+							<strong>Files</strong> - Episodes, characters,
+							locations, etc.
+						</div>
+					</div>
+
+					<div class="ob-docs-tip">
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							>lightbulb</span
+						>
+						<p>
+							<strong>Tip:</strong> You can export entire seasons
+							or individual files to share or backup your work.
+						</p>
+					</div>
+				</section>
+
+				<!-- File Types -->
+				<section id="files" class="ob-docs-section">
+					<h2 class="ob-docs-heading">File Types</h2>
+					<p class="ob-docs-text">
+						OceanBoard supports regular episodes and special file
+						types:
+					</p>
+
+					<div class="ob-docs-file-types">
+						<div class="ob-docs-file-type">
+							<div
+								class="ob-docs-file-type-badge episode no-select"
+								translate="no"
+							>
+								EP
+							</div>
+							<div>
+								<h4>Episode</h4>
+								<p>
+									Regular story files, chapters, or writing
+									entries
+								</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-file-type">
+							<div
+								class="ob-docs-file-type-badge character no-select"
+								translate="no"
+							>
+								C
+							</div>
+							<div>
+								<h4>Character</h4>
+								<p>
+									Character profiles, descriptions, and
+									development notes
+								</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-file-type">
+							<div
+								class="ob-docs-file-type-badge object no-select"
+								translate="no"
+							>
+								O
+							</div>
+							<div>
+								<h4>Object</h4>
+								<p>
+									Important items, artifacts, or props in your
+									story
+								</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-file-type">
+							<div
+								class="ob-docs-file-type-badge scene no-select"
+								translate="no"
+							>
+								SC
+							</div>
+							<div>
+								<h4>Scene</h4>
+								<p>
+									Locations, settings, or environment
+									descriptions
+								</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-file-type">
+							<div
+								class="ob-docs-file-type-badge abstract no-select"
+								translate="no"
+							>
+								A
+							</div>
+							<div>
+								<h4>Abstract</h4>
+								<p>Concepts, themes, or abstract ideas</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-file-type">
+							<div
+								class="ob-docs-file-type-badge attribute no-select"
+								translate="no"
+							>
+								AT
+							</div>
+							<div>
+								<h4>Attribute</h4>
+								<p>
+									Dictionary files for linking mentions across
+									files
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Special Files -->
+				<section id="special-files" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Special Files</h2>
+					<p class="ob-docs-text">
+						Special files (Characters, Objects, Scenes, etc.)
+						automatically get a file-id template on creation. This
+						ID allows you to reference them from other files.
+					</p>
+
+					<div class="ob-docs-code">
+						<pre><code>$ file-id = "protagonist1"
+
+# Character Name
+Description of your character...</code></pre>
+					</div>
+
+					<p class="ob-docs-text">
+						The first line contains the file-id (hidden in preview).
+						You can customize or remove it.
+					</p>
+
+					<div class="ob-docs-rules">
+						<h4>File-ID Rules:</h4>
+						<ul>
+							<li>Maximum 24 characters</li>
+							<li>Alphanumeric only (letters and numbers)</li>
+							<li>Must be unique across all files</li>
+							<li>Used for mentions and linking</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Attributes & Mentions -->
+				<section id="attributes" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Attributes & Mentions</h2>
+					<p class="ob-docs-text">
+						Link files together using mentions. There are two ways
+						to create mentions:
+					</p>
+
+					<div class="ob-docs-mention-types">
+						<div class="ob-docs-mention-type">
+							<h4>Natural Mention</h4>
+							<div class="ob-docs-code">
+								<pre><code>The character.protagonist1 entered the room.</code></pre>
+							</div>
+							<p>
+								Shows a confirmation bubble: "Link to
+								character.protagonist1?"
+							</p>
+						</div>
+
+						<div class="ob-docs-mention-type">
+							<h4>Direct Mention</h4>
+							<div class="ob-docs-code">
+								<pre><code>The @character.protagonist1 entered the room.</code></pre>
+							</div>
+							<p>
+								Instant link, no confirmation. Preview shows
+								only "protagonist1"
+							</p>
+						</div>
+					</div>
+
+					<div class="ob-docs-tip">
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							>link</span
+						>
+						<p>
+							<strong>Click mentions</strong> to navigate directly
+							to the referenced file and line!
+						</p>
+					</div>
+				</section>
+
+				<!-- Markdown Editor -->
+				<section id="markdown" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Markdown Editor</h2>
+					<p class="ob-docs-text">
+						OceanBoard uses markdown for formatting. Here are the
+						basics:
+					</p>
+
+					<div class="ob-docs-markdown-guide">
+						<div class="ob-docs-markdown-item">
+							<code># Heading 1</code>
+							<span class="ob-docs-markdown-arrow">→</span>
+							<h1 style="margin: 0; font-size: 24px">
+								Heading 1
+							</h1>
+						</div>
+
+						<div class="ob-docs-markdown-item">
+							<code>**bold text**</code>
+							<span class="ob-docs-markdown-arrow">→</span>
+							<strong>bold text</strong>
+						</div>
+
+						<div class="ob-docs-markdown-item">
+							<code>*italic text*</code>
+							<span class="ob-docs-markdown-arrow">→</span>
+							<em>italic text</em>
+						</div>
+
+						<div class="ob-docs-markdown-item">
+							<code>[link](url)</code>
+							<span class="ob-docs-markdown-arrow">→</span>
+							<a href="#" style="color: var(--ob-accent)">link</a>
+						</div>
+
+						<div class="ob-docs-markdown-item">
+							<code>- list item</code>
+							<span class="ob-docs-markdown-arrow">→</span>
+							<span>• list item</span>
+						</div>
+					</div>
+				</section>
+
+				<!-- Import & Export -->
+				<section id="import-export" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Import & Export</h2>
+					<p class="ob-docs-text">
+						OceanBoard offers flexible import and export options:
+					</p>
+
+					<div class="ob-docs-export-options">
+						<div class="ob-docs-export-card">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>folder</span
+							>
+							<h4>Full Workspace</h4>
+							<p>
+								Import & Export all series, seasons, files, and
+								settings as one ZIP file
+							</p>
+						</div>
+
+						<div class="ob-docs-export-card">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>description</span
+							>
+							<h4>Single File</h4>
+							<p>
+								Import & Export individual files with metadata
+								(right-click file)
+							</p>
+						</div>
+
+						<div class="ob-docs-export-card">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>library_books</span
+							>
+							<h4>Season</h4>
+							<p>
+								Import & Export all files from a single season
+								(right-click season)
+							</p>
+						</div>
+
+						<div class="ob-docs-export-card">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>image</span
+							>
+							<h4>Media File</h4>
+							<p>Import & Export Images, Videos & Audios!</p>
+						</div>
+					</div>
+					<div class="ob-docs-warning">
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							>backup</span
+						>
+						<p>
+							<strong>Backup Regularly:</strong> Export your
+							workspace periodically to keep your work safe!
+						</p>
+					</div>
+				</section>
+
+				<!-- Settings -->
+				<section id="settings" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Settings</h2>
+					<p class="ob-docs-text">
+						Customize your writing experience in the settings panel:
+					</p>
+
+					<div class="ob-docs-settings-list">
+						<div class="ob-docs-setting">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>format_size</span
+							>
+							<div>
+								<strong>Font Size</strong>
+								<p>
+									Adjust editor and preview text size
+									(12-24px)
+								</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-setting">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>height</span
+							>
+							<div>
+								<strong>Line Height</strong>
+								<p>Control spacing between lines (1.2-2.0)</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-setting">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>wrap_text</span
+							>
+							<div>
+								<strong>Word Wrap</strong>
+								<p>Toggle automatic line wrapping in editor</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-setting">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>numbers</span
+							>
+							<div>
+								<strong>Line Numbers</strong>
+								<p>
+									Display the number line (like an code
+									editor) in editor
+								</p>
+							</div>
+						</div>
+
+						<div class="ob-docs-setting">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>timer</span
+							>
+							<div>
+								<strong>Auto-Save time</strong>
+								<p>
+									When will your work be cached and
+									auto-saved? 5s? 15s? instantly?
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Command Palette -->
+				<section id="command-palette" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Command Palette</h2>
+					<p class="ob-docs-text">
+						The Command Palette is your quick-access hub for all
+						OceanBoard actions. Press <strong>Ctrl + K</strong> (or
+						<strong>Cmd + K</strong> on Mac) to open it instantly.
+					</p>
+
+					<div class="ob-docs-highlight">
+						<div class="ob-docs-highlight-icon">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>bolt</span
+							>
+						</div>
+						<div>
+							<strong>Power User Tool</strong>
+							<p>
+								Access any command without leaving your
+								keyboard. Search by name, description, or
+								keywords!
+							</p>
+						</div>
+					</div>
+
+					<!-- VIDEO DEMO -->
+					<div class="ob-docs-image-placeholder no-select">
+						<video
+							class="ob-docs-demo-video"
+							controls
+							preload="metadata"
+							src="https://github.com/umaera/umaera.github.io/releases/download/id%3D893/CommandPaletteDemo.mp4"
+						>
+							<p>
+								Your browser doesn't support HTML video. Here is
+								a
+								<a
+									href="https://github.com/umaera/umaera.github.io/releases/download/id%3D893/CommandPaletteDemo.mp4"
+									>link to the video</a
+								>
+								instead.
+							</p>
+						</video>
+						<p class="ob-docs-image-caption">
+							The Command Palette in action - Live demonstration
+						</p>
+					</div>
+
+					<h3
+						style="
+							color: var(--ob-accent);
+							margin-top: 40px;
+							margin-bottom: 20px;
+							font-size: 28px;
+						"
+					>
+						Available Commands
+					</h3>
+					<p class="ob-docs-text">
+						All commands are organized by category for easy
+						navigation:
+					</p>
+
+					<!-- File Operations -->
+					<h4
+						style="
+							color: var(--ob-text);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							style="color: var(--ob-accent)"
+							>folder</span
+						>
+						File Operations
+					</h4>
+					<div class="ob-docs-command-list">
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>note_add</span
+							>
+							<div>
+								<strong>New Episode</strong>
+								<p>Create a new episode file</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>create_new_folder</span
+							>
+							<div>
+								<strong>New Season</strong>
+								<p>Create a new season folder</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>save</span
+							>
+							<div>
+								<strong>Save File</strong>
+								<p>Save the current file</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>swap_horiz</span
+							>
+							<div>
+								<strong>Quick File Switcher</strong>
+								<p>Quickly switch between files</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Search -->
+					<h4
+						style="
+							color: var(--ob-text);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							style="color: var(--ob-accent)"
+							>search</span
+						>
+						Search
+					</h4>
+					<div class="ob-docs-command-list">
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>search</span
+							>
+							<div>
+								<strong>Global Search</strong>
+								<p>Search across all files</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>find_in_page</span
+							>
+							<div>
+								<strong>Search in File</strong>
+								<p>Search within current file</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Tabs -->
+					<h4
+						style="
+							color: var(--ob-text);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							style="color: var(--ob-accent)"
+							>tab</span
+						>
+						Tab Management
+					</h4>
+					<div class="ob-docs-command-list">
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>close</span
+							>
+							<div>
+								<strong>Close Tab</strong>
+								<p>Close the current tab</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>navigate_next</span
+							>
+							<div>
+								<strong>Next Tab</strong>
+								<p>Switch to next tab</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>navigate_before</span
+							>
+							<div>
+								<strong>Previous Tab</strong>
+								<p>Switch to previous tab</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>close_fullscreen</span
+							>
+							<div>
+								<strong>Close All Tabs</strong>
+								<p>Close all open tabs</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- View -->
+					<h4
+						style="
+							color: var(--ob-text);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							style="color: var(--ob-accent)"
+							>visibility</span
+						>
+						View Options
+					</h4>
+					<div class="ob-docs-command-list">
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>center_focus_strong</span
+							>
+							<div>
+								<strong>Toggle Focus Mode</strong>
+								<p>Enter distraction-free writing mode</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>fullscreen</span
+							>
+							<div>
+								<strong>Toggle Fullscreen</strong>
+								<p>Enter or exit fullscreen mode</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>menu</span
+							>
+							<div>
+								<strong>Toggle Sidebar</strong>
+								<p>Show or hide the sidebar</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Components -->
+					<h4
+						style="
+							color: var(--ob-text);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							style="color: var(--ob-accent)"
+							>widgets</span
+						>
+						Components
+					</h4>
+					<div class="ob-docs-command-list">
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>person_add</span
+							>
+							<div>
+								<strong>Add Actor</strong>
+								<p>Add a new character/actor</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>location_on</span
+							>
+							<div>
+								<strong>Add Location</strong>
+								<p>Add a new location</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>category</span
+							>
+							<div>
+								<strong>Add Item</strong>
+								<p>Add a new item/prop</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>notes</span
+							>
+							<div>
+								<strong>Add Note</strong>
+								<p>Add a new note</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Series Management -->
+					<h4
+						style="
+							color: var(--ob-text);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							style="color: var(--ob-accent)"
+							>library_books</span
+						>
+						Series Management
+					</h4>
+					<div class="ob-docs-command-list">
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>library_add</span
+							>
+							<div>
+								<strong>New Series</strong>
+								<p>Create a new series project</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>tune</span
+							>
+							<div>
+								<strong>Series Settings</strong>
+								<p>Edit current series settings</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Import/Export -->
+					<h4
+						style="
+							color: var(--ob-text);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							style="color: var(--ob-accent)"
+							>sync_alt</span
+						>
+						Import & Export
+					</h4>
+					<div class="ob-docs-command-list">
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>upload</span
+							>
+							<div>
+								<strong>Import Workspace</strong>
+								<p>Import a complete workspace</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>download</span
+							>
+							<div>
+								<strong>Export Workspace</strong>
+								<p>Export complete workspace</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>file_download</span
+							>
+							<div>
+								<strong>Export Files Only</strong>
+								<p>Export files without settings</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Settings & Help -->
+					<h4
+						style="
+							color: var(--ob-text);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							style="color: var(--ob-accent)"
+							>help</span
+						>
+						Settings & Help
+					</h4>
+					<div class="ob-docs-command-list">
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>settings</span
+							>
+							<div>
+								<strong>Open Settings</strong>
+								<p>Open application settings</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>keyboard</span
+							>
+							<div>
+								<strong>Keyboard Shortcuts</strong>
+								<p>View all keyboard shortcuts</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>history</span
+							>
+							<div>
+								<strong>Show Changelog</strong>
+								<p>View recent updates and changes</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Workspace -->
+					<h4
+						style="
+							color: var(--ob-text);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 20px;
+							display: flex;
+							align-items: center;
+							gap: 8px;
+						"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							style="color: var(--ob-accent)"
+							>work</span
+						>
+						Workspace Management
+					</h4>
+					<div class="ob-docs-command-list">
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>storage</span
+							>
+							<div>
+								<strong>Storage Info</strong>
+								<p>View storage usage information</p>
+							</div>
+						</div>
+						<div class="ob-docs-command-item">
+							<span
+								class="material-icons-round no-select"
+								translate="no"
+								>clear_all</span
+							>
+							<div>
+								<strong>Clear Storage</strong>
+								<p>Clear all application data</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="ob-docs-tip" style="margin-top: 40px">
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							>tips_and_updates</span
+						>
+						<p>
+							<strong>Smart Search:</strong> Type keywords to
+							filter commands instantly. For example, type "save"
+							to find all save-related actions!
+						</p>
+					</div>
+				</section>
+				<!-- Keyboard Shortcuts -->
+				<section id="keyboard-shortcuts" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Keyboard Shortcuts</h2>
+					<p class="ob-docs-text">
+						Boost your productivity with these handy keyboard
+						shortcuts. All shortcuts are available for both
+						Windows/Linux (Ctrl) and Mac (Cmd).
+					</p>
+
+					<!-- File Operations -->
+					<h3
+						style="
+							color: var(--ob-accent);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 24px;
+						"
+					>
+						File Operations
+					</h3>
+					<table class="ob-docs-shortcuts-table">
+						<tr>
+							<th>Action</th>
+							<th>Shortcut</th>
+						</tr>
+						<tr>
+							<td>Save Current File</td>
+							<td>Ctrl + S (Cmd + S on Mac)</td>
+						</tr>
+						<tr>
+							<td>Create New File</td>
+							<td>Ctrl + N (Cmd + N on Mac)</td>
+						</tr>
+						<tr>
+							<td>Open File</td>
+							<td>Ctrl + O (Cmd + O on Mac)</td>
+						</tr>
+					</table>
+
+					<!-- Navigation -->
+					<h3
+						style="
+							color: var(--ob-accent);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 24px;
+						"
+					>
+						Navigation
+					</h3>
+					<table class="ob-docs-shortcuts-table">
+						<tr>
+							<th>Action</th>
+							<th>Shortcut</th>
+						</tr>
+						<tr>
+							<td>Quick File Switcher</td>
+							<td>Ctrl + P (Cmd + P on Mac)</td>
+						</tr>
+						<tr>
+							<td>Command Palette</td>
+							<td>Ctrl + K (Cmd + K on Mac)</td>
+						</tr>
+					</table>
+
+					<!-- Tabs -->
+					<h3
+						style="
+							color: var(--ob-accent);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 24px;
+						"
+					>
+						Tab Management
+					</h3>
+					<table class="ob-docs-shortcuts-table">
+						<tr>
+							<th>Action</th>
+							<th>Shortcut</th>
+						</tr>
+						<tr>
+							<td>Close Current Tab</td>
+							<td>Ctrl + W (Cmd + W on Mac)</td>
+						</tr>
+						<tr>
+							<td>Next Tab</td>
+							<td>Ctrl + Tab</td>
+						</tr>
+						<tr>
+							<td>Previous Tab</td>
+							<td>Ctrl + Shift + Tab</td>
+						</tr>
+						<tr>
+							<td>Switch to Tab 1</td>
+							<td>Ctrl + 1</td>
+						</tr>
+						<tr>
+							<td>Switch to Tab 2</td>
+							<td>Ctrl + 2</td>
+						</tr>
+						<tr>
+							<td>Switch to Tab 3</td>
+							<td>Ctrl + 3</td>
+						</tr>
+						<tr>
+							<td>Switch to Tab 4</td>
+							<td>Ctrl + 4</td>
+						</tr>
+						<tr>
+							<td>Switch to Tab 5</td>
+							<td>Ctrl + 5</td>
+						</tr>
+					</table>
+
+					<!-- View -->
+					<h3
+						style="
+							color: var(--ob-accent);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 24px;
+						"
+					>
+						View Options
+					</h3>
+					<table class="ob-docs-shortcuts-table">
+						<tr>
+							<th>Action</th>
+							<th>Shortcut</th>
+						</tr>
+						<tr>
+							<td>Toggle Fullscreen</td>
+							<td>F11</td>
+						</tr>
+						<tr>
+							<td>Toggle Focus Mode</td>
+							<td>Ctrl + Shift + F (Cmd + Shift + F on Mac)</td>
+						</tr>
+					</table>
+
+					<!-- Search -->
+					<h3
+						style="
+							color: var(--ob-accent);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 24px;
+						"
+					>
+						Search
+					</h3>
+					<table class="ob-docs-shortcuts-table">
+						<tr>
+							<th>Action</th>
+							<th>Shortcut</th>
+						</tr>
+						<tr>
+							<td>Search in File</td>
+							<td>Ctrl + F (Cmd + F on Mac)</td>
+						</tr>
+						<tr>
+							<td>Global Search</td>
+							<td>Ctrl + Shift + F (Cmd + Shift + F on Mac)</td>
+						</tr>
+					</table>
+
+					<!-- Settings & Help -->
+					<h3
+						style="
+							color: var(--ob-accent);
+							margin-top: 32px;
+							margin-bottom: 16px;
+							font-size: 24px;
+						"
+					>
+						Settings & Help
+					</h3>
+					<table class="ob-docs-shortcuts-table">
+						<tr>
+							<th>Action</th>
+							<th>Shortcut</th>
+						</tr>
+						<tr>
+							<td>Open Settings</td>
+							<td>Ctrl + , (Cmd + , on Mac)</td>
+						</tr>
+						<tr>
+							<td>Show Help</td>
+							<td>F1</td>
+						</tr>
+						<tr>
+							<td>Show Keyboard Shortcuts</td>
+							<td>Ctrl + / (Cmd + / on Mac)</td>
+						</tr>
+						<tr>
+							<td>Close Modal/Overlay</td>
+							<td>Escape</td>
+						</tr>
+					</table>
+
+					<div class="ob-docs-tip" style="margin-top: 32px">
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							>keyboard</span
+						>
+						<p>
+							<strong>Pro Tip:</strong> Press
+							<kbd>Ctrl + /</kbd> (or <kbd>Cmd + /</kbd> on Mac)
+							anytime in the editor to see all available keyboard
+							shortcuts!
+						</p>
+					</div>
+				</section>
+				<!-- File Linking -->
+				<section id="file-linking" class="ob-docs-section">
+					<h2 class="ob-docs-heading">File Linking</h2>
+					<p class="ob-docs-text">
+						Create connections between files using the attribute
+						system:
+					</p>
+
+					<ol class="ob-docs-ordered-list">
+						<li>
+							Create an Attribute file to act as your dictionary
+						</li>
+						<li>
+							Define keys that map to file-ids and line numbers
+						</li>
+						<li>
+							Reference these keys from any file using mentions
+						</li>
+						<li>
+							Click mentions to navigate instantly to the target
+							location
+						</li>
+					</ol>
+
+					<div class="ob-docs-image-placeholder">
+						<img
+							src="../media/images/attributes.PNG"
+							alt="File Linking Workflow"
+							class="no-select"
+						/>
+						<p class="ob-docs-image-caption">
+							How file linking works in OceanBoard
+						</p>
+					</div>
+				</section>
+
+				<!-- Workflows -->
+				<section id="workflows" class="ob-docs-section">
+					<h2 class="ob-docs-heading">Workflows</h2>
+					<p class="ob-docs-text">
+						Here are some recommended workflows for different use
+						cases:
+					</p>
+
+					<div class="ob-docs-workflow">
+						<h4>Novel Writing</h4>
+						<p>
+							Create a series for your novel, seasons for
+							parts/acts, episodes for chapters. Use character and
+							scene files for reference.
+						</p>
+					</div>
+
+					<div class="ob-docs-workflow">
+						<h4>Worldbuilding</h4>
+						<p>
+							Organize by theme (Geography, History, Culture). Use
+							attribute files to link related concepts across your
+							world.
+						</p>
+					</div>
+
+					<div class="ob-docs-workflow">
+						<h4>Screenplay</h4>
+						<p>
+							Series for the project, seasons for acts, episodes
+							for scenes. Character files for cast, object files
+							for props.
+						</p>
+					</div>
+				</section>
+
+				<!-- Footer -->
+				<div class="ob-docs-footer" id="morehelp">
+					<p>Start creating or need more help?</p>
+					<a href="../editor" class="ob-docs-footer-btn">
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							>rocket_launch</span
+						>
+						Start Creating
+					</a>
+					<a
+						href="https://forms.gle/VD4Qn2DiFyBh8Pib6"
+						class="ob-docs-footer-btn"
+					>
+						<span
+							class="material-icons-round no-select"
+							translate="no"
+							>quiz</span
+						>
+						More help?
+					</a>
+				</div>
+			</main>
+		</div>
+
+		<script src="./scripts/docs.js"></script>
+	</body>
+</html>

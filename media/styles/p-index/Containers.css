@@ -1,0 +1,17 @@
+/**
+ * ☆=========================================☆
+ * Containers.css - Style for common container elements.
+ * ☆=========================================☆
+*/
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0;
+	padding: 0 0.5rem;
+	overflow-x: hidden;
+	overflow-y: visible;
+	height: 100vh;
+}

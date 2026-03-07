@@ -1,0 +1,225 @@
+/* ===== LEFT SIDE ===== */
+
+/* Left side - Text elements */
+.header-prese {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-icon {
+  height: 40px;
+  width: 40px;
+  background-image: url("../../media/img/fractal.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.line {
+  width: 40%;
+  height: 2px;
+  background-color: var(--purple-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Section containers for mobile layout */
+.header-section,
+.media-section,
+.buttons-section {
+  width: 100%;
+}
+
+/* Left side - Buttons */
+.buttons {
+  width: 100%;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.85rem 1.75rem;
+  background-color: var(--purple-color);
+  color: black;
+  border: none;
+  font-weight: 600;
+  transition: 0.2s all ease;
+  white-space: nowrap;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 3px;
+}
+
+.button:hover {
+  transition: 0.2s all ease;
+  background-color: var(--primary-color);
+  border-color: var(--selection-color);
+}
+
+.button:hover a {
+  color: var(--selection-color);
+}
+
+.button a {
+  color: black;
+  text-decoration: none;
+}
+
+.try {
+  background-color: var(--neon-cyan);
+}
+
+.code {
+  background-color: var(--neon-yellow);
+}
+
+.download {
+  background-color: var(--neon-green);
+}
+
+/* Left side - Links */
+.links {
+  width: 100%;
+  margin-top: 1%;
+  z-index: 3;
+  color: var(--semi-white);
+  user-select: text;
+  -moz-user-select: text;
+}
+
+.links a {
+  color: var(--selection-color);
+  text-decoration: none;
+  font-weight: 500;
+  user-select: text;
+  -moz-user-select: text;
+}
+
+/* ===== RIGHT SIDE ===== */
+/* Right side - Media */
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  padding: 2%;
+}
+
+.media-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: #4714ff 2px solid;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+/* ===== TABLET DESIGN (768px - 1024px) ===== */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .header-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  .line {
+    width: 50%;
+  }
+
+  .links {
+    font-size: 1rem;
+  }
+}
+
+/* ===== MOBILE DESIGN (Below 768px) ===== */
+@media (max-width: 768px) {
+  .header-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .line {
+    width: 60%;
+  }
+
+  .links {
+    font-size: 0.95rem;
+  }
+}
+
+/* ===== SMALL MOBILE (Below 480px) ===== */
+@media (max-width: 480px) {
+  .header-prese {
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+
+  .header-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .line {
+    width: 75%;
+    height: 1.5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 0.6rem;
+    margin-top: 3%;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+    border-width: 2px;
+  }
+
+  .button a {
+    font-size: 0.95rem;
+  }
+
+  .media-container {
+    padding: 1.5%;
+  }
+
+  .media-container video {
+    border-width: 1px;
+  }
+
+  .links {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-top: 2%;
+  }
+}

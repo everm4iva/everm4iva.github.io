@@ -1,0 +1,12 @@
+@keyframes warning {
+    0% { color: yellow; font-weight: 500; font-size: 1.1rem; }
+    50% { color: white; font-weight: normal; }
+}
+
+/* Additional sparkle positions */
+.sparkle-1 { top: 20%; left: 20%; animation-delay: 0s; }
+.sparkle-2 { top: 30%; right: 25%; animation-delay: 0.5s; }
+.sparkle-3 { bottom: 40%; left: 15%; animation-delay: 1s; }
+.sparkle-4 { bottom: 20%; right: 30%; animation-delay: 1.5s; }
+.sparkle-5 { top: 60%; left: 70%; animation-delay: 2s; }
+.sparkle-6 { top: 80%; right: 60%; animation-delay: 2.5s; }

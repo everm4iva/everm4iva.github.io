@@ -1,0 +1,55 @@
+@import url("https://umaera.github.io/shared/point/fonts/fonts.css");
+@import url("./styles/animations.css");
+@import url("./styles/page-style.css");
+@import url("./styles/components.css");
+@import url("./styles/popups.css");
+
+:root {
+  --background-color: #000000;
+  --primary-color: #ffffff;
+  --purple-color: #4714ff;
+  --selection-color: #ff0f53;
+  --semi-white: #ffffff81;
+  --neon-cyan: #4df8f5;
+  --neon-yellow: #f5f14d;
+  --neon-green: #4df56b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: var(--selection-color);
+  color: black;
+}
+
+body {
+  margin: 2%;
+  padding: 0;
+  background: var(--background-color);
+  font-family: Outfit, "Courier New", monospace;
+  overflow: hidden;
+  cursor: default;
+  color: var(--purple-color);
+  font-size: 16px;
+}
+
+h3 {
+  color: white;
+  font-weight: 300;
+}
+
+section {
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

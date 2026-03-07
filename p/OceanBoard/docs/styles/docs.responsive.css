@@ -1,0 +1,27 @@
+/* === Responsive Styles === */
+
+.ob-docs-container,
+.ob-docs-sidebar,
+.ob-docs-content,
+.ob-docs-nav {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.ob-docs-image-placeholder img,
+.ob-docs-code pre,
+.ob-docs-code code {
+     max-width: 100%;
+     box-sizing: border-box;
+}
+
+@media (max-width: 968px) {
+    .ob-docs-container {
+        flex-direction: column;
+        margin: 0 12px 48px;
+    }
+
+    aside {
+        display: none !important;
+    }
+
+}

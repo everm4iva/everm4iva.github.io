@@ -1,0 +1,133 @@
+/* Stars */ 
+
+#sky {
+    position: absolute;
+    width: 120%; 
+    height: 100%; 
+    pointer-events: none; 
+    animation: rotateSky 410s linear infinite; 
+    transform-origin: center; 
+
+
+}
+
+
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: shine 2s infinite alternate;
+}
+
+@keyframes shine {
+    from {
+        opacity: 0.5;
+        transform: scale(1);
+        box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.5);
+        box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes rotateSky {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359.9deg);
+    }
+}
+
+/* planets */ 
+
+#planets {
+    position: absolute;
+    width: 120%; 
+    height: 100%; 
+    pointer-events: none; 
+    animation: rotateSky 410s linear infinite; 
+    transform-origin: center; 
+
+
+}
+
+
+.planet {
+    background-image: url(https://umaera.github.io/icons/website-icons/default.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgb(156, 232, 255);
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 234, 0, 0.757);
+    animation: turn 79s infinite alternate;
+}
+
+@keyframes turn {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359.9deg);
+    }
+}
+
+@keyframes rotateSky {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359.9deg);
+    }
+}
+
+/* Fireworks */
+
+#firework-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.firework {
+    position: absolute;
+    bottom: 0;
+    width: 2px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0);
+    opacity: 0;
+    animation: launch 2s ease-out forwards, fade-out 1s ease-out 2s forwards;
+}
+
+.particle {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: red;
+    border-radius: 50%;
+    filter: blur(8px);
+    opacity: 0.9;
+    animation: explode 1.5s ease-out forwards, fade-out 1.5s ease-out forwards;
+}
+
+@keyframes launch {
+    0% { transform: translateY(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(var(--height)); opacity: 1; }
+}
+
+@keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes explode {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(var(--x), var(--y)); }
+}
+

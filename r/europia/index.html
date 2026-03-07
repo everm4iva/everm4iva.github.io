@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Europia - Discord Bot</title>
+    <meta name="robots" content="index, follow, noarchive, nosnippet, translate">
+    <link rel="shortcut icon" href="../../icons/lib-icons/europia-gen3.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		::selection {
+			background: rgba(139, 92, 246, 0.5);
+			color: white;
+		}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        .logo {
+			position: relative;
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-top: 5rem;
+        }
+        
+		.logo:before {
+			content: "";
+			position: absolute;
+			background-image: url('../../icons/lib-icons/europia-gen3.jpg');
+			background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+			width: 70px;
+			height: 70px;
+			top: -80%;
+            left: 50%;
+            transform: translateX(-50%);
+			z-index: -1;
+            border-radius: 10px;
+		}
+
+        .tagline {
+            font-size: 1.2rem;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 2rem;
+        }
+
+        .invite-btn {
+            display: inline-block;
+            background-color: #c1a6ff;
+            color: #7657be;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .invite-btn:hover {
+            background-color: #ffa6cb;
+            color: #832b60;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 0, 79, 0.4);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: rgba(30, 30, 50, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 0, 79, 0.4);
+        }
+
+        .card h2 {
+            color: #e2e8f0;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-icon {
+            font-size: 1.3rem;
+        }
+
+        .card p, .card ul {
+            color: #cbd5e0;
+            margin-bottom: 1rem;
+        }
+
+        .card ul {
+            padding-left: 1.5rem;
+        }
+
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .feature {
+            background: rgba(139, 92, 246, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #8b5cf6;
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            background: rgba(255, 0, 79, 0.1);
+            border-left-color: #ff004f;
+        }
+
+        .feature h3 {
+            color: #e2e8f0;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: rgba(255,255,255,0.8);
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .card {
+                padding: 1.5rem;
+            }
+        }
+        code {
+            background-color: #010124;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a {
+            color: #ff0099;
+            background-color: black;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Europia</div>
+            <div class="tagline">Your Ultimate Discord Companion</div>
+            <a target="_blank" href="https://discord.com/oauth2/authorize?client_id=1063083903021219920&permissions=155457027126&response_type=code&redirect_uri=https%3A%2F%2Fumaera.github.io%2Fresources%2Feuropia%2Fthanks&integration_type=0&scope=bot+email+identify" class="invite-btn">Invite to Your Server</a>
+        </header>
+
+<div class="content">
+    <div class="card">
+        <h2><span class="card-icon">⚡</span>What is Europia?</h2>
+        <p><strong>Europia</strong> is a simplified yet powerful Discord bot designed to be both useful and emotionally responsive. It can talk with you through messages using an AI agent that has its own evolving opinion, shaped over time by the chat's pace and emotion.</p>
+
+        <div class="features-grid">
+            <div class="feature">
+                <h3>💬 Conversational AI</h3>
+                <p>Talks with you directly, shares memes, mentions others for interesting chats, and can even revive general chat discussions through a unique <em>revive mode</em>.</p>
+            </div>
+            <div class="feature">
+                <h3>🛡️ Smart Moderation</h3>
+                <p>Can ban or kick users when appropriate, but only within the limits and permissions you configure yourself.</p>
+            </div>
+            <div class="feature">
+                <h3>🧰 Practical Tools</h3>
+                <p>Assists with server tools and setup, adapting its features and boundaries based on your custom configuration.</p>
+            </div>
+            <div class="feature">
+                <h3>🔧 Flexible Customization</h3>
+                <p>You can freely change the bot's name, though the icon and brand must remain to credit the creator. Keep it personal, but respectful.</p>
+            </div>
+        </div>
+
+        <p style="margin-top: 1rem;"><em>Note: Europia isn't just a bot — it's a tiny digital companion, curious and ever-growing, shaped by your server's vibe and imagination.</em></p>
+    </div>
+
+    <div class="card">
+        <h2><span class="card-icon">🔒</span>Data Privacy</h2>
+        <p><strong>Your privacy comes first.</strong> Here's how Europia handles your data:</p>
+        <ul>
+            <li><strong>No Logs:</strong> Europia does not log or store any user messages or actions beyond what is needed temporarily for functionality.</li>
+            <li><strong>Erase Anytime:</strong> You can use the <code>/erase something</code> command to delete stored memory or interactions.</li>
+            <li><strong>User-Controlled Limits:</strong> All capabilities depend solely on the permissions and boundaries you set.</li>
+            <li><strong>Dev-Free Monitoring:</strong> The developer cannot see or access any bot/user activity. Europia is fully user-focused.</li>
+        </ul>
+        <p>If you ever have questions, feel free to reach out via our support channels.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="card-icon">📜</span>License & Terms</h2>
+        <p><strong>Proprietary Software - All Rights Reserved</strong></p>
+        <p>Europia is not open-source, as it uses an experimental (yet stable) AI model. Once the AI model becomes officially available, Europia’s code may be updated accordingly.</p>
+        
+        <h3 style="margin: 1.5rem 0 1rem 0; color: #e2e8f0;">Usage Terms:</h3>
+        <ul>
+            <li>You may customize the bot's name, but not its icon or brand.</li>
+            <li>Redistribution or use of Europia for commercial/profit-based purposes is strictly prohibited.</li>
+            <li>Reverse engineering or source code extraction is not allowed.</li>
+            <li>The bot is provided “as-is” with no guarantees or warranties.</li>
+            <li>Users must comply with <a href="https://discord.com/terms">Discord’s Terms of Service.</a></li>
+        </ul>
+
+        <p style="font-style: italic; margin-top: 1rem;">
+            By inviting and using Europia, you agree to these terms and conditions.
+        </p>
+    </div>
+</div>
+
+
+        <footer>
+            <p>&copy; 2025 GemCloud - by UmaEra. All rights reserved.</p>
+            <p>Built with ❤️ for the Discord community</p>
+        </footer>
+    </div>
+</body>
+</html>

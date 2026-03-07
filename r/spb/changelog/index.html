@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <lang="en">
+    <title>Changelog</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="The simplest Changelog for the simplest browser!">
+    <link rel="stylesheet" href="styles/General.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
+    <link rel="stylesheet" href="styles/notation.css">
+    <link rel="stylesheet" href="styles/VersionSearch.css">
+    <link rel="stylesheet" href="styles/Resize.css">
+    <link rel="stylesheet" href="styles/Box.css">
+    <link rel="stylesheet" href="styles/CreditsFrame.css">
+    <link rel="shortcut icon" href="https://umaera.github.io/icons/app-icons/simplyprivate37.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://umaera.github.io/icons/app-icons/simplyprivate37.png" type="image/x-icon">
+    <link rel="icon" href="https://umaera.github.io/icons/app-icons/simplyprivate37.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Version Selection Frame -->
+    <div class="VersionSearchFrame" id="VersionSelection">
+        <div class="VersionSearch">
+            <div class="SearchHeader">
+                <h3>Select a Version</h3>
+                <div class="closeVersionSelect" onclick="CloseVersionSearch()">X</div>
+            </div>
+            <div class="Versions">
+                <a href="#release-3-6-11" onclick="CloseVersionSearch()">Release 3.6.11</a>
+                <a href="#release-3-6-1" onclick="CloseVersionSearch()">Release 3.6.1</a>
+                <a href="#release-3-6" onclick="CloseVersionSearch()">Release 3.6</a>
+                <a href="#release-3-5" onclick="CloseVersionSearch()">Release 3.5</a>
+                <a href="#release-3-4" onclick="CloseVersionSearch()">Release 3.4</a>
+                <a href="#release-3-3" onclick="CloseVersionSearch()">Release 3.3</a>
+                <a href="#release-3-2-1" onclick="CloseVersionSearch()">Release 3.2.1</a>
+                <a href="#release-3-2" onclick="CloseVersionSearch()">Release 3.2</a>
+                <a href="#release-3-1" onclick="CloseVersionSearch()">Release 3.1</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scredits -->
+    <div class="CreditsFrame" id="Credits">
+        <iframe id="CreditsIframe" src="https://umaera.github.io/asp/credits.html" frameborder="0"></iframe>
+        <div class="CreditsClose" onclick="CreditsClose()">Close</div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <div class="content">
+        <!-- Welcome Section -->
+
+            <section>
+                <h1>🌿 SimplyPrivate – Changelog</h1>
+
+                <h4>Welcome to our simplest changelog page for our simplest browser out there! </h4>
+                <div class="miniBlock-Link-Inline" onclick="window.open('https://github.com/NotYarazi/SimplyPrivate')">Github Page</div> 
+                <div class="miniBlock-Link-Inline" onclick="window.open('https://umaera.github.io/resources/')">Resources</div>
+                <a class="miniBlock-Link-Inline" id="hidOnResize" onclick="CreditsOpen()">Credits</a>
+                <div class="miniBlock-Link-Inline" onclick="toggleTheme()" id="ThemeSwitchText" >Light Mode</div>
+                <a href="#VersionSelection" id="hidOnResize" class="miniBlock-Link-Inline" onclick="OpenVersionSearch()">Go to version..</a>
+            </section>
+
+
+        <!-- Release Sections -->
+        <section id="release-3-6-11">
+            <!-- Header -->
+            <div class="content-header">
+                <div style="display: flex; align-items: center;">
+                    <h1>Release 3.6.11</h1>
+                    <span class="LatestPop">Latest</span>
+                </div>
+                <p style="line-height: 0%;">09 March, 2025</p>
+            </div>
+            <!-- Text Content -->
+            <div class="changes text-select">
+                <h3>◆ Introduction</h3>
+                <p>SimplyPrivate 3.6.11 is a highly anticipated update, packed with improvements that will make your browsing experience faster and smoother. After some issues with version 3.6.1, we focused on fixing everything and bringing a more beautiful and functional interface. Let's see what changed 🤩</p>
+
+                <h3>◆ What Changed?</h3>
+                <p>This version is all about performance and stability. A lot of things were updated, fixed, and even removed to improve the overall performance. Here are the most notable changes:</p>
+            </div>
+            <!-- Dropdown - See Changes -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>See Changes</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <ul>
+                            <li><strong>Updated JAF:</strong> Now SimplyPrivate runs faster with the latest version of JAF (JustAFrogScript). Everything will feel smoother!</li>
+                            <li><strong>New Window/Popup Effects:</strong> It's no longer just a plain window; now it has a cool background blur effect that makes everything look much nicer.</li>
+                            <li><strong>Fixed Visual Issues:</strong> Themes and colors were adjusted to make it easier on the eyes and to make the environment more comfortable.</li>
+                            <li><strong>Fixed "Unknown Errors":</strong> That annoying error that made the browser crash when something failed? That's gone now!</li>
+                            <li><strong>Removed Shortcuts:</strong> We know this was a handy feature, but we had to remove it for now due to compatibility issues. It will come back in a future update!</li>
+                            <li><strong>Re-added Intro Animation:</strong> Remember that intro from version 3.6.0? Well, it's back with a fresh blue accent to give everything a more refreshing feel.</li>
+                            <li><strong>Updated Plugin Explorer:</strong> The whole plugin explorer system got a redesign, looking cleaner and more organized. Some features might be unavailable depending on your operating system, but we're working on that.</li>
+                            <li><strong>Updated Settings Command System:</strong> Instead of an impractical window, we now have a dropdown menu with all available commands!</li>
+                            <li><strong>Added Window Flexibility:</strong> You now have the freedom to adjust your window width, and the design will adapt to fit your needs!</li>
+                            <li><strong>Improved Overall Stability:</strong> We removed some development tools and made other tweaks to ensure a faster and smoother experience.</li>
+                            <li><strong>Fixed Internet Manager Math:</strong> In older versions, the math for calculating G's based on internet speed was totally wrong. We've fixed it by switching from jaf(argm) to jaf(basic).</li>
+                            <li><strong>Updated Reset Speed:</strong> Now, "delete all data" is much faster without using the file queue.</li>
+                            <li><strong>Added New Theme "Quartz":</strong> A smooth pastel purple-themed design for both light and dark mode users.</li>
+                            <li><strong>Fixed Missing Tab Icons:</strong> We switched to an API used by Google, so rest assured, it doesn't track anything.</li>
+                            <li><strong>Removed Unused Assets:</strong> Goodbye to all the unused files that were just taking up space!</li>
+                            <li><strong>Updated "Enjoy" Screen:</strong> That old blinding screen is now replaced with a friendly, simple animation!</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- Dropdown - Advanced Info -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Advanced Info</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div style="display: flex; gap: 10px; flex-direction: row;" class="AdvancedInfoFormat">
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 1rem; height: fit-content" class="AdvancedInfoBlob">
+                            <h3><strong>Download:</strong></h3>
+                            <div>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/download/v3.6.11/simplyprivate-3.6.11-windows-.zip" target="_blank">↳ Download for Windows</a>
+                                <p style="margin: 0;"></p>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/tag/v3.6.11" target="_blank">↳ GitHub Release Page</a>
+                            </div>
+                            <h3><strong>Packages:</strong></h3>
+                            <p class="miniBlock-Package">@JAF^23b</p>
+                            <p class="miniBlock-Package">@Aurae^4.2s</p>
+                            <p class="miniBlock-Package">@Carbon^3.6.0</p>
+                            <p class="miniBlock-Package">@electron^32.1.2</p>
+                            <p class="miniBlock-Package">@Urn^3.25.0</p>
+                            <p class="miniBlock-Package">@iridium^1.2</p>
+                            <p class="miniBlock-Package">@hydrogen^1.1</p>
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 8px; border-radius: 1rem;" class="AdvancedInfoBlob">
+                            <h3><strong>Software:</strong></h3>
+                            <div class="miniBlock-Info">Size:
+                                <div class="miniBlock-Info-Inline">Disk Storage: 200mb~</div>
+                                <div class="miniBlock-Info-Inline">Memory: 300mb~</div>
+                                <div class="miniBlock-Info-Inline">CPU: low</div>
+                                <div class="miniBlock-Info-Inline">Session Storage: 12mb~</div>
+                            </div>
+                            <div class="miniBlock-Info">Supported OS:
+                                <div class="miniBlock-Info-Inline">Windows 7</div>
+                                <div class="miniBlock-Info-Inline">Windows 10</div>
+                                <div class="miniBlock-Info-Inline">Windows 11</div>
+                            </div>
+                            <div class="miniBlock-Security">Security = 7.02/10 (good)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="release-3-6-1">
+                <!-- Header -->
+                <div class="content-header">
+                    <div style="display: flex; align-items: center;">
+                        <h1>Release 3.6.1</h1>
+                        <span class="DeletedPop">DELETED</span>
+                    </div>
+                    <p style="line-height: 0%;">01 September, 2024</p>
+                </div>
+                <!-- Text Content -->
+                <div class="changes text-select">
+                    <h3>◆ Introduction</h3>
+                    <p>3.6.1 is here, and let me tell you – it’s a game-changer.  We’ve managed to create something that’s faster, safer, and just plain better. Oh, and we fixed some bugs too. You’re welcome. 😏 Let’s dive in!</p>
+
+                    <h3>◆ What Changed?</h3>
+                    <p>Hold on tight – this version came with some MASSIVE updates! Here’s what’s new:</p>
+            </div>
+
+            <!-- Dropdown - General Features -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>General Features</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <ul>
+                            <li><strong>Aurae Engine:</strong> Meet Aurae, our brand-new engine that makes your browsing safer by blocking trackers and wiping all cookies when you close SimplyPrivate. Now your data gets a good night’s sleep too. 😌</li>
+                            <li><strong>Loading Screen:</strong> We added a loading screen. Now, when things lag (it happens, okay?), you won’t feel like you’re waiting for a century. ⏳</li>
+                            <li><strong>Error Code System Redesign:</strong> We revamped the error code system – it’s now more informative and way less... cryptic. No more "404s" that leave you wondering if you just broke the internet. 🙃</li>
+                            <li><strong>Reset SimplyPrivate Command:</strong> Now you can do that with SimplyPrivate. One command, and all your data gets deleted of the software. Ahh, sweet relief. 🧘‍♀️</li>
+                            <li><strong>Settings Command Execution:</strong> You can now hit "Enter" in the settings popup to execute commands. We’re making things way more effecient. 😎</li>
+                            <li><strong>Shortcuts Window:</strong> Want to open or close popups like a pro? The new shortcuts window has your back. </li>
+                            <li><strong>Admin-Only Commands:</strong> Only for the developers. Admin-only commands are now functional, but don’t get too excited – they’re only for dev mode. 🙃</li>
+                            <li><strong>Admin Password Frame:</strong> When you see “Enter password to access hidden content” in the plugin window, just know it’s *serious* business. 🕵️‍♂️</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- Dropdown - Improvements -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Improvements</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <ul>
+                            <li><strong>Popup/Window Tweaks:</strong> We fixed visual bugs and made everything look smoother. 🍓</li>
+                            <li><strong>Internet Manager Optimization:</strong> The Internet Manager is now faster and smarter. 📶</li>
+                            <li><strong>High-Resolution Favicon:</strong> Your tabs will look extra sharp with our high-res favicons. It's all about that crisp look. 🖼️</li>
+                            <li><strong>Tabs Window Structure Rework:</strong> We gave the tabs window a makeover. It's sleek, organized, and ready to impress. 💅</li>
+                            <li><strong>Security Window Structure Rework:</strong> The security window got a glow-up too. Now it’s easy to check your settings and feel all secure. 🛡️</li>
+                            <li><strong>Plugins Window Improvement:</strong> The plugins window got some minor tweaks, plus a new code viewer for JAF files. So much better, right? 😎</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- Dropdown - Fixes -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Fixes</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <ul>
+                            <li><strong>Memory Leak Fixes:</strong> We *finally* fixed those sneaky memory leaks that were making everything slow down. Bye-bye, lag! 👋</li>
+                            <li><strong>Tab Order Display Fix:</strong> Tabs will now display in the right order – because chaos is *so* last season. 🙄</li>
+                            <li><strong>UI Loading Speed:</strong> No more slow startup. Your SimplyPrivate is now quicker than a cat chasing a laser. 🐱💨</li>
+                            <li><strong>Link Recognition System Overhaul:</strong> We reworked how links are recognized. It’s faster and way more accurate. 🔗</li>
+                            <li><strong>Credits Window Alignment Fix:</strong> The credits window looks way more polished now. Who knew alignment could be so exciting? 🎉</li>
+                            <li><strong>Window Drag Correction:</strong> We fixed the window dragging issue. Now you can drag windows the way they were meant to be dragged. 🎯</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- Dropdown - Themes -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Themes</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="ThemesBox">
+                        <div class="Theme" style="background-color: rgb(164, 17, 255);">Purple</div>
+                        <div class="Theme" style="background-color: rgb(255, 110, 53);">Orange</div>
+                        <div class="Theme" style="background-color: rgb(0, 0, 0); border-style: solid; border-width: 1px; border-color: red;">Neon Red</div>
+                        <div class="Theme" style="background-color: rgb(0, 0, 0); border-style: solid; border-width: 1px; border-color: rgb(55, 255, 0);">Neon Green</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Plugins -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Plugins</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="PluginsBox">
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.justafrog.png');"><div class="PluginName">code.jaf</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.justafrog.png');"><div class="PluginName">winformt.jaf</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.file.png');"><div class="PluginName">lists.e4</div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Advanced Info -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Advanced Info</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div style="display: flex; gap: 10px; flex-direction: row;" class="AdvancedInfoFormat">
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 1rem; height: fit-content" class="AdvancedInfoBlob">
+                            <h3><strong>Download:</strong></h3>
+                            <div>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/tag/v3.6.11" target="_blank">↳ GitHub Release Page</a>
+                            </div>
+                            <h3><strong>Packages:</strong></h3>
+                            <p class="miniBlock-Package">@Aurae^1.0</p>
+                            <p class="miniBlock-Package">@Carbon^3.6.0</p>
+                            <p class="miniBlock-Package">@electron^31.2.1</p>
+                            <p class="miniBlock-Package">@Urn^3.21.0</p>
+                            <p class="miniBlock-Package">@iridium^1.0</p>
+                            <p class="miniBlock-Package">@hydrogen^1.0</p>
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 8px; border-radius: 1rem;" class="AdvancedInfoBlob">
+                            <h3><strong>Software:</strong></h3>
+                            <div class="miniBlock-Info">Size:
+                                <div class="miniBlock-Info-Inline">Disk Storage: 200mb~</div>
+                                <div class="miniBlock-Info-Inline">Memory: 300mb~</div>
+                                <div class="miniBlock-Info-Inline">CPU: low</div>
+                                <div class="miniBlock-Info-Inline">Session Storage: 12mb~</div>
+                            </div>
+                            <div class="miniBlock-Info">Supported OS:
+                                <div class="miniBlock-Info-Inline">Windows 7</div>
+                                <div class="miniBlock-Info-Inline">Windows 10</div>
+                                <div class="miniBlock-Info-Inline">Windows 11</div>
+                            </div>
+                            <div class="miniBlock-Security">Security = 7/10 (good)</div>
+                            <div class="miniBlock-Flag">This version was deleted due to extreme general instability.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="release-3-6">
+                <!-- Header -->
+                <div class="content-header">
+                    <div style="display: flex; align-items: center;">
+                        <h1>Release 3.6</h1>
+                    </div>
+                    <p style="line-height: 0%;">25 July, 2024</p>
+                </div>
+                <!-- Text Content -->
+                <div class="changes text-select">
+                    <h3>◆ Introduction</h3>
+                    <p>SimplyPrivate 3.6 marked a major transformation, bringing a fresh new experience to the browser. With a completely redesigned tab system, improved settings, better animations, and a more refined UI. Let’s take a look at what made 3.6.0 special! 🚀</p>
+
+                    <h3>◆ What Changed?</h3>
+                    <p>This update focused on usability, design, and performance. Here are some of the biggest highlights:</p>
+            </div>
+
+            <!-- Dropdown - General Features -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>General Features</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <ul>
+                            <li><strong>Brand-New Tab System:</strong> Tabs were completely reworked to be more organized and responsive.</li>
+                            <li><strong>Improved Settings:</strong> The settings menu got a fresh redesign, making it easier to navigate and configure options.</li>
+                            <li><strong>Fresh UI Enhancements:</strong> Buttons, text, and theme visibility were adjusted for better readability.</li>
+                            <li><strong>New Popups & Animations:</strong> Menus and popups now featured smooth animations, making navigation feel more fluid.</li>
+                            <li><strong>Discord RPC Integration:</strong> SimplyPrivate now connected with Discord, showing what you were browsing in real-time.</li>
+                            <li><strong>Reworked Plugin System:</strong> New plugins were introduced, and existing ones were improved for better compatibility.</li>
+                            <li><strong>New Themes:</strong> Several stylish new themes were added, including Indigo, Gray, RedBerry, Couple, Cherry, King, and Atmosphere.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- Dropdown - Themes -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Themes</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="ThemesBox">
+                        <div class="Theme" style="background-color: rgb(36, 22, 125);">Indigo</div>
+                        <div class="Theme" style="background-color: rgb(18, 18, 18);">Gray</div>
+                        <div class="Theme" style="background-image: url('https://umaera.github.io/icons/themes/redberry.jpg');">RedBerry</div>
+                        <div class="Theme" style="background-image: url('https://umaera.github.io/icons/themes/couple.jpg');">Couple</div>
+                        <div class="Theme" style="background-image: url('https://umaera.github.io/icons/themes/cherry.jpg');">Cherry</div>
+                        <div class="Theme" style="background-image: url('https://umaera.github.io/icons/themes/king.jpg');">King</div>
+                        <div class="Theme" style="background-image: url('https://umaera.github.io/icons/themes/atmosphere.jpg');">Atmosphere</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Plugins -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Plugins</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="PluginsBox">
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.uranium.png');"><div class="PluginName">DHS.urn</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.uranium.png');"><div class="PluginName">EPR.urn</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.uranium.png');"><div class="PluginName">BUR.urn</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.uranium.png');"><div class="PluginName">DPS.urn</div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Advanced Info -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Advanced Info</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div style="display: flex; gap: 10px; flex-direction: row;" class="AdvancedInfoFormat">
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 1rem; height: fit-content" class="AdvancedInfoBlob">
+                            <h3><strong>Download:</strong></h3>
+                            <div>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/download/v3.6.11/simplyprivate-3.6.11-windows-.zip" target="_blank">↳ Download for Windows</a>
+                                <p style="margin: 0;"></p>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/download/v3.6/simplyprivate_linux.deb" target="_blank">↳ Download for Linux (.deb)</a>
+                                <p style="margin: 0;"></p>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/download/v3.6/simplyprivate_linux.AppImage" target="_blank">↳ Download for Linux (.AppImage)</a>
+                                <p style="margin: 0;"></p>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/tag/v3.6" target="_blank">↳ GitHub Release Page</a>
+                            </div>
+                            <h3><strong>Packages:</strong></h3>
+                            <p class="miniBlock-Package">@Carbon^3.6.0</p>
+                            <p class="miniBlock-Package">@electron^31.2.1</p>
+                            <p class="miniBlock-Package">@Urn^3.21.0</p>
+                            <p class="miniBlock-Package">@iridium^1.0</p>
+                            <p class="miniBlock-Package">@hydrogen^1.0</p>
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 8px; border-radius: 1rem;" class="AdvancedInfoBlob">
+                            <h3><strong>Software:</strong></h3>
+                            <div class="miniBlock-Info">Size:
+                                <div class="miniBlock-Info-Inline">Disk Storage: 200mb~</div>
+                                <div class="miniBlock-Info-Inline">Memory: 350mb~</div>
+                                <div class="miniBlock-Info-Inline">CPU: low-medium</div>
+                                <div class="miniBlock-Info-Inline">Session Storage: 9mb~</div>
+                            </div>
+                            <div class="miniBlock-Info">Supported OS:
+                                <div class="miniBlock-Info-Inline">Linux Ubuntu</div>
+                                <div class="miniBlock-Info-Inline">Linux Debian</div>
+                                <div class="miniBlock-Info-Inline">Linux Mint</div>
+                                <div class="miniBlock-Info-Inline">Linux Arch</div>
+                                <div class="miniBlock-Info-Inline">Windows 7</div>
+                                <div class="miniBlock-Info-Inline">Windows 10</div>
+                                <div class="miniBlock-Info-Inline">Windows 11</div>
+                            </div>
+                            <div class="miniBlock-Security">Security = 7/10 (good)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="release-3-5">
+                <!-- Header -->
+                <div class="content-header">
+                    <div style="display: flex; align-items: center;">
+                        <h1>Release 3.5</h1>
+                    </div>
+                    <p style="line-height: 0%;">11 March, 2024</p>
+                </div>
+                <!-- Text Content -->
+                <div class="changes text-select">
+                    <h3>◆ Introduction</h3>
+                    <p>SimplyPrivate 3.5 was a major update focused on security, memory optimization, and bug fixes. While it didn’t introduce huge UI changes, it brought massive improvements to performance and security. This version set the foundation for a smoother experience and introduced some cool features along the way! 💚</p>
+
+                    <h3>◆ What Changed?</h3>
+                    <p>The focus of this update was to make SimplyPrivate more efficient, faster, and safer. Here are the key changes:</p>
+            </div>
+            <!-- Dropdown - General Features -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>General Features</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <ul>
+                            <li><strong>Startup Animation Optimization:</strong> The animation was redesigned to consume less memory and improve launch speed.</li>
+                            <li><strong>VPN Enhancements:</strong> VS-VPN (Virtual Simulation VPN) was optimized for faster loading times.</li>
+                            <li><strong>Security Panel Added:</strong> A brand-new panel displaying network info and integrated security tools.</li>
+                            <li><strong>New Reload Button in Plugins Window:</strong> Now, you can quickly refresh your plugins without restarting the browser.</li>
+                            <li><strong>Improved Upbar Design:</strong> Border and color settings were tweaked to better match themes.</li>
+                            <li><strong>CSS & JavaScript Optimization:</strong> The browser now runs smoother thanks to code refinements.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- Dropdown - Themes -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Themes</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="ThemesBox">
+                        <div class="Theme" style="background-color: rgb(83, 46, 16);">Chocolate</div>
+                        <div class="Theme" style="background-color: rgb(0, 0, 0); border-style: solid; border-width: 1px; border-color: yellow;">Neon Black</div>
+                        <div class="Theme" style="background-image: linear-gradient(to right, rgb(174, 23, 23) , rgb(203, 42, 101));">Blossom Red</div>
+                        <div class="Theme" style="background-image: url('https://umaera.github.io/icons/themes/binary.jpg');">Binary</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Plugins -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Plugins</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="PluginsBox">
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.folder.dev.png');"><div class="PluginName">uptHandler.urn</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.iridium.png');"><div class="PluginName">security.iri</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">fix-zoom.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.iridium.png');"><div class="PluginName">sxtt.iri</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.carbon.png');"><div class="PluginName">icod.crb</div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Advanced Info -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Advanced Info</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div style="display: flex; gap: 10px; flex-direction: row;" class="AdvancedInfoFormat">
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 1rem; height: fit-content" class="AdvancedInfoBlob">
+                            <h3><strong>Download:</strong></h3>
+                            <div>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/download/v3.5/simplyprivate-32bits.exe" target="_blank">↳ Download for Windows (x32)</a>
+                                <p style="margin: 0;"></p>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/download/v3.5/simplyprivate-64bits.exe" target="_blank">↳ Download for Windows (x64)</a>
+                                <p style="margin: 0;"></p>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/tag/v3.5" target="_blank">↳ GitHub Release Page</a>
+                            </div>
+                            <h3><strong>Packages:</strong></h3>
+                            <p class="miniBlock-Package">@Carbon^3.0b</p>
+                            <p class="miniBlock-Package">@electron^29.1.2</p>
+                            <p class="miniBlock-Package">@Urn^3.14.0</p>
+                            <p class="miniBlock-Package">@iridium^1.0</p>
+                            <p class="miniBlock-Package">@hydrogen^1.0</p>
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 8px; border-radius: 1rem;" class="AdvancedInfoBlob">
+                            <h3><strong>Software:</strong></h3>
+                            <div class="miniBlock-Info">Size:
+                                <div class="miniBlock-Info-Inline">Disk Storage: 190mb~</div>
+                                <div class="miniBlock-Info-Inline">Memory: 410mb~</div>
+                                <div class="miniBlock-Info-Inline">CPU: low-medium</div>
+                                <div class="miniBlock-Info-Inline">Session Storage: 5mb~</div>
+                            </div>
+                            <div class="miniBlock-Info">Supported OS:
+                                <div class="miniBlock-Info-Inline">Windows 7</div>
+                                <div class="miniBlock-Info-Inline">Windows 10</div>
+                                <div class="miniBlock-Info-Inline">Windows 11</div>
+                            </div>
+                            <div class="miniBlock-Security-2">Security = 5/10 (low, usage not recommended)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="release-3-4">
+                <!-- Header -->
+                <div class="content-header">
+                    <div style="display: flex; align-items: center;">
+                        <h1>Release 3.4</h1>
+                        <div class="DeletedPop">DELETED</div>
+                    </div>
+                    <p style="line-height: 0%;">16 February, 2024</p>
+            </div>
+            <!-- Text Content -->
+            <div class="changes text-select">
+                <h3>◆ Introduction</h3>
+                <p>Due to instability issues, SimplyPrivate 3.4 is no longer available for download. However, this version introduced a variety of improvements focused on personalization, speed, and performance. Let’s break down what changed!</p>
+
+                <h3>◆ What Changed?</h3>
+                <p>This update brought some exciting changes, including themes system, better support for most websites and turbo mode. Here’s what was improved:</p>
+
+                <!-- Dropdown - General Features -->
+                <div class="dropdown" data-dropdown-id="version-1">
+                    <button class="dropdown-header">
+                        <span>General Features</span>
+                        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>
+                            <ul>
+                                <li><strong>New Turbo Mode:</strong> A performance booster that sped up browsing, but also caused memory issues at startup. Definitely made things faster, but required some fine-tuning.</li>
+                                <li><strong>New Icon 🍃:</strong> A fresh, leafy icon was added to give SimplyPrivate a more organic and clean feel. Simple, but nice!</li>
+                                <li><strong>New Startup Animation:</strong> We introduced a new green-themed startup animation to make the launch feel more modern and lively!</li>
+                                <li><strong>Faster Startup:</strong> The startup process was optimized to be faster, though it may have led to some memory-related problems for certain users.</li>
+                                <li><strong>Config Menu Shortcut:</strong> You can now open the configuration menu directly by clicking the app icon in the sidebar, or by using the shortcut <code>Ctrl + F6</code> for quicker access.</li>
+                                <li><strong>Offline Screens:</strong> Added offline screens for cases when a website is unavailable or there is no internet connection. This ensures users always know what’s going on.</li>
+                                <li><strong>Windows 32/64-bit Support:</strong> SimplyPrivate was repacked to support both Windows 32-bit and 64-bit versions once again.</li>
+                                <li><strong>Zoom Adjustments:</strong> We fine-tuned the zoom levels, now allowing a max zoom of 20 and a minimum of -20, giving more flexibility to users.</li>
+                                <li><strong>V-VPN Optimizations:</strong> The VPN feature was optimized to provide a better browsing experience, though it’s important to note that it might have been unstable for some users and will be revisited in future versions.</li>
+                                <li><strong>New Shortcuts and Animations:</strong> We’ve added a new shortcut to access the debug panel, and animations have been applied throughout the app to improve the visual experience and make interactions smoother.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Dropdown - Bug Fixes -->
+                <div class="dropdown" data-dropdown-id="version-1">
+                    <button class="dropdown-header">
+                        <span>Bug Fixes</span>
+                        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>
+                            <ul>
+                                <li><strong>Deleted Console:</strong> The console was removed as it wasn’t serving any practical purpose for most users.</li>
+                                <li><strong>Config Screen Changes:</strong> We replaced checkboxes with buttons on the config screen for better usability.</li>
+                                <li><strong>Explorer List Removed:</strong> The explorer list on the plugin frame was removed as it couldn’t interact properly and had no function.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown - Themes -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Themes</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="ThemesBox">
+                        <div class="Theme" style="background-color: rgb(0, 0, 0);">Black</div>
+                        <div class="Theme" style="background-color: rgb(230, 230, 230); color: rgb(60, 60, 60);">White</div>
+                        <div class="Theme" style="background-color: rgb(56, 121, 44);">Green</div>
+                        <div class="Theme" style="background-color: rgb(243, 50, 50);">Red</div>
+                        <div class="Theme" style="background-color: rgb(249, 137, 137);">Pink</div>
+                        <div class="Theme" style="background-color: rgb(112, 179, 202);">Light Blue</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Plugins -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Plugins</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="PluginsBox">
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.folder.uranium.png');"><div class="PluginName">betterElements</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.folder.hydrogen.png');"><div class="PluginName">Offline Screens</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.carbon.png');"><div class="PluginName">sphereY.crb</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.folder.hydrogen.png');"><div class="PluginName">BetterAnimations</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.folder.settings.png');"><div class="PluginName">SessionSys</div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Advanced Info -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Advanced Info</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div style="display: flex; gap: 10px; flex-direction: row;" class="AdvancedInfoFormat">
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 1rem; height: fit-content" class="AdvancedInfoBlob">
+                            <h3><strong>Download:</strong></h3>
+                            <div>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/tag/v3.4" target="_blank">↳ GitHub Release Page</a>
+                            </div>
+                            <h3><strong>Packages:</strong></h3>
+                            <p class="miniBlock-Package">@Carbon^2.9b</p>
+                            <p class="miniBlock-Package">@electron^29.0.1</p>
+                            <p class="miniBlock-Package">@Urn^2.21.1</p>
+                            <p class="miniBlock-Package">@iridium^1.0</p>
+                            <p class="miniBlock-Package">@hydrogen^1.0</p>
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 8px; border-radius: 1rem;" class="AdvancedInfoBlob">
+                            <h3><strong>Software:</strong></h3>
+                            <div class="miniBlock-Info">Size:
+                                <div class="miniBlock-Info-Inline">Disk Storage: 120mb~</div>
+                                <div class="miniBlock-Info-Inline">Memory: 360mb~</div>
+                                <div class="miniBlock-Info-Inline">CPU: low</div>
+                                <div class="miniBlock-Info-Inline">Session Storage: 5mb~</div>
+                            </div>
+                            <div class="miniBlock-Info">Supported OS:
+                                <div class="miniBlock-Info-Inline">Windows 7</div>
+                                <div class="miniBlock-Info-Inline">Windows 10</div>
+                                <div class="miniBlock-Info-Inline">Windows 11</div>
+                            </div>
+                            <div class="miniBlock-Security-1">Security = 2/10 (critical risks!)</div>
+                            <div class="miniBlock-Flag">This version was deleted due to extreme security risks.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="release-3-3">
+                <!-- Header -->
+                <div class="content-header">
+                    <div style="display: flex; align-items: center;">
+                        <h1>Release 3.3</h1>
+                    </div>
+                    <p style="line-height: 0%;">17 February, 2024</p>
+                </div>
+                <!-- Text Content -->
+                <div class="changes text-select">
+                    <h3>◆ Introduction</h3>
+                    <p>3.3 Is here, packed with some serious upgrades! This update takes a huge jump in privacy, performance, and overall efficiency. Expect faster speeds, smarter memory management, and a browsing experience that just feels better. Let’s dive in! 🎉</p>
+
+                    <h3>◆ What Changed?</h3>
+                    <p>The focus of this update was to make SimplyPrivate more efficient, faster, and safer. Here are the key changes:</p>
+            </div>
+            <!-- Dropdown - General Features -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>General Features</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <ul>
+                            <li><strong>Fast Startup:</strong> Plugins now load only when needed, meaning the browser boots up faster than ever.</li>
+                            <li><strong>Windows 32/64-bit Support:</strong> Now fully packed for both 32-bit and 64-bit systems.</li>
+                            <li><strong>Lazy Tab Loading:</strong> Tabs now wait for you to click them before loading, reducing initial memory usage.</li>
+                            <li><strong>Navigation Bar Upgrade:</strong> We ditched the unnecessary blur in the navigation bar for a cleaner, more polished interface.</li>
+                            <li><strong>Tab Loading Fix:</strong> Tabs 9 and 10 were misbehavin', now they work as expected!</li>
+                            <li><strong>ConsoleApp Now Reads Logs:</strong> Developers, the log reader is back in action.</li>
+                            <li><strong>Internet Chart Crash Fixed:</strong> No more random crashes when checking your network stats.</li>
+                            <li><strong>New Startup Animation:</strong> A fresh, dynamic animation greets you at launch. (We’re pretty proud of it! 🥳)</li>
+                            <li><strong>Auto-Updater:</strong> No more guessing! Get notified when a new update is available.</li>
+                            <li><strong>File Browser Lock:</strong>Private files are now password-protected for an extra layer of security.</li>
+                            <li><strong>Config Menu with Debug Tools:</strong> Tweak experimental features, enable dev tools, and more! (Activate with <code>Ctrl + F6</code>)</li>
+                            <li><strong>VPN Security (Beta):</strong> Changes your IP country info for better privacy while keeping your real IP for loading pages.</li>
+                            <li><strong>10 Tabs Support:</strong> More tabs, more multitasking! The browser now lets you experience up to 10 open tabs.</li>
+                            <li><strong>Windows93 Mode:</strong> Feeling nostalgic? You can now enable a Windows93-inspired experience.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <!-- Dropdown - Plugins -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Plugins</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="PluginsBox">
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.uranium.png');"><div class="PluginName">fastload.urn</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.uranium.png');"><div class="PluginName">Nwf.urn</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">net-spack.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">notanimcrash.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.carbon.png');"><div class="PluginName">onlyADMIN.crb</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">better.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">diskmin.hyd</div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Advanced Info -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Advanced Info</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div style="display: flex; gap: 10px; flex-direction: row;" class="AdvancedInfoFormat">
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 1rem; width: 50%; height: fit-content" class="AdvancedInfoBlob">
+                            <h3><strong>Download:</strong></h3>
+                            <div>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/download/v3.3/32bit-simplyprivate.zip" target="_blank">↳ Download for Windows (x32)</a>
+                                <p style="margin: 0;"></p>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/download/v3.3/64bit-simplyprivate.zip" target="_blank">↳ Download for Windows (x64)</a>
+                                <p style="margin: 0;"></p>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/tag/v3.3" target="_blank">↳ GitHub Release Page</a>
+                            </div>
+                            <h3><strong>Packages:</strong></h3>
+                            <p class="miniBlock-Package">@Carbon^2.7b</p>
+                            <p class="miniBlock-Package">@electron^28.2.3</p>
+                            <p class="miniBlock-Package">@Urn^2.2</p>
+                            <p class="miniBlock-Package">@hydrogen^1.0</p>
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 8px; border-radius: 1rem;" class="AdvancedInfoBlob">
+                            <h3><strong>Software:</strong></h3>
+                            <div class="miniBlock-Info">Size:
+                                <div class="miniBlock-Info-Inline">Disk Storage: 160mb~</div>
+                                <div class="miniBlock-Info-Inline">Memory: 170mb~</div>
+                                <div class="miniBlock-Info-Inline">CPU: mostly low</div>
+                                <div class="miniBlock-Info-Inline">Session Storage: 9mb~</div>
+                            </div>
+                            <div class="miniBlock-Info">Supported OS:
+                                <div class="miniBlock-Info-Inline">Windows 7</div>
+                                <div class="miniBlock-Info-Inline">Windows 10</div>
+                                <div class="miniBlock-Info-Inline">Windows 11</div>
+                            </div>
+                            <div class="miniBlock-Security-2">Security = 5/10 (low, usage not recommended)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <!-- Dropdown - Recent Activity -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Most Recent Activities</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <h2>26 June, 2025</h2>
+                        <ul>
+                            <li>1. Planing to delete all executables and download links in this update in a few months. Enjoy while is still considered "official".</li>
+                        </ul>
+                        <div class="miniBlock-Info"><b>NOTICE:</b> As mentioned on the EULA, when a version is deleted, all the installer executables become "unofficial".</div>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="release-3-2-1">
+                <!-- Header -->
+                <div class="content-header">
+                    <div style="display: flex; align-items: center;">
+                        <h1>Release 3.2.1</h1>
+                        <div class="DeletedPop">DELETED</div>
+                    </div>
+                    <p style="line-height: 0%;">20 December, 2023</p>
+            </div>
+            <!-- Text Content -->
+            <div class="changes text-select">
+                <h3>◆ Introduction</h3>
+                <p>Okay, so... turns out our plugins and network iframes decided to take a little vacation into sillyness. They packed their bags, disappeared for a bit, and left us all wondering what happened. But don’t worry, we tracked them down, brought them back, and made sure they’re working properly again!</p>
+
+                <h3>◆ What Changed?</h3>
+                <ul>
+                    <li><strong>Plugin & Network Iframe Fix:</strong> Plugins and network iframes should now behave like responsible code and actually do their jobs.</li>
+                </ul>
+            </div>
+            <!-- Dropdown - Advanced Info -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Advanced Info</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div style="display: flex; gap: 10px; flex-direction: row;" class="AdvancedInfoFormat">
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 1rem; height: fit-content" class="AdvancedInfoBlob">
+                            <h3><strong>Download:</strong></h3>
+                            <div>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/tag/v3.2.1" target="_blank">↳ GitHub Release Page</a>
+                            </div>
+                            <h3><strong>Packages:</strong></h3>
+                            <p class="miniBlock-Package">@Carbon^2.0.4</p>
+                            <p class="miniBlock-Package">@electron^28.0.0</p>
+                            <p class="miniBlock-Package">@Urn^2.1</p>
+                            <p class="miniBlock-Package">@hydrogen^1.0</p>
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 8px; border-radius: 1rem;" class="AdvancedInfoBlob">
+                            <h3><strong>Software:</strong></h3>
+                            <div class="miniBlock-Info">Size:
+                                <div class="miniBlock-Info-Inline">Disk Storage: 140mb~</div>
+                                <div class="miniBlock-Info-Inline">Memory: 300mb~</div>
+                                <div class="miniBlock-Info-Inline">CPU: low</div>
+                                <div class="miniBlock-Info-Inline">Session Storage: 3mb~</div>
+                            </div>
+                            <div class="miniBlock-Info">Supported OS:
+                                <div class="miniBlock-Info-Inline">Windows 10</div>
+                                <div class="miniBlock-Info-Inline">Windows 11</div>
+                            </div>
+                            <div class="miniBlock-Security-2">Security = 3/10 (not worth the risk)</div>
+                            <div class="miniBlock-Flag">This version was deleted because is too old and has low security score.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Dropdown - Recent Activity -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Most Recent Activities</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <h2>26 June, 2025</h2>
+                        <ul>
+                            <li>1. Deleted all download links</li>
+                        </ul>
+                        <div class="miniBlock-Info"><b>NOTICE:</b> As mentioned on the EULA, when a version is deleted, all the installer executables become "unofficial".</div>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="release-3-2">
+                <!-- Header -->
+                <div class="content-header">
+                    <div style="display: flex; align-items: center;">
+                        <h1>Release 3.2</h1>
+                        <div class="DeletedPop">DELETED</div>
+                    </div>
+                    <p style="line-height: 0%;">18 December, 2023</p>
+            </div>
+            <!-- Text Content -->
+            <div class="changes text-select">
+                <h3>◆ Introduction</h3>
+                <p>Alright, we heard you loud and clear! Nobody likes a pop-up that just won’t go away, so we fixed it! This little update is all about polishing your experience, making sure you're not interrupted by an unnecessary update notification.</p>
+
+                <h3>◆ What Changed?</h3>
+                <p>This isn't a major overhaul, but it’s an important one. Here's the key fix:</p>
+                <ul>
+                    <li><strong>Update Pop-Up Fix:</strong> That persistent, annoying update notification? Gone! No more false alarms—SimplyPrivate will now only notify you when there’s a real update available.</li>
+                </ul>
+            </div>
+            <!-- Dropdown - Advanced Info -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Advanced Info</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div style="display: flex; gap: 10px; flex-direction: row;" class="AdvancedInfoFormat">
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 1rem; height: fit-content" class="AdvancedInfoBlob">
+                            <h3><strong>Download:</strong></h3>
+                            <div>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/tag/v3.4" target="_blank">↳ GitHub Release Page</a>
+                            </div>
+                            <h3><strong>Packages:</strong></h3>
+                            <p class="miniBlock-Package">@Carbon^2.0.4</p>
+                            <p class="miniBlock-Package">@electron^28.0.0</p>
+                            <p class="miniBlock-Package">@Urn^2.1</p>
+                            <p class="miniBlock-Package">@hydrogen^1.0</p>
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 8px; border-radius: 1rem;" class="AdvancedInfoBlob">
+                            <h3><strong>Software:</strong></h3>
+                            <div class="miniBlock-Info">Size:
+                                <div class="miniBlock-Info-Inline">Disk Storage: 140mb~</div>
+                                <div class="miniBlock-Info-Inline">Memory: 300mb~</div>
+                                <div class="miniBlock-Info-Inline">CPU: low</div>
+                                <div class="miniBlock-Info-Inline">Session Storage: 3mb~</div>
+                            </div>
+                            <div class="miniBlock-Info">Supported OS:
+                                <div class="miniBlock-Info-Inline">Windows 10</div>
+                            </div>
+                            <div class="miniBlock-Security-2">Security = 3/10 (still not worth the risk)</div>
+                            <div class="miniBlock-Flag">This version was deleted because is too old and has low security score.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Recent Activity -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Most Recent Activities</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <h2>26 June, 2025</h2>
+                        <ul>
+                            <li>1. Deleted all download links</li>
+                        </ul>
+                        <div class="miniBlock-Info"><b>NOTICE:</b> As mentioned on the EULA, when a version is deleted, all the installer executables become "unofficial".</div>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="release-3-1">
+                <!-- Header -->
+                <div class="content-header">
+                    <div style="display: flex; align-items: center;">
+                        <h1>Release 3.1</h1>
+                        <div class="DeletedPop">DELETED</div>
+                    </div>
+                    <p style="line-height: 0%;">17 December, 2023</p>
+            </div>
+            <!-- Text Content -->
+            <div class="changes text-select">
+                <h3>◆ Introduction</h3>
+                <p>We’re all about making SimplyPrivate faster and smoother, a HUGE update focused on giving you a better browsing experience! From improved tab management to deeper customization options, version 3.1 brings major upgrades under the hood. Let’s check out what’s new!</p>
+
+                <h3>◆ What Changed?</h3>
+                <p>With this update, we made SimplyPrivate more efficient. Here’s what’s new:</p>
+
+                <!-- Dropdown - General Features -->
+                <div class="dropdown" data-dropdown-id="version-1">
+                    <button class="dropdown-header">
+                        <span>General Features</span>
+                        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                            <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <p>
+                            <ul>
+                                <li><strong>Startup Optimization:</strong> The browser now launches even faster, using fewer resources.</li>
+                                <li><strong>Installation Optimization:</strong> A smoother, more reliable install process.</li>
+                                <li><strong>Latest Electron Version:</strong> Upgraded for improved performance, security, and compatibility.</li>
+                                <li><strong>Smarter Search Bar:</strong> Now applies directly to the currently open tab, no more unnecessary tab switches!</li>
+                                <li><strong>Navigation Buttons Upgrade:</strong> Back, Forward, and Reload now work seamlessly with the active tab.</li>
+                                <li><strong>Fixed Flag Filter in Sidebar:</strong> Now properly applied to tab settings.</li>
+                                <li><strong>Fixed Insert Link in Upbar:</strong> Adding links now works as expected.</li>
+                                <li><strong>Internet Chart Fix:</strong> The network chart is now responsive and won’t randomly freeze.</li>
+                                <li><strong>Auto-Updater:</strong> Get notified whenever a new version is available!</li>
+                                <li><strong>10 Tabs Support:</strong> More multitasking power! The browser can now handle up to 10 open tabs.</li>
+                                <li><strong>Optimized File Browser:</strong> Plugin tab browsing is now more organized and colorful.</li>
+                                <li><strong>Built-in VPN Optimization:</strong> Unlock restricted websites without changing your location.</li>
+                                <li><strong>Config Menu with Debug Tools:</strong> Unlock experimental features with <code>Ctrl + F6</code>:</li>
+                                <ul>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown - Commands -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Commands</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li>🎨 <strong>Enable Themes Button:</strong> Customize your experience (not fully developed yet).</li>
+                        <li>💻 <strong>Enable Console Button:</strong> Gives developers access to internal logs.</li>
+                        <li>⚙️ <strong>Developer Keys:</strong> Unlock advanced app functions:</li>
+                        <ul>
+                            <li><code>--test (windowname)</code> → Opens specific windows.</li>
+                            <li><code>-- -e</code> → Activates specific plugins.</li>
+                            <li><code>-- -e -l</code> → Opens the plugin code explorer.</li>
+                            <li><code>-- -e -o (code)</code> → Unlocks protected plugin folders.</li>
+                            <li><code>--test tz</code> → Opens the optimizer tool.</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <!-- Dropdown - Plugins -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Plugins</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div class="PluginsBox">
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">themes.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">assets.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">network.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">adminPanel.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">codehandler.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">betterStartup.hyd</div></div>
+                        <div class="Plugin" style="background-image: url('https://umaera.github.io/icons/new-pack-icons/tile.hydrogen.png');"><div class="PluginName">updateTask.hyd</div></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown - Advanced Info -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Advanced Info</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <div style="display: flex; gap: 10px; flex-direction: row;" class="AdvancedInfoFormat">
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 15px; border-radius: 1rem; height: fit-content" class="AdvancedInfoBlob">
+                            <h3><strong>Download:</strong></h3>
+                            <div>
+                                <a href="https://github.com/NotYarazi/SimplyPrivate/releases/tag/v3.1" target="_blank">↳ GitHub Release Page</a>
+                            </div>
+                            <h3><strong>Packages:</strong></h3>
+                            <p class="miniBlock-Package">@Carbon^2.0b</p>
+                            <p class="miniBlock-Package">@electron^27.1.3</p>
+                            <p class="miniBlock-Package">@Urn^1.0</p>
+                            <p class="miniBlock-Package">@hydrogen^1.0</p>
+                        </div>
+                        <div style="background-color: rgba(0, 0, 0, 0.2); padding: 8px; border-radius: 1rem;" class="AdvancedInfoBlob">
+                            <h3><strong>Software:</strong></h3>
+                            <div class="miniBlock-Info">Size:
+                                <div class="miniBlock-Info-Inline">Disk Storage: 150mb~</div>
+                                <div class="miniBlock-Info-Inline">Memory: 180mb~</div>
+                                <div class="miniBlock-Info-Inline">CPU: medium</div>
+                                <div class="miniBlock-Info-Inline">Session Storage: 670kb~</div>
+                            </div>
+                            <div class="miniBlock-Info">Supported OS:
+                                <div class="miniBlock-Info-Inline">Windows 10</div>
+                            </div>
+                            <div class="miniBlock-Security-1">Security = 2/10 (CRITICAL RISKS!)</div>
+                            <div class="miniBlock-Flag">Version deleted because it's too old</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dropdown - Recent Activity -->
+            <div class="dropdown" data-dropdown-id="version-1">
+                <button class="dropdown-header">
+                    <span>Most Recent Activities</span>
+                    <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12">
+                        <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+                <div class="dropdown-content">
+                    <p>
+                        <h2>03 May, 2025</h2>
+                        <ul>
+                            <li>1. Deleted all download links</li>
+                        </ul>
+                        <div class="miniBlock-Info"><b>NOTICE:</b> As mentioned on the EULA, when a version is deleted, all the installer executables become "unofficial".</div>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>© 2025 SimplyPrivate • Made with ❤️ by AzayraTeam</p>
+            </div>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/VersionSearch.js"></script>
+    <script src="scripts/ThemeSys.js"></script>
+    <script src="scripts/Credits.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+@font-face {
+    font-family: Dosis;
+    font-display: swap;
+    src: url(./Dosis/Dosis.ttf);
+}
+
+@font-face {
+    font-family: FleurDeLeah;
+    font-display: swap;
+    src: url(./FleurDeLeah/FleurDeLeah.ttf);
+}
+
+@font-face {
+    font-family: Jersey10;
+    font-display: swap;
+    src: url(./Jersey10/Jersey10.ttf);
+}
+
+@font-face {
+    font-family: Outfit;
+    font-display: swap;
+    src: url(./Outfit/Outfit.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    font-display: swap;
+    src: url(./Quicksand/Quicksand.ttf);
+}
+
+@font-face {
+    font-family: Rubik;
+    font-display: swap;
+    src: url(./Rubik/Rubik.ttf);
+}
+
+@font-face {
+    font-family: RubikMonoOne;
+    font-display: swap;
+    src: url(./RubikMonoOne/RubikMonoOne.ttf);
+}
+
+@font-face {
+    font-family: SourceCodePro;
+    font-display: swap;
+    src: url(./SourceCodePro/SourceCodePro.ttf);
+}
+
+@font-face {
+    font-family: WorkSans;
+    font-display: swap;
+    src: url(./WorkSans/WorkSans.ttf);
+}
+
+@font-face {
+    font-family: LubriFont;
+    font-display: swap;
+    src: url(./WDXLLubrifontSC/WDXLLubrifontSC.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    font-display: swap;
+    src: url(./Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family:LibertinusMono;
+    font-display: swap;
+    src: url(./LibertinusMono/LibertinusMono.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    font-display: swap;
+    src: url(./Inter/Inter.ttf);
+}
+
+@font-face {
+    font-family: MarkerGothic;
+    font-display: swap;
+    src: url(./LXGWMarkerGothic/LXGWMarkerGothic.ttf);
+}

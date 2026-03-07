@@ -1,0 +1,286 @@
+html{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: Outfit, 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+body:before{
+    content: '';
+    position: absolute;
+    /* background-image: url('../../shared/v3/images/bgs/pan_forestview.jpg'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; height: 100%;
+    z-index: -2;
+    filter: blur(2px);
+    opacity: 0.4;
+}
+
+
+a{
+    color: #ffa2bd;
+    font-size: 1rem;
+}
+
+.old{
+    filter: brightness(0.6)
+}
+
+::selection{
+    background-color: #ffa2bd;
+    color: #c44569;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Profile Card */
+.profile-card {
+    max-width: 400px;
+    background: rgb(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 96%;
+    height: 100%;
+    border: 1px solid rgb(255, 0, 115);
+    backdrop-filter: blur(25px);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(45deg, #ff6b9d, #c44569);
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../media/images/me.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid rgb(255, 0, 115);
+}
+
+.username {
+    color: rgb(255, 0, 115);
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.marks {
+    color: rgb(255, 0, 115);
+	font-size: 1rem;
+	width: 100%;
+	text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+}
+
+.social-link:hover {
+    background: rgba(255, 0, 115, 0.2);
+    transform: translateY(-5px);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.contact-email {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Main Card */
+.main-card {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    width: 100%;
+}
+        
+.main-content {
+    display: grid;
+    gap: 20px;
+    margin-bottom: 30px;
+    grid-template-columns: 1fr;
+}
+
+.platform-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.youtube-card {
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.1));
+}
+
+.instagram-card {
+    background: linear-gradient(135deg, rgba(225, 48, 108, 0.2), rgba(225, 48, 108, 0.1));
+}
+
+.twitch-card {
+    background: linear-gradient(135deg, rgba(145, 70, 255, 0.2), rgba(145, 70, 255, 0.1));
+    grid-column: 1 / -1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.platform-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.platform-handle {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bottom-section {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+}
+
+.small-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.small-card:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.github-card {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+}
+
+.discord-card {
+    background: linear-gradient(135deg, rgba(88, 101, 242, 0.2), rgba(88, 101, 242, 0.1));
+}
+
+.email-card {
+    background: linear-gradient(135deg, rgba(100, 181, 246, 0.2), rgba(100, 181, 246, 0.1));
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.handle {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.discord-text {
+    color: #5865f2;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.warning{
+    display: none;
+}
+
+@media (max-width: 340px){
+    .container{
+        display: none;
+    }
+    .warning{
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-height: 340px){
+    .container{
+        display: none;
+    }
+    .warning{
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

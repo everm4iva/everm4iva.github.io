@@ -1,0 +1,19 @@
+.frame{
+    animation: goup 2s ease-in;
+    margin-top: -1800;
+}
+
+@keyframes goup {
+    0%{
+        margin-top: 0;
+    }
+    100%{
+        margin-top: -1800;
+    }
+}
+
+.frame2{
+    position: relative;
+    margin-top: 1000;
+    text-align: center;
+}

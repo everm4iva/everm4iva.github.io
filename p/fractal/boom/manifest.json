@@ -1,0 +1,31 @@
+{
+  "name": "FRACTAL",
+  "short_name": "FRACTAL",
+  "description": "GEOMETRY VIOLENCE",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "theme_color": "#4714FF",
+  "background_color": "#000000",
+  "icons": [
+    {
+      "src": "./img/fractal.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./img/fractal.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": [
+    "games",
+    "action",
+    "arcade"
+  ],
+  "screenshots": [],
+  "lang": "en-US"
+}

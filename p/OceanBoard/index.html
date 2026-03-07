@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>OceanBoard - Build & Write with ease.</title>
+	<meta name="robots" content="index, follow, archive, snippet, translate">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dosis:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Material Icons -->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet">
+	<link rel="stylesheet" href="./media/styles/landing.css">
+	<link rel="shortcut icon" href="./media/icons/Icon-Pink.png" type="image/png">
+	<meta name="description" content="Everything You Need to Tell Your Story!">
+</head>
+<body>
+	<!-- Navigation -->
+	<nav class="ob-nav">
+		<div class="ob-nav-content no-select">
+			<div class="ob-nav-logo">
+				<img src="./media/icons/Icon-Pink.svg" alt="OceanBoard Logo" class="ob-nav-logo-img">
+				<span class="ob-nav-logo-text no-select">OceanBoard</span>
+			</div>
+			<div class="ob-nav-links">
+				<a href="#help" class="ob-nav-link">More</a>
+				<a href="./docs" class="ob-nav-link">Docs</a>
+				<a href="./changelog/" class="ob-nav-link">Changelog</a>
+				<a href="./editor" class="ob-nav-btn">Editor</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section class="ob-hero">
+		<canvas id="heroCanvas" class="ob-hero-canvas"></canvas>
+		<div class="ob-hero-content">
+			<h1 class="ob-hero-title">Write. Build. Create.</h1>
+			<p class="ob-hero-subtitle">
+				A beautiful creative writing tool designed for authors, worldbuilders, and storytellers.
+				Organize characters, locations, episodes, and more with an intuitive markdown editor.
+			</p>
+			<div class="ob-hero-buttons">
+				<a href="./editor/" class="ob-hero-btn primary" translate="yes">
+					<span class="material-icons-round no-select" translate="no">edit</span>
+					Start Writing
+				</a>
+				<a href="./download/OceanBoard-udr0.0.5.zip" class="ob-hero-btn secondary" translate="yes">
+					<span class="material-icons-round no-select" translate="no">play_arrow</span>
+					Download latest
+				</a>
+			</div>
+		</div>
+		<div class="ob-hero-scroll">
+			<span class="material-icons-round no-select" translate="no">expand_more</span>
+		</div>
+	</section>
+
+	<!-- Features Section -->
+	<section id="features" class="ob-features">
+		<div class="ob-container">
+			<h2 class="ob-section-title">Everything You Need to Tell Your Story</h2>
+			<p class="ob-section-subtitle">Powerful features wrapped in a beautiful interface</p>
+
+			<div class="ob-features-grid">
+				<div class="ob-feature-card">
+					<div class="ob-feature-icon">
+						<span class="material-icons-round no-select" translate="no">description</span>
+					</div>
+					<h3 class="ob-feature-title">Markdown Editor</h3>
+					<p class="ob-feature-desc">
+						Write with full markdown support. Live preview, syntax highlighting, 
+						and a distraction-free writing experience.
+					</p>
+				</div>
+
+				<div class="ob-feature-card">
+					<div class="ob-feature-icon">
+						<span class="material-icons-round no-select" translate="no">folder_special</span>
+					</div>
+					<h3 class="ob-feature-title">Smart Organization</h3>
+					<p class="ob-feature-desc">
+						Organize your work into Series, Seasons, and Episodes. 
+						Create special files for Characters, Objects, Scenes, and Attributes.
+					</p>
+				</div>
+
+				<div class="ob-feature-card">
+					<div class="ob-feature-icon">
+						<span class="material-icons-round no-select" translate="no">link</span>
+					</div>
+					<h3 class="ob-feature-title">Smart Linking</h3>
+					<p class="ob-feature-desc">
+						Connect files with mentions and attributes. Reference characters,
+						locations, and concepts across your entire project.
+					</p>
+				</div>
+
+				<div class="ob-feature-card">
+					<div class="ob-feature-icon">
+						<span class="material-icons-round no-select" translate="no">import_export</span>
+					</div>
+					<h3 class="ob-feature-title">Import & Export</h3>
+					<p class="ob-feature-desc">
+						Export your entire workspace, single files, or whole seasons. 
+						Keep backups and share your work easily.
+					</p>
+				</div>
+
+				<div class="ob-feature-card">
+					<div class="ob-feature-icon">
+						<span class="material-icons-round no-select" translate="no">palette</span>
+					</div>
+					<h3 class="ob-feature-title">Beautiful Design</h3>
+					<p class="ob-feature-desc">
+						Dark theme optimized for long writing sessions. 
+						Smooth animations and particle effects that inspire creativity.
+					</p>
+				</div>
+
+				<div class="ob-feature-card">
+					<div class="ob-feature-icon">
+						<span class="material-icons-round no-select" translate="no">storage</span>
+					</div>
+					<h3 class="ob-feature-title">Local Storage</h3>
+					<p class="ob-feature-desc">
+						Everything stored locally in your browser.
+						No accounts, no cloud, no tracking. Your stories are yours.
+					</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Preview Section -->
+	<section id="preview" class="ob-preview">
+		<div class="ob-container">
+			<h2 class="ob-section-title">See It In Action</h2>
+			<p class="ob-section-subtitle">See the waters of your creative workspace</p>
+
+			<div class="ob-preview-showcase no-select">
+				<img src="./media/images/fullscreenshot.png" alt="OceanBoard Editor Preview" class="ob-preview-img no-select">
+			</div>
+
+			<div class="ob-preview-features">
+				<div class="ob-preview-feature">
+					<div class="ob-preview-feature-icon">
+						<span class="material-icons-round no-select" translate="no">edit_note</span>
+					</div>
+					<div class="ob-preview-feature-content">
+						<h4>Split View Editor</h4>
+						<p>Write in markdown on the left, see beautiful formatted preview on the right</p>
+					</div>
+				</div>
+
+				<div class="ob-preview-feature">
+					<div class="ob-preview-feature-icon">
+						<span class="material-icons-round no-select" translate="no">tab</span>
+					</div>
+					<div class="ob-preview-feature-content">
+						<h4>Tab System</h4>
+						<p>Keep multiple files open and switch between them instantly</p>
+					</div>
+				</div>
+
+				<div class="ob-preview-feature">
+					<div class="ob-preview-feature-icon">
+						<span class="material-icons-round no-select" translate="no">search</span>
+					</div>
+					<div class="ob-preview-feature-content">
+						<h4>Command pallete</h4>
+						<p>Press <code>ctrl</code> + <code>K</code> to open an amazing command pallete for quick actions. </p>
+					</div>
+				</div>
+
+				<div class="ob-preview-feature">
+					<div class="ob-preview-feature-icon">
+						<span class="material-icons-round no-select" translate="no">settings</span>
+					</div>
+					<div class="ob-preview-feature-content">
+						<h4>Settings</h4>
+						<p>Your workspace becomes more flexible in every update. Enable line numbers, text size, and more.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Support us & Report bug -->
+	<section class="srb ob-cta" id="help">
+		<div class="ob-cta-content">
+			<h2 class="ob-cta-title">Have an idea, bug or feature request?</h2>
+			<p class="ob-cta-subtitle">This form helps you and the community improve OceanBoard.</p>
+			<a href="https://forms.gle/VD4Qn2DiFyBh8Pib6" class="ob-cta-btn no-select" target="_blank">
+				<span class="material-icons-round no-select" translate="no">quiz</span>
+				Open Form
+			</a>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="ob-footer">
+		<div class="ob-container">
+			<div class="ob-footer-content">
+				<div class="ob-footer-brand">
+					<img src="./media/icons/Icon-Pink.svg" alt="OceanBoard" class="ob-footer-logo no-select">
+					<p class="ob-footer-tagline">Build & Write with ease.</p>
+				</div>
+				<div class="ob-footer-links">
+					<div class="ob-footer-column">
+						<h4>Product</h4>
+						<a href="#features">Features</a>
+						<a href="#preview">Preview</a>
+						<a href="./editor">Editor</a>
+					</div>
+					<div class="ob-footer-column">
+						<h4>Resources</h4>
+						<a href="./docs">Documentation</a>
+						<a href="./docs#getting-started">Getting Started</a>
+					</div>
+					<div class="ob-footer-column">
+						<h4>Info</h4>
+						<a href="https://umaera.github.io">About</a>
+						<a href="https://github.com/everm4iva/OceanBoard" target="_blank">GitHub</a>
+						<a href="./changelog/">Changelog</a>
+					</div>
+				</div>
+			</div>
+			<div class="ob-footer-bottom">
+				<p>Made with love. <a href="https://umaera.github.io/social">umaera</a></p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="./media/scripts/particles.js"></script>
+</body>
+</html>

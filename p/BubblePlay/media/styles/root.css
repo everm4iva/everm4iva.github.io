@@ -1,0 +1,151 @@
+@import url('../fonts/fonts.css');
+
+:root{
+    /* == Main Colors == */
+    --con-bg: #ffffff0a;
+    --con-bg-light: #ffffff0a;
+    --con-bg-light-plus: #ffffff0a;
+
+    /* == Font Settings == */
+    --title-size: 1.6rem;
+    --subtitle-size: 1.3rem;
+    --font-primary: Outfit;
+    --font-secundary: Comfortaa;
+    --font-primary-color: white;
+    --font-secundary-color: rgb(201, 201, 201);
+    --font-primary-size: 1rem;
+    --font-secundary-size: 0.8rem;
+
+    /* == Miscellaneous == */
+    --bg-blur: 11px;
+    --container-border-radius: 0.5rem;
+
+    /* == Animations & Transitions == */
+    --transition-set: 0.1s ease-in-out;
+    --transition-page: 0.4s ease;
+
+    /* == Player Details == */
+    --player-primary-color: purple;
+    --player-primary-color-light: rgb(163, 26, 163);
+    --player-primary-color-dark:rgb(45, 4, 45);
+    --player-sec-color: blue;
+
+    --bg-cover: url('../images/SlumberParty.jpg');
+    --player-cover: url('../images/Player-SlumberParty.png');
+}
+
+html{
+    user-select: text;
+    -moz-user-select:text;
+    -webkit-user-drag: none;
+}
+
+::selection{
+    background-color: yellow;
+    color: black;
+}
+
+body::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background-image: var(--bg-cover);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(20px);
+    opacity: 0.7;
+    transition: var(--transition-page);
+}
+
+body{
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-page);
+    font-family: var(--font-primary);
+    color: var(--font-primary-color);
+    font-size: var(--font-primary-size);
+    text-align: center;
+}
+
+.text{
+    position: relative;
+    margin-top:10%;
+    font-family: var(--font-primary);
+    transition: var(--transition-page);
+}
+
+.smalltext{
+    font-family: var(--font-primary);
+    color: var(--font-secundary-color);
+    transition: var(--transition-page);
+}
+
+.bigtext{
+    font-family: var(--font-primary);
+    color: var(--font-primary-color);
+    font-size: 70px;
+    font-weight: 700;
+    transition: var(--transition-page);
+}
+
+.desc{
+    font-family: var(--font-primary);
+    color: var(--font-primary-color);
+    transition: var(--transition-page);
+}
+
+.screenshot{
+    margin-top:2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    transition: var(--transition-page);
+}
+
+img{
+    width: 90%;
+    border-style: solid;
+    border-radius: var(--container-border-radius);
+    border-color: white;
+    border-width: 1px;
+    transition: var(--transition-page);
+}
+
+/* == Custom Scrollbar == */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--con-bg);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--player-primary-color), var(--player-primary-color-light));
+    border-radius: 10px;
+    transition: var(--transition-set);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--player-primary-color-light), var(--player-primary-color));
+    box-shadow: 0 0 10px var(--player-primary-color-light);
+}
+
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--player-primary-color) var(--con-bg);
+}

@@ -1,0 +1,59 @@
+/**
+ * ☆=========================================☆
+ * Notation.css - Style for common note elements.
+ * ☆=========================================☆
+*/
+
+/* Native */
+blockquote {
+	margin: 0;
+	background-color: var(--bg-color-t6);
+	border-left-style: solid;
+	border-left-color: var(--cyan);
+	border-left-width: 1px;
+	padding-left: 1%;
+}
+
+pre {
+	color: var(--cyan);
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--yellow);
+}
+
+a {
+	color: var(--cyan);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+a.old {
+	color: var(--cyan-dead);
+}
+
+/* Classes */
+.overcyan {
+	background-color: var(--cyan);
+	color: var(--bg-color);
+	width: fit-content;
+}
+
+.overyellow {
+	background-color: var(--yellow);
+	color: var(--bg-color);
+	width: fit-content;
+}
+
+.overpink {
+	background-color: var(--pink);
+	color: var(--bg-color);
+	width: fit-content;
+}

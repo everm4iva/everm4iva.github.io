@@ -1,0 +1,46 @@
+/* === CTA Section === */
+.ob-cta {
+	padding: 2rem 0;
+	background-color: var(--ob-bg-secondary);
+	text-align: center;
+}
+
+.ob-cta-content {
+	width: 70%;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+.ob-cta-title {
+	font-family: 'Dosis', sans-serif;
+	font-size: 3rem;
+	font-weight: 700;
+	color: var(--ob-accent);
+	margin-bottom: 16px;
+}
+
+.ob-cta-subtitle {
+	font-size: 20px;
+	color: var(--ob-text-dim);
+	margin-bottom: 40px;
+}
+
+.ob-cta-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 12px;
+	padding: 20px 48px;
+	background: var(--ob-accent);
+	color: var(--ob-bg);
+	border-radius: 12px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 20px;
+	transition: all 0.3s;
+}
+
+.ob-cta-btn:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 16px 40px rgba(255, 128, 170, 0.5);
+	transition: all 0.2s;
+}

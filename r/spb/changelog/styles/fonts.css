@@ -1,0 +1,19 @@
+@font-face {
+    font-family: QuickSand;
+    src: url(./fonts/Quicksand.ttf);
+}
+
+@font-face {
+    font-family: Confortaa;
+    src: url(./fonts/Comfortaa.ttf);
+}
+
+@font-face {
+    font-family: Oxygen;
+    src: url(./fonts/Oxygen.ttf);
+}
+
+@font-face {
+    font-family: Code;
+    src: url(./fonts/SourceCodePro.ttf);
+}

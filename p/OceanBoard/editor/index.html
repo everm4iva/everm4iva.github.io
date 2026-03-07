@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OceanBoard</title>
+		<meta
+			name="robots"
+			content="index, follow, archive, snippet, translate"
+		/>
+		<!-- Google Fonts - api -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dosis:wght@400;700&family=Outfit:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./styles/root.css" />
+		<link
+			rel="shortcut icon"
+			href="./media/icons/Icon-Pink.png"
+			type="image/png"
+		/>
+		<link rel="apple-touch-icon" href="./media/icons/Icon-Pink.png" />
+		<link rel="manifest" href="./manifest.json" />
+
+		<meta name="theme-color" content="#E43967" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black-translucent"
+		/>
+		<meta name="apple-mobile-web-app-title" content="OceanBoard" />
+
+		<script src="./libs/marked.js"></script>
+		<script src="./libs/lz-string.min.js"></script>
+	</head>
+	<body>
+		<div class="ob-app">
+			<aside class="ob-sidebar">
+				<div class="ob-sidebar-bar">
+					<div class="ob-logo"></div>
+					<button class="ob-series-add-btn" title="Add Series">
+						<span class="material-icons-round" translate="no"
+							>add</span
+						>
+					</button>
+					<div class="ob-series-tiles">
+						<!-- Series tiles will be loaded from localStorage -->
+					</div>
+				</div>
+				<div class="ob-sidebar-content">
+					<div class="ob-project-title-static">OceanBoard</div>
+					<div class="ob-sidebar-actions">
+						<button title="New Episode" class="ob-action-episode">
+							<span class="material-icons-round" translate="no"
+								>note_add</span
+							>
+						</button>
+						<button title="New Season" class="ob-action-season">
+							<span class="material-icons-round" translate="no"
+								>create_new_folder</span
+							>
+						</button>
+					</div>
+					<div class="ob-tree">
+						<!-- Seasons will be loaded from localStorage -->
+					</div>
+					<div class="ob-special-section">
+						<div class="ob-tree-title ob-special-title">
+							Components
+						</div>
+						<ul class="ob-tree-list">
+							<!-- Special files will be loaded from localStorage -->
+						</ul>
+					</div>
+					<div class="ob-media-section">
+						<div class="ob-tree-title ob-media-title">Media</div>
+						<div class="ob-media-list">
+							<!-- Media files will be loaded from localStorage -->
+						</div>
+					</div>
+				</div>
+			</aside>
+			<main class="ob-main">
+				<header class="ob-header">
+					<div class="ob-header-controls">
+						<button class="ob-header-btn" title="Import">
+							<span class="material-icons-round" translate="no"
+								>upload</span
+							>
+						</button>
+						<button class="ob-header-btn" title="Export">
+							<span class="material-icons-round" translate="no"
+								>download</span
+							>
+						</button>
+						<button class="ob-header-btn" title="changelog">
+							<span class="material-icons-round" translate="no"
+								>history</span
+							>
+						</button>
+						<button
+							class="ob-header-btn"
+							id="headerCommandPaletteBtn"
+							title="Command Palette (Ctrl+K)"
+						>
+							<span class="material-icons-round" translate="no"
+								>terminal</span
+							>
+						</button>
+						<button class="ob-header-btn" title="Settings">
+							<span class="material-icons-round" translate="no"
+								>settings</span
+							>
+						</button>
+					</div>
+				</header>
+				<div class="ob-tabs"></div>
+				<section class="ob-content">
+					<div class="ob-welcome">
+						<h1>
+							<span>Welcome to</span>
+							<span class="ob-logo-text">OceanBoard</span>
+						</h1>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script class="./classes/updater.js"></script>
+		<script src="./classes/index.js" type="module"></script>
+	</body>
+</html>

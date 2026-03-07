@@ -1,0 +1,299 @@
+@import url("https://umaera.github.io/shared/point/fonts/fonts.css");
+
+:root {
+  --background-color: #000000;
+  --primary-color: #ffffff;
+  --purple-color: #4e044e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  font-family: Outfit, "Courier New", monospace;
+  overflow: hidden;
+  cursor: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+}
+
+.container {
+  text-align: center;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+#gameCanvas {
+  background: #000;
+  display: block;
+}
+
+.hud-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  padding: 20px;
+  z-index: 10;
+  display: none;
+}
+
+.hud-top {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.hud-item {
+  color: #00ff00;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 5px #000;
+  font-family: "Courier New", monospace;
+}
+
+#scoreDisplay {
+  color: #ffff00;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.8), 0 0 5px #000;
+}
+
+#accuracyDisplay {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 5px #000;
+}
+
+.health-bar-container {
+  height: 25px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #00ff00;
+  position: relative;
+  margin: 0 auto;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.health-bar-fill {
+  height: 100%;
+  background: #00ff00;
+  transition: width 0.3s, background-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+.controls-ascii {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #00ff00;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.8), 0 0 5px #000;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  z-index: 10;
+  white-space: nowrap;
+  display: none;
+}
+
+.key-hint {
+  color: #ffff00;
+  font-weight: bold;
+}
+
+.powerup-container {
+  width: 300px;
+  margin: 4px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.powerup-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.powerup-row.multishot {
+  background: rgba(255, 0, 255, 0.25);
+  border-color: #ff00ff;
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.4);
+}
+
+.powerup-row.timewarp {
+  background: rgba(0, 255, 255, 0.25);
+  border-color: #00ffff;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
+.powerup-row.pushpull {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.powerup-icon {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Courier New", monospace;
+  flex: 0 0 auto;
+  width: 20px;
+  text-align: center;
+}
+
+.powerup-row.multishot .powerup-icon {
+  color: #ff00ff;
+  text-shadow: 0 0 6px rgba(255, 0, 255, 0.8);
+}
+
+.powerup-row.timewarp .powerup-icon {
+  color: #00ffff;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.8);
+}
+
+.powerup-row.pushpull .powerup-icon {
+  color: #ffffff;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.powerup-bar {
+  flex: 1 1 auto;
+  height: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.powerup-row.multishot .powerup-bar {
+  border-color: #ff00ff;
+}
+
+.powerup-row.timewarp .powerup-bar {
+  border-color: #00ffff;
+}
+
+.powerup-row.pushpull .powerup-bar {
+  border-color: #ffffff;
+}
+
+.powerup-bar-fill {
+  height: 100%;
+  transition: width 0.1s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.powerup-row.multishot .powerup-bar-fill {
+  background: #ff00ff;
+  box-shadow: 0 0 4px rgba(255, 0, 255, 0.6);
+}
+
+.powerup-row.timewarp .powerup-bar-fill {
+  background: #00ffff;
+  box-shadow: 0 0 4px rgba(0, 255, 255, 0.6);
+}
+
+.powerup-row.pushpull .powerup-bar-fill {
+  background: #ffffff;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+}
+
+/* Inventory Bar */
+.inventory-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+.inv-slot {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #333;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inv-slot.selected {
+  border-color: #ffff00;
+  box-shadow: 0 0 8px rgba(255, 255, 0, 0.5);
+}
+
+.inv-slot.has-item {
+  border-color: #333;
+}
+
+.inv-slot.has-item.selected {
+  border-color: #ffff00;
+}
+
+.inv-icon {
+  font-size: 20px;
+}
+
+.inv-count {
+  position: absolute;
+  bottom: 1px;
+  right: 3px;
+  font-size: 10px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-family: "Courier New", monospace;
+}
+
+/* ==== RESIZE SCREEN LIMIT ==== */
+@media (min-width: 500px) {
+  body {
+    width: 0%;
+    height: 0%;
+  }
+  body::after {
+    width: 100%;
+    height: 100%;
+    content: "Bad size";
+    display: block;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 18px;
+    font-family: "Courier New", monospace;
+  }
+}

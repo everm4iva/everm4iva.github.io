@@ -1,0 +1,133 @@
+/* === Attribute System Styles === */
+
+/* File-ID Error Banner */
+.ob-file-id-error {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 12px 16px;
+	margin-bottom: 10px;
+	background: rgba(255, 80, 80, 0.15);
+	border-left: 3px solid rgba(255, 80, 80, 0.8);
+	border-radius: 4px;
+	color: #ffcccc;
+	font-size: 14px;
+	animation: slideDown 0.3s ease-out;
+}
+
+.ob-file-id-error .material-icons-round:first-child {
+	color: rgba(255, 80, 80, 0.9);
+	font-size: 20px;
+}
+
+.ob-file-id-error .ob-error-dismiss {
+	margin-left: auto;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px;
+	transition: background 0.2s;
+}
+
+.ob-file-id-error .ob-error-dismiss:hover {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.ob-file-id-error .ob-error-dismiss .material-icons-round {
+	color: #ffcccc;
+	font-size: 18px;
+}
+
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* Mention Highlighting (for @component.fileId) */
+.ob-mention {
+	color: var(--ob-accent);
+	background: rgba(255, 128, 170, 0.15);
+	padding: 2px 4px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: background 0.2s;
+}
+
+.ob-mention:hover {
+	background: rgba(255, 128, 170, 0.25);
+	text-decoration: underline;
+}
+
+/* Confirmation Bubble */
+.ob-mention-bubble {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 12px;
+	background: rgba(20, 20, 30, 0.95);
+	border: 1px solid rgba(255, 128, 170, 0.5);
+	border-radius: 6px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+	z-index: 1000;
+	animation: fadeIn 0.2s ease-out;
+}
+
+.ob-mention-bubble-text {
+	color: #e0e0e0;
+	font-size: 13px;
+}
+
+.ob-mention-bubble-highlight {
+	color: var(--ob-accent);
+	font-weight: 600;
+}
+
+.ob-mention-bubble-btn {
+	padding: 4px 12px;
+	background: rgba(255, 128, 170, 0.2);
+	border: 1px solid rgba(255, 128, 170, 0.4);
+	border-radius: 4px;
+	color: var(--ob-accent);
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.ob-mention-bubble-btn:hover {
+	background: rgba(255, 128, 170, 0.3);
+	border-color: rgba(255, 128, 170, 0.6);
+}
+
+.ob-mention-bubble-btn.secondary {
+	background: rgba(100, 100, 120, 0.2);
+	border-color: rgba(150, 150, 170, 0.4);
+	color: #b0b0c0;
+}
+
+.ob-mention-bubble-btn.secondary:hover {
+	background: rgba(100, 100, 120, 0.3);
+	border-color: rgba(150, 150, 170, 0.6);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.95);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

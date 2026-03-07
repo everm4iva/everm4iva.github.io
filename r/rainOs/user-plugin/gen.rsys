@@ -1,0 +1,8 @@
+.read('./')[after +1]
+try{
+    if (file('../RAINOS.bit').exists){
+        output:(pluginInfo.on.this)
+    } else {
+        output.error(sys.notfound)
+    }
+}

@@ -1,0 +1,205 @@
+/* ===### Ocean Animations ###=== */
+
+/* === Floating Animation === */
+@keyframes ob-float {
+	0%, 100% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}
+
+/* === Pulse Animation === */
+@keyframes ob-pulse {
+	0%, 100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.05);
+		opacity: 0.8;
+	}
+}
+
+/* === Fade In Animation === */
+@keyframes ob-fade-in {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* === Slide In From Left === */
+@keyframes ob-slide-in-left {
+	from {
+		opacity: 0;
+		transform: translateX(-30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* === Slide In From Right === */
+@keyframes ob-slide-in-right {
+	from {
+		opacity: 0;
+		transform: translateX(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* === Glow Pulse === */
+@keyframes ob-glow-pulse {
+	0%, 100% {
+		box-shadow: 0 0 5px rgba(228, 57, 103, 0.3);
+	}
+	50% {
+		box-shadow: 0 0 20px rgba(228, 57, 103, 0.6);
+	}
+}
+
+/* === Shimmer Effect === */
+@keyframes ob-shimmer {
+	0% {
+		background-position: -200% center;
+	}
+	100% {
+		background-position: 200% center;
+	}
+}
+
+/* === Bounce In === */
+@keyframes ob-bounce-in {
+	0% {
+		opacity: 0;
+		transform: scale(0.3);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	70% {
+		transform: scale(0.9);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+/* === Shake === */
+@keyframes ob-shake {
+	0%, 100% {
+		transform: translateX(0);
+	}
+	10%, 30%, 50%, 70%, 90% {
+		transform: translateX(-5px);
+	}
+	20%, 40%, 60%, 80% {
+		transform: translateX(5px);
+	}
+}
+
+/* === Rotate In === */
+@keyframes ob-rotate-in {
+	from {
+		opacity: 0;
+		transform: rotate(-180deg) scale(0.5);
+	}
+	to {
+		opacity: 1;
+		transform: rotate(0deg) scale(1);
+	}
+}
+
+/* === Wave === */
+@keyframes ob-wave {
+	0%, 100% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(10deg);
+	}
+	75% {
+		transform: rotate(-10deg);
+	}
+}
+
+/* === Sparkle === */
+@keyframes ob-sparkle {
+	0%, 100% {
+		opacity: 0;
+		transform: scale(0) rotate(0deg);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1) rotate(180deg);
+	}
+}
+
+/* === Typing Indicator === */
+@keyframes ob-typing {
+	0%, 60%, 100% {
+		transform: translateY(0);
+	}
+	30% {
+		transform: translateY(-10px);
+	}
+}
+
+/* === Gradient Shift === */
+@keyframes ob-gradient-shift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* === Heartbeat === */
+@keyframes ob-heartbeat {
+	0%, 100% {
+		transform: scale(1);
+	}
+	10%, 30% {
+		transform: scale(1.1);
+	}
+	20%, 40% {
+		transform: scale(1);
+	}
+}
+
+/* === Flip === */
+@keyframes ob-flip {
+	from {
+		transform: perspective(400px) rotateY(0);
+	}
+	to {
+		transform: perspective(400px) rotateY(360deg);
+	}
+}
+
+/* === Blur In === */
+@keyframes ob-blur-in {
+	from {
+		opacity: 0;
+		filter: blur(10px);
+	}
+	to {
+		opacity: 1;
+		filter: blur(0);
+	}
+}

@@ -1,0 +1,88 @@
+/**
+ * ☆=========================================☆
+ * MeDummy.css - Making my little dummy functional.
+ * ☆=========================================☆
+*/
+
+.me {
+	position: fixed;
+	left: 2%;
+	width: 6rem;
+	height: 8rem;
+	z-index: 30;
+	cursor: grab;
+	touch-action: none;
+	transition: all 180ms ease;
+	filter: invert(1);
+	top: 20%;
+	background-image: url('../../images/me/bored-t.gif');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.me.dragging {
+	cursor: grabbing;
+	transform: scale(1.03);
+	transform: scale(0.95);
+	background-image: url('../../images/me/totallyscared-t.gif');
+	filter: invert(1);
+}
+
+.me.rock {
+	position: fixed;
+	left: 2%;
+	width: 6rem;
+	height: 8rem;
+	z-index: 30;
+	cursor: grab;
+	touch-action: none;
+	transition: all 180ms ease;
+	top: 20%;
+	background-image: url('../../images/me/rockin-t.gif');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.me.rock.dragging {
+	cursor: grabbing;
+	transform: scale(1.03);
+	transform: scale(0.95);
+	background-image: url('../../images/me/serious-t.gif');
+	filter: invert(1);
+}
+
+.me.ball {
+	position: fixed;
+	left: 2%;
+	width: 6rem;
+	height: 8rem;
+	z-index: 30;
+	cursor: grab;
+	touch-action: none;
+	transition: all 180ms ease;
+	filter: invert(1);
+	top: 20%;
+	background-image: url('../../images/me/ball-t.gif');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.me.sleep {
+	position: fixed;
+	left: 2%;
+	width: 6rem;
+	height: 8rem;
+	z-index: 30;
+	cursor: grab;
+	touch-action: none;
+	transition: all 180ms ease;
+	filter: invert(0);
+	top: 20%;
+	background-image: url('../../images/me/sleep-t.gif');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

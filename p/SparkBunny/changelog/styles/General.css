@@ -1,0 +1,139 @@
+/* Theme Variables */
+:root {
+    --background: #111;
+    --text: #fff;
+    --surface: #1d1d1d;
+    --surface-hover: #2d2d2d;
+    --primary: #77efff;
+    --primary-hover: #8e44ad;
+    --accent: #ff00f2;
+
+    --ul-text: #b4b4b4;
+
+    --fixed: #7dc5d5;
+    --added: #8aba5d;
+    --improved: #c4bc7e;
+    --redesigned: #d0876b;
+}
+
+[data-theme="light"] {
+    --background: #e5d0ff;
+    --text: #1a1a1a;
+    --surface: #ffffff;
+    --surface-hover: #f0f0f0;
+    --primary: #8e44ad;
+    --primary-hover: #6c3483;
+    --accent: #d100c7;
+
+    --ul-text: #b4b4b4;
+
+    --fixed: #7dc5d5;
+    --added: #8aba5d;
+    --improved: #c4bc7e;
+    --redesigned: #d0876b;
+}
+
+
+::selection {
+    background: black;
+    color: #ffb7b7;
+}
+
+html{
+    width: 100%;
+    max-width: 100%;
+    user-select: none;
+    overflow-x: hidden;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Outfit, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+}
+  
+body::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
+}
+  
+section {
+    display: inline-block;
+    height: fit-content;
+    width: 85%;
+    max-width: 1200px;
+    padding: 5% 0% 5% 5%;
+    border-color: #333;
+    border-bottom-style: solid;
+}
+
+section h1{
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-icon {
+  flex-shrink: 0;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.header-links-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
+.header-iconElement {
+    cursor:grab;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.header-iconElement:active {
+    cursor:grabbing;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <lang="en">
+    <title>Changelog - SparkBunny</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="See what changed over the versions!">
+    <meta name="robots" content="index, follow, archive, snippet, translate">
+    <link rel="stylesheet" href="styles/General.css">
+    <link rel="stylesheet" href="styles/notation.css">
+    <link rel="stylesheet" href="styles/VersionSearch.css">
+    <link rel="stylesheet" href="styles/Resize.css">
+    <link rel="stylesheet" href="../midia/fonts/fonts.css">
+    <link rel="shortcut icon" href="../midia/icons/o4r0q-8zavr-001.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Version Selection Frame -->
+    <div class="VersionSearchFrame" id="vs">
+        <div class="VersionSearch">
+            <div class="SearchHeader">
+                <h3>Select a Version</h3>
+                <div class="closeVersionSelect" onclick="CloseVersionSearch()"></div>
+            </div>
+            <div class="Versions">
+                <a href="#ur_ud-0.1.2" onclick="CloseVersionSearch()">ur_ud 0.1.2</a>
+                <a href="#ur_ud-0.1.3" onclick="CloseVersionSearch()">ur_ud 0.1.3</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <div class="content">
+        <!-- Welcome Section -->
+        <section class="header-flex">
+        <div class="header-icon">
+            <img src="../midia/icons/SparkBunny-RF.png" alt="SparkBunnyIcon" class="header-iconElement" style="height: 9rem;">
+        </div>
+        <div class="header-content">
+            <h1 style="font-size: 2.2rem;">SparkBunny – Changelog</h1>
+            <h4>See what changed over the versions!</h4>
+            <div class="header-links-row">
+                <div class="miniBlock-Link-Inline" onclick="window.open('https://github.com/NotYarazi/SparkBunny')">GitHub</div>
+                <!--<div class="miniBlock-Link-Inline" onclick="toggleTheme()" id="ThemeSwitchText">Light Mode</div>-->
+                <a href="#vs" id="hidOnResize" class="miniBlock-Link-Inline" onclick="OpenVersionSearch()">Search Version</a>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- Release Sections -->
+        <section id="ur_ud-0.1.3">
+            <!-- Header -->
+            <div class="content-header text-select">
+                <div style="display: flex; align-items: center;">
+                    <h1>Ur_ud 0.1.3</h1>
+                    <span class="LatestPop no-select">Latest</span>
+                </div>
+                <p >07 August, 2025 - Unreleased UnderDevelopment</p>
+            </div>
+            <!-- Text Content -->
+            <div class="changes">
+                    <ul>
+                        <li><div class="fixed">Fixed</div> import errors on the whole project.</li>
+                        <li><div class="improved">Improved</div> existing textures.</li>
+                        <li><div class="added">Added</div> "health potion" item.</li>
+                        <li><div class="added">Added</div> an portable client method. - With Discord RPC integration executable.</li>
+                        <li><div class="added">Added</div> Instant Level teleport through Final Doors.</li>
+                        <li><div class="added">Added</div> Ghost mode instead of kicking player out.</li>
+                        <li><div class="redesigned">Redesigned</div> every menu and icon of the game. New colors also.</li>
+                        <li><div class="added">Added</div> new blocks: Windowed wall (with reflexions on the shaders).</li>
+                        <li><div class="added">Added</div> Overlays - add overlay images or any wall!</li>
+                        <li><div class="added">Added</div> map propriety <code>display:true</code>, if true displays the map on map menu.</li>
+                        </ul>
+                    </p>
+            </div>
+        </section>
+        <section id="ur_ud-0.1.2">
+            <!-- Header -->
+            <div class="content-header text-select">
+                <div style="display: flex; align-items: center;">
+                    <h1>Ur_ud 0.1.2</h1>
+                </div>
+                <p>03 August, 2025 - Unreleased UnderDevelopment</p>
+            </div>
+            <!-- Text Content -->
+            <div class="changes">
+                    <ul>
+                        <li><div class="fixed">Fixed</div> general export methods (import/export) in map editor.</li>
+                        <li><div class="improved">Improved</div> and organized whole folder/file system of the game</li>
+                        <li><div class="improved">Improved</div> "entities" ai system, path tracking polishing, and some missing textures.</li>
+                        <li><div class="improved">Improved</div> graphic optimization - wall culling, light-edge & door animations added</li>
+                        <li><div class="improved">Improved</div> gun/ammo logic - Now you need a gun to shoot.</li>
+                        <li><div class="improved">Improved</div> inventory system. Keys and ammo have their own invisible slot.</li>
+                        <li><div class="added">Added</div> Shaders (implemented on game, and haves their own dedicated system.), that includes colored lighting, shadows, fog and ambient light.</li>
+                        <li><div class="fixed">Fixed</div> ceiling/floor color system</li>
+                        <li><div class="added">Added</div> ambient light, direction, shadows and more. - To set the atmosphere</li>
+                        <li><div class="added">Added</div> Candle & Text Display items</li>
+                        <li><div class="redesigned">Redesigned</div> portal system - now spawns as an entity.</li>
+                        </ul>
+                    </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Made by <a href="https://umaera.github.io/social" target="_blank">UmaEra</a> • 2025 SparkBunny</p>
+            </div>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="scripts/VersionSearch.js"></script>
+</body>
+</html>

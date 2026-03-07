@@ -1,0 +1,280 @@
+.no-select{
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.text-select{
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-drag: text;
+    -webkit-user-select: text;
+}
+
+.changes{
+    margin-top: 5%;
+}
+
+.fixed{
+    display: inline-block;
+    color: var(--fixed);
+    font-weight: 800;
+}
+
+.improved{
+    display: inline-block;
+    color: var(--improved);
+    font-weight: 800;
+}
+
+.added{
+    display: inline-block;
+    color: var(--added);
+    font-weight: 800;
+}
+
+.redesigned{
+    display: inline-block;
+    color: var(--redesigned);
+    font-weight: 800;
+}
+
+a{
+    color: #ff00f2;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+
+code{
+    background-color: #000000;
+    font-family: SourceCodePro, sans-serif;
+    position: relative;
+    padding: 5px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+pre {
+    background-color: #0000001e;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.8rem;
+    font-family: SourceCodePro, sans-serif;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-user-drag: text;
+    -webkit-user-select: text;
+}
+
+ul li{
+    padding: 0px 10px ;
+    border-left-style: solid;
+    border-left-color: var(--ul-text);
+    margin: 10px;
+    border-width: 1px;
+    font-size: 1.0rem;
+    font-weight: 600;
+    color: #a4a4a4;
+}
+ul li::before{
+    content: '• ';
+}
+
+.highlight {
+    color: #ff00f2;
+    font-weight: bold;
+}
+
+.note, .embed {
+    background-color: rgba(255, 230, 242, 0.178);
+    padding: 5px;
+    margin-top: 20px;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+}
+
+.per-dev {
+    background-color: rgb(255, 185, 185);
+    padding: 7px 10px;
+    margin-top: 20px;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 8px;
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.per-sup {
+    background-color: rgb(185, 198, 255);
+    padding: 7px 10px;
+    margin-top: 20px;
+    border-left: 5px solid rgb(122, 220, 255);
+    border-radius: 8px;
+    width: auto;
+    display: inline-block;
+    cursor: pointer;
+}
+  
+.embed img, .embed video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.miniBlock-Package{
+    background-color: blueviolet; 
+    padding: 5px; 
+    border-radius: 5px; 
+    display: inline;
+    margin:0.2rem;
+    line-height: 2;
+    color: white;
+}
+
+.miniBlock-Info{
+    background-color: rgba(137, 43, 226, 0.25); 
+    padding: 3px; 
+    border-radius: 5px; 
+    margin: 1%;
+    line-height: 2;
+    color: white;
+}
+
+.miniBlock-beta{
+    color: white;
+    background-color: rgba(81, 252, 78, 0.635); 
+    padding: 5px 15px; 
+    border-radius: 5px; 
+    display: inline;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 20;
+    font-weight: 500;
+}
+
+.miniBlock-Link-Inline{
+    color: white;
+    background-color: rgba(168, 78, 252, 0.511); 
+    padding: 5px 15px; 
+    border-radius: 5px; 
+    display: inline;
+    white-space: nowrap;
+    font-weight: 600;
+    transition: 0.1s linear;
+}
+
+.miniBlock-Link-Inline:hover{
+    background-color: rgba(168, 78, 252, 0.4); 
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.miniBlock-Info-Inline{
+    color: white;
+    background-color: rgba(168, 78, 252, 0.25); 
+    padding: 3px; 
+    border-radius: 5px; 
+    display: inline;
+    margin: 1%;
+    white-space: nowrap;
+}
+
+.miniBlock-Info-Inline:hover{
+    background-color: rgba(168, 78, 252, 0.4); 
+    padding: 3px; 
+    border-radius: 5px; 
+    display: inline;
+    margin: 1%;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.miniBlock-Security{
+    background-color: rgba(132, 255, 130, 0.453); 
+    padding: 5px; 
+    border-radius: 5px; 
+    margin: 1%;
+    white-space: nowrap;
+    color: white;
+}
+
+.miniBlock-Security-2{
+    background-color: rgba(255, 92, 17, 0.665); 
+    padding: 5px; 
+    border-radius: 5px; 
+    margin: 1%;
+    white-space: nowrap;
+    color: white;
+}
+
+.miniBlock-Security-1{
+    background-color: rgb(255, 0, 0); 
+    padding: 5px; 
+    border-radius: 5px; 
+    margin: 1%;
+    white-space: nowrap;
+    color: white;
+}
+
+.miniBlock-Flag{
+    background-color: rgba(255, 132, 169, 0.453); 
+    padding: 5px; 
+    border-radius: 5px; 
+    margin: 1%;
+    display: inline-block;
+    color: white;
+}
+
+
+.LatestPop{
+    background-color: rgb(203, 70, 203);
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+  
+.DeletedPop{
+    background-color: rgb(185, 51, 51);
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+  
+.StablePop{
+    color: #003131;
+    background-color: rgb(132, 236, 255);
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    margin-left: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+  
+.UnstablePop{
+    background-color: rgb(255, 136, 0);
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+}
+
+.AdvancedInfoBlob{
+    width: 50%;
+    color: white;
+}

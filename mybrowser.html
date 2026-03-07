@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Browser Info</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; background: #000000; color: #ffffff; }
+        h1 { color: #e22ae2; }
+        table { border-collapse: collapse; width: 100%; max-width: 700px; background: #000000; }
+        th, td { border: 1px solid #79107c; padding: 8px; }
+        th { background: #640c5e; text-align: left; }
+        tr:nth-child(even) { background: #000000; }
+        code { background: #360125; padding: 2px 4px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>Browser & WebView Information</h1>
+    <table id="browser-info">
+        <tbody></tbody>
+    </table>
+    <script>
+        function getBrowserInfo() {
+            return {
+                'User Agent': navigator.userAgent,
+                'Platform': navigator.platform,
+                'App Name': navigator.appName,
+                'App Version': navigator.appVersion,
+                'Language': navigator.language,
+                'Languages': navigator.languages ? navigator.languages.join(', ') : 'N/A',
+                'Cookies Enabled': navigator.cookieEnabled,
+                'Online': navigator.onLine,
+                'Java Enabled': navigator.javaEnabled ? navigator.javaEnabled() : 'N/A',
+                'Do Not Track': navigator.doNotTrack,
+                'Screen Size': `${screen.width} x ${screen.height}`,
+                'Color Depth': screen.colorDepth,
+                'Pixel Depth': screen.pixelDepth,
+                'Device Memory (GB)': navigator.deviceMemory || 'N/A',
+                'Hardware Concurrency (CPUs)': navigator.hardwareConcurrency || 'N/A',
+                'Touch Support': 'ontouchstart' in window,
+                'Timezone': Intl.DateTimeFormat().resolvedOptions().timeZone,
+                'Local Time': new Date().toString(),
+                'Referrer': document.referrer,
+                'Location': window.location.href,
+                'Cookies': document.cookie || 'None',
+            };
+        }
+
+        function renderInfo() {
+            const info = getBrowserInfo();
+            const tbody = document.querySelector('#browser-info tbody');
+            tbody.innerHTML = '';
+            for (const key in info) {
+                const tr = document.createElement('tr');
+                const th = document.createElement('th');
+                th.textContent = key;
+                const td = document.createElement('td');
+                td.innerHTML = `<code>${info[key]}</code>`;
+                tr.appendChild(th);
+                tr.appendChild(td);
+                tbody.appendChild(tr);
+            }
+        }
+
+        renderInfo();
+    </script>
+</body>
+</html>

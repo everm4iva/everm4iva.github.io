@@ -1,0 +1,61 @@
+/**
+ * ☆=========================================☆
+ * c-leftside.css - Styles for the left side container!
+ * ☆=========================================☆
+*/
+
+.left-cont {
+	position: relative;
+	flex: 1 1 75%;
+	min-width: 0;
+	width: 75%;
+	font-size: 0.9rem;
+	box-sizing: border-box;
+	display: flex;
+	align-items: flex-start;
+	scrollbar-color: var(--pink) var(--bg-color);
+	scrollbar-width: medium;
+	overflow-x: hidden;
+	overflow-y: auto;
+	min-height: 0;
+	overflow-wrap: anywhere;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.left-cont p,
+.left-cont li,
+.left-cont blockquote,
+.left-cont h1,
+.left-cont h2,
+.left-cont h3,
+.left-cont a {
+	overflow-wrap: anywhere;
+	word-wrap: break-word;
+	hyphens: auto;
+}
+
+.left-cont .main {
+	width: 100%;
+	min-width: 0;
+	box-sizing: border-box;
+	flex: 1 1 auto;
+	padding-right: 1rem;
+}
+
+.left-cont img,
+.left-cont .me {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.left-cont::-webkit-scrollbar {
+	width: 8px;
+}
+.left-cont::-webkit-scrollbar-thumb {
+	background-color: var(--cyan);
+	border-radius: 4px;
+}
+.left-cont::-webkit-scrollbar-track {
+	background-color: var(--bg-color);
+}

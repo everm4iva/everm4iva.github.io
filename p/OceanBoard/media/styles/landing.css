@@ -1,0 +1,183 @@
+@import url('anim&resp.css');
+@import url('cta.css');
+@import url('features.css');
+@import url('hero.css');
+
+/* === OceanBoard Landing Page === */
+
+:root {
+	--ob-bg: #0a0a0f;
+	--ob-bg-secondary: #12121a;
+	--ob-bg-tertiary: #1a1a28;
+	--ob-accent: #ff80aa;
+	--ob-accent-dim: rgba(255, 128, 170, 0.3);
+	--ob-text: #e0e0e0;
+	--ob-text-dim: #a0a0b0;
+	--ob-border: rgba(255, 255, 255, 0.1);
+}
+
+.no-select{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Dosis', sans-serif;
+	background: var(--ob-bg);
+	color: var(--ob-text);
+	overflow-x: hidden;
+}
+::selection{
+	background-color: var(--ob-accent);
+	color: #0a0a0f;
+}
+a{
+	color: var(--ob-accent);
+}
+/* === Navigation === */
+.ob-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: rgba(10, 10, 15, 0.8);
+	backdrop-filter: blur(10px);
+	border-bottom: 1px solid var(--ob-border);
+	z-index: 1000;
+	padding: 16px 0;
+}
+
+.ob-nav-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ob-nav-logo {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.ob-nav-logo-img {
+	width: 32px;
+	height: 32px;
+}
+
+.ob-nav-logo-text {
+	font-family: 'Pacifico', cursive;
+	font-size: 24px;
+	color: var(--ob-accent);
+}
+
+.ob-nav-links {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+
+.ob-nav-link {
+	color: var(--ob-text-dim);
+	text-decoration: none;
+	font-weight: 500;
+	transition: all 0.3s;
+}
+
+.ob-nav-link:hover {
+	color: var(--ob-accent);
+	transition: color 0.2s;
+}
+
+.ob-nav-btn {
+	padding: 10px 24px;
+	background: var(--ob-accent);
+	color: var(--ob-bg);
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 700;
+	transition: all 0.2s;
+}
+
+.ob-nav-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(255, 128, 170, 0.4);
+	transition: all 0.2s;
+}
+
+/* === Footer === */
+.ob-footer {
+	padding: 64px 0 32px;
+	background: var(--ob-bg-secondary);
+	border-top: 1px solid var(--ob-border);
+}
+
+.ob-footer-content {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	gap: 64px;
+	margin-bottom: 48px;
+}
+
+.ob-footer-brand {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.ob-footer-logo {
+	width: 48px;
+	height: 48px;
+}
+
+.ob-footer-tagline {
+	color: var(--ob-text-dim);
+	font-size: 16px;
+}
+
+.ob-footer-links {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 32px;
+}
+
+.ob-footer-column h4 {
+	color: var(--ob-text);
+	margin-bottom: 16px;
+	font-size: 16px;
+}
+
+.ob-footer-column {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.ob-footer-column a {
+	color: var(--ob-text-dim);
+	text-decoration: none;
+	font-size: 14px;
+	transition: color 0.3s;
+}
+
+.ob-footer-column a:hover {
+	color: var(--ob-accent);
+	transition: all 0.2s;
+}
+
+.ob-footer-bottom {
+	text-align: center;
+	padding-top: 32px;
+	border-top: 1px solid var(--ob-border);
+	color: var(--ob-text-dim);
+	font-size: 14px;
+}

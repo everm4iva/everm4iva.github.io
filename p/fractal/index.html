@@ -1,0 +1,170 @@
+<head>
+  <title>Fractal</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./media/root.css" />
+  <meta name="description" content="GEOMETRIC VIOLENCE IN YOUR BROWSER " />
+  <link rel="shortcut icon" href="./media/img/fractal.png" type="image/png" />
+  <link
+    rel="shortcut icon"
+    href="./media/img/4pti9-hlk56-001.ico"
+    type="image/x-icon"
+  />
+</head>
+<body>
+  <!-- Desktop Layout -->
+  <div class="desktop">
+    <div class="bola"></div>
+    <section class="landing">
+      <div class="content">
+        <div class="left">
+          <div class="header-prese">
+            <div class="header-icon no-select"></div>
+            <h1>Fractal</h1>
+          </div>
+          <div class="line"></div>
+          <h3>
+            A fast, chaotic arena shooter where the game adapts to your
+            playstyle, lies to you when you get confident, and turns power,
+            progress, and even the screen itself into threats.
+          </h3>
+          <div class="buttons no-select">
+            <div class="button try"><a href="./boom/">Try web</a></div>
+            <div class="button code">
+              <a href="https://github.com/NotYarazi/Fractal">Check Code</a>
+            </div>
+            <div class="button download">
+              <a href="#download" id="download-btn">Download</a>
+            </div>
+            <div class="links">
+              Made By
+              <a href="https://umaera.github.io/social" target="_blank"
+                >UmaEra</a
+              >
+              • check <a href="./changelog/" target="_blank">changelog</a>.
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="media-container no-select">
+            <video src="./media/files/8372.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Mobile Layout -->
+  <div class="mobile">
+    <div class="bola"></div>
+    <section class="landing">
+      <div class="content">
+        <div class="header-section">
+          <div class="header-prese">
+            <div class="header-icon no-select"></div>
+            <h1>Fractal</h1>
+          </div>
+          <div class="line"></div>
+          <h3>
+            A fast, chaotic arena shooter where the game adapts to your
+            playstyle, lies to you when you get confident, and turns power,
+            progress, and even the screen itself into threats.
+          </h3>
+        </div>
+        <div class="media-section">
+          <div class="media-container no-select">
+            <video src="./media/files/8372.mp4" controls></video>
+          </div>
+        </div>
+        <div class="buttons-section">
+          <div class="buttons no-select">
+            <div class="button try"><a href="./boom/">Try web</a></div>
+            <div class="button code">
+              <a href="https://github.com/NotYarazi/Fractal">Check Code</a>
+            </div>
+            <div class="button download">
+              <a href="#download" id="download-btn">Download</a>
+            </div>
+          </div>
+          <div class="links">
+            Made By
+            <a href="https://umaera.github.io/social" target="_blank">UmaEra</a>
+            • check <a href="./changelog/" target="_blank">changelog</a>.
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Download Popup -->
+  <div id="download-popup" class="download-popup-overlay no-select">
+    <div class="download-popup">
+      <div class="popup-header">
+        <h2>Download Fractal</h2>
+        <button class="close-btn" onclick="closeDownloadPopup()">×</button>
+      </div>
+
+      <div class="popup-content">
+        <div class="selection-group">
+          <label>Select Operating System</label>
+          <div class="options-row">
+            <div class="option-card" onclick="selectOS('windows')">
+              <div class="option-icon windows"></div>
+              <p>Windows</p>
+            </div>
+            <div class="option-card" onclick="selectOS('mac')">
+              <div class="option-icon macos"></div>
+              <p>macOS</p>
+            </div>
+            <div class="option-card" onclick="selectOS('linux')">
+              <div class="option-icon linux"></div>
+              <p>Linux</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="selection-group">
+          <label>Choose Format</label>
+          <div class="options-row">
+            <div
+              class="option-card"
+              data-format="executable"
+              onclick="selectFormat('executable')"
+            >
+              <div class="option-icon exe"></div>
+              <p>Setup (Installer)</p>
+            </div>
+            <div
+              class="option-card portable-option"
+              data-format="portable"
+              onclick="selectFormat('portable')"
+              style="display: none"
+            >
+              <div class="option-icon portable"></div>
+              <p>Portable Executable</p>
+            </div>
+            <div
+              class="option-card"
+              data-format="code"
+              onclick="selectFormat('code')"
+            >
+              <div class="option-icon foldercode"></div>
+              <p>Source Code</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="download-actions">
+          <button class="btn-download" id="download-action-btn" disabled>
+            Download
+          </button>
+          <button class="btn-cancel" onclick="closeDownloadPopup()">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./media/scripts/dowl.js"></script>
+</body>

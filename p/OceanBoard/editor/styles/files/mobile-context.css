@@ -1,0 +1,257 @@
+/* === Mobile Stuff - drag & context menu... === */
+
+.ob-mobile-context-menu {
+	position: fixed;
+	background: var(--ob-color-bg);
+	border: 2px solid var(--ob-color-main);
+	border-radius: var(--ob-radius);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+	z-index: 10002;
+	opacity: 0;
+	transform: scale(0.9) translateY(-10px);
+	transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	min-width: 180px;
+	overflow: hidden;
+	backdrop-filter: blur(10px);
+}
+
+.ob-mobile-context-menu.show {
+	opacity: 1;
+	transform: scale(1) translateY(0);
+}
+
+.ob-mobile-context-item {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 12px 16px;
+	background: none;
+	border: none;
+	color: var(--ob-color-text);
+	font-family: var(--ob-font-ui);
+	font-size: 14px;
+	text-align: left;
+	cursor: pointer;
+	transition: background 0.2s ease;
+	gap: 12px;
+}
+
+.ob-mobile-context-item:hover,
+.ob-mobile-context-item:focus {
+	background: rgba(255, 255, 255, 0.1);
+	outline: none;
+}
+
+.ob-mobile-context-item:active {
+	background: rgba(255, 255, 255, 0.15);
+	transform: scale(0.98);
+}
+
+.ob-mobile-context-item .material-icons-round {
+	font-size: 18px;
+	color: var(--ob-color-main);
+}
+
+.ob-mobile-context-item:last-child {
+	border-bottom: none;
+}
+
+/* Special colors */
+.ob-mobile-context-item[data-action="delete"] {
+	color: #ff6b6b;
+}
+
+.ob-mobile-context-item[data-action="delete"] .material-icons-round {
+	color: #ff6b6b;
+}
+
+.ob-mobile-context-item[data-action="delete"]:hover {
+	background: rgba(255, 107, 107, 0.1);
+}
+
+/* Drag and Drop */
+.ob-drag-preview {
+	pointer-events: none !important;
+	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+	border: 2px solid var(--ob-color-main);
+	border-radius: var(--ob-radius);
+	background: var(--ob-color-bg);
+	z-index: 10001;
+}
+
+.ob-drag-placeholder {
+	background: linear-gradient(
+		135deg,
+		rgba(var(--ob-color-main-rgb), 0.2),
+		rgba(var(--ob-color-main-rgb), 0.1)
+	);
+	border: 2px dashed var(--ob-color-main);
+	border-radius: var(--ob-radius);
+	position: relative;
+	animation: dragPlaceholderPulse 2s ease-in-out infinite;
+}
+
+.ob-drag-placeholder::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	background: var(--ob-color-main);
+	border-radius: 50%;
+	opacity: 0.6;
+}
+
+@keyframes dragPlaceholderPulse {
+	0%,
+	100% {
+		opacity: 0.6;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.8;
+		transform: scale(1.02);
+	}
+}
+
+/* Touch feedback for draggable elements */
+[draggable="true"]:active,
+.ob-tree-list li:active,
+.ob-tab:active {
+	transform: scale(0.98);
+	transition: transform 0.1s ease;
+}
+
+/* Prevent text selection during drag */
+.ob-dragging,
+.ob-dragging * {
+	user-select: none !important;
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	-ms-user-select: none !important;
+}
+
+/* Mobile-specific stuff for draggable elements */
+@media (max-width: 768px) {
+	[draggable="true"],
+	.ob-tree-list li,
+	.ob-tab {
+		touch-action: pan-y;
+	}
+
+	.ob-mobile-context-menu {
+		min-width: 160px;
+		max-width: 220px;
+	}
+
+	.ob-mobile-context-item {
+		padding: 14px 16px;
+		font-size: 15px;
+		min-height: 48px;
+	}
+
+	.ob-mobile-context-item .material-icons-round {
+		font-size: 20px;
+	}
+
+	.ob-drag-preview {
+		transform: scale(0.9) !important;
+		opacity: 0.9 !important;
+	}
+}
+
+/* Animation for context menu items - WEEE */
+.ob-mobile-context-menu .ob-mobile-context-item {
+	animation: contextItemSlideIn 0.2s ease-out backwards;
+}
+
+.ob-mobile-context-menu .ob-mobile-context-item:nth-child(1) {
+	animation-delay: 0ms;
+}
+
+.ob-mobile-context-menu .ob-mobile-context-item:nth-child(2) {
+	animation-delay: 50ms;
+}
+
+.ob-mobile-context-menu .ob-mobile-context-item:nth-child(3) {
+	animation-delay: 100ms;
+}
+
+.ob-mobile-context-menu .ob-mobile-context-item:nth-child(4) {
+	animation-delay: 150ms;
+}
+
+.ob-mobile-context-menu .ob-mobile-context-item:nth-child(5) {
+	animation-delay: 200ms;
+}
+
+@keyframes contextItemSlideIn {
+	from {
+		opacity: 0;
+		transform: translateX(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+/* Haptic feedback visual stuff*/
+.ob-haptic-feedback {
+	position: relative;
+}
+
+.ob-haptic-feedback::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--ob-color-main);
+	opacity: 0;
+	border-radius: inherit;
+	animation: hapticFlash 0.1s ease-out;
+}
+
+@keyframes hapticFlash {
+	50% {
+		opacity: 0.3;
+	}
+}
+
+/* Touch targets for small UI elements */
+@media (max-width: 768px) {
+	.ob-tree-list li,
+	.ob-series-tile,
+	.ob-tab {
+		min-height: 44px;
+		display: flex;
+		align-items: center;
+	}
+
+	.ob-header-btn,
+	.ob-md-btn {
+		min-width: 44px;
+		min-height: 44px;
+	}
+}
+
+/* Context menu positioning */
+.ob-mobile-context-menu.position-left {
+	transform-origin: right center;
+}
+
+.ob-mobile-context-menu.position-right {
+	transform-origin: left center;
+}
+
+.ob-mobile-context-menu.position-top {
+	transform-origin: center bottom;
+}
+
+.ob-mobile-context-menu.position-bottom {
+	transform-origin: center top;
+}

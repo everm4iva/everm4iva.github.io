@@ -1,0 +1,220 @@
+html {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	color: #ffa2bd;
+	font-size: 1rem;
+}
+
+::selection {
+	background-color: #ffa2bd;
+	color: #c44569;
+}
+
+body {
+	position: relative;
+	font-family: Outfit, 'Arial', sans-serif;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	background-color: rgb(0, 0, 0);
+}
+
+body:before {
+	content: '';
+	position: absolute;
+	/* background-image: url('../media/images/background/pasa.webp'); */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	filter: blur(10px);
+	opacity: 0.3;
+}
+
+.line {
+	width: 60%;
+	height: 2px;
+	background-color: #c44569;
+}
+
+.container {
+	display: flex;
+	gap: 2%;
+	max-width: 1200px;
+	align-items: center;
+	min-height: 80vh;
+}
+
+/* Left Profile Card */
+.profile-card {
+	/* background-color: rgba(255, 255, 255, 1); */
+	padding: 40px;
+	min-width: 350px;
+	color: #c44569;
+	width: 40%;
+	backdrop-filter: blur(10px);
+	border: 2px #c44569 solid;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.avatar {
+	width: 140px;
+	height: 140px;
+	background: linear-gradient(45deg, #ff6b9d, #c44569);
+	margin-bottom: 30px;
+	border: 2px #c44569 solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url('../media/images/me.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.username {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+.quote {
+	color: #ffffff;
+	font-size: 1rem;
+	font-style: italic;
+	margin-bottom: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+.marks {
+	font-size: 1rem;
+	width: 100%;
+	text-align: center;
+}
+
+.contact-email {
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 1rem;
+}
+
+.old-socials {
+	text-align: left;
+	margin-top: 20px;
+	font-size: 0.9rem;
+	color: #c44569;
+}
+
+.old-socials a {
+	color: #c44569;
+	text-decoration: none;
+	margin-left: 5px;
+}
+
+/* Right Social Media Container */
+.social-container {
+	flex: 0.9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60%;
+}
+
+.social-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 25px;
+	max-width: 80%;
+	width: 100%;
+	height: 10%;
+}
+
+.social-card {
+	background: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border: 3px solid rgba(0, 0, 0, 0.5);
+	transition: all 0.3s ease;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	backdrop-filter: blur(5px);
+	transform: 0.2s ease;
+}
+
+.social-card:hover {
+	transform: translateY(-8px);
+	border: 3px dotted rgb(0, 0, 0);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+/*
+.youtube-card {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+.instagram-card {
+    background-color: rgba(225, 48, 108, 0.1);
+}
+
+.twitch-card {
+    background-color: rgba(145, 70, 255, 0.1);
+}
+
+.github-card {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+}
+
+.discord-card {
+    background-color: rgba(35, 54, 255, 0.1);
+    grid-column: 1 / -1;
+} */
+
+.social-icon {
+	width: 100%;
+	/* margin-bottom: 15px; */
+	transition: transform 0.3s ease;
+}
+
+.social-card:hover .social-icon {
+	transform: scale(0.9);
+}
+
+.platform-details {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.platform-name {
+	color: black;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.platform-handle {
+	color: #ff0095;
+	font-weight: 400;
+}

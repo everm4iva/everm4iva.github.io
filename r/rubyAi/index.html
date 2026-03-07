@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="none">
+    <link rel="shortcut icon" href="../../icons/lib-icons/ruby2.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruby.ai</title>
+    <meta name="description" content="Ruby.Ai - the most modular ai/agent that uses intancing system for the most configurable tasks.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ::selection{
+            background-color: white;
+            color: blueviolet;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* Animated background particles */
+        .bg-particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            animation: float 8s linear infinite;
+        }
+        
+        .particle:nth-child(1) { left: 10%; animation-delay: 0s; animation-duration: 6s; }
+        .particle:nth-child(2) { left: 20%; animation-delay: 1s; animation-duration: 8s; }
+        .particle:nth-child(3) { left: 30%; animation-delay: 2s; animation-duration: 7s; }
+        .particle:nth-child(4) { left: 40%; animation-delay: 3s; animation-duration: 9s; }
+        .particle:nth-child(5) { left: 50%; animation-delay: 4s; animation-duration: 6s; }
+        .particle:nth-child(6) { left: 60%; animation-delay: 5s; animation-duration: 8s; }
+        .particle:nth-child(7) { left: 70%; animation-delay: 6s; animation-duration: 7s; }
+        .particle:nth-child(8) { left: 80%; animation-delay: 7s; animation-duration: 9s; }
+        .particle:nth-child(9) { left: 90%; animation-delay: 8s; animation-duration: 6s; }
+        
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+        }
+        
+        .container {
+            text-align: center;
+            padding: 3rem;
+            max-width: 600px;
+            z-index: 2;
+            min-width:600px ;
+            position: relative;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background-image: url('../../icons/lib-icons/ruby2.png');
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            font-weight: bold;
+            animation: gradientShift 3s ease infinite, pulse 2s infinite;
+            position: relative;
+            overflow: hidden;
+        }
+        
+
+        .logo-text {
+            color: white;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+            z-index: 1;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #ff6b6b, #54a0ff, #ff9ff3);
+            background-size: 200% 200%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textGlow 3s ease-in-out infinite alternate, gradientShift 3s ease infinite;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        @keyframes textGlow {
+            from { filter: drop-shadow(0 0 20px rgba(255, 107, 107, 0.5)); }
+            to { filter: drop-shadow(0 0 30px rgba(84, 160, 255, 0.8)); }
+        }
+        
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            animation: statusPulse 2s infinite;
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            background: #ff6b6b;
+            border-radius: 50%;
+            animation: dotPulse 1.5s infinite;
+        }
+        
+        @keyframes statusPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
+        @keyframes dotPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+        
+        .message {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 14px 28px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            min-width: 120px;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn:hover {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn.primary {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            border: 1px solid rgba(255, 107, 107, 0.5);
+        }
+        
+        .btn.primary:hover {
+            background: linear-gradient(135deg, #ff5252, #ff3838);
+            box-shadow: 0 10px 25px rgba(255, 107, 107, 0.4);
+        }
+        
+        .countdown {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .countdown-timer {
+            font-weight: 600;
+            color: #54a0ff;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            opacity: 0.5;
+            color: rgba(255, 255, 255, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .logo {
+                width: 100px;
+                height: 100px;
+                font-size: 3rem;
+            }
+            
+            .message {
+                font-size: 1.1rem;
+            }
+            
+            .actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <div class="container">
+        <div class="logo">
+            <div class="logo-text"></div>
+        </div>
+        
+        <h1>Ruby.ai</h1>
+        
+        <div class="status-indicator">
+            <div class="status-dot"></div>
+            <span>Server Offline</span>
+        </div>
+        
+       <!-- <div class="actions">
+            <button class="btn" onclick="location.reload()">Refresh Page</button>
+        </div>
+        -->
+        <div class="countdown">
+            Next automatic check in: <span class="countdown-timer" id="timer">30</span>s
+        </div>
+    </div>
+    
+    <div class="footer">
+        Ruby.ai © 2023 | UmaEra & Dhummy
+    </div>
+    
+    <script>
+        let countdownTimer = 30;
+        let isChecking = false;
+        
+        function updateCountdown() {
+            const timerElement = document.getElementById('timer');
+            timerElement.textContent = countdownTimer;
+            
+            if (countdownTimer > 0) {
+                countdownTimer--;
+            } else {
+                countdownTimer = 30;
+                checkServer();
+            }
+        }
+        
+        function checkServer() {
+            if (isChecking) return;
+            
+            isChecking = true;
+            const statusBtn = document.querySelector('.btn.primary');
+            const originalText = statusBtn.textContent;
+            
+            statusBtn.textContent = 'Checking...';
+            statusBtn.style.opacity = '0.7';
+            
+            fetch('/direct', { method: 'HEAD', mode: 'no-cors' })
+                .then(() => {
+                    // Server is up, redirect
+                    window.location.href = 'https://2fb6-193-236-86-128.ngrok-free.app';
+                })
+                .catch(() => {
+                    // Server still down
+                    statusBtn.textContent = 'Still Offline';
+                    statusBtn.style.background = 'linear-gradient(135deg, #ff6b6b, #ee5a24)';
+                    
+                    setTimeout(() => {
+                        statusBtn.textContent = originalText;
+                        statusBtn.style.opacity = '1';
+                        statusBtn.style.background = 'linear-gradient(135deg, #ff6b6b, #ee5a24)';
+                        isChecking = false;
+                    }, 2000);
+                });
+        }
+        
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        
+        // Auto-check server every 30 seconds
+        setInterval(checkServer, 30000);
+        
+        // Add some dynamic particle effects
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDuration = (Math.random() * 3 + 6) + 's';
+            particle.style.animationDelay = Math.random() * 2 + 's';
+            document.querySelector('.bg-particles').appendChild(particle);
+            
+            setTimeout(() => {
+                particle.remove();
+            }, 10000);
+        }
+        
+        // Create new particles periodically
+        setInterval(createParticle, 2000);
+    </script>
+</body>
+</html>

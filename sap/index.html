@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Service Access Point</title>
+		<link rel="stylesheet" href="../media/fonts/fonts.css" />
+		<style>
+			body {
+				font-family: 'Poppins', Arial, sans-serif;
+				margin: 2em;
+				background: #000000;
+				color: #ffffff;
+			}
+			h1 {
+				margin-bottom: 1em;
+			}
+			.service {
+				border: 1px solid #ccc;
+				padding: 1em;
+				margin-bottom: 1em;
+				border-radius: 4px;
+			}
+			.service h2 {
+				margin-top: 0;
+			}
+			.service ul {
+				margin: 0.5em 0 0 1em;
+			}
+
+			.service .line {
+				margin: 0.2em 0;
+			}
+			.service .line .key {
+				font-weight: bold;
+			}
+			.service .line .val {
+				margin-left: 0.3em;
+				color: #ff0077;
+				padding: 0 0.2em;
+				border-radius: 2px;
+			}
+			a {
+				color: #ff0077;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Services</h1>
+		<div class="additional">
+			<h3>Website Sources</h3>
+			<ul>
+				<li><a href="../media/fonts/fonts.css">Fonts</a></li>
+			</ul>
+		</div>
+		<div id="services"></div>
+
+		<script>
+			async function loadServices() {
+				try {
+					const resp = await fetch('global.json');
+					const data = await resp.json();
+					const services = data[0].Services || {};
+					const container = document.getElementById('services');
+					for (const [name, path] of Object.entries(services)) {
+						const div = document.createElement('div');
+						div.className = 'service';
+						const title = document.createElement('h2');
+						title.textContent = name;
+						div.appendChild(title);
+
+						const loading = document.createElement('p');
+						loading.textContent = 'Loading details...';
+						div.appendChild(loading);
+						container.appendChild(div);
+
+						try {
+							const r = await fetch(path);
+							const infoJson = await r.json();
+							const info = Array.isArray(infoJson) ? infoJson[0] : infoJson;
+							div.removeChild(loading);
+							renderObject(info, div, 0);
+
+							// // raw JSON view
+							// const pre = document.createElement('pre');
+							// pre.textContent = JSON.stringify(info, null, 2);
+							// div.appendChild(pre);
+						} catch (e) {
+							loading.textContent = 'Error loading info: ' + e;
+						}
+					}
+				} catch (e) {
+					console.error('Unable to load global.json', e);
+					document.getElementById('services').textContent = 'Failed to load services list.';
+				}
+			}
+
+			function renderObject(obj, parent, depth) {
+				for (const [key, value] of Object.entries(obj)) {
+					const line = document.createElement('div');
+					line.className = 'line';
+					line.style.paddingLeft = depth * 1 + 'em';
+
+					const keySpan = document.createElement('span');
+					keySpan.className = 'key';
+					keySpan.textContent = key + ':';
+					line.appendChild(keySpan);
+
+					if (value && typeof value === 'object' && !Array.isArray(value)) {
+						parent.appendChild(line);
+						renderObject(value, parent, depth + 1);
+					} else {
+						const valSpan = document.createElement('span');
+						valSpan.className = 'val';
+						valSpan.textContent = JSON.stringify(value);
+						line.appendChild(valSpan);
+						parent.appendChild(line);
+					}
+				}
+			}
+
+			loadServices();
+		</script>
+	</body>
+</html>

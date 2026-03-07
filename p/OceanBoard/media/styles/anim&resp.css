@@ -1,0 +1,62 @@
+
+/* === Animations === */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes bounce {
+	0%, 100% {
+		transform: translateX(-50%) translateY(0);
+	}
+	50% {
+		transform: translateX(-50%) translateY(-10px);
+	}
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+	.ob-hero-title {
+		font-size: 3rem !important;
+	}
+
+	.ob-hero-subtitle {
+		font-size: 2rem;
+	}
+	
+	.ob-hero-buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+	.ob-nav-logo-img{
+		display: none;
+	}
+	.ob-nav-btn{
+		display: none;
+	}
+	.ob-nav-links {
+		gap: 16px;
+	}
+	
+	.ob-nav-link {
+		font-size: 14px;
+	}
+	
+	.ob-footer-content {
+		grid-template-columns: 1fr;
+		gap: 32px;
+	}
+
+	.ob-section-title {
+		font-size: 2rem !important;
+	}
+	.ob-cta-title{
+		font-size: 2rem !important;
+	}
+}

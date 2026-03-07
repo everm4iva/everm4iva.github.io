@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>FRACTAL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="GEOMETRY VIOLENCE" />
+    <meta name="theme-color" content="#4714FF" />
+    <link rel="shortcut icon" href="./img/fractal.png" type="image/png" />
+    <link rel="shortcut icon" href="./img/4pti9-hlk56-001.ico" type="image/x-icon">
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="root.css" />
+  </head>
+  <body>
+    <div class="game-wrapper">
+      <canvas id="gameCanvas"></canvas>
+      <!-- VHS Boot Logo -->
+      <img
+        id="vhsLogo"
+        src="./img/fractal.png"
+        alt="FRACTAL"
+        style="
+          display: none;
+          position: absolute;
+          max-width: 400px;
+          max-height: 400px;
+          z-index: 100;
+        "
+      />
+      <div class="hud-overlay">
+        <div class="hud-top">
+          <div class="hud-item" id="levelDisplay">>> LVL 1</div>
+          <div class="hud-item" id="scoreDisplay">SCORE: 0</div>
+          <div class="hud-item" id="killsDisplay">KILLS: 0/16</div>
+          <div class="hud-item" id="accuracyDisplay">ACC: 0%</div>
+        </div>
+        <div class="health-bar-container">
+          <div class="health-bar-fill" id="healthBar" style="width: 100%"></div>
+        </div>
+        <div id="powerupContainer" class="powerup-container">
+          <div
+            id="multishotPanel"
+            class="powerup-row multishot"
+            style="display: none"
+          >
+            <span class="powerup-icon" id="multishotIcon">×3</span>
+            <div class="powerup-bar">
+              <div class="powerup-bar-fill" id="multishotProgress"></div>
+            </div>
+          </div>
+          <div
+            id="timewarpPanel"
+            class="powerup-row timewarp"
+            style="display: none"
+          >
+            <span class="powerup-icon">⏱</span>
+            <div class="powerup-bar">
+              <div class="powerup-bar-fill" id="timewarpProgress"></div>
+            </div>
+          </div>
+          <div
+            id="pushpullPanel"
+            class="powerup-row pushpull"
+            style="display: none"
+          >
+            <span class="powerup-icon">⟷</span>
+            <div class="powerup-bar">
+              <div class="powerup-bar-fill" id="pushpullProgress"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls-ascii">
+        <span class="key-hint">[W][A][S][D]</span> move |
+        <span class="key-hint">[CLICK]</span> shoot |
+        <span class="key-hint">[P]/[ESC]</span> pause |
+        <span class="key-hint">[R]</span> reset
+      </div>
+      <div id="inventoryBar" class="inventory-bar" style="display: none">
+        <div id="invSlot0" class="inv-slot selected" data-slot="0">
+          <span class="inv-icon"></span>
+          <span class="inv-count"></span>
+        </div>
+        <div id="invSlot1" class="inv-slot" data-slot="1">
+          <span class="inv-icon"></span>
+          <span class="inv-count"></span>
+        </div>
+        <div id="invSlot2" class="inv-slot" data-slot="2">
+          <span class="inv-icon"></span>
+          <span class="inv-count"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Warning -->
+    <div
+      id="mobileWarning"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        color: #ff0000;
+        z-index: 9999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        font-family: 'Courier New', monospace;
+      "
+    >
+      <div style="max-width: 600px">
+        <h1
+          style="
+            font-size: 48px;
+            color: #4714ff;
+            text-shadow: 0 0 20px #4714ff;
+            margin-bottom: 20px;
+          "
+        >
+          DEVICE NOT SUPPORTED
+        </h1>
+        <p style="font-size: 24px; color: #ff0000; margin-bottom: 15px">
+          FRACTAL requires a desktop device
+        </p>
+        <p style="font-size: 16px; color: #00ff00; line-height: 1.6">
+          This game is optimized for:<br />
+          » Keyboard controls (WASD + Mouse)<br />
+          » Larger screen real estate<br />
+          » High-performance rendering<br /><br />
+          <span style="color: #ffff00"
+            >Please visit on a desktop or laptop computer</span
+          >
+        </p>
+        <div
+          style="
+            margin-top: 30px;
+            padding: 15px;
+            border: 2px solid #4714ff;
+            background: rgba(71, 20, 255, 0.1);
+          "
+        >
+          <p style="font-size: 14px; color: #00ffff">
+            Your device: <span id="deviceInfo" style="color: #ff00ff"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Zoom Warning (hidden by default) -->
+    <div
+      id="zoomWarning"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        color: #fff;
+        z-index: 100000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Courier New', monospace;
+        font-size: 36px;
+        text-align: center;
+      "
+    >
+      bad size
+    </div>
+
+    <script>
+      // Mobile detection
+      (function () {
+        const isMobile =
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          ) || window.innerWidth < 768;
+
+        if (isMobile) {
+          document.getElementById("mobileWarning").style.display = "flex";
+          document.querySelector(".game-wrapper").style.display = "none";
+          document.getElementById("deviceInfo").textContent =
+            navigator.userAgent.split("(")[1]?.split(")")[0] || "Mobile";
+        }
+      })();
+    </script>
+
+    <script type="module" src="./classes/index.js"></script>
+  </body>
+</html>

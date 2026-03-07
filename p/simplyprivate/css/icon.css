@@ -1,0 +1,146 @@
+.icon{
+    position: absolute;
+    margin-top: -1%;
+    margin-left:14%;
+    width: auto;
+    height: 800;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+.tools{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100px;
+    width: 100%;
+    margin-top: 650;
+}
+
+
+.about{
+    font-family: QuickSand;
+    width: 100;
+    height:60%;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    border-bottom-style:solid;
+    border-radius: 0px;
+    border-bottom-width: 3px;
+    border-color: white;
+    margin-left: 550;
+    transition: 0.2s;
+}
+
+.about:hover{
+    color:yellow;
+    border-color: yellow;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.download{
+    font-family: QuickSand;
+    width: 170;
+    height:60%;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    border-bottom-style:solid;
+    border-radius: 0px;
+    border-bottom-width: 3px;
+    border-color: white;
+    margin-left: 070;
+    transition: 0.2s;
+}
+
+.download:hover{
+    color:yellow;
+    border-color: yellow;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.countdown{
+    font-family: QuickSand;
+    width: 170;
+    height:60%;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    border-bottom-style:solid;
+    border-radius: 0px;
+    border-bottom-width: 3px;
+    border-color: white;
+    margin-left: 070;
+    transition: 0.2s;
+}
+
+.countdown:hover{
+    color: yellow;
+    border-color: yellow;
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.p1{
+    position:absolute;
+    background-color: rgba(0, 0, 255, 0);
+    height: 400;
+    width: 500;
+    margin-left: 100;
+    margin-top: 050;
+}
+
+
+.p2{
+    background-color: rgba(56, 56, 227, 0);
+    height: 100;
+    width: 500;
+    margin-left:550;
+    margin-top: -350;
+    position:absolute;
+}
+.p3{
+    background-color: rgba(56, 56, 227, 0);
+    height: 100;
+    width: 500;
+    margin-left:1200;
+    margin-top: 50;
+    position:absolute;
+}
+.creditsweb{
+    height: 400;
+    width: 400;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+.discord{
+    font-family: QuickSand;
+    width: 220;
+    height:60%;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border-style: none;
+    border-bottom-style:solid;
+    border-radius: 0px;
+    border-bottom-width: 3px;
+    border-color: white;
+    margin-left: 070;
+    transition: 0.2s;
+}
+
+.discord:hover{
+    color:yellow;
+    border-color: yellow;
+    transition: 0.2s;
+    transform: scale(1.2);
+}

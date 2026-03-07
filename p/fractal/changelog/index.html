@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal - Changelog</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="description" content="Wondering what changed between versions? We got you, check this out!">
+    <meta name="robots" content="index, follow, archive, snippet, translate">
+    <link rel="stylesheet" href="styles/General.css">
+    <link rel="stylesheet" href="styles/notation.css">
+    <link rel="stylesheet" href="styles/Resize.css">
+    <link rel="shortcut icon" href="../media/img/fractal.png" type="image/png">
+
+</head>
+
+<body>
+    <!-- Main Content -->
+      <div class="content">
+        <!-- Welcome Section -->
+        <section class="header-flex">
+        <div class="header-icon">
+            <img src="../media/img/fractal.svg" alt="FractalIcon" class="header-iconElement">
+        </div>
+        <div class="header-content">
+            <h1 class="headerh1">Fractal – Changelog</h1>
+            <h4>Wondering what changed between versions? We got you:</h4>
+            <div class="header-links-row">
+                <div class="miniBlock-Link-Inline" onclick="location.href = '../'">Website</div>
+                <div class="miniBlock-Link-Inline" onclick="window.open('https://github.com/everm4iva/fractal')">See Code</div>
+                                <div class="miniBlock-Link-Inline" onclick="window.open('https://github.com/everm4iva/fractal/tags')">Versions</div>
+            </div>
+        </div>
+        </section>
+
+
+        <!-- Release Sections -->
+         <section>
+            <div class="content-header text-select">
+                <div style="display: flex; align-items: center;">
+                    <h1>Release 0.8.1</h1>
+                    <span class="LatestPop no-select">Latest</span>
+                </div>
+                <blockquote>"quick fix &amp; drop" - 28 December, 2025</blockquote>
+            </div>
+            <div class="changes">
+                <ul>
+                    <li><div class="added">Added:</div> Manifest &amp; service modal for mobile devices. (Mobile isn't supported yet)</li>
+                    <li><div class="added">Added:</div> Bot play (press B)</li>
+                    <li><div class="added">Added:</div> ZOOM LIMITS! (no more than 130%, no less than 60%)</li>
+                    <li><div class="added">Added:</div> Total Kills statistic added to gameover screen!</li>
+                    <li><div class="added">Added:</div> Stars and powerups kill enemies near it when picked up.</li>
+                    <li><div class="redesigned">Redesigned:</div> Enemy vision/moviment system. (Now they are smarter, less linear)</li>
+                    <li><div class="fixed">Fixed:</div> Bosses missing properties and not spawning (lvl10 = nova, lvl8 = mage).</li>
+                    <li><div class="fixed">Fixed:</div> Text selection of whole game.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- ====================================== -->
+        <section>
+            <div class="content-header text-select">
+                <div style="display: flex; align-items: center;">
+                    <h1>Release 0.8.0</h1>
+                </div>
+                <blockquote>"Code Revolution, Enemies confusion" - 22 December, 2025</blockquote>
+            </div>
+            <div class="changes">
+                <ul>
+                    <li><div class="added">Added:</div> DISCORD INTEGRATION ADDED!! (it's supa cool)</li>
+                    <li><div class="added">Added:</div> EASY CONFIG FILE!!!!! omgomg, all in: <code>classes/config/GameConfig.js</code></li>
+                    <li><div class="added">Added:</div> DASH MECHANIC!!!! double-tap any wasd key and dash (become immortal while dashing!)</li>
+                    <li><div class="added">Added:</div> Time warp! - everything else moves 30% speed but you.</li>
+                    <li><div class="added">Added:</div> BAM! "pushpull" powerup is here. Push enemies, pull xp orbs while immune to any attack - for 10s! enjoy.</li>
+                    <li><div class="added">Added:</div> F2 to screenshot. (saved to <code>documents/FRACTAL/screenshots</code>)</li>
+                    <li><div class="added">Added:</div> MORE DEATH MESSAGES - more cruel than ever.</li>
+                    <li><div class="added">Added:</div> COMBO SYSTEM IS HERE! Violently apears, violently desapears.</li>
+                    <li><div class="changed">Changed:</div> Now multishot powerup goes all the way to x7 bullets (random. fate.)</li>
+                    <li><div class="changed">Changed:</div> Nova spawns every 10 levels - if killed.</li>
+                    <li><div class="changed">Changed:</div> All orbs are attracted to you when you pick up life-powerup.</li>
+                    <li><div class="changed">Changed:</div> NOVA grabs u :3 instead of just.. teleporting whatever</li>
+                    <li><div class="changed">Changed:</div> NOVA'S laser indicator is soo much visible, impossible to miss.</li>
+                    <li><div class="deleted">Deleted:</div> Removed <code>force_buy_stars</code> key.</li>
+                    <li><div class="improved">Improved:</div> NOVA lasts longer in the fight before desapearing (30s)</li>
+                    <li><div class="redesigned">Redesigned:</div> UI! The powerup's container is now more compact :3</li>
+                    <li><div class="fixed">Fixed:</div> Bullets are slightly more larger</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+        <!-- ====================================== -->
+        <section>
+            <div class="content-header text-select">
+                <div style="display: flex; align-items: center;">
+                    <h1>Release 0.7.0</h1>
+                </div>
+                <blockquote>"More speed, More Mechanics to more fates!" - 22 December, 2025</blockquote>
+            </div>
+            <div class="changes">
+                <ul>
+                    <li><div class="added">Added:</div> CURSORS!!!! funny. They shape.</li>
+                    <li><div class="added">Added:</div> Nova now re-appears 2 levels later.</li>
+                    <li><div class="added">Added:</div> Walls check for other walls before spawning, so it doesn't stack walls inside walls, that is a visual skill issue sign.</li>
+                    <li><div class="added">Added:</div> Click "F" to switch full screen -> windowed</li>
+                    <li><div class="added">Added:</div> A particles queue to spawn everything linear instead of spawning all at once.</li>
+                    <li><div class="added">Added:</div> More death messages!</li>
+                    <li><div class="added">Added:</div> Auto shoot is here! Just keep your finger pressing the mouse button.</li>
+                    <li><div class="changed">Changed:</div> Mage has now more health. (extra)</li>
+                    <li><div class="changed">Changed:</div> Star size -> Increased</li>
+                    <li><div class="changed">Changed:</div> Max particles - from 500 to 120 (optimization)</li>
+                    <li><div class="changed">Changed:</div> Firebombs now spread even more FIRE!</li>
+                    <li><div class="changed">Changed:</div> Now boss-bars scale (width) depending on the value.</li>
+                    <li><div class="improved">Improved:</div> Now when leveled up, some enemies explode and some stay (it's called fate - 50%)</li>
+                    <li><div class="improved">Improved:</div> Nerf-ed the explosion particles count to prevent lag.</li>
+                    <li><div class="improved">Improved:</div> Max walls on screen: 12</li>
+                    <li><div class="redesigned">Redesigned:</div> Inventory System! 3 slots for 3 items, stacks up to 9 each, use what you selected!</li>
+                    <li><div class="fixed">Fixed:</div> Star buff: Deals damage to Mage and breaks nova's shield.</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+        <!-- ====================================== -->
+        <section>
+            <div class="content-header text-select">
+                <div style="display: flex; align-items: center;">
+                    <h1>indev 0.6.0</h1>
+                </div>
+                <blockquote>"Um... technicly.." - 16 December, 2025</blockquote>
+            </div>
+            <div class="changes">
+                <ul>
+                    <li><div class="improved">Improved:</div> Optimized particle limit</li>
+                    <li><div class="changed">Changed:</div> Color inversion reduced</li>
+                    <li><div class="changed">Changed:</div> Nova lazer: from line to BEAM</li>
+                    <li><div class="added">Added:</div> START SEQUENCE!!!! insert card</li>
+                    <li><div class="added">Added:</div> WINDOW/GAME!!!</li>
+                    <li><div class="changed">Changed:</div> accuracy -&gt; playerStyleTrack (defence/attack)</li>
+                    <li><div class="improved">Improved:</div> BETTER GAME OVER SCREEN!</li>
+                </ul>
+            </div>
+        </section>
+        <!-- ====================================== -->
+        <section>
+            <div class="content-header text-select">
+                <div style="display: flex; align-items: center;">
+                    <h1>indev 0.5.0</h1>
+                </div>
+                <blockquote>"BOOM AND PLUH!" - 15 December, 2025</blockquote>
+            </div>
+            <div class="changes">
+                <ul>
+                    <li><div class="added">Added:</div> Skipped a few versions.</li>
+                    <li><div class="added">Added:</div> Full screen</li>
+                    <li><div class="added">Added:</div> VHS effects</li>
+                    <li><div class="added">Added:</div> New type of enemy: medium (smart + dumb)</li>
+                    <li><div class="added">Added:</div> Accuracy counter</li>
+                    <li><div class="added">Added:</div> Level transition animations</li>
+                    <li><div class="added">Added:</div> Bomb and firebombs</li>
+                    <li><div class="added">Added:</div> Mage - teleports, attacks, glitches, is purple and drops a shockwave crystal.</li>
+                    <li><div class="added">Added:</div> NOVA - the glitch, destroys, inverts, shoots lazer, moves player, spawns enemies and just goes away.</li>
+                    <li><div class="added">Added:</div> Funny death messages</li>
+                </ul>
+            </div>
+        </section>
+        <!-- ====================================== -->
+        <section>
+            <div class="content-header text-select">
+                <div style="display: flex; align-items: center;">
+                    <h1>0.1.0 - Initial Release</h1>
+                </div>
+                <p>15 December, 2025</p>
+            </div>
+            <div class="changes">
+                <ul>
+                    <li><div class="added">Added:</div> Everything. A base release. A new start. All versions will be showed here.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Made by <a href="https://umaera.github.io/social" target="_blank">UmaEra</a> • 2025 FRACTAL</p>
+            </div>
+        </footer>
+      </div>
+</body>
+</html>

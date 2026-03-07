@@ -1,0 +1,326 @@
+/* === Hierarchy === */
+.ob-docs-hierarchy {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 12px;
+	padding: 32px;
+	background: var(--ob-bg-tertiary);
+	border-radius: 12px;
+	margin: 24px 0;
+}
+
+.ob-docs-hierarchy-level {
+	padding: 16px 32px;
+	background: var(--ob-bg-secondary);
+	border: 2px solid var(--ob-accent);
+	border-radius: 8px;
+	font-size: 16px;
+	color: var(--ob-text);
+}
+
+.ob-docs-hierarchy-arrow .material-icons-round {
+	color: var(--ob-accent);
+	font-size: 32px;
+}
+
+/* === Tip Box === */
+.ob-docs-tip {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 16px;
+	background: rgba(255, 200, 100, 0.1);
+	border-left: 3px solid #ffc864;
+	border-radius: 8px;
+	margin: 24px 0;
+}
+
+.ob-docs-tip .material-icons-round {
+	color: #ffc864;
+	font-size: 20px;
+	flex-shrink: 0;
+}
+
+.ob-docs-tip p {
+	color: var(--ob-text-dim);
+	font-size: 14px;
+	margin: 0;
+}
+
+/* === File Types === */
+.ob-docs-file-types {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin: 24px 0;
+}
+
+.ob-docs-file-type {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 16px;
+	background: var(--ob-bg-tertiary);
+	border-radius: 8px;
+	border: 1px solid var(--ob-border);
+}
+
+.ob-docs-file-type-badge {
+	padding: 8px 12px;
+	border-radius: 6px;
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--ob-bg);
+	min-width: 40px;
+	text-align: center;
+}
+
+.ob-docs-file-type-badge.episode { background: #64c8ff; }
+.ob-docs-file-type-badge.character { background: #ff64c8; }
+.ob-docs-file-type-badge.object { background: #c864ff; }
+.ob-docs-file-type-badge.scene { background: #64ffc8; }
+.ob-docs-file-type-badge.abstract { background: #ffc864; }
+.ob-docs-file-type-badge.attribute { background: #c8ff64; }
+
+.ob-docs-file-type h4 {
+	font-size: 16px;
+	color: var(--ob-text);
+	margin-bottom: 4px;
+}
+
+.ob-docs-file-type p {
+	font-size: 14px;
+	color: var(--ob-text-dim);
+	margin: 0;
+}
+
+/* === Code Block === */
+.ob-docs-code {
+	margin: 24px 0;
+	border-radius: 8px;
+	overflow: hidden;
+	border: 1px solid var(--ob-border);
+}
+
+.ob-docs-code pre {
+	background: var(--ob-code-bg);
+	padding: 20px;
+	overflow-x: auto;
+	margin: 0;
+}
+
+.ob-docs-code code {
+	font-family: 'Source Code Pro', monospace;
+	font-size: 14px;
+	color: #ff80aa;
+	line-height: 1.6;
+}
+
+/* === Rules List === */
+.ob-docs-rules {
+	padding: 20px;
+	background: var(--ob-bg-tertiary);
+	border-radius: 8px;
+	margin: 24px 0;
+}
+
+.ob-docs-rules h4 {
+	color: var(--ob-text);
+	margin-bottom: 12px;
+}
+
+.ob-docs-rules ul {
+	list-style: none;
+	padding: 0;
+}
+
+.ob-docs-rules li {
+	padding: 8px 0;
+	padding-left: 24px;
+	color: var(--ob-text-dim);
+	position: relative;
+}
+
+.ob-docs-rules li::before {
+	content: '✓';
+	position: absolute;
+	left: 0;
+	color: var(--ob-accent);
+	font-weight: 700;
+}
+
+/* === Mention Types === */
+.ob-docs-mention-types {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 24px;
+	margin: 24px 0;
+}
+
+.ob-docs-mention-type {
+	padding: 20px;
+	background: var(--ob-bg-tertiary);
+	border-radius: 8px;
+	border: 1px solid var(--ob-border);
+}
+
+.ob-docs-mention-type h4 {
+	color: var(--ob-accent);
+	margin-bottom: 12px;
+}
+
+.ob-docs-mention-type p {
+	font-size: 14px;
+	color: var(--ob-text-dim);
+	margin-top: 12px;
+}
+
+/* === Markdown Guide === */
+.ob-docs-markdown-guide {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin: 24px 0;
+}
+
+.ob-docs-markdown-item {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 16px;
+	background: var(--ob-bg-tertiary);
+	border-radius: 8px;
+}
+
+.ob-docs-markdown-item code {
+	font-family: 'Source Code Pro', monospace;
+	background: var(--ob-code-bg);
+	padding: 6px 12px;
+	border-radius: 4px;
+	color: var(--ob-accent);
+	font-size: 14px;
+	min-width: 200px;
+}
+
+.ob-docs-markdown-arrow {
+	color: var(--ob-text-dim);
+	font-size: 18px;
+}
+
+/* === Warning Box === */
+.ob-docs-warning {
+	display: flex;
+	align-items: flex-start;
+	gap: 12px;
+	padding: 16px;
+	background: rgba(255, 100, 100, 0.1);
+	border-left: 3px solid #ff6464;
+	border-radius: 8px;
+	margin: 24px 0;
+}
+
+.ob-docs-warning .material-icons-round {
+	color: #ff6464;
+	font-size: 20px;
+	flex-shrink: 0;
+}
+
+.ob-docs-warning p {
+	color: var(--ob-text-dim);
+	font-size: 14px;
+	margin: 0;
+}
+
+/* === Tips Grid === */
+.ob-docs-tips-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 24px;
+	margin: 24px 0;
+}
+
+.ob-docs-tip-card {
+	padding: 24px;
+	background: var(--ob-bg-tertiary);
+	border-radius: 12px;
+	border: 1px solid var(--ob-border);
+	text-align: center;
+	transition: transform 0.3s, border-color 0.3s;
+}
+
+.ob-docs-tip-card:hover {
+	transform: translateY(-4px);
+	border-color: var(--ob-accent);
+}
+
+.ob-docs-tip-card .material-icons-round {
+	font-size: 40px;
+	color: var(--ob-accent);
+	margin-bottom: 16px;
+}
+
+.ob-docs-tip-card h4 {
+	font-size: 16px;
+	color: var(--ob-text);
+	margin-bottom: 8px;
+}
+
+.ob-docs-tip-card p {
+	font-size: 13px;
+	color: var(--ob-text-dim);
+}
+
+
+/* === Keyboard Shortcuts Table === */
+.ob-docs-shortcuts-table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	margin: 24px 0;
+	border-radius: 12px;
+	overflow: hidden;
+	border: 1px solid var(--ob-border);
+}
+
+.ob-docs-shortcuts-table th {
+	background: var(--ob-accent);
+	color: var(--ob-bg);
+	font-weight: 700;
+	text-align: left;
+	padding: 16px 20px;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.ob-docs-shortcuts-table tr {
+	transition: background 0.2s;
+}
+
+.ob-docs-shortcuts-table tbody tr:hover {
+	background: rgba(255, 128, 170, 0.08);
+}
+
+.ob-docs-shortcuts-table td {
+	padding: 16px 20px;
+	border-bottom: 1px solid var(--ob-border);
+	color: var(--ob-text-dim);
+	font-size: 15px;
+}
+
+.ob-docs-shortcuts-table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+.ob-docs-shortcuts-table td:first-child {
+	color: var(--ob-text);
+	font-weight: 500;
+}
+
+.ob-docs-shortcuts-table td:last-child {
+	font-family: 'Source Code Pro', monospace;
+	color: var(--ob-accent);
+	font-size: 14px;
+	background: var(--ob-code-bg);
+}

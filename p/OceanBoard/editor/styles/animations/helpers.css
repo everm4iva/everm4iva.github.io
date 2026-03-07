@@ -1,0 +1,154 @@
+/* ===### Animation Helper Classes ###=== */
+
+/* === Floating Elements === */
+.ob-animate-float {
+	animation: ob-float 3s ease-in-out infinite;
+}
+
+/* === Pulse Effect === */
+.ob-animate-pulse {
+	animation: ob-pulse 2s ease-in-out infinite;
+}
+
+/* === Fade In === */
+.ob-animate-fade-in {
+	animation: ob-fade-in 0.5s ease-out forwards;
+}
+
+/* === Slide Animations === */
+.ob-animate-slide-left {
+	animation: ob-slide-in-left 0.4s ease-out forwards;
+}
+
+.ob-animate-slide-right {
+	animation: ob-slide-in-right 0.4s ease-out forwards;
+}
+
+/* === Glow Effect === */
+.ob-animate-glow {
+	animation: ob-glow-pulse 2s ease-in-out infinite;
+}
+
+/* === Shimmer Effect === */
+.ob-animate-shimmer {
+	background: linear-gradient(
+		90deg,
+		rgba(228, 57, 103, 0.1) 0%,
+		rgba(228, 57, 103, 0.3) 50%,
+		rgba(228, 57, 103, 0.1) 100%
+	);
+	background-size: 200% 100%;
+	animation: ob-shimmer 2s linear infinite;
+}
+
+/* === Bounce In === */
+.ob-animate-bounce-in {
+	animation: ob-bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* === Shake === */
+.ob-animate-shake {
+	animation: ob-shake 0.5s ease-in-out;
+}
+
+/* === Rotate In === */
+.ob-animate-rotate-in {
+	animation: ob-rotate-in 0.6s ease-out forwards;
+}
+
+/* === Wave === */
+.ob-animate-wave {
+	animation: ob-wave 1s ease-in-out infinite;
+}
+
+/* === Sparkle === */
+.ob-animate-sparkle {
+	animation: ob-sparkle 1.5s ease-in-out infinite;
+}
+
+/* === Typing Indicator === */
+.ob-animate-typing {
+	animation: ob-typing 1.4s ease-in-out infinite;
+}
+
+/* === Gradient Shift === */
+.ob-animate-gradient {
+	background: linear-gradient(
+		-45deg,
+		var(--ob-color-main),
+		var(--ob-color-main-dark),
+		#E43967,
+		#FF6B9D
+	);
+	background-size: 400% 400%;
+	animation: ob-gradient-shift 3s ease infinite;
+}
+
+/* === Heartbeat === */
+.ob-animate-heartbeat {
+	animation: ob-heartbeat 1.5s ease-in-out infinite;
+}
+
+/* === Flip === */
+.ob-animate-flip {
+	animation: ob-flip 0.6s ease-in-out;
+}
+
+/* === Blur In === */
+.ob-animate-blur-in {
+	animation: ob-blur-in 0.8s ease-out forwards;
+}
+
+/* === Staggered Animations === */
+.ob-animate-stagger-1 {
+	animation-delay: 0.1s;
+}
+
+.ob-animate-stagger-2 {
+	animation-delay: 0.2s;
+}
+
+.ob-animate-stagger-3 {
+	animation-delay: 0.3s;
+}
+
+.ob-animate-stagger-4 {
+	animation-delay: 0.4s;
+}
+
+.ob-animate-stagger-5 {
+	animation-delay: 0.5s;
+}
+
+/* === Hover Animations === */
+.ob-hover-lift:hover {
+	transform: translateY(-3px);
+	transition: transform 0.2s ease;
+}
+
+.ob-hover-scale:hover {
+	transform: scale(1.05);
+	transition: transform 0.2s ease;
+}
+
+.ob-hover-glow:hover {
+	box-shadow: 0 0 20px rgba(228, 57, 103, 0.5);
+	transition: box-shadow 0.3s ease;
+}
+
+.ob-hover-rotate:hover {
+	transform: rotate(5deg);
+	transition: transform 0.2s ease;
+}
+
+/* === Particle Canvas === */
+.ob-particle-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 1;
+	opacity: 0.6;
+}

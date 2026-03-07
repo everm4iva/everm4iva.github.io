@@ -1,0 +1,105 @@
+/**
+ * ☆=========================================☆
+ * root.css - Imports and variables for all styles!
+ * ☆=========================================☆
+*/
+@import url('../fonts/fonts.css');
+@import url('./Notation.css');
+:root {
+	/* Basic Colors */
+	--bg-color: #0a0718;
+	--bg-color-t1: rgba(10, 7, 24, 0.1);
+	--bg-color-t3: rgba(10, 7, 24, 0.3);
+	--bg-color-t6: rgba(10, 7, 24, 0.6);
+	--pink: #db347a;
+	--cute-pink: #ff80a6;
+	--yellow: #ffd000;
+	--cyan: #00ffe7;
+	--cyan-dead: #008080;
+	--white: #ffffff;
+	--black: #000000;
+
+	/* Fonts */
+	--MainFont: 'SourGummy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-size-base: 16px;
+	--line-height-base: 1.5;
+	--spacing-unit: 8px;
+
+	/* Audio Note */
+	--audionote-color: #1c0902;
+	--audionote-border-color: var(--pink);
+
+	/* Background & Images */
+	--bg-img: url('../images/background/IMG_20251119_072917.jpg');
+
+	/* Project Colors */
+	--fractal-p: #4714ff;
+	--bubbleplay-p: #AC50C3;
+	--bubbleplay-s: #FEFEFE;
+	--oceanboard-p: #e43967;
+	--oceanboard-s: #9b2a48;
+	--sparky-p: #13085a;
+	--sparky-s: #3c194b;
+	--orianaterminal-p: #fc6cff;
+	--orianaterminal-s: #d3926b;
+	--aurelin-p: #6c82ff;
+	--lma-p: #a62164;
+	--lma-s: #0e3f44;
+	--simplyprivate-p: #330824;
+	--simplyprivate-s: #aa2fba;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: var(--font-size-base);
+	font-family: var(--MainFont);
+	line-height: var(--line-height-base);
+	box-sizing: border-box;
+	background-color: var(--bg-color);
+}
+
+::selection {
+	background-color: var(--yellow);
+	color: var(--black);
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--bg-color);
+	/* background-image: var(--bg-img); */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0;
+	margin: 0;
+	filter: blur(700px);
+	opacity: 0.3;
+	z-index: -1;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	background-color: var(--bg-color-t1);
+	overflow-x: hidden;
+	font-family: 'SourGummy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: var(--white);
+	overflow: hidden;
+	font-size: 1rem;
+}
+
+.hidden {
+	opacity: 0;
+	transform: translateY(8px) scale(0.995);
+	pointer-events: none;
+	height: 0;
+	overflow: hidden;
+	transition: all 280ms ease;
+}

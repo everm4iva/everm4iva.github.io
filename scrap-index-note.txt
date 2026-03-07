@@ -1,0 +1,30 @@
+<!-- <h3>☆= I'm good at:</h3>
+<ul>
+	<li>seeing second-order consequences,</li>
+	<li>designing for humans instead of averages,</li>
+	<li>holding contradictory ideas without panicking.</li>
+    <li>building meaning out of messy inputs</li>
+    <li>learning weird, cross-disciplinary stuff (art + logic + feeling + systems)</li>
+    <li>staying curious long after most people mentally clock out</li>
+</ul>
+	<h3>☆= I'm bad at:</h3>
+<ul>
+	<li>stopping,</li>
+	<li>letting go once I care</li>
+    <li>understanding the logic of “good enough”</li>
+	<li>linear stuff.</li>
+    <li>resting without guilt</li>
+    <li>doing things halfway (i go all in or not at all)</li>
+    <li>accepting simple answers when complex ones exist</li>
+    <li>having a schedule</li>
+</ul>
+	<h3>☆= My values:</h3>
+<ul>
+	<li>Capitalism is a big no no! </li>
+	<li>Profit doesn’t motivate me.</li>
+	<li>Control/Power annoys me.</li>
+	<li>Vulnerable is something strong.</li>
+    <li>Rather be stable than grow like crazy</li>
+    <li>Once i promisse, I keep it. No take backs. 'Till i die.</li>
+    <li>I want to create memories, not develop because yes.</li>
+</ul> -->

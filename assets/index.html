@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Global Assets</title>
+		<link rel="shortcut icon" href="../media/icons/Star.bg.png" type="image/png" />
+		<meta name="robots" content="index, follow, archive, snippet, translate" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Global assets for the website and other projects" />
+		<link rel="manifest" href="manifest.json" />
+		<!-- Styles -->
+		<link rel="stylesheet" href="../media/styles/p-assets/index.css"/>
+		<meta name="theme-color" content="#121212" />
+	</head>
+	<body>
+        Updating assets page, for now use the old one: <a href="https://umaera.github.io/assets">Assets page</a>
+
+		<script>
+			setTimeout(() => {
+				//redirect
+				window.location.href = "https://umaera.github.io/assets";
+			}, 3000);
+			// Countdown to redirect visual - bottom center - shows ms
+			const countdown = document.createElement("div");
+			countdown.style.position = "fixed";
+			countdown.style.bottom = "10px";
+			countdown.style.left = "50%";
+			countdown.style.transform = "translateX(-50%)";
+			countdown.style.background = "rgba(0, 0, 0, 0.5)";
+			countdown.style.color = "#fff";
+			countdown.style.padding = "5px 10px";
+			countdown.style.borderRadius = "5px";
+			countdown.style.fontSize = "1.5rem";
+			document.body.appendChild(countdown);
+			let timeLeft = 3000;
+			const interval = setInterval(() => {
+				timeLeft -= 100;
+				countdown.textContent = `Redirecting in ${timeLeft / 1000}s...`;
+				if (timeLeft <= 0) {
+					clearInterval(interval);
+				}
+			}, 100);
+
+		</script>
+    </body>
+</html>
