@@ -1,9 +1,39 @@
 [
 	{
 		"service-title": "OrianaTerminal",
-		"service-description": "Development and general variables for servers and clients",
+		"service-description": "General info and model hosting",
+		"service-area": "Ai app api",
+		"service-type": ["manifest", "rules", "text", "api"],
 		"latest-ver": "0.1.3",
 		"latest-ver-id": "urudc&s",
-		"online": false
+		"online": false,
+		"models": {
+			"oriana-echo": {
+				"online": true,
+				"version": 1,
+				"max-response": 2599,
+				"show-errors": false,
+				"internet-access": false,
+				"emotion": 8,
+				"correction": 5,
+				"auto-reload": false,
+				"debug": false,
+				"maxtoken": 2999
+			},
+			"oriana-manu": {
+				"online": true,
+				"version": 1,
+				"max-response": 2899,
+				"show-errors": true,
+				"internet-access": true,
+				"emotion": 6,
+				"correction": 7,
+				"auto-reload": true,
+				"debug": true,
+				"maxtoken": 3299
+			},
+			"oriana-zia": {"online": false, "version": 1},
+			"oriana-jessy": {"online": false, "version": 1}
+		}
 	}
 ]

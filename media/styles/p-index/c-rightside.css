@@ -206,3 +206,16 @@
 .p-simplyprivate:hover{
 	box-shadow: var(--simplyprivate-s) 0px 4px 0px 0px;
 }
+
+.p-downsrc {
+	border-color: var(--downsrc-s);
+}
+
+.p-downsrc .fproject-name {
+	color: var(--downsrc-s);
+}
+
+.p-downsrc:hover{
+	box-shadow: var(--downsrc-s) 0px 4px 0px 0px;
+}
+

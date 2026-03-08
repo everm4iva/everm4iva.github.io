@@ -1,0 +1,19 @@
+[
+	{
+		"service-title": "everm4iva.github.io",
+		"service-description": "debug links & tools.",
+		"service-area": "website",
+		"service-type": ["text", "list"],
+		"latest-ver": "nan",
+		"latest-ver-id": "release",
+		"sap-links": {
+			"oriana-terminal": "https://everm4iva.github.io/sap/OrianaTerminal/info.json",
+			"spark-bunny": "https://everm4iva.github.io/sap/SparkBunny/info.json"
+		},
+		"style-links":{
+			"main": "https://everm4iva.github.io/media/styles/root.css",
+			"notation": "https://everm4iva.github.io/media/styles/Notation.css",
+			"fonts": "https://everm4iva.github.io/media/fonts/fonts.css"
+		}
+	}
+]

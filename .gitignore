@@ -1,1 +1,9 @@
 @old/
+
+# Hide index media (not ready yet)
+media/*.html
+media/*/*.html
+media/*/*/*.html
+media/*/*/*/*.html
+media/*/*/*/*/*.html
+media/*/*/*/*/*/*.html

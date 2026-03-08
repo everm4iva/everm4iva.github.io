@@ -38,6 +38,8 @@
 	--bubbleplay-s: #FEFEFE;
 	--oceanboard-p: #e43967;
 	--oceanboard-s: #9b2a48;
+	--downsrc-p: #ff7f27;
+	--downsrc-s: #c05d1b;
 	--sparky-p: #13085a;
 	--sparky-s: #3c194b;
 	--orianaterminal-p: #fc6cff;
@@ -47,6 +49,22 @@
 	--lma-s: #0e3f44;
 	--simplyprivate-p: #330824;
 	--simplyprivate-s: #aa2fba;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color-t3);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--pink);
+    border: 3px solid var(--bg-color);
+}
+
+*{
+	scrollbar-width: auto;
+    scrollbar-color: var(--pink) var(--bg-color);
 }
 
 html {
@@ -102,4 +120,10 @@ body {
 	height: 0;
 	overflow: hidden;
 	transition: all 280ms ease;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
