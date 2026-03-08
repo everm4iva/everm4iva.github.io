@@ -4,11 +4,11 @@
 
 ### Write, Build and Create with ease.
 
-[Documentation](https://umaera.github.io/p/OceanBoard/docs)
+[Documentation](https://everm4iva.github.io/p/OceanBoard/docs)
 •
-[Versions](https://github.com/NotYarazi/p/OceanBoard/tags)
+[Versions](https://github.com/everm4iva/p/OceanBoard/tags)
 •
-[Start Using](https://umaera.github.io/p/OceanBoard/editor)
+[Start Using](https://everm4iva.github.io/p/OceanBoard/editor)
 
 ---
 
@@ -41,4 +41,4 @@ WTFPL – Do What the Fuck You Want to Public License
 
 ## Contribute
 All Issues and pull requests are welcome. For sugesting ideas, check our special [Forms](https://forms.gle/VD4Qn2DiFyBh8Pib6).
-Made by umaera
+Made by everm4iva

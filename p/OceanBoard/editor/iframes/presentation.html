@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -6,18 +6,10 @@
 		<title>Presentation Mode - OceanBoard</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Outfit:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet" />
 		<script src="../libs/marked.js"></script>
-		<link
-			rel="shortcut icon"
-			href="../../media/icons/Icon-B&W.png"
-			type="image/png"
-		/>
+		<link rel="shortcut icon" href="../../media/icons/Icon-B&W.png" type="image/png" />
 		<style>
 			:root {
 				--ob-bg: #0a0a0f;
@@ -34,7 +26,7 @@
 			}
 
 			body {
-				font-family: "Outfit", sans-serif;
+				font-family: 'Outfit', sans-serif;
 				background: var(--ob-bg);
 				color: var(--ob-text);
 				overflow-x: hidden;
@@ -67,7 +59,7 @@
 			}
 
 			.presentation-content h1 {
-				font-family: "Dosis", sans-serif;
+				font-family: 'Dosis', sans-serif;
 				font-size: 3rem;
 				color: var(--ob-accent);
 				margin-bottom: 1.5rem;
@@ -110,7 +102,7 @@
 				background: var(--ob-bg);
 				padding: 0.2em 0.4em;
 				border-radius: 4px;
-				font-family: "Source Code Pro", monospace;
+				font-family: 'Source Code Pro', monospace;
 				color: var(--ob-accent);
 				font-size: 0.9em;
 			}
@@ -157,12 +149,7 @@
 			.presentation-content hr {
 				border: none;
 				height: 2px;
-				background: linear-gradient(
-					90deg,
-					transparent,
-					rgba(255, 128, 170, 0.3),
-					transparent
-				);
+				background: linear-gradient(90deg, transparent, rgba(255, 128, 170, 0.3), transparent);
 				margin: 2rem 0;
 			}
 
@@ -328,11 +315,7 @@
 		</div>
 
 		<!-- Main Content -->
-		<div
-			class="presentation-container"
-			id="container"
-			style="display: none"
-		>
+		<div class="presentation-container" id="container" style="display: none">
 			<div class="presentation-content" id="content">
 				<!-- Markdown content will be rendered here -->
 			</div>
@@ -341,73 +324,41 @@
 		<!-- Bottom Navigation Bar -->
 		<nav class="presentation-nav" id="nav" style="display: none">
 			<div class="presentation-nav-center">
-				<button
-					class="presentation-nav-btn"
-					id="prevBtn"
-					title="Previous File"
-				>
-					<span class="material-icons-round" translate="no"
-						>chevron_left</span
-					>
+				<button class="presentation-nav-btn" id="prevBtn" title="Previous File">
+					<span class="material-icons-round" translate="no">chevron_left</span>
 				</button>
 
 				<div class="presentation-file-info">
-					<div class="presentation-series-name" id="seriesName">
-						Series Name
-					</div>
-					<div class="presentation-file-name" id="fileName">
-						File Name
-					</div>
+					<div class="presentation-series-name" id="seriesName">Series Name</div>
+					<div class="presentation-file-name" id="fileName">File Name</div>
 				</div>
 
-				<button
-					class="presentation-nav-btn"
-					id="nextBtn"
-					title="Next File"
-				>
-					<span class="material-icons-round" translate="no"
-						>chevron_right</span
-					>
+				<button class="presentation-nav-btn" id="nextBtn" title="Next File">
+					<span class="material-icons-round" translate="no">chevron_right</span>
 				</button>
 
-				<button
-					class="presentation-nav-btn"
-					onclick="location.reload()"
-					title="Reload"
-				>
-					<span class="material-icons-round" translate="no"
-						>refresh</span
-					>
+				<button class="presentation-nav-btn" onclick="location.reload()" title="Reload">
+					<span class="material-icons-round" translate="no">refresh</span>
 				</button>
 				<button class="presentation-close-btn" id="closeBtn">
-					<span class="material-icons-round" translate="no"
-						>close</span
-					>
-					<div class="presentation-close-text">
-						Close Presentation
-					</div>
+					<span class="material-icons-round" translate="no">close</span>
+					<div class="presentation-close-text">Close Presentation</div>
 				</button>
 			</div>
 		</nav>
 
 		<script type="module">
 			// Import media system functions
-			import {
-				getMedia,
-				getMediaIdFromMention,
-			} from "../classes/filesystem/mediasystem.js";
-			import {
-				preprocessMediaMentions,
-				setupCustomRenderer,
-			} from "../classes/editors/mediarenderer.js";
+			import {getMedia, getMediaIdFromMention} from '../classes/filesystem/mediasystem.js';
+			import {preprocessMediaMentions, setupCustomRenderer} from '../classes/editors/mediarenderer.js';
 
 			// Initialize custom renderer for media
 			setupCustomRenderer();
 
 			// Get file ID from URL parameter
 			const urlParams = new URLSearchParams(window.location.search);
-			const fileId = urlParams.get("file");
-			const seriesId = urlParams.get("series");
+			const fileId = urlParams.get('file');
+			const seriesId = urlParams.get('series');
 
 			let allFiles = [];
 			let currentIndex = 0;
@@ -415,7 +366,7 @@
 			// Load file content and metadata
 			async function loadPresentation() {
 				if (!fileId || !seriesId) {
-					document.getElementById("loading").innerHTML = `
+					document.getElementById('loading').innerHTML = `
 					<div class="presentation-loading-text" style="color: #ff8080;">
 						Error: No file specified for presentation mode
 					</div>
@@ -423,23 +374,18 @@
 					return;
 				}
 
-				console.log("[Presentation] Loading file:", fileId);
-				console.log("[Presentation] Series:", seriesId);
-				console.log("[Presentation] Storage key:", "ob-file-" + fileId);
+				console.log('[Presentation] Loading file:', fileId);
+				console.log('[Presentation] Series:', seriesId);
+				console.log('[Presentation] Storage key:', 'ob-file-' + fileId);
 
 				// Get file content from localStorage
-				const content = localStorage.getItem("ob-file-" + fileId);
+				const content = localStorage.getItem('ob-file-' + fileId);
 				if (!content) {
 					// Debug: Show all available files
-					const allKeys = Object.keys(localStorage).filter((k) =>
-						k.startsWith("ob-file-")
-					);
-					console.error(
-						"[Presentation] File not found. Available files:",
-						allKeys
-					);
+					const allKeys = Object.keys(localStorage).filter((k) => k.startsWith('ob-file-'));
+					console.error('[Presentation] File not found. Available files:', allKeys);
 
-					document.getElementById("loading").innerHTML = `
+					document.getElementById('loading').innerHTML = `
 					<div class="presentation-loading-text" style="color: #ff8080;">
 						Error: File not found<br>
 						<small style="opacity: 0.7; font-size: 0.9rem;">Looking for: ob-file-${fileId}</small><br>
@@ -450,22 +396,15 @@
 				}
 
 				// Get workspace data to build file list
-				const workspaceData = JSON.parse(
-					localStorage.getItem("ob-workspace-" + seriesId) || "{}"
-				);
-				const seriesMetadata = JSON.parse(
-					localStorage.getItem("ob-series-meta-" + seriesId) || "{}"
-				);
+				const workspaceData = JSON.parse(localStorage.getItem('ob-workspace-' + seriesId) || '{}');
+				const seriesMetadata = JSON.parse(localStorage.getItem('ob-series-meta-' + seriesId) || '{}');
 
 				// Build flat file list
 				if (workspaceData.seasons) {
 					workspaceData.seasons.forEach((season) => {
 						if (season.episodes) {
 							season.episodes.forEach((episode) => {
-								allFiles.push({
-									name: episode.name,
-									seasonName: season.name,
-								});
+								allFiles.push({name: episode.name, seasonName: season.name});
 							});
 						}
 					});
@@ -474,10 +413,7 @@
 				// Add special files
 				if (workspaceData.specialFiles) {
 					workspaceData.specialFiles.forEach((file) => {
-						allFiles.push({
-							name: file.name,
-							seasonName: "Special Files",
-						});
+						allFiles.push({name: file.name, seasonName: 'Special Files'});
 					});
 				}
 
@@ -488,81 +424,72 @@
 				let cleanContent = content;
 				const fileIdPattern = /^\$\s*file-id\s*=\s*"[^"]+"\s*\n?/;
 				if (fileIdPattern.test(content)) {
-					cleanContent = content.replace(fileIdPattern, "");
+					cleanContent = content.replace(fileIdPattern, '');
 				}
 
 				// Strip @component. prefix from mentions
-				cleanContent = cleanContent.replace(
-					/@([a-z]+)\.([a-zA-Z0-9]+)/g,
-					"$2"
-				);
+				cleanContent = cleanContent.replace(/@([a-z]+)\.([a-zA-Z0-9]+)/g, '$2');
 
 				// Preprocess media mentions
 				cleanContent = preprocessMediaMentions(cleanContent);
 
 				// Render markdown
 				const html = marked.parse(cleanContent);
-				document.getElementById("content").innerHTML = html;
+				document.getElementById('content').innerHTML = html;
 
 				// Update file info
-				document.getElementById("fileName").textContent = fileId;
-				document.getElementById("seriesName").textContent =
-					seriesMetadata.name || "OceanBoard";
+				document.getElementById('fileName').textContent = fileId;
+				document.getElementById('seriesName').textContent = seriesMetadata.name || 'OceanBoard';
 
 				// Update navigation buttons
 				updateNavButtons();
 
 				// Show content
-				document.getElementById("loading").style.display = "none";
-				document.getElementById("container").style.display = "block";
-				document.getElementById("nav").style.display = "flex";
+				document.getElementById('loading').style.display = 'none';
+				document.getElementById('container').style.display = 'block';
+				document.getElementById('nav').style.display = 'flex';
 			}
 
 			function updateNavButtons() {
-				const prevBtn = document.getElementById("prevBtn");
-				const nextBtn = document.getElementById("nextBtn");
+				const prevBtn = document.getElementById('prevBtn');
+				const nextBtn = document.getElementById('nextBtn');
 
 				prevBtn.disabled = currentIndex <= 0;
 				nextBtn.disabled = currentIndex >= allFiles.length - 1;
 			}
 
 			// Navigation handlers
-			document.getElementById("prevBtn").addEventListener("click", () => {
+			document.getElementById('prevBtn').addEventListener('click', () => {
 				if (currentIndex > 0) {
 					currentIndex--;
 					const file = allFiles[currentIndex];
 					window.location.href = `?file=${encodeURIComponent(
-						file.name
+						file.name,
 					)}&series=${encodeURIComponent(seriesId)}`;
 				}
 			});
 
-			document.getElementById("nextBtn").addEventListener("click", () => {
+			document.getElementById('nextBtn').addEventListener('click', () => {
 				if (currentIndex < allFiles.length - 1) {
 					currentIndex++;
 					const file = allFiles[currentIndex];
 					window.location.href = `?file=${encodeURIComponent(
-						file.name
+						file.name,
 					)}&series=${encodeURIComponent(seriesId)}`;
 				}
 			});
 
-			document
-				.getElementById("closeBtn")
-				.addEventListener("click", () => {
-					window.close();
-				});
+			document.getElementById('closeBtn').addEventListener('click', () => {
+				window.close();
+			});
 
 			// Keyboard navigation
-			document.addEventListener("keydown", (e) => {
-				if (e.key === "ArrowLeft" && currentIndex > 0) {
-					document.getElementById("prevBtn").click();
-				} else if (
-					e.key === "ArrowRight" &&
-					currentIndex < allFiles.length - 1
-				) {
-					document.getElementById("nextBtn").click();
-				} else if (e.key === "Escape") {
+			document.addEventListener('keydown', (e) => {
+				if (e.key === 'ArrowLeft' && currentIndex > 0) {
+					document.getElementById('prevBtn').click();
+				} else if (e.key === 'ArrowRight' && currentIndex < allFiles.length - 1) {
+					document.getElementById('nextBtn').click();
+				} else if (e.key === 'Escape') {
 					window.close();
 				}
 			});

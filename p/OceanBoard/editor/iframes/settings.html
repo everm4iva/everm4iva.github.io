@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -6,12 +6,8 @@
 		<title>OceanBoard - Settings</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dosis:wght@400;700&family=Outfit:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Material+Icons+Round"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet" />
 		<style>
 			/* ===### Root ###=== */
 			:root {
@@ -31,7 +27,7 @@
 			}
 
 			body {
-				font-family: "Outfit", sans-serif;
+				font-family: 'Outfit', sans-serif;
 				background: var(--bg-color);
 				color: var(--text-color);
 				padding: 2rem;
@@ -46,7 +42,7 @@
 			}
 
 			.settings-header h1 {
-				font-family: "Pacifico", cursive;
+				font-family: 'Pacifico', cursive;
 				color: var(--main-color);
 				font-size: 2.5rem;
 				margin-bottom: 0.5rem;
@@ -66,7 +62,7 @@
 			}
 
 			.settings-section h2 {
-				font-family: "Dosis", sans-serif;
+				font-family: 'Dosis', sans-serif;
 				color: var(--main-color);
 				font-size: 1.5rem;
 				margin-bottom: 1rem;
@@ -118,25 +114,25 @@
 			}
 
 			/* ===### Inputs ###=== */
-			input[type="number"],
+			input[type='number'],
 			select {
 				background: var(--bg-hover);
 				border: 2px solid transparent;
 				border-radius: 6px;
 				color: var(--text-color);
 				padding: 0.5rem 1rem;
-				font-family: "Outfit", sans-serif;
+				font-family: 'Outfit', sans-serif;
 				font-size: 0.9rem;
 				transition: border-color 0.2s;
 			}
 
-			input[type="number"]:focus,
+			input[type='number']:focus,
 			select:focus {
 				outline: none;
 				border-color: var(--main-color);
 			}
 
-			input[type="number"] {
+			input[type='number'] {
 				width: 80px;
 				text-align: center;
 			}
@@ -161,7 +157,7 @@
 			}
 
 			.toggle-switch::after {
-				content: "";
+				content: '';
 				position: absolute;
 				width: 20px;
 				height: 20px;
@@ -183,14 +179,16 @@
 				border: none;
 				border-radius: 6px;
 				padding: 0.75rem 1.5rem;
-				font-family: "Dosis", sans-serif;
+				font-family: 'Dosis', sans-serif;
 				font-size: 1rem;
 				font-weight: 700;
 				cursor: pointer;
 				display: inline-flex;
 				align-items: center;
 				gap: 0.5rem;
-				transition: background 0.2s, transform 0.1s;
+				transition:
+					background 0.2s,
+					transform 0.1s;
 			}
 
 			.btn:hover {
@@ -251,9 +249,7 @@
 		<!-- ===### Editor Settings ###=== -->
 		<div class="settings-section">
 			<h2>
-				<span class="material-icons-round" translate="no"
-					>edit_note</span
-				>
+				<span class="material-icons-round" translate="no">edit_note</span>
 				Editor
 			</h2>
 			<div class="setting-item">
@@ -262,13 +258,7 @@
 					<p>How often should your work be saved automatically</p>
 				</div>
 				<div class="setting-control">
-					<input
-						type="number"
-						id="autosave-interval"
-						min="5"
-						max="300"
-						value="15"
-					/>
+					<input type="number" id="autosave-interval" min="5" max="300" value="15" />
 					<span>seconds</span>
 				</div>
 			</div>
@@ -314,11 +304,7 @@
 					<p>Display line numbers in the editor</p>
 				</div>
 				<div class="setting-control">
-					<div
-						class="toggle-switch"
-						id="line-numbers"
-						data-enabled="false"
-					></div>
+					<div class="toggle-switch" id="line-numbers" data-enabled="false"></div>
 				</div>
 			</div>
 			<div class="setting-item">
@@ -327,11 +313,7 @@
 					<p>Wrap long lines instead of scrolling horizontally</p>
 				</div>
 				<div class="setting-control">
-					<div
-						class="toggle-switch active"
-						id="word-wrap"
-						data-enabled="true"
-					></div>
+					<div class="toggle-switch active" id="word-wrap" data-enabled="true"></div>
 				</div>
 			</div>
 			<div class="setting-item">
@@ -340,11 +322,7 @@
 					<p>Enable smooth scrolling animations</p>
 				</div>
 				<div class="setting-control">
-					<div
-						class="toggle-switch active"
-						id="smooth-scroll"
-						data-enabled="true"
-					></div>
+					<div class="toggle-switch active" id="smooth-scroll" data-enabled="true"></div>
 				</div>
 			</div>
 		</div>
@@ -352,25 +330,16 @@
 		<!-- ===### Notifications Settings ###=== -->
 		<div class="settings-section">
 			<h2>
-				<span class="material-icons-round" translate="no"
-					>notifications</span
-				>
+				<span class="material-icons-round" translate="no">notifications</span>
 				Notifications
 			</h2>
 			<div class="setting-item">
 				<div class="setting-info">
 					<label>Show version update notifications</label>
-					<p>
-						Display a modal when OceanBoard is updated to a new
-						version
-					</p>
+					<p>Display a modal when OceanBoard is updated to a new version</p>
 				</div>
 				<div class="setting-control">
-					<div
-						class="toggle-switch active"
-						id="update-notifications"
-						data-enabled="true"
-					></div>
+					<div class="toggle-switch active" id="update-notifications" data-enabled="true"></div>
 				</div>
 			</div>
 		</div>
@@ -378,9 +347,7 @@
 		<!-- ===### Data Management ###=== -->
 		<div class="settings-section">
 			<h2>
-				<span class="material-icons-round" translate="no"
-					>folder_open</span
-				>
+				<span class="material-icons-round" translate="no">folder_open</span>
 				Data Management
 			</h2>
 			<div class="info-box">
@@ -391,40 +358,28 @@
 			</div>
 			<div class="button-group">
 				<button class="btn btn-secondary" id="btn-export">
-					<span class="material-icons-round" translate="no"
-						>download</span
-					>
+					<span class="material-icons-round" translate="no">download</span>
 					Export Workspace
 				</button>
 				<button class="btn btn-secondary" id="btn-import">
-					<span class="material-icons-round" translate="no"
-						>upload</span
-					>
+					<span class="material-icons-round" translate="no">upload</span>
 					Import Workspace
 				</button>
 			</div>
 			<div class="button-group">
 				<button class="btn btn-danger" id="btn-clear">
-					<span class="material-icons-round" translate="no"
-						>delete_forever</span
-					>
+					<span class="material-icons-round" translate="no">delete_forever</span>
 					Clear All Data
 				</button>
 				<button class="btn btn-danger" id="btn-reset">
-					<span class="material-icons-round" translate="no"
-						>restart_alt</span
-					>
+					<span class="material-icons-round" translate="no">restart_alt</span>
 					Reset to Empty State
 				</button>
 			</div>
-			<div
-				class="info-box"
-				style="border-left-color: #ff9800; margin-top: 1rem"
-			>
+			<div class="info-box" style="border-left-color: #ff9800; margin-top: 1rem">
 				<p style="color: #ff9800">
-					<strong>Warning:</strong> "Clear All Data" removes
-					everything including settings. "Reset to Empty State"
-					removes all series and workspaces but keeps your settings.
+					<strong>Warning:</strong> "Clear All Data" removes everything including settings. "Reset to Empty
+					State" removes all series and workspaces but keeps your settings.
 				</p>
 			</div>
 		</div>
@@ -440,26 +395,18 @@
 					<strong>Version:</strong>
 					<span id="app-version">Loading...</span>
 				</p>
-				<p><strong>Created by:</strong> umaera</p>
+				<p><strong>Created by:</strong> <a href="https://everm4iva.github.io/social">everm4iva</a></p>
 				<p><strong>License:</strong> WTFPL license - Open Source</p>
 			</div>
 			<div class="button-group">
 				<button
 					class="btn btn-secondary"
-					onclick="window.open('https://github.com/everm4iva/OceanBoard', '_blank')"
-				>
-					<span class="material-icons-round" translate="no"
-						>code</span
-					>
+					onclick="window.open('https://github.com/everm4iva/OceanBoard', '_blank')">
+					<span class="material-icons-round" translate="no">code</span>
 					View on GitHub
 				</button>
-				<button
-					class="btn btn-secondary"
-					onclick="window.open('../../', '_blank')"
-				>
-					<span class="material-icons-round" translate="no"
-						>language</span
-					>
+				<button class="btn btn-secondary" onclick="window.open('../../', '_blank')">
+					<span class="material-icons-round" translate="no">language</span>
 					Visit Website
 				</button>
 			</div>
@@ -469,70 +416,49 @@
 			/* === Settings Management === */
 
 			// Import version
-			import { OCEANBOARD_VERSION } from "../classes/config/version.js";
+			import {OCEANBOARD_VERSION} from '../classes/config/version.js';
 
 			// Load settings from localStorage
 			function loadSettings() {
 				const settings = {
-					autosaveInterval:
-						localStorage.getItem("ob-setting-autosave") || "15",
-					fontSize:
-						localStorage.getItem("ob-setting-fontsize") || "14",
-					lineHeight:
-						localStorage.getItem("ob-setting-lineheight") || "1.6",
-					lineNumbers:
-						localStorage.getItem("ob-setting-linenumbers") ===
-						"true",
-					wordWrap:
-						localStorage.getItem("ob-setting-wordwrap") !== "false",
-					smoothScroll:
-						localStorage.getItem("ob-setting-smoothscroll") !==
-						"false",
-					updateNotifications:
-						localStorage.getItem("ob-disable-update-modal") !==
-						"true",
+					autosaveInterval: localStorage.getItem('ob-setting-autosave') || '15',
+					fontSize: localStorage.getItem('ob-setting-fontsize') || '14',
+					lineHeight: localStorage.getItem('ob-setting-lineheight') || '1.6',
+					lineNumbers: localStorage.getItem('ob-setting-linenumbers') === 'true',
+					wordWrap: localStorage.getItem('ob-setting-wordwrap') !== 'false',
+					smoothScroll: localStorage.getItem('ob-setting-smoothscroll') !== 'false',
+					updateNotifications: localStorage.getItem('ob-disable-update-modal') !== 'true',
 				};
 
-				document.getElementById("autosave-interval").value =
-					settings.autosaveInterval;
-				document.getElementById("font-size").value = settings.fontSize;
-				document.getElementById("line-height").value =
-					settings.lineHeight;
+				document.getElementById('autosave-interval').value = settings.autosaveInterval;
+				document.getElementById('font-size').value = settings.fontSize;
+				document.getElementById('line-height').value = settings.lineHeight;
 
-				const lineNumbersToggle =
-					document.getElementById("line-numbers");
-				const wordWrapToggle = document.getElementById("word-wrap");
-				const smoothScrollToggle =
-					document.getElementById("smooth-scroll");
-				const updateNotificationsToggle = document.getElementById(
-					"update-notifications"
-				);
+				const lineNumbersToggle = document.getElementById('line-numbers');
+				const wordWrapToggle = document.getElementById('word-wrap');
+				const smoothScrollToggle = document.getElementById('smooth-scroll');
+				const updateNotificationsToggle = document.getElementById('update-notifications');
 
-				if (settings.lineNumbers)
-					lineNumbersToggle.classList.add("active");
-				if (settings.wordWrap) wordWrapToggle.classList.add("active");
-				if (settings.smoothScroll)
-					smoothScrollToggle.classList.add("active");
-				if (settings.updateNotifications)
-					updateNotificationsToggle.classList.add("active");
+				if (settings.lineNumbers) lineNumbersToggle.classList.add('active');
+				if (settings.wordWrap) wordWrapToggle.classList.add('active');
+				if (settings.smoothScroll) smoothScrollToggle.classList.add('active');
+				if (settings.updateNotifications) updateNotificationsToggle.classList.add('active');
 
 				lineNumbersToggle.dataset.enabled = settings.lineNumbers;
 				wordWrapToggle.dataset.enabled = settings.wordWrap;
 				smoothScrollToggle.dataset.enabled = settings.smoothScroll;
-				updateNotificationsToggle.dataset.enabled =
-					settings.updateNotifications;
+				updateNotificationsToggle.dataset.enabled = settings.updateNotifications;
 
 				// Load and display version
-				document.getElementById("app-version").textContent =
-					OCEANBOARD_VERSION + " (Beta)";
+				document.getElementById('app-version').textContent = OCEANBOARD_VERSION + ' (Beta)';
 
-				console.log("[Settings] Loaded settings");
+				console.log('[Settings] Loaded settings');
 			}
 
 			// Save setting to localStorage
 			function saveSetting(key, value) {
-				localStorage.setItem("ob-setting-" + key, value);
-				console.log("[Settings] Saved:", key, "=", value);
+				localStorage.setItem('ob-setting-' + key, value);
+				console.log('[Settings] Saved:', key, '=', value);
 			}
 
 			// Calculate storage usage
@@ -544,60 +470,46 @@
 					}
 				}
 				const kb = (total / 1024).toFixed(2);
-				document.getElementById("storage-used").textContent =
-					kb + " KB";
+				document.getElementById('storage-used').textContent = kb + ' KB';
 			}
 
 			// Auto-save interval
-			document
-				.getElementById("autosave-interval")
-				.addEventListener("change", function () {
-					saveSetting("autosave", this.value);
-					applySettingToParent("autosave", this.value);
-				});
+			document.getElementById('autosave-interval').addEventListener('change', function () {
+				saveSetting('autosave', this.value);
+				applySettingToParent('autosave', this.value);
+			});
 
 			// Font size
-			document
-				.getElementById("font-size")
-				.addEventListener("change", function () {
-					saveSetting("fontsize", this.value);
-					applySettingToParent("fontsize", this.value);
-				});
+			document.getElementById('font-size').addEventListener('change', function () {
+				saveSetting('fontsize', this.value);
+				applySettingToParent('fontsize', this.value);
+			});
 
 			// Line height
-			document
-				.getElementById("line-height")
-				.addEventListener("change", function () {
-					saveSetting("lineheight", this.value);
-					applySettingToParent("lineheight", this.value);
-				});
+			document.getElementById('line-height').addEventListener('change', function () {
+				saveSetting('lineheight', this.value);
+				applySettingToParent('lineheight', this.value);
+			});
 
 			// Toggle switches
-			document.querySelectorAll(".toggle-switch").forEach((toggle) => {
-				toggle.addEventListener("click", function () {
-					this.classList.toggle("active");
-					const isEnabled = this.classList.contains("active");
+			document.querySelectorAll('.toggle-switch').forEach((toggle) => {
+				toggle.addEventListener('click', function () {
+					this.classList.toggle('active');
+					const isEnabled = this.classList.contains('active');
 					this.dataset.enabled = isEnabled;
 					const settingId = this.id;
 
 					// Handle update notifications toggle specially
-					if (settingId === "update-notifications") {
+					if (settingId === 'update-notifications') {
 						if (isEnabled) {
-							localStorage.removeItem("ob-disable-update-modal");
-							console.log(
-								"[Settings] Update notifications enabled"
-							);
+							localStorage.removeItem('ob-disable-update-modal');
+							console.log('[Settings] Update notifications enabled');
 						} else {
-							localStorage.setItem(
-								"ob-disable-update-modal",
-								"true"
-							);
-							console.log(
-								"[Settings] Update notifications disabled"
-							);
+							localStorage.setItem('ob-disable-update-modal', 'true');
+							console.log('[Settings] Update notifications disabled');
 						}
 					} else {
-						const settingName = settingId.replace(/-/g, "");
+						const settingName = settingId.replace(/-/g, '');
 						saveSetting(settingName, isEnabled);
 						applySettingToParent(settingName, isEnabled);
 					}
@@ -607,99 +519,63 @@
 			// Apply setting to parent window (live update)
 			function applySettingToParent(setting, value) {
 				if (window.opener && !window.opener.closed) {
-					window.opener.postMessage(
-						{
-							type: "oceanboard-setting",
-							setting: setting,
-							value: value,
-						},
-						"*"
-					);
-					console.log(
-						"[Settings] Applied to main window:",
-						setting,
-						"=",
-						value
-					);
+					window.opener.postMessage({type: 'oceanboard-setting', setting: setting, value: value}, '*');
+					console.log('[Settings] Applied to main window:', setting, '=', value);
 				}
 			}
 
 			// Clear all data
-			document
-				.getElementById("btn-clear")
-				.addEventListener("click", function () {
-					if (
-						confirm(
-							"Are you sure you want to clear ALL data? This cannot be undone!"
-						)
-					) {
-						if (
-							confirm(
-								"Really? This will delete everything including all your files and settings!"
-							)
-						) {
-							localStorage.clear();
-							alert(
-								"All data has been cleared. The page will reload."
-							);
-							if (window.opener && !window.opener.closed) {
-								window.opener.location.reload();
-							}
-							window.close();
+			document.getElementById('btn-clear').addEventListener('click', function () {
+				if (confirm('Are you sure you want to clear ALL data? This cannot be undone!')) {
+					if (confirm('Really? This will delete everything including all your files and settings!')) {
+						localStorage.clear();
+						alert('All data has been cleared. The page will reload.');
+						if (window.opener && !window.opener.closed) {
+							window.opener.location.reload();
 						}
+						window.close();
 					}
-				});
+				}
+			});
 
 			// Reset to empty state
-			document
-				.getElementById("btn-reset")
-				.addEventListener("click", function () {
-					if (
-						confirm(
-							"Reset to empty state? This will remove all series and workspaces but keep your settings."
-						)
-					) {
-						if (
-							confirm(
-								"Are you sure? All your series, seasons, episodes, and files will be deleted!"
-							)
-						) {
-							// Get all localStorage keys
-							const keysToRemove = [];
-							for (let i = 0; i < localStorage.length; i++) {
-								const key = localStorage.key(i);
-								// Remove series, workspace, and file data (but keep settings)
-								if (
-									key.startsWith("ob-series-") ||
-									key.startsWith("ob-workspace-") ||
-									key.startsWith("ob-file-") ||
-									key === "ob-active-series"
-								) {
-									keysToRemove.push(key);
-								}
+			document.getElementById('btn-reset').addEventListener('click', function () {
+				if (
+					confirm('Reset to empty state? This will remove all series and workspaces but keep your settings.')
+				) {
+					if (confirm('Are you sure? All your series, seasons, episodes, and files will be deleted!')) {
+						// Get all localStorage keys
+						const keysToRemove = [];
+						for (let i = 0; i < localStorage.length; i++) {
+							const key = localStorage.key(i);
+							// Remove series, workspace, and file data (but keep settings)
+							if (
+								key.startsWith('ob-series-') ||
+								key.startsWith('ob-workspace-') ||
+								key.startsWith('ob-file-') ||
+								key === 'ob-active-series'
+							) {
+								keysToRemove.push(key);
 							}
-
-							// Remove all identified keys
-							keysToRemove.forEach((key) =>
-								localStorage.removeItem(key)
-							);
-
-							alert(
-								"Reset complete! The page will reload to show the empty state."
-							);
-							if (window.opener && !window.opener.closed) {
-								window.opener.location.reload();
-							}
-							window.close();
 						}
+
+						// Remove all identified keys
+						keysToRemove.forEach((key) => localStorage.removeItem(key));
+
+						alert('Reset complete! The page will reload to show the empty state.');
+						if (window.opener && !window.opener.closed) {
+							window.opener.location.reload();
+						}
+						window.close();
 					}
-				});
+				}
+			});
 
 			// Initialize
 			loadSettings();
 			calculateStorageUsage();
 
-			console.log("[Settings] Page initialized");
+			console.log('[Settings] Page initialized');
 		</script>
 	</body>
 </html>

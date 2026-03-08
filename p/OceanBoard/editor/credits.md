@@ -22,6 +22,6 @@ Supporter
 Socials: [Website](https://wiki-page-devilwolf.netlify.app/)
 
 # oceanboard
-created by [umaera](https://umaera.github.io/social/)
+created by [everm4iva](https://everm4iva.github.io/social/)
 
 made for the world and developed by you.
