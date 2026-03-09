@@ -31,6 +31,7 @@
 
 .me.rock {
 	position: fixed;
+	filter: invert(0);
 	left: 2%;
 	width: 6rem;
 	height: 8rem;

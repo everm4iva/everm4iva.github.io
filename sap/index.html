@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Service Access Point</title>
-		<link rel="shortcut icon" href="../media/icons/Star.bg.png" type="image/png">
-		<link rel="stylesheet" href="../media/fonts/fonts.css">
+		<link rel="shortcut icon" href="../media/icons/Star.bg.png" type="image/png" />
+		<link rel="stylesheet" href="../media/fonts/fonts.css" />
 		<style>
 			body {
 				font-family: 'Poppins', Arial, sans-serif;
@@ -17,12 +17,67 @@
 			}
 			.service {
 				border: 1px solid #ccc;
-				padding: 1em;
+				padding: 0.5em 1em 1em;
 				margin-bottom: 1em;
 				border-radius: 4px;
+				background: #111;
+				transition: background 0.2s;
 			}
-			.service h2 {
-				margin-top: 0;
+			.service[open] {
+				background: #222;
+			}
+			.line {
+				font-family: monospace;
+				font-size: 1rem;
+			}
+			.service > summary {
+				font-size: 1.4rem;
+				font-weight: bold;
+				margin: 0;
+				cursor: pointer;
+				list-style: none;
+				position: relative;
+				padding-left: 1.4rem;
+				transition: background 0.2s;
+			}
+			.service > summary:hover {
+				background: rgba(255, 0, 119, 0.1);
+			}
+			.service > summary::before,
+			.line > summary::before {
+				content: '>';
+				position: absolute;
+				left: 0;
+				transition: transform 0.2s ease;
+				color: #ff0077;
+			}
+			.service[open] > summary::before,
+			.line[open] > summary::before {
+				transform: rotate(90deg);
+			}
+			.line > summary {
+				font-size: 1.2rem;
+				font-weight: normal;
+				padding-left: 1.2em;
+			}
+			.service > summary::-webkit-details-marker,
+			.line > summary::-webkit-details-marker {
+				display: none;
+			}
+			.val-string {
+				color: #6fcf97;
+			}
+			.val-number {
+				color: #56ccf2;
+			}
+			.val-boolean {
+				color: #f2c94c;
+			}
+			.val-null {
+				color: #828282;
+			}
+			.val {
+				color: #ff0077;
 			}
 			.service ul {
 				margin: 0.5em 0 0 1em;
@@ -44,7 +99,7 @@
 				color: #ff0077;
 				cursor: pointer;
 			}
-			::selection{
+			::selection {
 				color: black;
 				background-color: #ff0077;
 			}
@@ -57,28 +112,32 @@
 		<script>
 			async function loadServices() {
 				try {
-					const resp = await fetch('global.json');
+					const resp = await fetch('point.json');
 					const data = await resp.json();
 					const services = data[0].Services || {};
 					const container = document.getElementById('services');
 					for (const [name, path] of Object.entries(services)) {
-						const div = document.createElement('div');
-						div.className = 'service';
-						const title = document.createElement('h2');
-						title.textContent = name;
-						div.appendChild(title);
+						const details = document.createElement('details');
+						details.className = 'service';
+						const summary = document.createElement('summary');
+						summary.textContent = name;
+						details.appendChild(summary);
+
+						// container for the fetched JSON info
+						const infoContainer = document.createElement('div');
+						details.appendChild(infoContainer);
 
 						const loading = document.createElement('p');
 						loading.textContent = 'Loading details...';
-						div.appendChild(loading);
-						container.appendChild(div);
+						infoContainer.appendChild(loading);
+						container.appendChild(details);
 
 						try {
 							const r = await fetch(path);
 							const infoJson = await r.json();
 							const info = Array.isArray(infoJson) ? infoJson[0] : infoJson;
-							div.removeChild(loading);
-							renderObject(info, div, 0);
+							infoContainer.removeChild(loading);
+							renderObject(info, infoContainer, 0);
 
 							// // raw JSON view
 							// const pre = document.createElement('pre');
@@ -96,24 +155,53 @@
 
 			function renderObject(obj, parent, depth) {
 				for (const [key, value] of Object.entries(obj)) {
-					const line = document.createElement('div');
-					line.className = 'line';
-					line.style.paddingLeft = depth * 1 + 'em';
-
-					const keySpan = document.createElement('span');
-					keySpan.className = 'key';
-					keySpan.textContent = key + ':';
-					line.appendChild(keySpan);
-
 					if (value && typeof value === 'object' && !Array.isArray(value)) {
-						parent.appendChild(line);
-						renderObject(value, parent, depth + 1);
+						const subDetails = document.createElement('details');
+						subDetails.className = 'line';
+						subDetails.style.paddingLeft = depth * 1 + 'em';
+
+						const subSummary = document.createElement('summary');
+						subSummary.className = 'key';
+						subSummary.textContent = key + ':';
+						subDetails.appendChild(subSummary);
+						parent.appendChild(subDetails);
+						renderObject(value, subDetails, depth + 1);
 					} else {
-						const valSpan = document.createElement('span');
-						valSpan.className = 'val';
-						valSpan.textContent = JSON.stringify(value);
-						line.appendChild(valSpan);
-						parent.appendChild(line);
+						const line = document.createElement('div');
+						line.className = 'line';
+						line.style.paddingLeft = depth * 1 + 'em';
+
+						const keySpan = document.createElement('span');
+						keySpan.className = 'key';
+						keySpan.textContent = key + ':';
+						line.appendChild(keySpan);
+
+						if (typeof value === 'string' && /^(https?:\/\/)/i.test(value)) {
+							const link = document.createElement('a');
+							link.href = value;
+							link.target = '_blank';
+							link.rel = 'noopener';
+							link.textContent = value;
+							link.className = 'val-string';
+							line.appendChild(link);
+							parent.appendChild(line);
+						} else {
+							const valSpan = document.createElement('span');
+							if (value === null) {
+								valSpan.className = 'val-null';
+							} else if (typeof value === 'string') {
+								valSpan.className = 'val-string';
+							} else if (typeof value === 'number') {
+								valSpan.className = 'val-number';
+							} else if (typeof value === 'boolean') {
+								valSpan.className = 'val-boolean';
+							} else {
+								valSpan.className = 'val';
+							}
+							valSpan.textContent = JSON.stringify(value);
+							line.appendChild(valSpan);
+							parent.appendChild(line);
+						}
 					}
 				}
 			}

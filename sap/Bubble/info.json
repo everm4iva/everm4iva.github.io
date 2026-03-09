@@ -1,0 +1,45 @@
+[
+	{
+		"service-title": "Bubble",
+		"service-description": "Development and general variables for the server of Bubble apps (BubblePlay / awly)",
+		"service-area": "server",
+		"service-type": ["manifest", "api"],
+		"latest-ver": "1.7",
+		"latest-ver-id": "ub",
+		"global-servers": false,
+		"max-clients": 5,
+		"max-requests-per-min": "29",
+		"client-config": {
+			"bubbleplay": {
+				"latest-ver": "0.1.3",
+				"latest-ver-id": "none",
+				"description": "BubblePlay, your music in your control.",
+				"platforms": {"web-desktop": "true", "web-mobile": "true", "desktop": "false", "mobile": "false"},
+				"online": {"status": false, "auto-disable-timeout": "60"},
+				"mode": "debug",
+				"status": "beta-release",
+				"source-url": ""
+			},
+			"awly": {
+				"latest-ver": "0.1.0",
+				"latest-ver-id": "none",
+				"description": "Multi-media streaming app all in one, at the same time.",
+				"platforms": {"web-desktop": "true", "web-mobile": "false", "desktop": "false", "mobile": "false"},
+				"online": {"status": true, "auto-disable-timeout": "120"},
+				"mode": "debug",
+				"status": "development",
+				"source-url": ""
+			},
+			"starmusic": {
+				"latest-ver": "0.1.0",
+				"latest-ver-id": "none",
+				"description": "",
+				"platforms": {"web-desktop": "false", "web-mobile": "false", "desktop": "false", "mobile": "true"},
+				"online": {"status": false, "auto-disable-timeout": "120"},
+				"mode": "debug",
+				"status": "development",
+				"source-url": ""
+			}
+		}
+	}
+]

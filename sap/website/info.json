@@ -1,12 +1,15 @@
 [
 	{
 		"service-title": "everm4iva.github.io",
-		"service-description": "debug links & tools.",
+		"service-description": "Where i store my little stuff...",
 		"service-area": "website",
-		"service-type": ["text", "list"],
+		"service-type": ["text"],
 		"latest-ver": "nan",
 		"latest-ver-id": "release",
+		"source-url": "https://github.com/everm4iva/everm4iva.github.io",
 		"sap-links": {
+			"everm4iva-website": "https://everm4iva.github.io/sap/Website/info.json",
+			"bubble": "https://everm4iva.github.io/sap/Bubble/info.json",
 			"oriana-terminal": "https://everm4iva.github.io/sap/OrianaTerminal/info.json",
 			"spark-bunny": "https://everm4iva.github.io/sap/SparkBunny/info.json"
 		},
