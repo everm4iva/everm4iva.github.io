@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RiusBrowser - Info</title>
+    <link rel="shortcut icon" href="../../icons/@core/MyLittleIcon-Resources-v1.png" type="image/x-icon">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="RiusBrowser - About">
+
+    <link rel="stylesheet" href="../../shared/v2/-FONTS-/fonts.css">
+    <link rel="stylesheet" href="../../shared/v2/-STYLES-/resources/ap.infoview.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">About <mark>RiusBrowser</mark></h1>
+        </header>
+
+        <div class="project-info">
+            <p class="description">
+                An experimental browser project created by UmaEra, developed after the 5th month of development of the <em>SimplyPrivate Browser</em>. The vision was to create something unique that could save the complete website state (images, structure, and scripts) whenever the user wants, allowing them to revisit websites in their exact previous state.
+            </p>
+
+            <div class="status">
+                <strong>Current Status:</strong> The project was put to the side, but not officially abandoned.
+            </div>
+
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-label">Created</div>
+                    <div class="detail-value">March 2024</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Developer</div>
+                    <div class="detail-value">UmaEra</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Project Type</div>
+                    <div class="detail-value">Experimental Browser</div>
+                </div>
+            </div>
+
+            <div class="funfact">
+                <span class="funfact-label">Fun Fact:</span> This browser received "plugins" and "webpacks" features before SimplyPrivate Browser did.
+            </div>
+        </div>
+
+        <section class="screenshots">
+            <h2 class="screenshots-title">Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item" onclick="openModal('modal1', './screenshots/RiusBrowserScreenshot-MainScreen.PNG', 'Main Browser Interface')">
+                    <img src="./screenshots/RiusBrowserScreenshot-MainScreen.PNG" alt="RiusBrowser Main Screen">
+                    <div class="screenshot-caption">Main Browser Interface</div>
+                </div>
+                <div class="screenshot-item" onclick="openModal('modal2', './screenshots/RiusBrowserScreenshot-Plugins.PNG', 'Plugin Management System')">
+                    <img src="./screenshots/RiusBrowserScreenshot-Plugins.PNG" alt="RiusBrowser Plugins">
+                    <div class="screenshot-caption">Plugin Management System</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for image viewing -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+            
+                <img id="modalImage" class="modal-image" src="" alt="">
+                <div id="modalCaption" class="modal-caption"></div>
+                <div class="modal-hint">Press SPACE to open in new tab & anywhere else to close</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../shared/v2/-SCRIPTS-/resources/ap.infoview.js"></script>
+</body>
+</html>

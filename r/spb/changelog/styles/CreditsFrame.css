@@ -1,0 +1,37 @@
+.CreditsFrame{
+    display: none;
+    transition: 0.5s linear;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.070);
+    z-index: 1000;
+}
+
+#CreditsIframe{
+    position: absolute;
+    width: 80%; height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.CreditsClose{
+    border-radius: 0.3em;
+    position: absolute;
+    padding: 5px 20px;
+    background-color: white;
+    color: black;
+    width: fit-content; height: fit-content;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.CreditsClose:hover{
+    background-color: rgb(172, 172, 172);
+}

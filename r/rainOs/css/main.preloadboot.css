@@ -1,0 +1,14 @@
+body{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    font-size: 16px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+}
+
+body::-webkit-scrollbar{display: none;}

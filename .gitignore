@@ -1,4 +1,6 @@
 @old/
+tasks.md
+desktop.ini
 
 # Hide index media (not ready yet)
 media/*.html

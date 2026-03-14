@@ -1,0 +1,43 @@
+### SUPER COOL ROYAL M4IVA LICENSE - WEBSITE (SCRML-WEB-1.0) ###
+### -----------   not valid until i say so, here. ------------ ###
+# ! TERMS:
+do whatever, just make it cool.
+that applies to the:
+- source code
+- general icons
+- fonts
+- color scheme
+- general design and aesthetic of the website
+- any other assets that are part of the website's design and functionality, like the music panel, the background effects, the cursor, etc.
+but doesnt apply to:
+- project icon
+- project pages/source
+- videos/music/models/other media
+- the website's name and logo
+- my brand in general
+
+NO COMMERCIAL USE - EVER!!!!!
+
+# ! ATTRIBUTION:
+- no copying or reusing the website's name, logo, or brand without permission.
+- if you use the source code, please credit me (everm4iva) in a visible place, like a comment in the code or a credits section.
+- if you want to use the source code for a project, let me know! i might want to feature it on my website or something.
+- if you use the source code, you agree to give me credit and share your work with me if it's something you're proud of.
+
+# ! LIABILITY:
+- i (everm4iva) am not responsible for any issues that arise from using the source code, like bugs, security problems, or anything else. use it at your own risk.
+- also, if you do something really bad with the source code, like using it for illegal activities or causing harm to others, that's on you, not me.
+- if you use the source code, you agree to not hold me liable for any damages or legal issues that may come up.
+- if you do use the source code, please use it responsibly and ethically. don't be a jerk.
+# ! UPDATES:
+- i can change or update this license whenever i want, and those changes will apply to anyone using the source code from that point on. so if you use the source code, make sure to check back here for any updates.
+
+# ! CONTACT:
+- website.. this one: https://everm4iva.github.io
+- and social media: https://everm4iva.github.io/social
+
+# ! LAST UPDATED:
+- 14 feb 2026
+
+# ! VERSION:
+- 1.0

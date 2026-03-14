@@ -1,0 +1,4 @@
+# Usage of Audio note.
+- "audio-note" - Normal audio note with controls.
+- "shortcut-audiopanel" - Opens music panel directly, as a shortcut, no audio note.
+- "text" - just text note

@@ -1,0 +1,83 @@
+/**
+ * ☆=========================================☆
+ * Effects API - To complement the damn javascript file.
+ * ☆=========================================☆
+*/
+
+/* Effect animations */
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes distortion {
+	0% {
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	}
+	25% {
+		clip-path: polygon(5% 2%, 95% 5%, 98% 98%, 2% 95%);
+	}
+	50% {
+		clip-path: polygon(3% 1%, 98% 3%, 97% 96%, 1% 98%);
+	}
+	75% {
+		clip-path: polygon(2% 4%, 99% 1%, 96% 99%, 4% 97%);
+	}
+	100% {
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	}
+}
+
+/* Effect overlay containers */
+#effect-overlay-container {
+	/* Positioned in JS */
+}
+
+.effect-color-overlay {
+	/* Color and opacity set in JS */
+	backdrop-filter: blur(0px);
+}
+
+.effect-color-overlay.warm {
+	background: rgba(255, 100, 0, 0.3);
+}
+
+.effect-color-overlay.cold {
+	background: rgba(0, 150, 255, 0.3);
+}
+
+.effect-image-overlay {
+	/* Image and blend mode set in JS */
+}
+
+.effect-distortion {
+	/* Set dynamically in JS */
+}
+
+.effect-pulse {
+	/* Set dynamically in JS */
+}
+
+/* Music panel screenshake readiness */
+.music-panel {
+	transition: transform 0.05s ease-out; /* Smooth screenshake */
+}

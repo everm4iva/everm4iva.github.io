@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Service Access Point</title>
 		<link rel="shortcut icon" href="../media/icons/Star.bg.png" type="image/png" />
 		<link rel="stylesheet" href="../media/fonts/fonts.css" />
@@ -14,6 +15,7 @@
 			}
 			h1 {
 				margin-bottom: 1em;
+				font-size: 2rem;
 			}
 			.service {
 				border: 1px solid #ccc;
@@ -39,6 +41,8 @@
 				position: relative;
 				padding-left: 1.4rem;
 				transition: background 0.2s;
+				padding: 0.5em 0.5em 0.5em 1.4rem;
+				border-radius: 2px;
 			}
 			.service > summary:hover {
 				background: rgba(255, 0, 119, 0.1);
@@ -98,10 +102,84 @@
 			a {
 				color: #ff0077;
 				cursor: pointer;
+				word-break: break-all;
 			}
 			::selection {
 				color: black;
 				background-color: #ff0077;
+			}
+
+			@media (max-width: 768px) {
+				body {
+					margin: 1em;
+				}
+
+				h1 {
+					font-size: 1.5rem;
+					margin-bottom: 0.75em;
+				}
+
+				.service {
+					padding: 0.5em 0.75em 0.75em;
+					margin-bottom: 0.75em;
+					border-radius: 3px;
+				}
+
+				.service > summary {
+					font-size: 1.1rem;
+					padding: 0.4em 0.4em 0.4em 1.2rem;
+				}
+
+				.line > summary {
+					font-size: 1rem;
+					padding-left: 1em;
+				}
+
+				.service ul {
+					margin: 0.4em 0 0 0.75em;
+				}
+
+				.line {
+					font-size: 0.9rem;
+				}
+			}
+
+			@media (max-width: 480px) {
+				body {
+					margin: 0.75em;
+				}
+
+				h1 {
+					font-size: 1.3rem;
+					margin-bottom: 0.5em;
+				}
+
+				.service {
+					padding: 0.4em 0.5em 0.5em;
+					margin-bottom: 0.5em;
+				}
+
+				.service > summary {
+					font-size: 1rem;
+					padding: 0.3em 0.3em 0.3em 1rem;
+				}
+
+				.line > summary {
+					font-size: 0.9rem;
+					padding-left: 0.8em;
+				}
+
+				.service ul {
+					margin: 0.3em 0 0 0.5em;
+				}
+
+				.line {
+					font-size: 0.8rem;
+				}
+
+				.service .line {
+					margin: 0.15em 0;
+				}
 			}
 		</style>
 	</head>

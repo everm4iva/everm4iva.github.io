@@ -5,6 +5,7 @@
 */
 
 @import url('../root.css');
+@import url('./musicPanel.css');
 @import url('./AudioNote.css');
 @import url('./Containers.css');
 @import url('./MeDummy.css');

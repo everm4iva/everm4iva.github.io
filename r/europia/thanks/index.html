@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! - Europia Bot</title>
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, notranslate">
+    <link rel="shortcut icon" href="../../../icons/lib-icons/europia-gen3.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
+            min-height: 100vh;
+            overflow-x: hidden;
+            color: #e2e8f0;
+        }
+
+        ::selection {
+			background: rgba(139, 92, 246, 0.5);
+			color: white;
+		}
+
+        /* Animated background particles */
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: radial-gradient(circle, #8b5cf6, #ff004f);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.7; }
+            50% { transform: translateY(-20px) rotate(180deg); opacity: 1; }
+        }
+
+        /* Main container */
+        .container {
+            position: relative;
+            z-index: 2;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* Animated logo */
+        .logo-container {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            font-size: 4rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #8b5cf6, #ff004f, #8b5cf6);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: gradientShift 3s ease-in-out infinite, bounce 2s ease-in-out infinite;
+            text-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+            margin-top: 5rem;
+        }
+
+        .logo:before {
+			content: "";
+			position: absolute;
+            
+			background-image: url('../cutout.png');
+			background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+			width: 70px;
+			height: 70px;
+			top: -80%;
+            left: 50%;
+            transform: translateX(-50%);
+			z-index: -1;
+            border-radius: 10px;
+		}
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+
+        /* Pulsing ring around logo */
+        .logo-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            transform: translate(-50%, -50%);
+            border: 2px solid transparent;
+            border-top: 2px solid #8b5cf6;
+            border-right: 2px solid #ff004f;
+            border-radius: 50%;
+            animation: spin 4s linear infinite, pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+            50% { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+        }
+
+        /* Main thank you message */
+        .thank-you-message {
+            max-width: 800px;
+            margin-bottom: 3rem;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #e2e8f0, #8b5cf6, #ff004f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: titleGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            from { filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.3)); }
+            to { filter: drop-shadow(0 0 20px rgba(255, 0, 79, 0.5)); }
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #cbd5e0;
+            margin-bottom: 2rem;
+            animation: typewriter 3s steps(50) 1s both;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 2px solid #8b5cf6;
+        }
+
+        @keyframes typewriter {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        /* Animated cards */
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin-bottom: 3rem;
+        }
+
+        .thank-card {
+            background: rgba(30, 30, 50, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            backdrop-filter: blur(10px);
+            transform: translateY(50px);
+            opacity: 0;
+            animation: slideInUp 0.8s ease-out forwards;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .thank-card:nth-child(1) { animation-delay: 1s; }
+        .thank-card:nth-child(2) { animation-delay: 1.2s; }
+        .thank-card:nth-child(3) { animation-delay: 1.4s; }
+
+        .thank-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .thank-card:hover::before {
+            left: 100%;
+        }
+
+        .thank-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: rgba(255, 0, 79, 0.5);
+            box-shadow: 0 20px 40px rgba(255, 0, 79, 0.2);
+        }
+
+        @keyframes slideInUp {
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+            animation: iconSpin 3s ease-in-out infinite;
+        }
+
+        @keyframes iconSpin {
+            0%, 100% { transform: rotate(0deg) scale(1); }
+            25% { transform: rotate(-10deg) scale(1.1); }
+            75% { transform: rotate(10deg) scale(1.1); }
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #e2e8f0;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .card-text {
+            color: #cbd5e0;
+            line-height: 1.6;
+        }
+
+        /* Action buttons */
+        .actions {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            animation: fadeInUp 1s ease-out 2s both;
+        }
+
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #8b5cf6, #ff004f);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 0, 79, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .action-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .action-btn:hover::before {
+            left: 100%;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(255, 0, 79, 0.4);
+        }
+
+        .secondary-btn {
+            background: rgba(139, 92, 246, 0.2);
+            border: 2px solid #8b5cf6;
+        }
+
+        .secondary-btn:hover {
+            background: rgba(139, 92, 246, 0.3);
+            border-color: #ff004f;
+        }
+
+        /* Fade in animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Floating hearts animation */
+        .hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .heart {
+            position: absolute;
+            color: #ff004f;
+            font-size: 20px;
+            animation: heartFloat 4s ease-in-out infinite;
+            opacity: 0;
+        }
+
+        @keyframes heartFloat {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 3rem;
+            }
+            
+            .main-title {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+
+        
+        .try-btn {
+            display: none;
+            background-color: #c1a6ff;
+            color: #7657be;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border-style: none;
+        }
+
+        .try-btn:hover {
+            background-color: #ffa6cb;
+            color: #832b60;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 0, 79, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Floating hearts -->
+    <div class="hearts" id="hearts"></div>
+
+    <div class="container">
+        <div class="logo-container">
+            <div class="logo-ring"></div>
+            <div class="logo">Europia</div>
+        </div>
+
+        <div class="thank-you-message">
+            <h1 class="main-title" id="main-title">Thank You!</h1>
+            <p class="subtitle" id="subtitle"></p>
+            <button class="try-btn" id="try-btn" onclick="location.href = '../'">Try again</button>
+        </div>
+
+        <!--<div class="cards-container">
+            <div class="thank-card">
+                <span class="card-icon">🎉</span>
+                <h3 class="card-title">Welcome Aboard!</h3>
+                <p class="card-text">Thank you for inviting Europia to your server! We're excited to be part of your Discord community and help make it even better.</p>
+            </div>
+
+            <div class="thank-card">
+                <span class="card-icon">🚀</span>
+                <h3 class="card-title">Ready to Explore</h3>
+                <p class="card-text">Europia is now ready to serve your server with powerful moderation, entertainment, and utility features. Let's make your server amazing together!</p>
+            </div>
+
+            <div class="thank-card">
+                <span class="card-icon">💎</span>
+                <h3 class="card-title">Premium Experience</h3>
+                <p class="card-text">You're now part of the Europia family! Enjoy all the features and continuous updates we provide to make your Discord experience exceptional.</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <a href="#" class="action-btn">
+                <span>📚</span>
+                <span>View Commands</span>
+            </a>
+            <a href="#" class="action-btn secondary-btn">
+                <span>🏠</span>
+                <span>Back to Home</span>
+            </a>
+            <a href="#" class="action-btn secondary-btn">
+                <span>💬</span>
+                <span>Join Support</span>
+            </a>
+        </div>
+    </div>
+-->
+
+    <script>
+        // Create floating particles
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // Create floating hearts
+        function createHeart() {
+            const heartsContainer = document.getElementById('hearts');
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '💜';
+            heart.style.left = Math.random() * 100 + '%';
+            heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+            heartsContainer.appendChild(heart);
+
+            // Remove heart after animation
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+
+        // Initialize particles
+        createParticles();
+
+        // Create hearts periodically
+        setInterval(createHeart, 2000);
+
+        // Add click effect to cards
+        document.querySelectorAll('.thank-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+            });
+        });
+
+        // Add sparkle effect on mouse move
+        document.addEventListener('mousemove', function(e) {
+            if (Math.random() > 0.9) {
+                const sparkle = document.createElement('div');
+                sparkle.style.position = 'fixed';
+                sparkle.style.left = e.clientX + 'px';
+                sparkle.style.top = e.clientY + 'px';
+                sparkle.style.width = '4px';
+                sparkle.style.height = '4px';
+                sparkle.style.background = '#8b5cf6';
+                sparkle.style.borderRadius = '50%';
+                sparkle.style.pointerEvents = 'none';
+                sparkle.style.zIndex = '1000';
+                sparkle.style.animation = 'sparkle 1s ease-out forwards';
+                document.body.appendChild(sparkle);
+
+                setTimeout(() => sparkle.remove(), 1000);
+            }
+        });
+
+        // Add sparkle keyframes
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes sparkle {
+                0% { transform: scale(0) rotate(0deg); opacity: 1; }
+                100% { transform: scale(1) rotate(180deg); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+
+
+        const trybtn = document.getElementById('try-btn')
+        const title = document.getElementById('main-title')
+        const errorMsg = document.getElementById('subtitle')
+    document.addEventListener("DOMContentLoaded", function () {
+            function getQueryParam(name) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(name);
+            }
+
+            const error = getQueryParam("error");
+            const errorDesc = getQueryParam("error_description");
+
+        if (error === "access_denied") {
+            const errorMsg = document.getElementById("subtitle");
+            errorMsg.textContent = "Access denied to bot, try again";
+            title.textContent = "Soemthing went wrong";
+            trybtn.style.display = "inline-block"
+        } else if (getQueryParam("code")) {
+                 title.textContent = "All set!";
+                errorMsg.textContent = "Thank you! Your support means the world to us! 💜";
+            } else {
+            errorMsg.textContent = "Your support means the world to us! 💜"
+        } 
+});
+
+    </script>
+</body>
+</html>

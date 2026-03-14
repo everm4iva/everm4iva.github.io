@@ -68,6 +68,9 @@
 	border-style: solid;
 	border-color: var(--bg-color);
 	border-width: 3px;
+	color: var(--audionote-text-color);
+	font-weight: 600;
+	transition: color 200ms ease;
 }
 
 .audio-text img {
@@ -129,7 +132,12 @@
 .audio-title {
 	font-size: 1.2rem;
 	font-weight: bold;
-	color: var(--white);
+	color: var(--audionote-text-color);
+}
+
+.audio-artist {
+	font-size: 0.9rem;
+	color: var(--audionote-text-color);
 }
 
 .audio-controls {
@@ -146,6 +154,7 @@
 	width: 2rem;
 	height: 2rem;
 	cursor: pointer;
+	background-color: var(--pink);
 }
 
 .audio-btn:hover {

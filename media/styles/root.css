@@ -5,6 +5,8 @@
 */
 @import url('../fonts/fonts.css');
 @import url('./Notation.css');
+@import url('./effectsystem.css');
+
 :root {
 	/* Basic Colors */
 	--bg-color: #0a0718;
@@ -28,14 +30,16 @@
 	/* Audio Note */
 	--audionote-color: #1c0902;
 	--audionote-border-color: var(--pink);
+	--audionote-image: url('../../images/commonicons/audio-image.jpg');
+	--audionote-text-color: var(--white);
 
 	/* Background & Images */
-	--bg-img: url('../images/background/IMG_20251119_072917.jpg');
+	--bg-img: url('../../images/background/IMG_20251119_072917.jpg');
 
 	/* Project Colors */
 	--fractal-p: #4714ff;
-	--bubbleplay-p: #AC50C3;
-	--bubbleplay-s: #FEFEFE;
+	--bubbleplay-p: #ac50c3;
+	--bubbleplay-s: #fefefe;
 	--oceanboard-p: #e43967;
 	--oceanboard-s: #9b2a48;
 	--downsrc-p: #ff7f27;
@@ -51,20 +55,24 @@
 	--simplyprivate-s: #aa2fba;
 }
 
-::-webkit-scrollbar {
-    width: 12px;
-}
-::-webkit-scrollbar-track {
-    background: var(--bg-color-t3);
-}
-::-webkit-scrollbar-thumb {
-    background-color: var(--pink);
-    border: 3px solid var(--bg-color);
+:root.dark-audionote {
+	--audionote-text-color: var(--black);
 }
 
-*{
+::-webkit-scrollbar {
+	width: 12px;
+}
+::-webkit-scrollbar-track {
+	background: var(--bg-color-t3);
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--pink);
+	border: 3px solid var(--bg-color);
+}
+
+* {
 	scrollbar-width: auto;
-    scrollbar-color: var(--pink) var(--bg-color);
+	scrollbar-color: var(--pink) var(--bg-color);
 }
 
 html {

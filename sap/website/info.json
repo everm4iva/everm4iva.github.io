@@ -4,9 +4,13 @@
 		"service-description": "Where i store my little stuff...",
 		"service-area": "website",
 		"service-type": ["text"],
-		"latest-ver": "nan",
+		"latest-ver": "4.3.1",
 		"latest-ver-id": "release",
 		"source-url": "https://github.com/everm4iva/everm4iva.github.io",
+		"source-links": {
+			"changelog": "https://everm4iva.github.io/changelog.md",
+			"license": "https://everm4iva.github.io/LICENSE.txt"
+		},
 		"sap-links": {
 			"everm4iva-website": "https://everm4iva.github.io/sap/Website/info.json",
 			"bubble": "https://everm4iva.github.io/sap/Bubble/info.json",
@@ -17,6 +21,9 @@
 			"main": "https://everm4iva.github.io/media/styles/root.css",
 			"notation": "https://everm4iva.github.io/media/styles/Notation.css",
 			"fonts": "https://everm4iva.github.io/media/fonts/fonts.css"
+		},
+		"json-links": {
+			"music": "https://everm4iva.github.io/media/json/music.json"
 		}
 	}
 ]

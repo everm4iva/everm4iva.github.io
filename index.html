@@ -14,6 +14,48 @@
 		<link href="https://fonts.googleapis.com/css2?family=Material+Icons+Round" rel="stylesheet" />
 	</head>
 	<body>
+		<div class="music-panel hidden-init">
+			<div class="music-panel-bg"></div>
+			<div class="mp-music">
+				<div class="mp-music-cover">
+					<div class="mp-music-cover-image"></div>
+					<div class="mp-music-cover-details">
+						<div class="mp-music-title">The hand Lender</div>
+						<div class="mp-music-artist">by Queen Cult</div>
+					</div>
+				</div>
+				<div class="mp-music-controls">
+					<img
+						class="mp-btn mp-btn-play"
+						src="./media/images/commonicons/play.white.svg"
+						alt="Play"
+						role="button"
+						aria-pressed="false" />
+					<img
+						class="mp-btn mp-btn-pause"
+						src="./media/images/commonicons/pause.white.svg"
+						alt="Pause"
+						role="button"
+						aria-pressed="false" />
+					<img
+						class="mp-btn mp-btn-link"
+						src="./media/images/commonicons/link.diagonal.white.svg"
+						alt="Open in Spotify"
+						role="button"
+						aria-label="Open in Spotify" />
+					<input class="mp-volume" type="range" min="0" max="1" step="0.05" value="0.5" aria-label="Volume" />
+					<img
+						class="mp-btn mp-btn-close"
+						src="./media/images/commonicons/close.white.svg"
+						alt="Close"
+						role="button"
+						aria-pressed="false" />
+				</div>
+			</div>
+			<div class="mp-list">
+				<!-- Tracks will be populated by JavaScript -->
+			</div>
+		</div>
 		<div class="container">
 			<!-- ===== LEFT CONTAINER ===== -->
 			<div class="left-cont">
@@ -28,6 +70,8 @@
 * ##         ## ##   ##       ##    ##  ##     ##       ##   ##    ## ##   ##     ##
 * ########    ###    ######## ##     ## ##     ##       ##  ####    ###    ##     ##
 */
+- website, version <a href="./changelog.md">4.3.1</a> (last updated: 14 feb 2026) | see <a href="./LICENSE.txt">LICENSE</a>
+- this is my personal website, where i share my projects, resources and some random stuff.
                     </pre>
 					<div class="me" tabindex="1" role="button" aria-label="Draggable avatar" aria-grabbed="false"></div>
 					<h2 class="overpink header">Welcome to my little corner on the internet!</h2>
@@ -150,7 +194,7 @@
 						<div class="pop"></div>
 						<div class="audio-text">
 							<img class="play-toggle" src="./media/images/commonicons/play.white.svg" alt="Play" />
-							My fav music
+							music playlist HERE!
 						</div>
 					</div>
 				</div>
@@ -170,21 +214,13 @@
 							alt="Play"
 							role="button"
 							aria-pressed="false" />
-						<img
-							class="audio-btn"
-							src="./media/images/commonicons/link.diagonal.white.svg"
-							alt=""
-							onclick="
-								window.open(
-									'https://open.spotify.com/intl-pt/track/50gF43cRPzR5fvwX51cIGC?si=0da1aee6352b4387',
-								)
-							" />
+						<img class="audio-btn" src="./media/images/commonicons/queue.white.svg" alt="Open Music Panel" />
 						<input
 							class="audio-c-volume"
 							type="range"
 							min="0"
-							max="1"
-							step="0.05"
+							max="10"
+							step="0.1"
 							value="0.5"
 							aria-label="Volume" />
 					</div>
@@ -228,9 +264,7 @@
 							style="background-image: url('./media/base/@projects/downsrc/preview.png')">
 							<div
 								class="fproject-icon"
-								style="
-									background-image: url('./media/base/@projects/downsrc/downsrc.png');
-								"></div>
+								style="background-image: url('./media/base/@projects/downsrc/downsrc.png')"></div>
 							<div class="fproject-info">
 								<div class="fproject-name">downsrc</div>
 								<div class="fproject-desc">2026 • Terminal Tool</div>
@@ -264,9 +298,11 @@
 				</section>
 			</div>
 		</div>
+		<script src="./media/scripts/audiolib.js" defer></script>
 		<script src="./media/scripts/resizer-index.js"></script>
-		<script src="./media/scripts/audio-bubble.js" defer></script>
+	<script src="./media/scripts/effectsystem.js" defer></script>
+	<script src="./media/scripts/audio-bubble.js" defer></script>
 		<script src="./media/scripts/draggable.js" defer></script>
-		<script src="./media/scripts/pop-bounce.js" defer></script>
+		<!-- <script src="./media/scripts/pop-bounce.js" defer></script> -->
 	</body>
 </html>

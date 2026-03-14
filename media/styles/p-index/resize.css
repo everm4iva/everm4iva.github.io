@@ -1,4 +1,4 @@
-/**
+/*
  * ☆=========================================☆
  * resize.css - Styles for responsive design!
  * ☆=========================================☆
@@ -32,7 +32,7 @@
 }
 
 @media (max-width: 850px) {
-	#featured-projects{
+	#featured-projects {
 		display: none;
 	}
 	.container {
@@ -73,7 +73,7 @@
 }
 
 @media (max-width: 480px) {
-		#featured-projects{
+	#featured-projects {
 		display: none;
 	}
 	body {
