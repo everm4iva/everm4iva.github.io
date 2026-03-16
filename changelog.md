@@ -1,6 +1,11 @@
+# release 4.3.4 - (14 feb 2026)
+> minor fix
+- fixed some playback issues on audio notes
+- fixed manifest.json structure
+
 # release 4.3.3 - (14 feb 2026)
 > minor fix
-- Just fixed the name of a music cover image.. it wasn't loading.. I with browsers had common sense to not be case sensitive.
+- Just fixed the name of a music cover image.. it wasn't loading.. I wish browsers had common sense to not be case sensitive.
 - boosted the version, didn't commit it yet
 
 # release 4.3.2 (14 feb 2026)

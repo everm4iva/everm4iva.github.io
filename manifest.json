@@ -1,6 +1,6 @@
 {
-	"name": "EVERM4iva",
-	"short_name": "EVERM4iva",
+	"name": "everm4iva",
+	"short_name": "m4ivaweb",
 	"description": "Boring page for a boring person",
 	"start_url": "./index.html",
 	"display": "standalone",
