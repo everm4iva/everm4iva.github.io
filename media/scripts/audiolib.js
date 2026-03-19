@@ -132,7 +132,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 		});
 	}
 
-	function selectTrack(index) {
+	function selectTrack(index, options = {}) {
+		const {autoPlay = true} = options;
 		const track = tracks[index];
 		if (!track) {
 			console.warn('Track not found at index:', index);
@@ -205,7 +206,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 			window.updateAudioNoteDisplay(track);
 		}
 
-		if (!isAlreadyPlaying) {
+		if (autoPlay && !isAlreadyPlaying) {
 			audio.currentTime = 0;
 			audio.play().catch(() => {});
 		}
@@ -343,7 +344,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 	console.log('Tracks loaded:', tracks.length, 'tracks');
 	if (tracks.length > 0) {
 		populateTracklist();
-		selectTrack(0);
+		selectTrack(0, {autoPlay: false});
 		// console.log('Music library initialized, lightMode system active');
 	} else {
 		console.error('No tracks loaded from music library');

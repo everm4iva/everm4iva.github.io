@@ -1,3 +1,7 @@
+# release 4.3.5 - (19 mar 2026)
+> minor fix
+- fixed some playback issues, audio was kinda leaking out when page starts.
+
 # release 4.3.4 - (14 feb 2026)
 > minor fix
 - fixed some playback issues on audio notes
