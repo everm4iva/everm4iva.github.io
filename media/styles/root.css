@@ -13,6 +13,9 @@
 	--bg-color-t1: rgba(10, 7, 24, 0.1);
 	--bg-color-t3: rgba(10, 7, 24, 0.3);
 	--bg-color-t6: rgba(10, 7, 24, 0.6);
+	--box-color: #91176883;
+	--box-color-hover: #911768c0;
+	--box-color-selected: #911768ff;
 	--pink: #db347a;
 	--cute-pink: #ff80a6;
 	--yellow: #ffd000;

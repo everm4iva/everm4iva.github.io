@@ -1,0 +1,39 @@
+[
+    {
+        "url": "https://everm4iva.github.io/media/gradients/index.html",
+        "Material Gradients": {
+            "description": "my little collection of gradients with a noisy/distorted texture.",
+            "gradients": [
+                {
+                    "name": "folly",
+                    "image": "https://everm4iva.github.io/media/gradients/material/Material-folly.svg"
+                },
+                {
+                    "name": "rainbow",
+                    "image": "https://everm4iva.github.io/media/gradients/material/Material-rainbow.svg"
+                },
+                {
+                    "name": "red",
+                    "image": "https://everm4iva.github.io/media/gradients/material/Material-red.svg"
+                },
+                {
+                    "name": "storm",
+                    "image": "https://everm4iva.github.io/media/gradients/material/Material-storm.svg"
+                },
+                {
+                    "name": "oceanic",
+                    "image": "https://everm4iva.github.io/media/gradients/material/Material-oceanic.svg"
+                }
+            ]
+        },
+        "Blurred Gradients": {
+            "description": "gradients with a blurred texture.",
+            "gradients": [
+                {
+                    "name": "rainbow",
+                    "image": "https://everm4iva.github.io/media/gradients/blurred/Blurred-rainbow.svg"
+                }
+            ]
+        }
+    }
+]

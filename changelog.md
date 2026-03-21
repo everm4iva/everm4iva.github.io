@@ -4,6 +4,7 @@
 - Adjusted json structure of jsons!! yuppie
 - Design improvements to projects page.
 - Added screen designs
+- Added gradients & json list to it.
 
 # release 4.3.5 - (19 mar 2026)
 > minor fix

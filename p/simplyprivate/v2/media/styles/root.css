@@ -1,0 +1,23 @@
+@import url('https://everm4iva.github.io/media/fonts/fonts.css');
+
+:root{
+    --bg-color: #000000;
+    --text-color: #e7a0e4;
+    --bg-img: url('https://everm4iva.github.io/media/gradients/material/Material-oceanic.svg');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg-color);
+    background-image: var(--bg-img);
+    background-attachment: fixed;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    font-family: 'SourGummy', 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+}

@@ -17,14 +17,17 @@
 			"oriana-terminal": "https://everm4iva.github.io/sap/OrianaTerminal/info.json",
 			"spark-bunny": "https://everm4iva.github.io/sap/SparkBunny/info.json"
 		},
-		"style-links":{
+		"design-links":{
 			"main": "https://everm4iva.github.io/media/styles/root.css",
 			"notation": "https://everm4iva.github.io/media/styles/Notation.css",
 			"fonts": "https://everm4iva.github.io/media/fonts/fonts.css",
-			"font-preview-page": "https://everm4iva.github.io/media/fonts/fonts.html"
+			"font-preview-page": "https://everm4iva.github.io/media/fonts/fonts.html",
+			"gradients": "https://everm4iva.github.io/media/json/gradients.json",
+			"gradients-preview-page": "https://everm4iva.github.io/media/gradients/index.html"
 		},
 		"json-links": {
-			"music": "https://everm4iva.github.io/media/json/music.json"
+			"music": "https://everm4iva.github.io/media/json/music.json",
+			"gradients": "https://everm4iva.github.io/media/json/gradients.json"
 		}
 	}
 ]
