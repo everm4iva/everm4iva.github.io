@@ -1,4 +1,4 @@
-@import url("../../../media/fonts/fonts.css");
+@import url('../../../media/fonts/fonts.css');
 
 * {
 	margin: 0;
@@ -8,7 +8,7 @@
 
 body {
 	background-color: #111;
-	font-family: "Outfit", sans-serif;
+	font-family: 'Outfit', sans-serif;
 	min-height: 100vh;
 	overflow-y: auto;
 	display: flex;
@@ -23,9 +23,9 @@ header {
 	max-width: 1600px;
 }
 
-header h1 {
+header h2 {
 	color: white;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 700;
 }
 
@@ -66,13 +66,20 @@ footer {
 	align-items: center;
 	background: var(--gradient, #333);
 	text-decoration: none;
-	transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
-		filter 0.4s ease;
+	transition: all 0.4s ease;
 	position: relative;
-	border-radius: 15px;
+	border-radius: 5px;
 	overflow: hidden;
 	transition: 0.2s ease-in-out;
 	cursor: pointer;
+}
+
+.project-tile.unfinished {
+	filter: grayscale(100%) blur(2px);
+}
+
+.project-tile.unfinished:hover {
+	filter: grayscale(0%) blur(0);
 }
 
 .project-tile:hover {
@@ -144,7 +151,6 @@ footer {
 
 	.project-tile {
 		min-height: 180px;
-		border-radius: 1rem;
 	}
 
 	.project-tile img {

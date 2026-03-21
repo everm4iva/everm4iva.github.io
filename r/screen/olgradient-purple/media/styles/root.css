@@ -1,0 +1,8 @@
+body{
+    background-color: black;
+    background-image: url('../images/rec.svg');
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    overflow: hidden;
+}

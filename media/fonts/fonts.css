@@ -1,74 +1,94 @@
 @font-face {
-    font-family: SourGummy;
-    src: url(./SourGummy/SourGummy-VariableFont.ttf);
+	font-family: SourGummy;
+	src: url(./SourGummy/SourGummy-VariableFont.ttf);
 }
 
 @font-face {
-    font-family: Dosis;
-    src: url(./Dosis/Dosis.ttf);
+	font-family: Dosis;
+	src: url(./Dosis/Dosis.ttf);
 }
 
 @font-face {
-    font-family: FleurDeLeah;
-    src: url(./FleurDeLeah/FleurDeLeah.ttf);
+	font-family: FleurDeLeah;
+	src: url(./FleurDeLeah/FleurDeLeah.ttf);
 }
 
 @font-face {
-    font-family: Jersey10;
-    src: url(./Jersey10/Jersey10.ttf);
+	font-family: Jersey10;
+	src: url(./Jersey10/Jersey10.ttf);
 }
 
 @font-face {
-    font-family: Outfit;
-    src: url(./Outfit/Outfit.ttf);
+	font-family: Outfit;
+	src: url(./Outfit/Outfit.ttf);
 }
 
 @font-face {
-    font-family: Quicksand;
-    src: url(./Quicksand/Quicksand.ttf);
+	font-family: Quicksand;
+	src: url(./Quicksand/Quicksand.ttf);
 }
 
 @font-face {
-    font-family: Rubik;
-    src: url(./Rubik/Rubik.ttf);
+	font-family: Rubik;
+	src: url(./Rubik/Rubik.ttf);
 }
 
 @font-face {
-    font-family: RubikMonoOne;
-    src: url(./RubikMonoOne/RubikMonoOne.ttf);
+	font-family: RubikMonoOne;
+	src: url(./RubikMonoOne/RubikMonoOne.ttf);
 }
 
 @font-face {
-    font-family: SourceCodePro;
-    src: url(./SourceCodePro/SourceCodePro.ttf);
+	font-family: SourceCodePro;
+	src: url(./SourceCodePro/SourceCodePro.ttf);
 }
 
 @font-face {
-    font-family: WorkSans;
-    src: url(./WorkSans/WorkSans.ttf);
+	font-family: WorkSans;
+	src: url(./WorkSans/WorkSans.ttf);
 }
 
 @font-face {
-    font-family: LubriFont;
-    src: url(./WDXLLubrifontSC/WDXLLubrifontSC.ttf);
+	font-family: LubriFont;
+	src: url(./WDXLLubrifontSC/WDXLLubrifontSC.ttf);
 }
 
 @font-face {
-    font-family: Poppins;
-    src: url(./Poppins/Poppins-Regular.ttf);
+	font-family: Poppins;
+	src: url(./Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
-    font-family:LibertinusMono;
-    src: url(./LibertinusMono/LibertinusMono.ttf);
+	font-family: LibertinusMono;
+	src: url(./LibertinusMono/LibertinusMono.ttf);
 }
 
 @font-face {
-    font-family: Inter;
-    src: url(./Inter/Inter.ttf);
+	font-family: Inter;
+	src: url(./Inter/Inter.ttf);
 }
 
 @font-face {
-    font-family: MarkerGothic;
-    src: url(./LXGWMarkerGothic/LXGWMarkerGothic.ttf);
+	font-family: MarkerGothic;
+	src: url(./LXGWMarkerGothic/LXGWMarkerGothic.ttf);
+}
+
+@font-face {
+	font-family: Rampart;
+	src: url(./Rampart_One/RampartOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: Knewave;
+	src: url(./Knewave/Knewave-Regular.ttf);
+}
+
+@font-face {
+	font-family: Chewy;
+	src: url(./Chewy/Chewy-Regular.ttf);
+}
+
+@font-face {
+	font-family: Barriecito;
+	src: url(./Barriecito/Barriecito-Regular.ttf);
 }

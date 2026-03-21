@@ -1,0 +1,8 @@
+# Project RABI
+- Login/Register
+- Chat
+- File Sharing
+
+---
+Oriana Models x OAT
+Ruby.AI will never be forgotten.

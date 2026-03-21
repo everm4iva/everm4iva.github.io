@@ -20,7 +20,8 @@
 		"style-links":{
 			"main": "https://everm4iva.github.io/media/styles/root.css",
 			"notation": "https://everm4iva.github.io/media/styles/Notation.css",
-			"fonts": "https://everm4iva.github.io/media/fonts/fonts.css"
+			"fonts": "https://everm4iva.github.io/media/fonts/fonts.css",
+			"font-preview-page": "https://everm4iva.github.io/media/fonts/fonts.html"
 		},
 		"json-links": {
 			"music": "https://everm4iva.github.io/media/json/music.json"

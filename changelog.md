@@ -1,3 +1,10 @@
+# release 4.3.6 - (21 mar 2026)
+> Basic improvements & features
+- more fonts! and a simple html preview.
+- Adjusted json structure of jsons!! yuppie
+- Design improvements to projects page.
+- Added screen designs
+
 # release 4.3.5 - (19 mar 2026)
 > minor fix
 - fixed some playback issues, audio was kinda leaking out when page starts.
