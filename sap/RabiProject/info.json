@@ -1,0 +1,49 @@
+[
+	{
+		"service-title": "RABI-PROJECT",
+		"service-description": "Embbedable ai model for apps and services.",
+		"service-area": "api",
+		"service-type": ["manifest", "api", "server"],
+		"latest-ver": "1.0.0",
+		"latest-ver-id": "csbr",
+		"latest-ver-id-humanread": "closed, stable beta release",
+		"online": true,
+		"max-clients": 5,
+		"max-requests-per-min": "20",
+		"client-config": {
+			"rabibet-dev-test": {
+				"latest-ver": "0.1.0",
+				"latest-ver-id": "none",
+				"avaliable": false,
+				"description": "ASP.NET MVC app to test models",
+				"platforms": {},
+				"online": {"status": true, "auto-disable-timeout": "60"},
+				"mode": "debug",
+				"status": "private release",
+				"source-url": ""
+			},
+			"rabi-raspberryPi": {
+				"latest-ver": "nan",
+				"latest-ver-id": "none",
+				"avaliable": false,
+				"description": "rabi in a raspberry pi 5 with 1gb of ram, running on a local server, for testing and development purposes.",
+				"platforms": {},
+				"online": {},
+				"mode": "none",
+				"status": "indev",
+				"source-url": ""
+			},
+			"cloud-everm4iva-web": {
+				"latest-ver": "1.0",
+				"latest-ver-id": "none",
+				"avaliable": false,
+				"description": "",
+				"platforms": {},
+				"online": {},
+				"mode": "none",
+				"status": "none",
+				"source-url": "https://everm4iva.github.io/rabi/v1"
+			}
+		}
+	}
+]

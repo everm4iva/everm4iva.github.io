@@ -1,11 +1,13 @@
 [
 	{
-		"service-title": "OrianaTerminal",
+		"service-title": "OrianaAPI",
 		"service-description": "General info and model hosting",
-		"service-area": "Ai app api",
+		"service-area": "Artificial Intelligence/Algorithm API for apps and services",
 		"service-type": ["manifest", "rules", "text", "api"],
-		"latest-ver": "0.1.3",
-		"latest-ver-id": "urudc&s",
+		"latest-ver": "0.2.0",
+		"latest-ver-id": "udcsr",
+		"latest-ver-id-humanread": "under development, closed, stable release",
+		"param": "!",
 		"online": false,
 		"models": {
 			"oriana-echo": {

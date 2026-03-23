@@ -17,7 +17,7 @@
 			"oriana-terminal": "https://everm4iva.github.io/sap/OrianaTerminal/info.json",
 			"spark-bunny": "https://everm4iva.github.io/sap/SparkBunny/info.json"
 		},
-		"design-links":{
+		"design-links": {
 			"main": "https://everm4iva.github.io/media/styles/root.css",
 			"notation": "https://everm4iva.github.io/media/styles/Notation.css",
 			"fonts": "https://everm4iva.github.io/media/fonts/fonts.css",

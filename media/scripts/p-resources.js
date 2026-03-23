@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			header.className = 'section-header';
 			header.setAttribute('role', 'button');
 			header.setAttribute('tabindex', '0');
-			header.setAttribute('aria-expanded', 'true');
+			header.setAttribute('aria-expanded', 'false');
 
 			const titleEl = node.cloneNode(true);
 			titleEl.classList.add('section-title');
@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			const body = document.createElement('div');
 			body.className = 'section-body';
+			body.style.display = 'none';
 
 			section.appendChild(header);
 			section.appendChild(body);

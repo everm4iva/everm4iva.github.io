@@ -9,3 +9,7 @@ media/*/*/*.html
 media/*/*/*/*.html
 media/*/*/*/*/*.html
 media/*/*/*/*/*/*.html
+
+# Show expecific files
+!media/gradients/index.html
+!media/fonts/fonts.html

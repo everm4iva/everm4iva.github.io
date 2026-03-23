@@ -1,1 +1,11 @@
-[{"Services": {"everm4iva.github.io": "./website/info.json","Bubble": "./Bubble/info.json", "OrianaTerminal": "./OrianaTerminal/info.json", "SparkBunny": "./SparkBunny/info.json"}}]
+[
+	{
+		"Services": {
+			"everm4iva.github.io": "./website/info.json",
+			"RabiProject": "./RabiProject/info.json",
+			"Bubble": "./Bubble/info.json",
+			"Oriana": "./Oriana/info.json",
+			"SparkBunny": "./SparkBunny/info.json"
+		}
+	}
+]

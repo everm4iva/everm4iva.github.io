@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<title>Fonts</title>
+		<link rel="stylesheet" type="text/css" href="fonts.css" />
+	</head>
+	<style>
+		:root {
+			--bg-color: #0a0718;
+			--bg-color-t1: rgba(10, 7, 24, 0.1);
+			--bg-color-t3: rgba(10, 7, 24, 0.3);
+			--bg-color-t6: rgba(10, 7, 24, 0.6);
+			--pink: #db347a;
+			--cute-pink: #ff80a6;
+			--yellow: #ffd000;
+			--cyan: #00ffe7;
+			--cyan-dead: #008080;
+			--white: #ffffff;
+			--black: #000000;
+		}
+
+		::-webkit-scrollbar {
+			width: 12px;
+		}
+		::-webkit-scrollbar-track {
+			background: var(--bg-color-t3);
+		}
+		::-webkit-scrollbar-thumb {
+			background-color: var(--pink);
+			border: 3px solid var(--bg-color);
+		}
+
+		* {
+			scrollbar-width: auto;
+			scrollbar-color: var(--pink) var(--bg-color);
+		}
+
+		body {
+			width: 100%;
+			min-height: 100vh;
+			margin: 2%;
+			background-color: var(--bg-color);
+			overflow-x: hidden;
+			font-family: 'SourGummy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			color: var(--white);
+			overflow: hidden;
+			font-size: 1rem;
+		}
+
+		a {
+			color: var(--cyan);
+		}
+
+		::selection {
+			background: var(--pink);
+			color: var(--white);
+		}
+
+		.font-box {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.font-item {
+			border-style: solid;
+			border-color: var(--pink);
+			border-width: 1px;
+			padding: 20px;
+			min-width: 200px;
+			text-align: center;
+			font-size: 2rem;
+			margin: 0.5%;
+		}
+
+		/* ----- */
+		.arial {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		.console {
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		.inter {
+			font-family: 'Inter', sans-serif;
+		}
+		.sourgummy {
+			font-family: 'SourGummy', cursive;
+		}
+		.dosis {
+			font-family: 'Dosis', sans-serif;
+		}
+		.outfit {
+			font-family: 'Outfit', sans-serif;
+		}
+		.poppins {
+			font-family: 'Poppins', sans-serif;
+		}
+		.quicksand {
+			font-family: 'Quicksand', sans-serif;
+		}
+		.rubik {
+			font-family: 'Rubik', sans-serif;
+		}
+		.rubikmonoone {
+			font-family: 'RubikMonoOne', sans-serif;
+		}
+		.sourcecodepro {
+			font-family: 'SourceCodePro', monospace;
+		}
+		.wdxllubrifontsc {
+			font-family: 'WDXLLUbrifontSC', serif;
+		}
+		.worksans {
+			font-family: 'Work Sans', sans-serif;
+		}
+		.jersey10 {
+			font-family: 'Jersey10', sans-serif;
+		}
+		.libertinusmono {
+			font-family: 'Libertinus Mono', monospace;
+		}
+		.lxgwmarkergothic {
+			font-family: 'LXGWMarkerGothic', cursive;
+		}
+		.knewave {
+			font-family: 'Knewave', cursive;
+		}
+		.rampartone {
+			font-family: 'Rampart', sans-serif;
+		}
+		.chewy {
+			font-family: 'Chewy', cursive;
+		}
+		.barriecito {
+			font-family: 'Barriecito', cursive;
+		}
+		.fleurdeleah {
+			font-family: 'FleurDeLeah', cursive;
+		}
+	</style>
+	<body>
+		<h1>Fonts Showcase</h1>
+		<p>This is a simple showcase of the fonts available.</p>
+
+		<div class="font-box">
+			<div class="font-item arial">Arial</div>
+			<div class="font-item console">Console</div>
+			<div class="font-item inter">Inter</div>
+			<div class="font-item sourgummy">Sour Gummy</div>
+			<div class="font-item dosis">Dosis</div>
+			<div class="font-item outfit">Outfit</div>
+			<div class="font-item poppins">Poppins</div>
+			<div class="font-item quicksand">Quicksand</div>
+			<div class="font-item rubik">Rubik</div>
+			<div class="font-item rubikmonoone">Rubik-Mono-One</div>
+			<div class="font-item sourcecodepro">SourceCodePro</div>
+			<div class="font-item wdxllubrifontsc">WDXLLUbrifontSC</div>
+			<div class="font-item worksans">WorkSans</div>
+			<div class="font-item jersey10">Jersey10</div>
+			<div class="font-item libertinusmono">LibertinusMono</div>
+			<div class="font-item lxgwmarkergothic">LXGWMarkerGothic</div>
+			<div class="font-item knewave">Knewave</div>
+			<div class="font-item rampartone">Rampart_One</div>
+			<div class="font-item chewy">Chewy</div>
+			<div class="font-item barriecito">Barriecito</div>
+			<div class="font-item fleurdeleah">FleurDeLeah</div>
+		</div>
+		<footer>
+			<p>All fonts are from <a href="https://fonts.google.com/">"Google Fonts"</a></p>
+			<p>Font Css: <a href="fonts.css">"fonts.css"</a></p>
+		</footer>
+	</body>
+</html>

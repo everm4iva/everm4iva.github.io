@@ -1,3 +1,13 @@
+# release 4.3.7 - (23 mar 2026)
+> Organized & Improved some stuff
+- fixed some ignored files, now some hidden or un-accessible pages will be accessible.
+- Gradients & fonts page now public!
+- starting "/simplyprivate" page development
+- RabiProject added to Service Access Point (/sap)
+- Adjusted overall json structure
+- OrianaTerminal -> Oriana (in sap)
+- Organized and migrated links in resources page (/r)
+
 # release 4.3.6 - (21 mar 2026)
 > Basic improvements & features
 - more fonts! and a simple html preview.

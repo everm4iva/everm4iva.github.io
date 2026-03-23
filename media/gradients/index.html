@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>gradients - everm4iva</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../styles/root.css" />
+		<link rel="shortcut icon" href="../icons/Star.bg.png" type="image/x-icon" />
+	</head>
+	<style>
+		:root {
+			--bg-gradient: url('../gradients/material/Material-rainbow.svg');
+		}
+
+		body {
+			background-color: var(--bg-color);
+			color: var(--white);
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			height: 100vh;
+			gap: 1%;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.left {
+			width: 16%;
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+			gap: 1%;
+			margin-left: 1%;
+			overflow-y: auto;
+			padding-right: 0.5rem;
+		}
+
+		.right {
+			width: 84%;
+			height: 97vh;
+			background-color: black;
+			border-radius: 1rem 0 0 1rem;
+			overflow: hidden;
+			background-image: var(--bg-gradient);
+			background-size: cover;
+			background-position: center left;
+			background-repeat: repeat;
+		}
+		/* -- */
+		.gradient-box {
+			display: flex;
+			flex-direction: column;
+			gap: 0.4rem;
+			height: 100%;
+			margin-bottom: 1rem;
+		}
+		.gradient {
+			width: 100%;
+			height: 3rem;
+			border: 0;
+			border-radius: 0.6rem;
+			display: flex;
+			flex-direction: column;
+			background-color: var(--box-color);
+			cursor: pointer;
+			text-align: center;
+			align-self: center;
+			justify-content: center;
+			color: var(--white);
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+			font-weight: 600;
+			font-size: 0.9rem;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center left;
+			transition:
+				transform 0.2s ease,
+				box-shadow 0.2s ease;
+		}
+		.gradient:hover {
+			transform: translateY(-1px);
+			box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+		}
+		.gradient.active {
+			outline: 2px solid rgba(255, 255, 255, 0.9);
+			outline-offset: 1px;
+		}
+		.category-title {
+			margin: 0.6rem 0 0.4rem;
+			font-size: 1rem;
+		}
+		.error {
+			color: #ff9d9d;
+			font-size: 0.9rem;
+			line-height: 1.35;
+		}
+		@media (max-width: 900px) {
+			.container {
+				flex-direction: column;
+				height: 100vh;
+				gap: 0.5rem;
+			}
+			.left {
+				width: 98%;
+				height: 38vh;
+				margin-left: 0;
+			}
+			.right {
+				width: 98%;
+				height: 58vh;
+				border-radius: 1rem;
+			}
+		}
+	</style>
+	<body>
+		<div class="container">
+			<div class="left" id="gradientCategories">
+				<a href="../json/gradients.json">gradients.json</a>
+			</div>
+			<div class="right"></div>
+		</div>
+		<script>
+			const categoriesEl = document.getElementById('gradientCategories');
+			const gradientsJsonPath = '../json/gradients.json';
+
+			function toPreviewPath(imagePath) {
+				try {
+					const parsed = new URL(imagePath, window.location.origin);
+					if (parsed.pathname.startsWith('/media/gradients/')) {
+						return `.${parsed.pathname.replace('/media/gradients', '')}`;
+					}
+					return parsed.pathname;
+				} catch {
+					return imagePath;
+				}
+			}
+
+			function setGradient(previewPath) {
+				document.documentElement.style.setProperty('--bg-gradient', `url('${previewPath}')`);
+			}
+
+			function setActiveButton(activeButton) {
+				document.querySelectorAll('.gradient.active').forEach((button) => {
+					button.classList.remove('active');
+				});
+				activeButton.classList.add('active');
+			}
+
+			function createGradientButton(gradient) {
+				const button = document.createElement('button');
+				const previewPath = toPreviewPath(gradient.image);
+
+				button.type = 'button';
+				button.className = 'gradient';
+				button.textContent = gradient.name;
+				button.style.backgroundImage = `url('${previewPath}')`;
+				button.addEventListener('click', () => {
+					setGradient(previewPath);
+					setActiveButton(button);
+				});
+
+				return button;
+			}
+
+			function createCategory(categoryName, categoryData) {
+				const title = document.createElement('h3');
+				title.className = 'category-title';
+				title.textContent = categoryName;
+
+				const box = document.createElement('div');
+				box.className = 'gradient-box';
+
+				categoryData.gradients.forEach((gradient) => {
+					box.appendChild(createGradientButton(gradient));
+				});
+
+				categoriesEl.appendChild(title);
+				categoriesEl.appendChild(box);
+			}
+
+			async function loadGradients() {
+				try {
+					const response = await fetch(gradientsJsonPath);
+					if (!response.ok) {
+						throw new Error(`Failed to load gradients JSON: ${response.status}`);
+					}
+
+					const data = await response.json();
+					const rootObject = Array.isArray(data) ? data[0] : data;
+
+					Object.entries(rootObject).forEach(([categoryName, categoryData]) => {
+						if (categoryName === 'url') {
+							return;
+						}
+
+						if (!categoryData || !Array.isArray(categoryData.gradients)) {
+							return;
+						}
+
+						createCategory(categoryName, categoryData);
+					});
+
+					const firstGradientButton = document.querySelector('.gradient');
+					if (firstGradientButton) {
+						firstGradientButton.click();
+					}
+				} catch (error) {
+					const message = document.createElement('p');
+					message.className = 'error';
+					message.textContent = `Could not load gradients. ${error.message}`;
+					categoriesEl.appendChild(message);
+				}
+			}
+
+			loadGradients();
+		</script>
+	</body>
+</html>
