@@ -25,7 +25,7 @@
 				"latest-ver-id": "none",
 				"description": "Multi-media streaming app all in one, at the same time.",
 				"platforms": {"web-desktop": "true", "web-mobile": "false", "desktop": "false", "mobile": "false"},
-				"online": {"status": true, "auto-disable-timeout": "120"},
+				"online": {"status": false, "auto-disable-timeout": "120"},
 				"mode": "debug",
 				"status": "development",
 				"source-url": ""

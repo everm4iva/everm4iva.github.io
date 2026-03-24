@@ -1,3 +1,20 @@
+# release 4.3.8 - (24 mar 2026)
+- Rounded pfp picute + decoration
+- Adjusted some info on index page
+- COLOR PALLETTE CHANGE!!!!!11!! (i told you about this.)
+|> pink -> green
+|> yellow -> purple
+|> cyan -> yellow
+|> dark cyan -> orange
+|> don't worry, if i dont feel like it i will change it back to the original colors.
+|> quick note: i will never put themes in my own website so soon.
+- Added some.. rock songs!!! total bangers, you should check them out on the audio note playlist
+- Btw.. also finnally implemented screen effects, only avaliable in some songs (for now), i need to think better about this one. This was added a couple days ago, just didn't use yet.
+- Changed some pages that didn't syncronize with the main theme.
+- Registered "world2" in (/sap)
+- project-list.md avaliable on (/r - resources) or (/p - projects).
+-- Thanks @dhummy to give me some ideas through the process of this update. --
+
 # release 4.3.7 - (23 mar 2026)
 > Organized & Improved some stuff
 - fixed some ignored files, now some hidden or un-accessible pages will be accessible.

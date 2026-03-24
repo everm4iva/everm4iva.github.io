@@ -16,11 +16,15 @@
 	--box-color: #91176883;
 	--box-color-hover: #911768c0;
 	--box-color-selected: #911768ff;
-	--pink: #db347a;
+	--pink: #8ff370;
+	--old-ver-pink: #db347a;
 	--cute-pink: #ff80a6;
-	--yellow: #ffd000;
-	--cyan: #00ffe7;
-	--cyan-dead: #008080;
+	--yellow: #ff00d4;
+	--old-ver-yellow: #ffd000;
+	--cyan: #ffc400;
+	--old-ver-cyan: #00ffe7;
+	--cyan-dead: #ff3c00;
+	--old-ver-cyan-dead: #008080;
 	--white: #ffffff;
 	--black: #000000;
 

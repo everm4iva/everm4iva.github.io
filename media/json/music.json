@@ -52,12 +52,111 @@
 				"feminine adornments - julie": {
 					"title": "femenine adornments",
 					"artist": "julie",
-					"color": "#eeeff4",
-					"lightMode": true,
+					"color": "#3d3a41",
+					"lightMode": false,
 					"url": "https://open.spotify.com/track/4fDS9pq0XjGyv2GlQgxgbO",
 					"cover": "./media/audio/cover/feminine-adornments.jpg",
 					"music-src": "./media/audio/feminine adornments.mp3",
 					"genre": "Indie Rock",
+					"effects": "none"
+				},
+				"Autotheist - Baby Bugs": {
+					"title": "Autotheist",
+					"artist": "Baby Bugs",
+					"url": "https://open.spotify.com/track/67glriijLh7JsXpkLkiwAa",
+					"cover": "./media/audio/cover/Autotheist.jpg",
+					"music-src": "./media/audio/Autotheist.mp3",
+					"genre": "Rock",
+					"color": "#2f2f2f",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Eat Them - Lady Pills": {
+					"title": "Eat Them",
+					"artist": "Lady Pills",
+					"url": "https://open.spotify.com/track/2bnXSbogtQuHjDjh43GigB",
+					"cover": "./media/audio/cover/Eat-Them.jpg",
+					"music-src": "./media/audio/Eat-Them.mp3",
+					"genre": "Indie Rock",
+					"color": "#300c46",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Fear of Dying - Jack Off Jill": {
+					"title": "Fear of Dying",
+					"artist": "Jack Off Jill",
+					"url": "https://open.spotify.com/track/78EGz1N277AgdqBDpiehpD",
+					"cover": "./media/audio/cover/Fear-of-Dying.jpg",
+					"music-src": "./media/audio/Fear-of-Dying.mp3",
+					"genre": "Rock",
+					"color": "#817745",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Lights Out - MSI": {
+					"title": "Lights Out",
+					"artist": "Mindless Self Indulgence",
+					"url": "https://open.spotify.com/track/7L7AJb57lJH6YpnANgCDO6",
+					"cover": "./media/audio/cover/Lights-Out.jpg",
+					"music-src": "./media/audio/Lights-Out.mp3",
+					"genre": "Indie Rock",
+					"color": "#000000",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Little Fix - Sprints": {
+					"title": "Little Fix",
+					"artist": "Sprints",
+					"url": "https://open.spotify.com/track/6OLLrQfvU66LY4dUagqnJX",
+					"cover": "./media/audio/cover/Little-Fix.jpg",
+					"music-src": "./media/audio/Little-Fix.mp3",
+					"genre": "Indie Rock",
+					"color": "#f9bce6",
+					"lightMode": true,
+					"effects": "none"
+				},
+				"MELANCHOLIA - KNIFE BRIDE": {
+					"title": "MELANCHOLIA",
+					"artist": "KNIFE BRIDE",
+					"url": "https://open.spotify.com/track/6GrykNtfNhUVMqmAvJVM8y",
+					"cover": "./media/audio/cover/MELANCHOLIA.jpg",
+					"music-src": "./media/audio/MELANCHOLIA.mp3",
+					"genre": "Metal",
+					"color": "#af4420",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Poison - Doll Riot": {
+					"title": "Poison",
+					"artist": "Doll Riot",
+					"url": "https://open.spotify.com/track/1vCn2KQ5aiCeoCW7QCaTT0",
+					"cover": "./media/audio/cover/Poison.jpg",
+					"music-src": "./media/audio/Poison.mp3",
+					"genre": "Rock",
+					"color": "#151515",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Self Help - Ghoulies": {
+					"title": "Self Help",
+					"artist": "Ghoulies",
+					"url": "https://open.spotify.com/track/0IFsP6hdHjIZl6BixtTDKv",
+					"cover": "./media/audio/cover/Self-Help.jpg",
+					"music-src": "./media/audio/Self-Help.mp3",
+					"genre": "Indie Rock",
+					"color": "#faf7ea",
+					"lightMode": true,
+					"effects": "none"
+				},
+				"Shadow Boxing - Vundabar": {
+					"title": "Shadow Boxing",
+					"artist": "Vundabar",
+					"url": "https://open.spotify.com/track/7zBjEO7shj789TX9xfShIE",
+					"cover": "./media/audio/cover/shadow-boxing.jpg",
+					"music-src": "./media/audio/Shadow-Boxing.mp3",
+					"genre": "Indie Rock",
+					"color": "#e2ddda",
+					"lightMode": true,
 					"effects": "none"
 				},
 				"Hymn For A Droid - Psychedelic Porn Crumpets": {
@@ -111,7 +210,7 @@
 					"cover": "./media/audio/cover/HateMeIfYouWant.jpg",
 					"music-src": "./media/audio/Hate Me If You Want.mp3",
 					"genre": "Alternative Rock",
-					"color": "#dcdfde",
+					"color": "#8a8a8a",
 					"lightMode": true,
 					"effects": "none"
 				},
@@ -124,7 +223,17 @@
 					"genre": "Metal",
 					"color": "#8B0000",
 					"lightMode": false,
-					"effects": "none"
+					"effects": {
+						"screenshake": {
+							"intensity": 0.2,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.6,
+							"duration": "consistent",
+							"sensitivity": 12666.5,
+							"triggerType": "bass",
+							"syncToAudio": true
+						}
+					}
 				},
 				"Pry - Marionette": {
 					"title": "Pry",
@@ -157,7 +266,17 @@
 					"genre": "Rock",
 					"color": "#c33736",
 					"lightMode": false,
-					"effects": "none"
+										"effects": {
+						"screenshake": {
+							"intensity": 0.2,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.6,
+							"duration": "consistent",
+							"sensitivity": 666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
 				},
 				"Dick Move - Mommy Long Legs": {
 					"title": "Dick Move",
@@ -190,7 +309,17 @@
 					"genre": "Breakcore",
 					"color": "#66ad55",
 					"lightMode": false,
-					"effects": "none"
+					"effects": {
+						"screenshake": {
+							"intensity": 0.1,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.6,
+							"duration": "consistent",
+							"sensitivity": 46666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
 				},
 				"CATHODE RAY TUNE - telemist": {
 					"title": "CATHODE RAY TUNE",
@@ -201,7 +330,17 @@
 					"genre": "Breakcore",
 					"color": "#271c34",
 					"lightMode": false,
-					"effects": "none"
+					"effects": {
+						"screenshake": {
+							"intensity": 0.2,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.6,
+							"duration": "consistent",
+							"sensitivity": 4666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
 				},
 				"this one is for the boys in the polos - _skott.y": {
 					"title": "this one is for the boys in the polos",
@@ -212,9 +351,28 @@
 					"genre": "Breakcore",
 					"color": "#ffffff",
 					"lightMode": true,
-					"effects": "none"
+					"effects": {
+						"distortion": {
+							"intensity": 0.2,
+							"minIntensity": 0.1,
+							"maxIntensity": 0.5,
+							"frequency": "high",
+							"duration": 4.0,
+							"sensitivity": 0.7,
+							"triggerType": "beat",
+							"syncToAudio": true
+						},
+						"screenshake": {
+							"intensity": 0.07,
+							"minIntensity": 0.01,
+							"maxIntensity": 0.9,
+							"duration": "consistent",
+							"sensitivity": 7666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
 				},
-
 				"Lone Digger - Caravan Palace": {
 					"title": "Lone Digger",
 					"artist": "Caravan Palace",
@@ -235,7 +393,17 @@
 					"genre": "Breakcore",
 					"color": "#2b8db0",
 					"lightMode": false,
-					"effects": "none"
+					"effects": {
+						"screenshake": {
+							"intensity": 0.1,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.9,
+							"duration": "consistent",
+							"sensitivity": 72666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
 				},
 				"FLAWLESS! - ZOMB": {
 					"title": "FLAWLESS!",
@@ -246,7 +414,17 @@
 					"genre": "Electronic",
 					"color": "#010101",
 					"lightMode": false,
-					"effects": "none"
+					"effects": {
+						"screenshake": {
+							"intensity": 0.1,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.9,
+							"duration": "consistent",
+							"sensitivity": 72666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
 				},
 				"DAMAGE SUPRESSOR - Black Dresses": {
 					"title": "DAMAGE SUPRESSOR",
@@ -257,7 +435,17 @@
 					"genre": "NOISE",
 					"color": "#23490d",
 					"lightMode": false,
-					"effects": "none"
+					"effects": {
+						"screenshake": {
+							"intensity": 0.06,
+							"minIntensity": 0.001,
+							"maxIntensity": 0.9,
+							"duration": "consistent",
+							"sensitivity": 91666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
 				},
 				"what do you want me to do? - Joey Cash": {
 					"title": "what do you want me to do?",
@@ -268,7 +456,17 @@
 					"genre": "Electronic",
 					"color": "#adbdd7",
 					"lightMode": false,
-					"effects": "none"
+					"effects": {
+						"screenshake": {
+							"intensity": 0.08,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.6,
+							"duration": "consistent",
+							"sensitivity": 4666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
 				},
 				"HOOLIGANG - Joey Valence & Brae": {
 					"title": "HOOLIGANG",
@@ -279,18 +477,17 @@
 					"genre": "Alternative Indie",
 					"color": "#393939",
 					"lightMode": false,
-					"effects": "none"
-				},
-				"EnaMix - BRN1NG BRAIN SOUND INDUSTRIES": {
-					"title": "Ena MIX (Alergic to people MIX)",
-					"artist": "BRN1NG BRAIN SOUND INDUSTRIES, cotiles",
-					"url": "https://open.spotify.com/track/34jDexIVNRb3E12CMkQwlZ",
-					"cover": "./media/audio/cover/enamix.jpg",
-					"music-src": "./media/audio/Ena MIX.mp3",
-					"genre": "Breakcore",
-					"color": "#b32800",
-					"lightMode": false,
-					"effects": "none"
+					"effects": {
+						"screenshake": {
+							"intensity": 0.08,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.9,
+							"duration": "consistent",
+							"sensitivity": 12666.5,
+							"triggerType": "bass",
+							"syncToAudio": true
+						}
+					}
 				},
 				"HYPER4ID - t+pazolite": {
 					"title": "HYPER4ID",
@@ -299,9 +496,19 @@
 					"cover": "./media/audio/cover/hyperr4id.jpg",
 					"music-src": "./media/audio/HYPER4ID.mp3",
 					"genre": "Breakcore",
-					"color": "#220401",
+					"color": "#1c2400",
 					"lightMode": false,
-					"effects": "none"
+					"effects": {
+						"screenshake": {
+							"intensity": 0.2,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.6,
+							"duration": "consistent",
+							"sensitivity": 4666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
 				},
 				"No one better - anya nami": {
 					"title": "No one better",

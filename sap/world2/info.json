@@ -1,0 +1,216 @@
+[
+	{
+		"service-title": "World2-Servers",
+		"service-description": "public server config for world2",
+		"service-area": "server",
+		"service-type": ["server", "config"],
+		"latest-ver": "4.1.1",
+		"latest-ver-id": "pr",
+		"latest-ver-id-humanread": "private release",
+		"global-servers": false,
+		"max-clients": 29,
+		"account-required": true,
+		"account-types": ["admin", "player"],
+		"pre-defined-accounts": {
+			"everm4iva": {"password": "", "permissions": ["all"], "role": "admin"},
+			"dhummy": {"password": "", "permissions": ["all"], "role": "admin"},
+			"dhummy2": {"password": "", "permissions": ["all"], "role": "admin"},
+			"dhummy.vaq": {"password": "", "permissions": ["all"], "role": "admin"},
+			"zevastica": {"password": "", "permissions": ["all"], "role": "admin"},
+			"zevazevaplays": {"password": "", "permissions": ["all"], "role": "admin"},
+			"umaera": {"password": "", "permissions": ["all"], "role": "admin"},
+			"notyarazi": {"password": "", "permissions": ["all"], "role": "admin"},
+			"meyarazi": {"password": "", "permissions": ["all"], "role": "admin"},
+			"herobrine": {"password": "", "permissions": ["all"], "role": "admin"},
+			"shitists_": {"password": "", "permissions": ["all"], "role": "admin"},
+			"ragha": {"password": "", "permissions": ["all"], "role": "admin"},
+			"stormlit": {"password": "", "permissions": ["all"], "role": "admin"},
+			"as pingus nevam comam": {"password": "", "permissions": ["all"], "role": "admin"},
+			"rabanada_premium": {"password": "", "permissions": ["all"], "role": "admin"},
+			"rabanada": {"password": "", "permissions": ["all"], "role": "admin"},
+			"rabanada2": {"password": "", "permissions": ["all"], "role": "admin"},
+			"imsquido": {"password": "", "permissions": ["all"], "role": "admin"},
+			"@8a": {"password": "", "permissions": ["all"], "role": "admin"},
+			"catasph": {"password": "", "permissions": ["all"], "role": "admin"},
+			"outdaralast": {"password": "", "permissions": ["all"], "role": "admin"},
+			"devilwolf": {"password": "", "permissions": ["all"], "role": "admin"},
+			"bigmoneypocketpocketgoestomyass": {"password": "", "permissions": ["all"], "role": "admin"},
+			"CALAIDES": {"password": "", "permissions": ["all"], "role": "admin"},
+			"fdp_pq-baniste-me": {"password": "", "permissions": ["all"], "role": "admin"},
+			"vai_pa_merda_dhummy_premium": {"password": "", "permissions": ["all"], "role": "admin"},
+			"fragship": {"password": "", "permissions": ["all"], "role": "admin"},
+			"aleloria": {"password": "", "permissions": ["all"], "role": "admin"},
+			"overrated_trust_frfr": {"password": "", "permissions": ["all"], "role": "admin"},
+			"sou_ganda_personagem": {"password": "", "permissions": ["all"], "role": "admin"},
+			"supostamente_batman": {"password": "", "permissions": ["all"], "role": "admin"},
+			"supostamente_batman2": {"password": "", "permissions": ["all"], "role": "admin"}
+		},
+		"server-config": {
+			"global-server": {
+				"online": false,
+				"ip": "global.world2",
+				"password-required": false,
+				"password": "",
+				"port": "none",
+				"account-required": true,
+				"permitions": [
+					{
+						"seed": "global.world2",
+						"name": "global",
+						"description": "global server for everyone!",
+						"player-limit": 50,
+						"chat": [
+							{
+								"enabled": "true",
+								"slow-mode": false,
+								"chat-clear": false,
+								"chat-mute": false,
+								"chat-filter": false,
+								"chat-allow-links": false,
+								"chat-allow-mentions": true,
+								"chat-allow-private-messages": true
+							}
+						],
+						"build": true,
+						"destroy": true,
+						"grief": false,
+						"spawn-protection": true,
+						"spawn-protection-radius": 10,
+						"do-rules": [
+							{
+								"do-spawn": true,
+								"do-day-night-cycle": true,
+								"do-weather-cycle": true,
+								"do-mob-spawning": true,
+								"do-boss-spawning": true,
+								"do-interdimentional-travel": true,
+								"do-interdimentional-danger": true,
+								"do-universe-hate": true
+							}
+						],
+						"pvp": true,
+						"commands": true,
+						"admin-tools": true,
+						"debug-tools": true,
+						"dimentions": true,
+						"dimention-number": -1,
+						"track-players": false,
+						"shared-inventory": false,
+						"shared-health": false,
+						"logging": true
+					}
+				]
+			},
+			"dhummy's server": {
+				"online": false,
+				"ip": "dhummyone",
+				"password-required": true,
+				"password": "euamosapos123",
+				"port": "3371",
+				"account-required": true,
+				"permitions": [
+					{
+						"seed": "9178817840018391",
+						"name": "dhummyone",
+						"description": "Bora lá, apenas partir cenas",
+						"player-limit": 4,
+						"chat": [
+							{
+								"enabled": "false",
+								"slow-mode": false,
+								"chat-clear": false,
+								"chat-mute": false,
+								"chat-filter": false,
+								"chat-allow-links": false,
+								"chat-allow-mentions": true,
+								"chat-allow-private-messages": true
+							}
+						],
+						"build": true,
+						"destroy": true,
+						"grief": true,
+						"spawn-protection": false,
+						"spawn-protection-radius": 10,
+						"do-rules": [
+							{
+								"do-spawn": true,
+								"do-day-night-cycle": true,
+								"do-weather-cycle": true,
+								"do-mob-spawning": true,
+								"do-boss-spawning": true,
+								"do-interdimentional-travel": true,
+								"do-interdimentional-danger": true,
+								"do-universe-hate": true
+							}
+						],
+						"pvp": true,
+						"commands": false,
+						"admin-tools": false,
+						"debug-tools": false,
+						"dimentions": true,
+						"dimention-number": -1,
+						"track-players": true,
+						"shared-inventory": false,
+						"shared-health": false,
+						"logging": false
+					}
+				]
+			},
+			"ZEVA MANDA NESTA PORRA TODA! TAS A VER CARALHO?!": {
+				"online": false,
+				"ip": "zevarules",
+				"password-required": true,
+				"password": "é esta",
+				"port": "none",
+				"account-required": true,
+				"permitions": [
+					{
+						"seed": "global.world2",
+						"name": "global",
+						"description": "global server for everyone!",
+						"player-limit": 81,
+						"chat": [
+							{
+								"enabled": "true",
+								"slow-mode": true,
+								"chat-clear": false,
+								"chat-mute": false,
+								"chat-filter": false,
+								"chat-allow-links": true,
+								"chat-allow-mentions": true,
+								"chat-allow-private-messages": false
+							}
+						],
+						"build": true,
+						"destroy": true,
+						"grief": true,
+						"spawn-protection": true,
+						"spawn-protection-radius": 50,
+						"do-rules": [
+							{
+								"do-spawn": false,
+								"do-day-night-cycle": true,
+								"do-weather-cycle": true,
+								"do-mob-spawning": true,
+								"do-boss-spawning": true,
+								"do-interdimentional-travel": true,
+								"do-interdimentional-danger": true,
+								"do-universe-hate": true
+							}
+						],
+						"pvp": true,
+						"commands": true,
+						"admin-tools": true,
+						"debug-tools": true,
+						"dimentions": true,
+						"dimention-number": 14,
+						"track-players": false,
+						"shared-inventory": false,
+						"shared-health": false,
+						"logging": true
+					}
+				]
+			}
+		}
+	}
+]

@@ -11,7 +11,7 @@
 		"online": false,
 		"models": {
 			"oriana-echo": {
-				"online": true,
+				"online": false,
 				"version": 1,
 				"max-response": 2599,
 				"show-errors": false,
@@ -23,7 +23,7 @@
 				"maxtoken": 2999
 			},
 			"oriana-manu": {
-				"online": true,
+				"online": false,
 				"version": 1,
 				"max-response": 2899,
 				"show-errors": true,

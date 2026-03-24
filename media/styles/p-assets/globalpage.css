@@ -14,7 +14,7 @@
 }
 
 .itemtype{
-    background-color: cyan;
+    background-color: var(--cyan);
     width: 30rem; height: 30rem;
 }
 

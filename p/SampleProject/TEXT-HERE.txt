@@ -1,0 +1,2 @@
+Sample Project, tried to procedually generate a manifest file, but forgot that github pages doesnt do that.
+So, out of disapointement, i made this by hand. HA!

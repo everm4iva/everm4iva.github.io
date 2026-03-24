@@ -8,7 +8,7 @@
 	position: absolute;
 	top: 0%;
 	left: 20%;
-	width: 14rem;
+	width: 24rem;
 	height: 4rem;
 }
 
@@ -16,14 +16,13 @@
 	position: absolute;
 	top: 70%;
 	left: 0%;
-	width: 1.5rem;
-	height: 1.5rem;
+	width: 1.0rem;
+	height: 1.0rem;
 	background-color: var(--audionote-border-color);
 	border-radius: 50%;
 	border-style: solid;
 	border-color: var(--bg-color);
-	border-width: 4px;
-	cursor: pointer;
+	border-width: 3px;
 	will-change: transform, left, top;
 	transition: all 280ms ease;
 }
@@ -55,7 +54,7 @@
 .audio-text {
 	position: absolute;
 	top: 4%;
-	left: 10%;
+	left: 6%;
 	width: 10rem;
 	height: 2.5rem;
 	background-color: var(--audionote-border-color);
@@ -123,7 +122,6 @@
 	height: 5rem;
 	height: auto;
 	border-radius: 10px;
-	box-shadow: var(--audionote-border-color) 2px 2px 0px 0px;
 	cursor:
 		url('../../images/rock-hand.png') 32 32,
 		auto;

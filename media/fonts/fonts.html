@@ -2,22 +2,9 @@
 	<head>
 		<title>Fonts</title>
 		<link rel="stylesheet" type="text/css" href="fonts.css" />
+		<link rel="stylesheet" href="../styles/root.css" />
 	</head>
 	<style>
-		:root {
-			--bg-color: #0a0718;
-			--bg-color-t1: rgba(10, 7, 24, 0.1);
-			--bg-color-t3: rgba(10, 7, 24, 0.3);
-			--bg-color-t6: rgba(10, 7, 24, 0.6);
-			--pink: #db347a;
-			--cute-pink: #ff80a6;
-			--yellow: #ffd000;
-			--cyan: #00ffe7;
-			--cyan-dead: #008080;
-			--white: #ffffff;
-			--black: #000000;
-		}
-
 		::-webkit-scrollbar {
 			width: 12px;
 		}
@@ -40,14 +27,19 @@
 			margin: 2%;
 			background-color: var(--bg-color);
 			overflow-x: hidden;
+			overflow-y: auto;
 			font-family: 'SourGummy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 			color: var(--white);
-			overflow: hidden;
 			font-size: 1rem;
 		}
 
 		a {
 			color: var(--cyan);
+		}
+
+		span{
+			background-color: var(--pink);
+			color: var(--bg-color);
 		}
 
 		::selection {
@@ -140,13 +132,19 @@
 	</style>
 	<body>
 		<h1>Fonts Showcase</h1>
-		<p>This is a simple showcase of the fonts available.</p>
-
+		<p>This is a simple showcase of the fonts available on this website.</p>
+		<p><li>Main font: <span class="sourgummy">Sour Gummy</span></li></p>
+		<p><li>Secondary fonts: <span class="outfit">Outfit</span>, <span class="inter">Inter</span>, <span class="poppins">Poppins</span></li></p>
+		<p><li>Code Fonts: <span class="sourcecodepro">Source Code Pro</span>, <span class="console">Console</span>, <span class="dosis">Dosis</span></li></p>
+		<p><li>Document Fonts: <span class="wdxllubrifontsc">WDXLLUbrifontSC</span>, <span class="libertinusmono">Libertinus Mono</span>, <span class="worksans">Work Sans</span></li></p>
+		<p><li>Name/Annotation fonts: <span class="barriecito">Barriecito</span>, <span class="lxgwmarkergothic">LXGWMarkerGothic</span>,</li></p>
+		<p><li>Other Fonts: <span class="knewave">Knewave</span>, <span class="fleurdeleah">FleurDeLeah</span>, <span class="rampartone">Rampart_One</span>, <span class="chewy">Chewy</span>, <span class="rubikmonoone">Rubik Mono One</span></li></p>
+		<p><li>Brand Fonts: <span class="quicksand">Quicksand</span>, <span class="sourgummy">Sour Gummy</span>, <span class="rubik">Rubik</span></li></p>
 		<div class="font-box">
 			<div class="font-item arial">Arial</div>
 			<div class="font-item console">Console</div>
 			<div class="font-item inter">Inter</div>
-			<div class="font-item sourgummy">Sour Gummy</div>
+			<div class="font-item sourgummy"><i>Sour Gummy</i></div>
 			<div class="font-item dosis">Dosis</div>
 			<div class="font-item outfit">Outfit</div>
 			<div class="font-item poppins">Poppins</div>

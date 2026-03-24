@@ -5,7 +5,8 @@
 			"RabiProject": "./RabiProject/info.json",
 			"Bubble": "./Bubble/info.json",
 			"Oriana": "./Oriana/info.json",
-			"SparkBunny": "./SparkBunny/info.json"
+			"SparkBunny": "./SparkBunny/info.json",
+			"world2": "./world2/info.json"
 		}
 	}
 ]

@@ -56,7 +56,31 @@
 .pfp {
 	width: 5rem;
 	height: 5rem;
-	box-shadow: var(--yellow) 5px 5px 0px 2px;
+	border-radius: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0; padding: 0;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	cursor:grab;
+}
+
+.pfp-overlay {
+	position: absolute;
+	width: 6rem;
+	max-width: 6rem;
+	min-width: 6rem;
+	height: 6rem;
+	max-height: 6rem;
+	min-height: 6rem;
+	margin: -0.5rem;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-ms-user-select: none;
+	pointer-events: none;
 }
 
 .pfp-info {
