@@ -1,6 +1,6 @@
 [
 	{
-		"service-title": "SparkBunny",
+		"service-title": "Sparky",
 		"service-description": "Development and general variables for servers and clients",
 		"service-area": "game api",
 		"service-type": ["manifest", "api"],

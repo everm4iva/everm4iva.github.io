@@ -24,40 +24,7 @@
 					"url": "https://open.spotify.com/track/50gF43cRPzR5fvwX51cIGC",
 					"cover": "./media/images/commonicons/audio-image.jpg",
 					"music-src": "./media/audio/TheHandLender.mp3",
-					"genre": "Rock",
-					"effects": "none"
-				},
-				"Feel Again - Sir Chloe": {
-					"title": "Feel Again",
-					"artist": "Sir Chloe",
-					"color": "#b32626",
-					"lightMode": false,
-					"url": "https://open.spotify.com/track/6qEKAl27Pg1CHKcfZOWDjV",
-					"cover": "./media/audio/cover/FeelAgain.jpg",
-					"music-src": "./media/audio/Feel Again.mp3",
-					"genre": "Alternative Rock",
-					"effects": "none"
-				},
-				"Oh Distant You - Wilbur Soot": {
-					"title": "Oh Distant You",
-					"artist": "Wilbur Soot",
-					"url": "https://open.spotify.com/track/0SKRkYkymfcJcrvofcNzqu",
-					"cover": "./media/audio/cover/OhDistantYou.jpg",
-					"music-src": "./media/audio/Oh Distant You.mp3",
-					"genre": "Indie pop",
-					"color": "#10102c",
-					"lightMode": false,
-					"effects": "none"
-				},
-				"feminine adornments - julie": {
-					"title": "femenine adornments",
-					"artist": "julie",
-					"color": "#3d3a41",
-					"lightMode": false,
-					"url": "https://open.spotify.com/track/4fDS9pq0XjGyv2GlQgxgbO",
-					"cover": "./media/audio/cover/feminine-adornments.jpg",
-					"music-src": "./media/audio/feminine adornments.mp3",
-					"genre": "Indie Rock",
+					"genre": "Rock • Alternative Rock",
 					"effects": "none"
 				},
 				"Autotheist - Baby Bugs": {
@@ -66,63 +33,8 @@
 					"url": "https://open.spotify.com/track/67glriijLh7JsXpkLkiwAa",
 					"cover": "./media/audio/cover/autotheist.jpg",
 					"music-src": "./media/audio/Autotheist.mp3",
-					"genre": "Rock",
+					"genre": "Rock • Alternative Rock",
 					"color": "#2f2f2f",
-					"lightMode": false,
-					"effects": "none"
-				},
-				"Eat Them - Lady Pills": {
-					"title": "Eat Them",
-					"artist": "Lady Pills",
-					"url": "https://open.spotify.com/track/2bnXSbogtQuHjDjh43GigB",
-					"cover": "./media/audio/cover/eat-them.jpg",
-					"music-src": "./media/audio/Eat-Them.mp3",
-					"genre": "Indie Rock",
-					"color": "#300c46",
-					"lightMode": false,
-					"effects": "none"
-				},
-				"Fear of Dying - Jack Off Jill": {
-					"title": "Fear of Dying",
-					"artist": "Jack Off Jill",
-					"url": "https://open.spotify.com/track/78EGz1N277AgdqBDpiehpD",
-					"cover": "./media/audio/cover/fear-of-dying.jpg",
-					"music-src": "./media/audio/Fear-of-Dying.mp3",
-					"genre": "Rock",
-					"color": "#817745",
-					"lightMode": false,
-					"effects": "none"
-				},
-				"Lights Out - MSI": {
-					"title": "Lights Out",
-					"artist": "Mindless Self Indulgence",
-					"url": "https://open.spotify.com/track/7L7AJb57lJH6YpnANgCDO6",
-					"cover": "./media/audio/cover/lights-out.jpg",
-					"music-src": "./media/audio/Lights-Out.mp3",
-					"genre": "Indie Rock",
-					"color": "#000000",
-					"lightMode": false,
-					"effects": "none"
-				},
-				"Little Fix - Sprints": {
-					"title": "Little Fix",
-					"artist": "Sprints",
-					"url": "https://open.spotify.com/track/6OLLrQfvU66LY4dUagqnJX",
-					"cover": "./media/audio/cover/little-fix.jpg",
-					"music-src": "./media/audio/Little-Fix.mp3",
-					"genre": "Indie Rock",
-					"color": "#f9bce6",
-					"lightMode": true,
-					"effects": "none"
-				},
-				"MELANCHOLIA - KNIFE BRIDE": {
-					"title": "MELANCHOLIA",
-					"artist": "KNIFE BRIDE",
-					"url": "https://open.spotify.com/track/6GrykNtfNhUVMqmAvJVM8y",
-					"cover": "./media/audio/cover/melancholia.jpg",
-					"music-src": "./media/audio/MELANCHOLIA.mp3",
-					"genre": "Metal",
-					"color": "#af4420",
 					"lightMode": false,
 					"effects": "none"
 				},
@@ -132,30 +44,51 @@
 					"url": "https://open.spotify.com/track/1vCn2KQ5aiCeoCW7QCaTT0",
 					"cover": "./media/audio/cover/poison.jpg",
 					"music-src": "./media/audio/Poison.mp3",
-					"genre": "Rock",
+					"genre": "Rock • Alternative Rock",
 					"color": "#151515",
 					"lightMode": false,
 					"effects": "none"
 				},
-				"Self Help - Ghoulies": {
-					"title": "Self Help",
-					"artist": "Ghoulies",
-					"url": "https://open.spotify.com/track/0IFsP6hdHjIZl6BixtTDKv",
-					"cover": "./media/audio/cover/self-help.jpg",
-					"music-src": "./media/audio/Self-Help.mp3",
-					"genre": "Indie Rock",
-					"color": "#faf7ea",
-					"lightMode": true,
+				"Fear of Dying - Jack Off Jill": {
+					"title": "Fear of Dying",
+					"artist": "Jack Off Jill",
+					"url": "https://open.spotify.com/track/78EGz1N277AgdqBDpiehpD",
+					"cover": "./media/audio/cover/fear-of-dying.jpg",
+					"music-src": "./media/audio/Fear-of-Dying.mp3",
+					"genre": "Rock • Grunge",
+					"color": "#817745",
+					"lightMode": false,
 					"effects": "none"
 				},
-				"Shadow Boxing - Vundabar": {
-					"title": "Shadow Boxing",
-					"artist": "Vundabar",
-					"url": "https://open.spotify.com/track/7zBjEO7shj789TX9xfShIE",
-					"cover": "./media/audio/cover/shadow-boxing.jpg",
-					"music-src": "./media/audio/Shadow-Boxing.mp3",
-					"genre": "Indie Rock",
-					"color": "#e2ddda",
+				"IGNORE THIS - Dead Pony": {
+					"title": "IGNORE THIS",
+					"artist": "Dead Pony",
+					"url": "https://open.spotify.com/track/2fAepZ7Fl8sbwZXxkIZMpS",
+					"cover": "./media/audio/cover/IgnoreThis.jpg",
+					"music-src": "./media/audio/IGNORE THIS.mp3",
+					"genre": "Rock • Grunge • Alternative",
+					"color": "#c33736",
+					"lightMode": false,
+					"effects": {
+						"screenshake": {
+							"intensity": 0.2,
+							"minIntensity": 0.02,
+							"maxIntensity": 0.6,
+							"duration": "consistent",
+							"sensitivity": 666.5,
+							"triggerType": "beat",
+							"syncToAudio": true
+						}
+					}
+				},
+				"Room - Superheaven": {
+					"title": "Room",
+					"artist": "Superheaven",
+					"url": "https://open.spotify.com/track/1agy96vrWLLjaUruaT9hLC",
+					"cover": "./media/audio/cover/Room.jpg",
+					"music-src": "./media/audio/Room.mp3",
+					"genre": "Rock • Grunge • Alternative",
+					"color": "#c9ad86",
 					"lightMode": true,
 					"effects": "none"
 				},
@@ -165,53 +98,20 @@
 					"url": "https://open.spotify.com/track/6e7LEf6iDAkshuWbpnqcKN",
 					"cover": "./media/audio/cover/HymnForADroid.jpg",
 					"music-src": "./media/audio/Hymn For A Droid.mp3",
-					"genre": "Rock",
+					"genre": "Rock • Alternative Rock • Psychedelic Rock",
 					"color": "#1b1243",
 					"lightMode": false,
 					"effects": "none"
 				},
-				"Room - Superheaven": {
-					"title": "Room",
-					"artist": "Superheaven",
-					"url": "https://open.spotify.com/track/1agy96vrWLLjaUruaT9hLC",
-					"cover": "./media/audio/cover/Room.jpg",
-					"music-src": "./media/audio/Room.mp3",
-					"genre": "Rock",
-					"color": "#c9ad86",
-					"lightMode": true,
-					"effects": "none"
-				},
-				"My Propeller - Arctic Monkeys": {
-					"title": "My Propeller",
-					"artist": "Arctic Monkeys",
-					"url": "https://open.spotify.com/track/2hmHlBM0kPBm17Y7nVIW9f",
-					"cover": "./media/audio/cover/MyPropeller.jpg",
-					"music-src": "./media/audio/My Propeller.mp3",
-					"genre": "Alternative",
-					"color": "#000d18",
+				"MELANCHOLIA - KNIFE BRIDE": {
+					"title": "MELANCHOLIA",
+					"artist": "KNIFE BRIDE",
+					"url": "https://open.spotify.com/track/6GrykNtfNhUVMqmAvJVM8y",
+					"cover": "./media/audio/cover/melancholia.jpg",
+					"music-src": "./media/audio/MELANCHOLIA.mp3",
+					"genre": "Metal • Experimental",
+					"color": "#af4420",
 					"lightMode": false,
-					"effects": "none"
-				},
-				"Heart Throb - Be Your Own Pet": {
-					"title": "Heart Throb",
-					"artist": "Be Your Own Pet",
-					"url": "https://open.spotify.com/track/4GDVI7RuA59V4OM6DaxIE1",
-					"cover": "./media/audio/cover/HeartThrob.jpg",
-					"music-src": "./media/audio/Heart Throb.mp3",
-					"genre": "Indie Rock",
-					"color": "#cfd6d8",
-					"lightMode": true,
-					"effects": "none"
-				},
-				"Hate Me If You Want - ALEXSUCKS": {
-					"title": "Hate Me If You Want",
-					"artist": "ALEXSUCKS",
-					"url": "https://open.spotify.com/track/3Vr8RhymMCZl2fGMZ59Rif",
-					"cover": "./media/audio/cover/HateMeIfYouWant.jpg",
-					"music-src": "./media/audio/Hate Me If You Want.mp3",
-					"genre": "Alternative Rock",
-					"color": "#8a8a8a",
-					"lightMode": true,
 					"effects": "none"
 				},
 				"FANG DUMMY - KNIFE BRIDE": {
@@ -220,7 +120,7 @@
 					"url": "https://open.spotify.com/track/3c5J8nsfDQuLiIysWiRIga",
 					"cover": "./media/audio/cover/FangDummy.jpg",
 					"music-src": "./media/audio/Fang Dummy.mp3",
-					"genre": "Metal",
+					"genre": "Metal • Alternative Rock",
 					"color": "#8B0000",
 					"lightMode": false,
 					"effects": {
@@ -241,8 +141,41 @@
 					"url": "https://open.spotify.com/track/7cnN02UEDqJ2Df22oIhxCE",
 					"cover": "./media/audio/cover/Pry.jpg",
 					"music-src": "./media/audio/Pry.mp3",
-					"genre": "Metal",
+					"genre": "Metal • Alternative Rock",
 					"color": "#11161c",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Oh Distant You - Wilbur Soot": {
+					"title": "Oh Distant You",
+					"artist": "Wilbur Soot",
+					"url": "https://open.spotify.com/track/0SKRkYkymfcJcrvofcNzqu",
+					"cover": "./media/audio/cover/OhDistantYou.jpg",
+					"music-src": "./media/audio/Oh Distant You.mp3",
+					"genre": "Indie pop • Alternative",
+					"color": "#10102c",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Feel Again - Sir Chloe": {
+					"title": "Feel Again",
+					"artist": "Sir Chloe",
+					"color": "#b32626",
+					"lightMode": false,
+					"url": "https://open.spotify.com/track/6qEKAl27Pg1CHKcfZOWDjV",
+					"cover": "./media/audio/cover/FeelAgain.jpg",
+					"music-src": "./media/audio/Feel Again.mp3",
+					"genre": "Alternative Rock • Indie Rock",
+					"effects": "none"
+				},
+				"Dick Move - Mommy Long Legs": {
+					"title": "Dick Move",
+					"artist": "Mommy Long Legs",
+					"url": "https://open.spotify.com/track/7aFt4ziZC8OJxKkYCDoJ1w",
+					"cover": "./media/audio/cover/DickMove.jpg",
+					"music-src": "./media/audio/Dick Move.mp3",
+					"genre": "Alternative Rock • Indie Rock",
+					"color": "#dc868c",
 					"lightMode": false,
 					"effects": "none"
 				},
@@ -252,41 +185,195 @@
 					"url": "https://open.spotify.com/track/6mvseEofkXVqGxyqpAXDpY",
 					"cover": "./media/audio/cover/Loser.jpg",
 					"music-src": "./media/audio/loser.mp3",
-					"genre": "Alternative",
+					"genre": "Alternative • Indie Rock",
 					"color": "#0f0f17",
 					"lightMode": false,
 					"effects": "none"
 				},
-				"IGNORE THIS - Dead Pony": {
-					"title": "IGNORE THIS",
-					"artist": "Dead Pony",
-					"url": "https://open.spotify.com/track/2fAepZ7Fl8sbwZXxkIZMpS",
-					"cover": "./media/audio/cover/IgnoreThis.jpg",
-					"music-src": "./media/audio/IGNORE THIS.mp3",
-					"genre": "Rock",
-					"color": "#c33736",
+				"My Propeller - Arctic Monkeys": {
+					"title": "My Propeller",
+					"artist": "Arctic Monkeys",
+					"url": "https://open.spotify.com/track/2hmHlBM0kPBm17Y7nVIW9f",
+					"cover": "./media/audio/cover/MyPropeller.jpg",
+					"music-src": "./media/audio/My Propeller.mp3",
+					"genre": "Alternative • Indie Rock",
+					"color": "#000d18",
 					"lightMode": false,
-										"effects": {
+					"effects": "none"
+				},
+				"Hate Me If You Want - ALEXSUCKS": {
+					"title": "Hate Me If You Want",
+					"artist": "ALEXSUCKS",
+					"url": "https://open.spotify.com/track/3Vr8RhymMCZl2fGMZ59Rif",
+					"cover": "./media/audio/cover/HateMeIfYouWant.jpg",
+					"music-src": "./media/audio/Hate Me If You Want.mp3",
+					"genre": "Alternative Rock • Indie Rock",
+					"color": "#8a8a8a",
+					"lightMode": true,
+					"effects": "none"
+				},
+				"feminine adornments - julie": {
+					"title": "femenine adornments",
+					"artist": "julie",
+					"color": "#3d3a41",
+					"lightMode": false,
+					"url": "https://open.spotify.com/track/4fDS9pq0XjGyv2GlQgxgbO",
+					"cover": "./media/audio/cover/feminine-adornments.jpg",
+					"music-src": "./media/audio/feminine adornments.mp3",
+					"genre": "Indie Rock • Alternative • Grunge • Experimental",
+					"effects": "none"
+				},
+				"Eat Them - Lady Pills": {
+					"title": "Eat Them",
+					"artist": "Lady Pills",
+					"url": "https://open.spotify.com/track/2bnXSbogtQuHjDjh43GigB",
+					"cover": "./media/audio/cover/eat-them.jpg",
+					"music-src": "./media/audio/Eat-Them.mp3",
+					"genre": "Indie Rock • Alternative",
+					"color": "#300c46",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Self Help - Ghoulies": {
+					"title": "Self Help",
+					"artist": "Ghoulies",
+					"url": "https://open.spotify.com/track/0IFsP6hdHjIZl6BixtTDKv",
+					"cover": "./media/audio/cover/self-help.jpg",
+					"music-src": "./media/audio/Self-Help.mp3",
+					"genre": "Indie Rock • Alternative Rock",
+					"color": "#faf7ea",
+					"lightMode": true,
+					"effects": "none"
+				},
+				"Little Fix - Sprints": {
+					"title": "Little Fix",
+					"artist": "Sprints",
+					"url": "https://open.spotify.com/track/6OLLrQfvU66LY4dUagqnJX",
+					"cover": "./media/audio/cover/little-fix.jpg",
+					"music-src": "./media/audio/Little-Fix.mp3",
+					"genre": "Indie Rock • Alternative Rock",
+					"color": "#f9bce6",
+					"lightMode": true,
+					"effects": "none"
+				},
+				"Shadow Boxing - Vundabar": {
+					"title": "Shadow Boxing",
+					"artist": "Vundabar",
+					"url": "https://open.spotify.com/track/7zBjEO7shj789TX9xfShIE",
+					"cover": "./media/audio/cover/shadow-boxing.jpg",
+					"music-src": "./media/audio/Shadow-Boxing.mp3",
+					"genre": "Indie Rock • Alternative Rock • Post-punk • Experimental",
+					"color": "#e2ddda",
+					"lightMode": true,
+					"effects": "none"
+				},
+				"Heart Throb - Be Your Own Pet": {
+					"title": "Heart Throb",
+					"artist": "Be Your Own Pet",
+					"url": "https://open.spotify.com/track/4GDVI7RuA59V4OM6DaxIE1",
+					"cover": "./media/audio/cover/HeartThrob.jpg",
+					"music-src": "./media/audio/Heart Throb.mp3",
+					"genre": "Indie Rock • Garage Rock",
+					"color": "#cfd6d8",
+					"lightMode": true,
+					"effects": "none"
+				},
+				"Lights Out - MSI": {
+					"title": "Lights Out",
+					"artist": "Mindless Self Indulgence",
+					"url": "https://open.spotify.com/track/7L7AJb57lJH6YpnANgCDO6",
+					"cover": "./media/audio/cover/lights-out.jpg",
+					"music-src": "./media/audio/Lights-Out.mp3",
+					"genre": "Indie Rock • Alternative • Punk",
+					"color": "#000000",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Lady Radiator - Got A Thing For Being Stupid": {
+					"title": "Got A Thing For Being Stupid",
+					"artist": "Lady Radiator",
+					"url": "https://open.spotify.com/track/7FlfWaqNtsa2svsYmUaESy",
+					"cover": "./media/audio/cover/GotAThingForBeingStupid.webp",
+					"music-src": "./media/audio/GotAThingForBeignStupid.mp3",
+					"genre": "Punk • Alternative Rock",
+					"color": "#1d2025",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Avril Lavigne - Sk8ter Boi": {
+					"title": "Sk8ter Boi",
+					"artist": "Avril Lavigne",
+					"url": "https://open.spotify.com/track/00Mb3DuaIH1kjrwOku9CGU",
+					"cover": "./media/audio/cover/Sk8terBoi.jpg",
+					"music-src": "./media/audio/Sk8terBoi.mp3",
+					"genre": "Power Pop • Punk • Rock",
+					"color": "#9499a3",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Avril Lavigne - What The Hell": {
+					"title": "What The Hell",
+					"artist": "Avril Lavigne",
+					"url": "https://open.spotify.com/track/2z4U9d5OAA4YLNXoCgioxo",
+					"cover": "./media/audio/cover/WhatTheHell.jpg",
+					"music-src": "./media/audio/WhatTheHell.mp3",
+					"genre": "pop-punk • Power Pop • Rock",
+					"color": "#57634c",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"LoveJoy - Call Me What You Like": {
+					"title": "Call Me What You Like",
+					"artist": "LoveJoy",
+					"url": "https://open.spotify.com/track/21rYCEejlfM0LYRlfzxGeM",
+					"cover": "./media/audio/cover/CallMeWhatYouLike.jpg",
+					"music-src": "./media/audio/CallMeWhatYouLike.mp3",
+					"genre": "Alternative Indie • Rock",
+					"color": "#7fa9b7",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"Raue - Come Around": {
+					"title": "Come Around",
+					"artist": "Raue",
+					"url": "https://open.spotify.com/track/2lAKdUIztCptR5KISImGE8",
+					"cover": "./media/audio/cover/ComeAround.jpg",
+					"music-src": "./media/audio/ComeAround.mp3",
+					"genre": "Alternative",
+					"color": "#000005",
+					"lightMode": false,
+					"effects": "none"
+				},
+				"HOOLIGANG - Joey Valence & Brae": {
+					"title": "HOOLIGANG",
+					"artist": "Joey Valence & Brae",
+					"url": "https://open.spotify.com/track/0lwkzF4dDxLp8HMVSQjpFf",
+					"cover": "./media/audio/cover/hooligang.jpg",
+					"music-src": "./media/audio/HOOLIGANG.mp3",
+					"genre": "Alternative Indie • Rock • Hip-hop",
+					"color": "#393939",
+					"lightMode": false,
+					"effects": {
 						"screenshake": {
-							"intensity": 0.2,
+							"intensity": 0.08,
 							"minIntensity": 0.02,
-							"maxIntensity": 0.6,
+							"maxIntensity": 0.9,
 							"duration": "consistent",
-							"sensitivity": 666.5,
-							"triggerType": "beat",
+							"sensitivity": 12666.5,
+							"triggerType": "bass",
 							"syncToAudio": true
 						}
 					}
 				},
-				"Dick Move - Mommy Long Legs": {
-					"title": "Dick Move",
-					"artist": "Mommy Long Legs",
-					"url": "https://open.spotify.com/track/7aFt4ziZC8OJxKkYCDoJ1w",
-					"cover": "./media/audio/cover/DickMove.jpg",
-					"music-src": "./media/audio/Dick Move.mp3",
-					"genre": "Alternative Rock",
-					"color": "#dc868c",
-					"lightMode": false,
+				"Sink Saiko - How To Got It Bad": {
+					"title": "How To Got It Bad",
+					"artist": "Sink Saiko",
+					"url": "https://open.spotify.com/track/75bxoTvIAv9l6zseZCjmng",
+					"cover": "./media/audio/cover/HowToGotItBad.jpg",
+					"music-src": "./media/audio/HowIGotItBad.mp3",
+					"genre": "Breakcore • Experimental",
+					"color": "#c7d3c7",
+					"lightMode": true,
 					"effects": "none"
 				},
 				"SHOWS YOU THE WAY TO THE HIWAY - femtanyl": {
@@ -295,7 +382,7 @@
 					"url": "https://open.spotify.com/track/5fDeBxYvHwFO6U1DaE55s0",
 					"cover": "./media/audio/cover/videonasty.jpg",
 					"music-src": "./media/audio/SHOWS YOU THE WAY TO THE HIWAY.mp3",
-					"genre": "Breakcore",
+					"genre": "Breakcore • Electronic",
 					"color": "#1d0210",
 					"lightMode": false,
 					"effects": "none"
@@ -306,7 +393,7 @@
 					"url": "https://open.spotify.com/track/2wXJtlwqfkjDflrmXacPTm",
 					"cover": "./media/audio/cover/Polliwogs.jpg",
 					"music-src": "./media/audio/Polliwogs.mp3",
-					"genre": "Breakcore",
+					"genre": "Breakcore • Dance",
 					"color": "#66ad55",
 					"lightMode": false,
 					"effects": {
@@ -327,7 +414,7 @@
 					"url": "https://open.spotify.com/track/7nCNZeSZXLSzHVwJM5xheG",
 					"cover": "./media/audio/cover/CathodeRayTune.jpg",
 					"music-src": "./media/audio/CATHODE RAY TUNE.mp3",
-					"genre": "Breakcore",
+					"genre": "Breakcore • Electronic",
 					"color": "#271c34",
 					"lightMode": false,
 					"effects": {
@@ -348,7 +435,7 @@
 					"url": "https://open.spotify.com/track/64UYWJbqspsyy8hyLIgg5a",
 					"cover": "./media/audio/cover/ThisOneIfForTHeBoysInThePolos.jpg",
 					"music-src": "./media/audio/this one is for the boys in the polos.mp3",
-					"genre": "Breakcore",
+					"genre": "Breakcore • Electronic • Glitchcore • Experimental",
 					"color": "#ffffff",
 					"lightMode": true,
 					"effects": {
@@ -373,24 +460,13 @@
 						}
 					}
 				},
-				"Lone Digger - Caravan Palace": {
-					"title": "Lone Digger",
-					"artist": "Caravan Palace",
-					"url": "https://open.spotify.com/track/750jVPZnBVLItCUxaRR5iC",
-					"cover": "./media/audio/cover/LoneDigger.jpg",
-					"music-src": "./media/audio/Lone Digger.mp3",
-					"genre": "Electro-swing",
-					"color": "#22315a",
-					"lightMode": false,
-					"effects": "none"
-				},
 				"Bad girls - psiangel": {
 					"title": "Bad girls",
 					"artist": "psiangel",
 					"url": "https://open.spotify.com/track/3olxlNBeiezdTeASDO0KtA",
 					"cover": "./media/audio/cover/BadGirls.jpg",
 					"music-src": "./media/audio/Bad girls.mp3",
-					"genre": "Breakcore",
+					"genre": "Breakcore • NOISE",
 					"color": "#2b8db0",
 					"lightMode": false,
 					"effects": {
@@ -411,7 +487,7 @@
 					"url": "https://open.spotify.com/track/1q913z4slTrSsj6NpPtorT",
 					"cover": "./media/audio/cover/flawless.jpg",
 					"music-src": "./media/audio/FLAWLESS!.mp3",
-					"genre": "Electronic",
+					"genre": "Electronic • Glitchcore • Breakcore",
 					"color": "#010101",
 					"lightMode": false,
 					"effects": {
@@ -432,7 +508,7 @@
 					"url": "https://open.spotify.com/track/7Eo9DUgdglOIONp3PDPFLJ",
 					"cover": "./media/audio/cover/DAMAGESUPRESSOR.jpg",
 					"music-src": "./media/audio/DAMAGE SUPPRESSOR.mp3",
-					"genre": "NOISE",
+					"genre": "NOISE • Experimental • Breakcore",
 					"color": "#23490d",
 					"lightMode": false,
 					"effects": {
@@ -453,7 +529,7 @@
 					"url": "https://open.spotify.com/track/0rfA0I4IhArbfqa8wXZP3m",
 					"cover": "./media/audio/cover/wduwmtd.jpg",
 					"music-src": "./media/audio/what do you want me to do.mp3",
-					"genre": "Electronic",
+					"genre": "Electronic • Glitchcore • Breakcore",
 					"color": "#adbdd7",
 					"lightMode": false,
 					"effects": {
@@ -468,34 +544,13 @@
 						}
 					}
 				},
-				"HOOLIGANG - Joey Valence & Brae": {
-					"title": "HOOLIGANG",
-					"artist": "Joey Valence & Brae",
-					"url": "https://open.spotify.com/track/0lwkzF4dDxLp8HMVSQjpFf",
-					"cover": "./media/audio/cover/hooligang.jpg",
-					"music-src": "./media/audio/HOOLIGANG.mp3",
-					"genre": "Alternative Indie",
-					"color": "#393939",
-					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.08,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.9,
-							"duration": "consistent",
-							"sensitivity": 12666.5,
-							"triggerType": "bass",
-							"syncToAudio": true
-						}
-					}
-				},
 				"HYPER4ID - t+pazolite": {
 					"title": "HYPER4ID",
 					"artist": "t+pazolite",
 					"url": "https://open.spotify.com/track/7FzGnxnDHNlT3LjYj69MP9",
 					"cover": "./media/audio/cover/hyperr4id.jpg",
 					"music-src": "./media/audio/HYPER4ID.mp3",
-					"genre": "Breakcore",
+					"genre": "Breakcore • Electronic • Glitchcore • Experimental",
 					"color": "#1c2400",
 					"lightMode": false,
 					"effects": {
@@ -510,14 +565,14 @@
 						}
 					}
 				},
-				"No one better - anya nami": {
-					"title": "No one better",
-					"artist": "anya nami",
-					"url": "https://open.spotify.com/track/5X7RNmXMgiWz4jj6bLwAG6",
-					"cover": "./media/audio/cover/noonebetter.jpg",
-					"music-src": "./media/audio/No one better.mp3",
-					"genre": "Alternative pop",
-					"color": "#ed702e",
+				"Lone Digger - Caravan Palace": {
+					"title": "Lone Digger",
+					"artist": "Caravan Palace",
+					"url": "https://open.spotify.com/track/750jVPZnBVLItCUxaRR5iC",
+					"cover": "./media/audio/cover/LoneDigger.jpg",
+					"music-src": "./media/audio/Lone Digger.mp3",
+					"genre": "Electro-swing • Swing",
+					"color": "#22315a",
 					"lightMode": false,
 					"effects": "none"
 				}

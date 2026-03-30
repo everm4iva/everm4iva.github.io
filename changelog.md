@@ -1,3 +1,15 @@
+# release 4.3.9 - (30 mar 2026)
+Haven't updated for a while, here we go, some polishes.
+- Added /manifesto - To manifest my feelings and goals about some of my strongest projects.
+- Added new project in /p (project page) - BlueBerry Browser!
+- Changed globally the name and icon of the project "SparkBunny" to "sparky" since the original project also changed name.
+- Fixed and updated some website sap points - "everm4iva.github.io" domain
+- Disabled "Global Assets" link in index
+> since most of the icons/assets changed, now accessible via sap on the website source
+- More songs to audio note playlist!
+- Now existing songs will have more especific genre tags...
+- Organized music by genre!!
+
 # release 4.3.8 - (24 mar 2026)
 - Rounded pfp picute + decoration
 - Adjusted some info on index page
