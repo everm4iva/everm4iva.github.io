@@ -1,6 +1,7 @@
 https://everm4iva.github.io/sitemap.txt
 https://everm4iva.github.io/index.html
 https://everm4iva.github.io/social/index.html
+https://everm4iva.github.io/m/index.html
 https://everm4iva.github.io/r/index.html
 https://everm4iva.github.io/p/index.html
 https://everm4iva.github.io/p/fractal/index.html

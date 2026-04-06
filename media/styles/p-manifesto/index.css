@@ -1,0 +1,104 @@
+/**
+ * ☆=========================================☆
+ * Manifesto page Stylesheet
+ * ☆=========================================☆
+*/
+
+@import url('../root.css');
+@import url('./read.css');
+@import url('./notation.css');
+
+body{
+	overflow-y: auto;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container h1 {
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.container h2 {
+	font-size: 1.1rem;
+	color: var(--cyan);
+	font-weight: bold;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.content {
+	width: 100%;
+	font-size: 1rem;
+	line-height: 1.6;
+	color: var(--text-color);
+	margin-top: 5%;
+	text-align: justify;
+	display: flex;
+	flex-direction: row;
+	gap: 2%;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: center;
+	white-space: pre-line;
+	padding-bottom: 3%;
+}
+
+.item {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 1%;
+	width: 45%;
+	border: 3px dashed var(--pink);
+	cursor: pointer;
+	color: var(--white);
+}
+
+.item:hover {
+	background-color: var(--black);
+	filter: invert(1);
+}
+
+.item .title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: var(--cyan);
+}
+
+.item .description {
+	font-size: 1rem;
+	line-height: 1.6;
+	color: var(--pink);
+}
+
+.item .tags {
+	font-size: 0.9rem;
+	color: var(--yellow);
+	margin-top: 10px;
+}
+
+.item .tags .tag {
+	display: inline-block;
+	color: var(--white);
+	padding: 1px;
+	background-color: var(--yellow);
+	margin-right: 5px;
+}
+
+.item .reference {
+	font-size: 0.9rem;
+	color: var(--cyan);
+	margin-top: 10px;
+}

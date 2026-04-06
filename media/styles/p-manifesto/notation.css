@@ -1,0 +1,44 @@
+.content .text {
+	width: 100%;
+	text-align: left;
+	padding-left: 0%;
+	height: fit-content;
+    margin: 0;
+    padding-bottom: 2%;
+    border-top: 2px dashed var(--pink);
+    border-bottom: 2px dashed var(--pink);
+	font-family: Outfit, sans-serif;
+}
+
+.text h1 {
+	text-align: left !important;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.text h2 {
+	text-align: left !important;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.text h3 {
+	text-align: left !important;
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.text .block-title {
+	font-size: 1.2rem;
+	font-weight: bold;
+	display: inline-block;
+	background-color: var(--pink);
+	color: var(--black);
+	width: fit-content;
+}

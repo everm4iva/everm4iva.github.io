@@ -1,3 +1,13 @@
+# release 4.3.10 - (07 apr 2026)
+- Some improvements to the sap links
+- Created Manifesto page! ("m/") or click any link that says manifesto
+|> Contains my prespective on things, i won't use for projects.. just to say my thoughts.
+|> Maybe i'll create another page dedicated to project philosophy and shi-
+- Created a new marker in the resources page - "Licenses"
+|> That's where i will store the licenses created for my projects. Free to use btw.
+- Improved 404 page, in case u didn't notice, test it! just mess the url or type "404.html"
+- Added indexing to pages, for search engines and AIs to know this exists.
+
 # release 4.3.9 - (30 mar 2026)
 Haven't updated for a while, here we go, some polishes.
 - Added /manifesto - To manifest my feelings and goals about some of my strongest projects.
@@ -5,7 +15,7 @@ Haven't updated for a while, here we go, some polishes.
 - Changed globally the name and icon of the project "SparkBunny" to "sparky" since the original project also changed name.
 - Fixed and updated some website sap points - "everm4iva.github.io" domain
 - Disabled "Global Assets" link in index
-> since most of the icons/assets changed, now accessible via sap on the website source
+|> since most of the icons/assets changed, now accessible via sap on the website source
 - More songs to audio note playlist!
 - Now existing songs will have more especific genre tags...
 - Organized music by genre!!

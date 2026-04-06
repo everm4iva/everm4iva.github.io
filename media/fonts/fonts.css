@@ -4,6 +4,11 @@
 }
 
 @font-face {
+	font-family: cursive;
+	src: url(./Cursive/Cursive.ttf);
+}
+
+@font-face {
 	font-family: Dosis;
 	src: url(./Dosis/Dosis.ttf);
 }
