@@ -11,16 +11,16 @@ Disclaimer: Some projects may not be here in the project list, could be outdated
 
 ☆======= Delivered/Public =======☆
 
-- downsrc • Terminal-Tool • feb2025 (unactive dev)
+- downsrc • Terminal-Tool • feb2025
 > A simple desktop NPM package to download websites and their individual sources.
 
-- FRACTAL • Web/Desktop-game • dec2025 (unactive dev)
+- FRACTAL • Web/Desktop-game • dec2025
 > A abstract geometric war in your browser, a barebones 2d game shooter with shaders and a 90's game retro style.
 
-- SimplyPrivate • Web-Browser • oct2023 (active dev)
+- SimplyPrivate • Web-Browser • oct2023
 > Privacy and oversimplified browsing experience, deletes all data opon closing.
 
-- OceanBoard • Creative Tool • nov2025 (inactive dev)
+- OceanBoard • Creative Tool • nov2025
 > Write. Build. Create.
 > Organize your ideas, stories, series and even brain storm here.
 
@@ -65,7 +65,7 @@ Disclaimer: Some projects may not be here in the project list, could be outdated
 - RainOs • Experiemental Web OS • apr2023 (Abandoned, published)
 > Tried to make a small os in web tech, eventually due to unexperience i gave up.
 
-- ROOMS • web-game • feb2023 (published)
+- ROOMS • web-game • feb2023
 > A 2d game, you have 4 walls, 4 doors, you have to scape to the door 444 while collecting items/weapons and fighing monsters, each level gets more darker.
 
 - World2 • desktop game • sep2024
