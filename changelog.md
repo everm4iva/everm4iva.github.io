@@ -1,4 +1,11 @@
+# release 4.3.12 - (17 apr 2026)
+> minor update
+- updated the drawing (diary entry: untitled.png)
+- fixed broken resource links in the project page (/p)
+- added "orianaTerminal" info page and ditched github repo.
+
 # release 4.3.11 - (16 apr 2026)
+> minor update - version boost
 - boosted a version just to not seem like the website was dead.
 - Im trying to get some time to make things better around here!
 - Also changed profile picture decoration & changed profile description

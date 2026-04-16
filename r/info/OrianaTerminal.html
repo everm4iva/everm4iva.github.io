@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OrianaTerminal - Info</title>
+    <link rel="shortcut icon" href="../../icons/@core/MyLittleIcon-Resources-v1.png" type="image/x-icon">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="OrianaTerminal - About">
+
+    <link rel="stylesheet" href="../../media/styles/p-resources/ap.infoview.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">About <mark>OrianaTerminal</mark></h1>
+        </header>
+
+        <div class="project-info">
+            <p class="description">
+                Insolated multi-model desktop app with a terminal aesthetic and focus on local hosting / secure networking and security!
+                <p></p>
+                Models include:
+                <ul>
+                    <li>Echo: General AI model, specialized in text</li>
+                    <li>Manu: Specialized in handling coding and logic concepts</li>
+                    <li>Zia: Design focused, can handle image generation (for representation only) and read images & audio</li>
+                    <li>Jessy: specialized in creative and brainstorming.</li>
+                </ul>
+            </p>
+
+            <div class="status">
+                <strong>Current Status:</strong> The project was officially abandoned.
+            </div>
+
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-label">Created</div>
+                    <div class="detail-value">July 2025</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Developer</div>
+                    <div class="detail-value">UmaEra</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Project Type</div>
+                    <div class="detail-value">Experimental AI environment</div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="screenshots">
+            <h2 class="screenshots-title">Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item" onclick="openModal('modal1', './screenshots/Oriana-a5.webp', 'Desktop app - main Screen')">
+                    <img src="./screenshots/Oriana-a5.webp" alt="Desktop app - main Screen">
+                    <div class="screenshot-caption">Main Browser Interface</div>
+                </div>
+                <div class="screenshot-item" onclick="openModal('modal2', './screenshots/Oriana-a4.webp', 'Outside View')">
+                    <img src="./screenshots/Oriana-a4.webp" alt="OrianaTerminal Outside View">
+                    <div class="screenshot-caption">Outside View</div>
+                </div>
+                                <div class="screenshot-item" onclick="openModal('modal2', './screenshots/Oriana-a1.webp', 'Request screen view')">
+                    <img src="./screenshots/Oriana-a1.webp" alt="Request screen view">
+                    <div class="screenshot-caption">Request screen view</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for image viewing -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+            
+                <img id="modalImage" class="modal-image" src="" alt="">
+                <div id="modalCaption" class="modal-caption"></div>
+                <div class="modal-hint">Press SPACE to open in new tab & anywhere else to close</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../media/scripts/ap.infoview.js"></script>
+</body>
+</html>
