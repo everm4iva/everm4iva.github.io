@@ -35,6 +35,15 @@ a {
 	cursor: pointer;
 }
 
+
+a.exclusive {
+	content: "☆ ";
+	color: var(--pink);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
 a.old {
 	color: var(--cyan-dead);
 }

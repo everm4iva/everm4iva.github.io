@@ -1,3 +1,9 @@
+# release 4.3.11 - (16 apr 2026)
+- boosted a version just to not seem like the website was dead.
+- Im trying to get some time to make things better around here!
+- Also changed profile picture decoration & changed profile description
+- diary entry: untitled.png (drawing) - funny stuff
+
 # release 4.3.10 - (07 apr 2026)
 - Some improvements to the sap links
 - Created Manifesto page! ("m/") or click any link that says manifesto
