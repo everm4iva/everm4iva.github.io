@@ -3,6 +3,7 @@
 - updated the drawing (diary entry: untitled.png)
 - fixed broken resource links in the project page (/p)
 - added "orianaTerminal" info page and ditched github repo.
+-- Thanks @dhummy to warn me about those project page errors --
 
 # release 4.3.11 - (16 apr 2026)
 > minor update - version boost
