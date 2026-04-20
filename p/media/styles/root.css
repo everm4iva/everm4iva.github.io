@@ -75,6 +75,16 @@ footer {
 	cursor: pointer;
 }
 
+.project-tile.indev{
+	border:3px solid var(--yellow);
+	animation: blink-indev 1s step-start infinite;
+}
+
+@keyframes blink-indev {
+	0% { border-color: var(--yellow); }
+	50% { border-color: transparent; }
+	100% { border-color: var(--yellow); }
+}
 .project-tile.unfinished {
 	filter: grayscale(100%) blur(2px);
 }

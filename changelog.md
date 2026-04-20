@@ -1,3 +1,18 @@
+# release 4.3.13 - (20 apr 2026)
+> BIG CHANGES, OH YEAHH BABY
+- changed color scheme (again!)
+|> applies to all colors and backgrounds!
+|> check out the css file in /sap or /r - i added history
+- 404 page has now a new hand-drawn design! (+ mobile friendly styles)
+- .me element (the little draggy character in index page) now has more animations
+|> Throw at the wall or swing it around to know more.
+- Little loading animation ahh in the index page!
+- Removed music panel effects! (Screenshake, sat, etc..)
+- New client sap added to /sap page! - On "Oriana"
+- Cleaned a bit the stylesheets of some pages
+- Added more styles to project page
+- new "old" project added, but was this year tho - VIVID
+
 # release 4.3.12 - (17 apr 2026)
 > minor update
 - updated the drawing (diary entry: untitled.png)

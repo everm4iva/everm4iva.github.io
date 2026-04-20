@@ -2,11 +2,10 @@
 <html lang="en">
 	<head>
 		<title>404</title>
-		<link rel="shortcut icon" href="./media/icons/b1.png" type="image/png" />
+		<link rel="shortcut icon" href="./media/icons/Star.bg.png" type="image/png" />
 		<meta name="robots" content="none, translate, noarchive, nosnippet" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="OOPS, something went wrong" />
-		<link rel="stylesheet" href="https://everm4iva.github.io/media/styles/root.css" />
+		<meta name="description" content="uhmm.. sometimes something gets lost.. i guess" />
 		<style>
 			* {
 				box-sizing: border-box;
@@ -14,7 +13,7 @@
 			body {
 				margin: 0;
 				padding: 0;
-				background: var(--bg-color);
+				background: white;
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -25,62 +24,83 @@
 				-moz-user-select: none;
 				-webkit-user-drag: none;
 			}
+			.bg {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				filter: blur(90px);
+				opacity: 0.2;
+				image-rendering: pixelated;
+				image-orientation: flip;
+				overflow: hidden;
+				width: 800%;
+				height: 100%;
+			}
 			h1 {
 				position: absolute;
 				top: 80%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				font-size: 1.5rem;
-				color: var(--pink);
+				color: white;
+				background-color: black;
 				text-decoration: underline;
 				cursor: pointer;
 				margin: 0;
 				transition: transform 0.2s;
 			}
 			h2 {
-				color: var(--yellow);
+				color: black;
+				background-color: white;
 				position: absolute;
 				top: 88%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				font-size: 1rem;
 				margin: 0;
+				top: 85%;
+			}
+			a {
+				color: white;
+			}
+			.imgBlock {
+				width: 50%;
+			}
+			@media (max-width: 700px) {
+				.imgBlock {
+					width: 90%;
+				}
+
+				h1 {
+					font-size: 1.5rem;
+					width: 80%;
+					text-align: center;
+				}
+				h2 {
+					font-size: 1rem;
+					width: 80%;
+					text-align: center;
+					top: 85%;
+				}
 			}
 		</style>
 	</head>
 	<body>
-			<img src="https://everm4iva.github.io/media/images/Just404.svg" style="width: 40%" class="imgBlock" />
-			<h2 translate="yes">Page unavaliable or deleted</h2>
-			<h1 translate="yes"><a id="returnLink" href="./">✦ click here to return ✦</a></h1>
-
-		<script src="https://everm4iva.github.io/media/lib/gsap-min.js"></script>
+		<img src="https://everm4iva.github.io/media/images/404.png" class="imgBlock" />
+		<!-- Img Description:
+		 White background, solid black on the lines, pixelated + hand-drawn style. No more colors or complicated details, just loose lines.
+		 - One dude on the left, looking relaxed, no clothes and no characteristics, just a blank dude humanoid
+		 - Dude uses a sign that just says "404" in a pixelated hand-drawn font, in front of the face, covering most of it.
+		 - maiva character on the right, small girl with halo, curly hair to neck, fringe, on the left side of face is covered with hair to neck. Big black pupil, cartoon-ish. Uses a long t-shirt.
+		 - maiva is looking at dude from down view, half of the height of dude, with a suprised but confused expression.
+		 - maiva is touching dude with the right hand, streached up arm, touching prime finger in the left arm of dude.
+		 - subtitles on top of maiva saying "Uhm..." and down that "Are U Lost?" in a pixelated hand-drawn font, with a line break in the middle.
+		 -->
+		<h2 translate="yes">Page unavaliable or deleted</h2>
+		<h1 translate="yes"><a id="returnLink" href="./">✦ click here to return ✦</a></h1>
 		<script>
-			const img = document.querySelector('.imgBlock');
 			const returnLink = document.querySelector('#returnLink');
-			const svgFilter = `
-<svg style="position: absolute; width: 0; height: 0;">
-  <defs>
-    <filter id="wave-distortion">
-      <feTurbulence
-        id="turbulence" 
-        type="fractalNoise" 
-        baseFrequency="0.02 0.06"
-        numOctaves="8"
-        result="noise"
-      />
-      <feDisplacementMap 
-        in="SourceGraphic" 
-        in2="noise"
-        scale="10"
-      />
-    </filter>
-  </defs>
-</svg>
-`;
-
-			document.body.insertAdjacentHTML('beforeend', svgFilter);
-			img.style.filter = 'url(#wave-distortion)';
-
 			returnLink.addEventListener('click', (event) => {
 				event.preventDefault();
 				const canGoBack = window.history.length > 1 && document.referrer !== '';
@@ -89,14 +109,6 @@
 					return;
 				}
 				window.location.href = './';
-			});
-
-			gsap.to('#turbulence', {
-				attr: {baseFrequency: '1.80 1.60'},
-				duration: 800,
-				yoyo: true,
-				repeat: -1,
-				ease: 'sine',
 			});
 		</script>
 	</body>

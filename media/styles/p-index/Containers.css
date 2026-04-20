@@ -15,3 +15,81 @@
 	overflow-y: visible;
 	height: 100vh;
 }
+
+.container.index pre {
+	animation: fadeInWords 0.6s ease-out forwards;
+	opacity: 0;
+	animation-delay: 0s;
+}
+
+.container.index h2 {
+	animation: fadeInWords 0.2s ease-out forwards;
+	opacity: 0;
+}
+
+.container.index h2:nth-of-type(1) {
+	animation-delay: 0.1s;
+}
+.container.index h2:nth-of-type(2) {
+	animation-delay: 0.3s;
+}
+.container.index h2:nth-of-type(3) {
+	animation-delay: 0.5s;
+}
+.container.index h2:nth-of-type(4) {
+	animation-delay: 0.2s;
+}
+.container.index .banner:nth-of-type(5) {
+	animation-delay: 0.8s;
+}
+
+.container.index .banner {
+	animation: widthExpand 0.4s ease-out forwards;
+	width: 30%;
+	opacity: 0;
+	animation-delay: 1.8s;
+}
+
+.container.index blockquote {
+	animation: fadeInWords 0.3s ease-out forwards;
+	opacity: 0;
+	animation-delay: 1.4s;
+}
+
+.container.index ul {
+	animation: fadeInWords 0.2s ease-out forwards;
+	opacity: 0;
+	animation-delay: 1.7s;
+}
+
+.container.index p {
+	animation: fadeInWords 0.4s ease-out forwards;
+	opacity: 0;
+	animation-delay: 2s;
+}
+
+@keyframes fadeInWords {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes widthExpand {
+	0% {
+		width: 30%;
+		opacity: 0;
+	}
+	80% {
+		opacity: 0.5;
+	}
+	100% {
+		width: 80%;
+		opacity: 1;
+
+	}
+}

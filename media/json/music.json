@@ -69,17 +69,7 @@
 					"genre": "Rock • Grunge • Alternative",
 					"color": "#c33736",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.2,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.6,
-							"duration": "consistent",
-							"sensitivity": 666.5,
-							"triggerType": "beat",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"Room - Superheaven": {
 					"title": "Room",
@@ -123,17 +113,7 @@
 					"genre": "Metal • Alternative Rock",
 					"color": "#8B0000",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.2,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.6,
-							"duration": "consistent",
-							"sensitivity": 12666.5,
-							"triggerType": "bass",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"Pry - Marionette": {
 					"title": "Pry",
@@ -353,17 +333,7 @@
 					"genre": "Alternative Indie • Rock • Hip-hop",
 					"color": "#393939",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.08,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.9,
-							"duration": "consistent",
-							"sensitivity": 12666.5,
-							"triggerType": "bass",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"Sink Saiko - How To Got It Bad": {
 					"title": "How To Got It Bad",
@@ -396,17 +366,7 @@
 					"genre": "Breakcore • Dance",
 					"color": "#66ad55",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.1,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.6,
-							"duration": "consistent",
-							"sensitivity": 46666.5,
-							"triggerType": "beat",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"CATHODE RAY TUNE - telemist": {
 					"title": "CATHODE RAY TUNE",
@@ -417,17 +377,7 @@
 					"genre": "Breakcore • Electronic",
 					"color": "#271c34",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.2,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.6,
-							"duration": "consistent",
-							"sensitivity": 4666.5,
-							"triggerType": "beat",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"this one is for the boys in the polos - _skott.y": {
 					"title": "this one is for the boys in the polos",
@@ -438,27 +388,7 @@
 					"genre": "Breakcore • Electronic • Glitchcore • Experimental",
 					"color": "#ffffff",
 					"lightMode": true,
-					"effects": {
-						"distortion": {
-							"intensity": 0.2,
-							"minIntensity": 0.1,
-							"maxIntensity": 0.5,
-							"frequency": "high",
-							"duration": 4.0,
-							"sensitivity": 0.7,
-							"triggerType": "beat",
-							"syncToAudio": true
-						},
-						"screenshake": {
-							"intensity": 0.07,
-							"minIntensity": 0.01,
-							"maxIntensity": 0.9,
-							"duration": "consistent",
-							"sensitivity": 7666.5,
-							"triggerType": "beat",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"Bad girls - psiangel": {
 					"title": "Bad girls",
@@ -469,17 +399,7 @@
 					"genre": "Breakcore • NOISE",
 					"color": "#2b8db0",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.1,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.9,
-							"duration": "consistent",
-							"sensitivity": 72666.5,
-							"triggerType": "beat",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"FLAWLESS! - ZOMB": {
 					"title": "FLAWLESS!",
@@ -490,17 +410,7 @@
 					"genre": "Electronic • Glitchcore • Breakcore",
 					"color": "#010101",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.1,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.9,
-							"duration": "consistent",
-							"sensitivity": 72666.5,
-							"triggerType": "beat",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"DAMAGE SUPRESSOR - Black Dresses": {
 					"title": "DAMAGE SUPRESSOR",
@@ -511,17 +421,7 @@
 					"genre": "NOISE • Experimental • Breakcore",
 					"color": "#23490d",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.06,
-							"minIntensity": 0.001,
-							"maxIntensity": 0.9,
-							"duration": "consistent",
-							"sensitivity": 91666.5,
-							"triggerType": "beat",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"what do you want me to do? - Joey Cash": {
 					"title": "what do you want me to do?",
@@ -532,17 +432,7 @@
 					"genre": "Electronic • Glitchcore • Breakcore",
 					"color": "#adbdd7",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.08,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.6,
-							"duration": "consistent",
-							"sensitivity": 4666.5,
-							"triggerType": "beat",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"HYPER4ID - t+pazolite": {
 					"title": "HYPER4ID",
@@ -553,17 +443,7 @@
 					"genre": "Breakcore • Electronic • Glitchcore • Experimental",
 					"color": "#1c2400",
 					"lightMode": false,
-					"effects": {
-						"screenshake": {
-							"intensity": 0.2,
-							"minIntensity": 0.02,
-							"maxIntensity": 0.6,
-							"duration": "consistent",
-							"sensitivity": 4666.5,
-							"triggerType": "beat",
-							"syncToAudio": true
-						}
-					}
+					"effects": "none"
 				},
 				"Lone Digger - Caravan Palace": {
 					"title": "Lone Digger",

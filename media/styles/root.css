@@ -9,25 +9,46 @@
 
 :root {
 	/* Basic Colors */
-	--bg-color: #0a0718;
-	--bg-color-t1: rgba(10, 7, 24, 0.1);
-	--bg-color-t3: rgba(10, 7, 24, 0.3);
-	--bg-color-t6: rgba(10, 7, 24, 0.6);
+	--bg-color: #160b20;
+	--bg-color-t1: rgba(22, 11, 32, 0.1);
+	--bg-color-t3: rgba(22, 11, 32, 0.3);
+	--bg-color-t6: rgba(22, 11, 32, 0.6);
+
 	--box-color: #91176883;
 	--box-color-hover: #911768c0;
 	--box-color-selected: #911768ff;
-	--pink: #8ff370;
-	--old-ver-pink: #db347a;
+
+	--green: #8ff370;
+	--dead-green: #447435;
+	--pink: #db347a;
+	--neon-purple: #9118be;
+	--neon-purple-light: #e1a7e1;
 	--cute-pink: #ff80a6;
-	--yellow: #ff00d4;
-	--old-ver-yellow: #ffd000;
-	--cyan: #ffc400;
-	--old-ver-cyan: #00ffe7;
-	--cyan-dead: #ff3c00;
-	--old-ver-cyan-dead: #008080;
+	--strong-pink: #ff00d4;
+	--yellow: #ffc400;
+	--cyan: #00ffe7;
+	--cyan-dead: #008d7f;
+
+	--random-1: #881e4a;
+	--random-color-1: rgb(255, 255, 255);
+	--random-2: #8ff370;
+	--random-color:2 var(--black);
+	--random-3: #00ffe7;
+	--random-color-3: var(--white);
+
 	--white: #ffffff;
 	--black: #000000;
 
+	/* History of colors
+	--v1-accent1: #db347a; Pink
+	--v1-accent2: #ffd000; Yellow
+	--v1-cyan: #00ffe7; Cyan
+	-----
+	--v2-accent1: #8ff370; Light-Green
+	--v2-accent2: #ff80a6; Cute Pink
+	--v2-accent3: #ff00d4; Strong Pink
+	--v2-accent4: #ffc400; Yellow
+	*/
 	/* Fonts */
 	--MainFont: 'SourGummy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-size-base: 16px;
@@ -92,8 +113,8 @@ html {
 }
 
 ::selection {
-	background-color: var(--yellow);
-	color: var(--black);
+	background-color: var(--random-1);
+	color: var(--random-color-1);
 }
 
 body::before {

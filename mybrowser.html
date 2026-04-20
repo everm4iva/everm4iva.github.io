@@ -1,69 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, notranslate" />
-    <title>My Browser Info</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 2em; background: #000000; color: #ffffff; }
-        h1 { color: #e22ae2; }
-        table { border-collapse: collapse; width: 100%; max-width: 700px; background: #000000; }
-        th, td { border: 1px solid #79107c; padding: 8px; }
-        th { background: #640c5e; text-align: left; }
-        tr:nth-child(even) { background: #000000; }
-        code { background: #360125; padding: 2px 4px; border-radius: 3px; }
-    </style>
-</head>
-<body>
-    <h1>Browser & WebView Information</h1>
-    <table id="browser-info">
-        <tbody></tbody>
-    </table>
-    <script>
-        function getBrowserInfo() {
-            return {
-                'User Agent': navigator.userAgent,
-                'Platform': navigator.platform,
-                'App Name': navigator.appName,
-                'App Version': navigator.appVersion,
-                'Language': navigator.language,
-                'Languages': navigator.languages ? navigator.languages.join(', ') : 'N/A',
-                'Cookies Enabled': navigator.cookieEnabled,
-                'Online': navigator.onLine,
-                'Java Enabled': navigator.javaEnabled ? navigator.javaEnabled() : 'N/A',
-                'Do Not Track': navigator.doNotTrack,
-                'Screen Size': `${screen.width} x ${screen.height}`,
-                'Color Depth': screen.colorDepth,
-                'Pixel Depth': screen.pixelDepth,
-                'Device Memory (GB)': navigator.deviceMemory || 'N/A',
-                'Hardware Concurrency (CPUs)': navigator.hardwareConcurrency || 'N/A',
-                'Touch Support': 'ontouchstart' in window,
-                'Timezone': Intl.DateTimeFormat().resolvedOptions().timeZone,
-                'Local Time': new Date().toString(),
-                'Referrer': document.referrer,
-                'Location': window.location.href,
-                'Cookies': document.cookie || 'None',
-            };
-        }
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, notranslate" />
+		<title>BrowserInfo</title>
+		<link rel="shortcut icon" href="./media/icons/Star.bg.png" type="image/png" />
+		<link rel="stylesheet" href="http://everm4iva.github.io/media/fonts/fonts.css" />
+		<style>
+			:root {
+				/* Basic Colors */
+				--bg-color: #160b20;
+				--bg-color-t1: rgba(22, 11, 32, 0.1);
+				--bg-color-t3: rgba(22, 11, 32, 0.3);
+				--bg-color-t6: rgba(22, 11, 32, 0.6);
 
-        function renderInfo() {
-            const info = getBrowserInfo();
-            const tbody = document.querySelector('#browser-info tbody');
-            tbody.innerHTML = '';
-            for (const key in info) {
-                const tr = document.createElement('tr');
-                const th = document.createElement('th');
-                th.textContent = key;
-                const td = document.createElement('td');
-                td.innerHTML = `<code>${info[key]}</code>`;
-                tr.appendChild(th);
-                tr.appendChild(td);
-                tbody.appendChild(tr);
-            }
-        }
+				--green: #8ff370;
+				--dead-green: #447435;
+				--pink: #db347a;
+				--neon-purple: #9118be;
+				--neon-purple-light: #e1a7e1;
+				--cute-pink: #ff80a6;
+				--strong-pink: #ff00d4;
+				--yellow: #ffc400;
+				--cyan: #00ffe7;
+				--cyan-dead: #008d7f;
 
-        renderInfo();
-    </script>
-</body>
+				--white: #ffffff;
+				--black: #000000;
+			}
+
+			::selection {
+				background-color: var(--cute-pink);
+				color: var(--white);
+			}
+
+			body {
+				font-family: 'SourGummy', Arial, Helvetica, sans-serif;
+				margin: 2em;
+				background: var(--bg-color);
+				color: #ffffff;
+			}
+			h1 {
+				color: var(--cute-pink);
+			}
+			table {
+				border-collapse: collapse;
+				width: 100%;
+				max-width: 700px;
+				background: var(--bg-color-t3);
+			}
+			th,
+			td {
+				border: 1px solid var(--yellow);
+				padding: 8px;
+			}
+			th {
+				background: var(--yellow);
+				color: var(--black);
+				text-align: left;
+			}
+			tr:nth-child(even) {
+				background: var(--bg-color-t6);
+			}
+			code {
+				color: var(--white);
+				padding: 2px 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Browser & WebView Information</h1>
+		<table id="browser-info">
+			<tbody></tbody>
+		</table>
+		<script>
+			function getBrowserInfo() {
+				return {
+					'User Agent': navigator.userAgent,
+					'Platform': navigator.platform,
+					'App Name': navigator.appName,
+					'App Version': navigator.appVersion,
+					'Language': navigator.language,
+					'Languages': navigator.languages ? navigator.languages.join(', ') : 'N/A',
+					'Cookies Enabled': navigator.cookieEnabled,
+					'Online': navigator.onLine,
+					'Java Enabled': navigator.javaEnabled ? navigator.javaEnabled() : 'N/A',
+					'Do Not Track': navigator.doNotTrack,
+					'Screen Size': `${screen.width} x ${screen.height}`,
+					'Color Depth': screen.colorDepth,
+					'Pixel Depth': screen.pixelDepth,
+					'Device Memory (GB)': navigator.deviceMemory || 'N/A',
+					'Hardware Concurrency (CPUs)': navigator.hardwareConcurrency || 'N/A',
+					'Touch Support': 'ontouchstart' in window,
+					'Timezone': Intl.DateTimeFormat().resolvedOptions().timeZone,
+					'Local Time': new Date().toString(),
+					'Referrer': document.referrer,
+					'Location': window.location.href,
+					'Cookies': document.cookie || 'None',
+				};
+			}
+
+			function renderInfo() {
+				const info = getBrowserInfo();
+				const tbody = document.querySelector('#browser-info tbody');
+				tbody.innerHTML = '';
+				for (const key in info) {
+					const tr = document.createElement('tr');
+					const th = document.createElement('th');
+					th.textContent = key;
+					const td = document.createElement('td');
+					td.innerHTML = `<code>${info[key]}</code>`;
+					tr.appendChild(th);
+					tr.appendChild(td);
+					tbody.appendChild(tr);
+				}
+			}
+
+			renderInfo();
+		</script>
+	</body>
 </html>

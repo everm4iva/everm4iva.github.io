@@ -7,7 +7,7 @@
 		"latest-ver": "1.0.0",
 		"latest-ver-id": "csbr",
 		"latest-ver-id-humanread": "closed, stable beta release",
-		"online": true,
+		"online": false,
 		"max-clients": 5,
 		"max-requests-per-min": "20",
 		"client-config": {

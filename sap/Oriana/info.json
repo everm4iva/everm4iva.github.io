@@ -2,7 +2,7 @@
 	{
 		"service-title": "OrianaAPI",
 		"service-description": "General info and model hosting",
-		"service-area": "Artificial Intelligence/Algorithm API for apps and services",
+		"service-area": "AI/Algorithm API for apps and services",
 		"service-type": ["manifest", "rules", "text", "api"],
 		"latest-ver": "0.2.0",
 		"latest-ver-id": "udcsr",
@@ -10,6 +10,13 @@
 		"param": "!",
 		"online": false,
 		"models": {
+			"oriana-vivid": {
+				"online": false,
+				"status": "In Training",
+				"description": "Model focused on creativity, writing, art and music. Not generative or public, for training, educative and embedding purposes only.",
+				"version": 1,
+				"internet-access": false
+			},
 			"oriana-echo": {
 				"online": false,
 				"version": 1,

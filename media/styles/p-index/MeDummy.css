@@ -6,15 +6,15 @@
 
 .me {
 	position: fixed;
-	left: 2%;
-	width: 6rem;
-	height: 8rem;
+	left: 6%;
+	width: 8rem;
+	height: 3.5rem;
 	z-index: 30;
 	cursor: grab;
 	touch-action: none;
 	transition: all 180ms ease;
 	filter: invert(1);
-	top: 20%;
+	top: 25%;
 	background-image: url('../../images/me/bored-t.gif');
 	background-position: center;
 	background-size: cover;
@@ -22,11 +22,170 @@
 }
 
 .me.dragging {
+	width: 8rem;
+	height: 9rem;
 	cursor: grabbing;
-	transform: scale(1.03);
 	transform: scale(0.95);
-	background-image: url('../../images/me/totallyscared-t.gif');
-	filter: invert(1);
+	background-image: url('../../images/me/drag-right.gif');
+	filter: invert(0);
+}
+
+.me.drag-left {
+	width: 6rem;
+	height: 8rem;
+	filter: invert(0);
+	background-image: url('../../images/me/drag-left.gif');
+}
+
+.me.drag-right {
+	width: 6rem;
+	height: 8rem;
+	filter: invert(0);
+	background-image: url('../../images/me/drag-right.gif');
+}
+
+.me.drag-normal-left {
+	width: 6rem;
+	height: 8rem;
+	filter: invert(0);
+	background-image: url('../../images/me/drag-left.gif');
+}
+
+.me.drag-normal-right {
+	width: 6rem;
+	height: 8rem;
+	filter: invert(0);
+	background-image: url('../../images/me/drag-right.gif');
+}
+
+.me.drag-strong-left {
+	width: 6rem;
+	height: 8rem;
+	filter: invert(0);
+	background-image: url('../../images/me/drag-strong-left.gif');
+	transform: rotate(-60deg);
+}
+
+.me.drag-strong-right {
+	width: 6rem;
+	height: 8rem;
+	filter: invert(0);
+	background-image: url('../../images/me/drag-strong-right.gif');
+	transform: rotate(60deg);
+}
+
+.me.falling {
+	filter: invert(0);
+	background-image: url('../../images/me/bored-t.gif');
+	animation: fall 0.4s ease-in forwards;
+}
+
+@keyframes fall {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(30px);
+	}
+}
+
+.me.walled-left {
+	width: 4rem;
+	height: 9rem;
+	filter: invert(0);
+	background-image: url('../../images/me/walled-left.gif');
+	animation: wallSlideAndPop 1.8s ease-in forwards;
+}
+
+.me.walled-right {
+	width: 4rem;
+	height: 9rem;
+	filter: invert(0);
+	background-image: url('../../images/me/walled-right.gif');
+	animation: wallSlideAndPop 1.8s ease-in forwards;
+}
+
+.me.bounced-left {
+	width: 4rem;
+	height: 9rem;
+	filter: invert(0);
+	background-image: url('../../images/me/walled-left.gif');
+}
+
+.me.bounced-right {
+	width: 4rem;
+	height: 9rem;
+	filter: invert(0);
+	background-image: url('../../images/me/walled-right.gif');
+}
+
+.me.bouncing {
+	animation: wallBounce 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+.me.falling-impact {
+	filter: invert(0);
+	background-image: url('../../images/me/walled-right.gif');
+	animation: gravityFall 1.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes wallSlideAndPop {
+	0% {
+		transform: translateY(0) scaleX(1);
+	}
+	60% {
+		transform: translateY(100px) scaleX(1);
+	}
+	80% {
+		transform: translateY(100px) scaleX(1);
+	}
+	90% {
+		transform: translateY(100px) scaleX(-0.8);
+	}
+	100% {
+		transform: translateY(0) scaleX(1);
+	}
+}
+
+@keyframes wallBounce {
+	0% {
+		transform: translateX(0) translateY(0) scaleX(1);
+	}
+	50% {
+		transform: translateX(-60px) translateY(-40px) scaleX(0.9) rotate(15deg);
+	}
+	100% {
+		transform: translateX(-80px) translateY(0) scaleX(1) rotate(0deg);
+	}
+}
+
+@keyframes gravityFall {
+	0% {
+		transform: translateX(-80px) translateY(0);
+	}
+	100% {
+		transform: translateX(-80px) translateY(120px);
+	}
+}
+
+body.shake {
+	animation: screenShake 0.2s;
+}
+
+@keyframes screenShake {
+	0%,
+	100% {
+		transform: translateX(10px);
+	}
+	25% {
+		transform: translateX(-10px);
+	}
+	50% {
+		transform: translateX(10px);
+	}
+	75% {
+		transform: translateX(-10px);
+	}
 }
 
 .me.rock {
