@@ -9,6 +9,11 @@
 }
 
 @font-face {
+	font-family: honk;
+	src: url(./honk/honk.ttf);
+}
+
+@font-face {
 	font-family: Dosis;
 	src: url(./Dosis/Dosis.ttf);
 }

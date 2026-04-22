@@ -1,0 +1,14 @@
+[
+	{
+		"service-title": "Archi2",
+		"service-description": "",
+		"service-area": "",
+		"service-type": ["api"],
+		"latest-ver": "0.1.0",
+		"latest-ver-id": "pr",
+		"latest-ver-id-humanread": "private release",
+		"param": "?",
+		"online": false,
+		"models": {}
+	}
+]

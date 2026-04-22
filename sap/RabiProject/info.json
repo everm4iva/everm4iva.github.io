@@ -21,28 +21,6 @@
 				"mode": "debug",
 				"status": "private release",
 				"source-url": ""
-			},
-			"rabi-raspberryPi": {
-				"latest-ver": "nan",
-				"latest-ver-id": "none",
-				"avaliable": false,
-				"description": "rabi in a raspberry pi 5 with 1gb of ram, running on a local server, for testing and development purposes.",
-				"platforms": {},
-				"online": {},
-				"mode": "none",
-				"status": "indev",
-				"source-url": ""
-			},
-			"cloud-everm4iva-web": {
-				"latest-ver": "1.0",
-				"latest-ver-id": "none",
-				"avaliable": false,
-				"description": "",
-				"platforms": {},
-				"online": {},
-				"mode": "none",
-				"status": "none",
-				"source-url": "https://everm4iva.github.io/rabi/v1"
 			}
 		}
 	}
