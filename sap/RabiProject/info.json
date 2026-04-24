@@ -10,6 +10,7 @@
 		"online": false,
 		"max-clients": 5,
 		"max-requests-per-min": "20",
+		"models":{},
 		"client-config": {
 			"rabibet-dev-test": {
 				"latest-ver": "0.1.0",
@@ -17,7 +18,7 @@
 				"avaliable": false,
 				"description": "ASP.NET MVC app to test models",
 				"platforms": {},
-				"online": {"status": true, "auto-disable-timeout": "60"},
+				"online": {"status": false, "auto-disable-timeout": "60"},
 				"mode": "debug",
 				"status": "private release",
 				"source-url": ""
