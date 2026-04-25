@@ -1,3 +1,9 @@
+# release 4.3.14 - (25 apr 2026)
+- optimized some css styles
+- audio note -> text note
+- changed some index page phrases.
+- removed diary entry.
+
 # release 4.3.13 - (20 apr 2026)
 > BIG CHANGES, OH YEAHH BABY
 - changed color scheme (again!)

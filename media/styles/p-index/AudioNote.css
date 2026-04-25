@@ -55,13 +55,13 @@
 	position: absolute;
 	top: 4%;
 	left: 6%;
-	width: 10rem;
+	width: fit-content;
 	height: 2.5rem;
 	background-color: var(--audionote-border-color);
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding-left: 2%;
+	padding: 0% 4%;
 	justify-content: flex-start;
 	border-radius: 5px;
 	border-style: solid;

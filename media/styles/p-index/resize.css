@@ -32,6 +32,10 @@
 }
 
 @media (max-width: 850px) {
+	pre {
+		display: none;
+	}
+	
 	#featured-projects {
 		display: none;
 	}
