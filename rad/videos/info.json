@@ -1,0 +1,37 @@
+[
+	{
+		"name": "videos",
+		"path": "rad/videos",
+		"type": "media",
+		"color": "cyan",
+		"view": "big-items-grid",
+		"icon": "video",
+		"content": {
+			"type": "video",
+			"files": [
+				{
+					"i decorated my car": [
+						{
+							"title": "i decorated my car",
+							"description": "i decorated my car",
+							"file": "i decorated my car.mp4",
+							"thumbnail": "i decorated my car.jpg",
+							"duration": "00:01:30",
+							"size": "50MB"
+						}
+					],
+					"daddy's car": [
+						{
+							"title": "daddy's car",
+							"description": "daddy's car",
+							"file": "daddy's car.mp4",
+							"thumbnail": "daddy's car.jpg",
+							"duration": "00:02:00",
+							"size": "75MB"
+						}
+					]
+				}
+			]
+		}
+	}
+]

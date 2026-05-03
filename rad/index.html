@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RAD!</title>
+		<link rel="stylesheet" href="./media/styles/root.css" />
+		<script type="module" src="./media/scripts/rad.app.js"></script>
+	</head>
+	<body>
+		<div class="fx-window">
+			<header class="fx-topbar">
+				<div class="fx-brand">
+					<div class="fx-brand-title">RAD!</div>
+					<div class="fx-brand-sub">Radical Activity Directory</div>
+				</div>
+				<div class="fx-sep" aria-hidden="true"></div>
+				<div class="fx-path">
+					<div class="fx-label">PATH</div>
+					<div class="fx-field" id="fxPath" aria-label="Path">...</div>
+				</div>
+				<div class="fx-actions" aria-label="Window actions">
+					<button class="fx-btn" type="button">NEW</button>
+					<button class="fx-btn" type="button">COPY</button>
+					<button class="fx-btn" type="button">PASTE</button>
+					<button class="fx-btn" type="button">INFO</button>
+				</div>
+			</header>
+
+			<main class="fx-main">
+				<aside class="fx-pane fx-sidebar" aria-label="Sidebar">
+					<div class="fx-pane-head">
+						<div class="fx-pane-title">PLACES</div>
+						<div class="fx-pane-meta">PINNED</div>
+					</div>
+					<div class="fx-list" id="fxPlaces" role="list"></div>
+
+					<div class="fx-divider" aria-hidden="true"></div>
+
+					<div class="fx-pane-head">
+						<div class="fx-pane-title">DRIVES</div>
+						<div class="fx-pane-meta">LOCAL</div>
+					</div>
+					<div class="fx-list" id="fxDrives" role="list">
+						<div class="fx-item" role="listitem">
+							<div class="fx-item-icon" aria-hidden="true"></div>
+							<div class="fx-item-info">
+								<div class="fx-item-title">RAD (C:)</div>
+								<div class="fx-item-status">disc</div>
+							</div>
+						</div>
+						<div class="fx-item" role="listitem">
+							<div class="fx-item-icon" aria-hidden="true"></div>
+							<div class="fx-item-info">
+								<div class="fx-item-title">ARCHIVE (D:)</div>
+								<div class="fx-item-status">disc</div>
+							</div>
+						</div>
+					</div>
+				</aside>
+
+				<section class="fx-pane fx-content" aria-label="Content">
+					<div class="fx-toolbar">
+						<div class="fx-crumbs" id="fxCrumbs" aria-label="Breadcrumbs">...</div>
+						<div class="fx-toolbar-right" aria-label="Toolbar">
+							<div class="fx-pill" id="fxView">VIEW: LIST</div>
+							<div class="fx-pill">SORT: NAME</div>
+						</div>
+					</div>
+					<div class="fx-divider" aria-hidden="true"></div>
+
+					<div class="fx-filelist" id="fxFilelist" role="list"></div>
+				</section>
+			</main>
+
+			<footer class="fx-statusbar" aria-label="Status">
+				<div class="fx-status-left" id="fxStatusLeft">...</div>
+				<div class="fx-sep" aria-hidden="true"></div>
+				<div class="fx-status-mid" id="fxStatusMid">...</div>
+				<div class="fx-sep" aria-hidden="true"></div>
+				<div class="fx-status-right" id="fxStatusRight">ready</div>
+			</footer>
+		</div>
+
+		<div class="fx-previewhost hidden" id="fxPreviewHost" aria-label="Preview window">
+			<div class="fx-previewbar" id="fxPreviewBar">
+				<div class="fx-previewtitle" id="fxPreviewTitle">preview</div>
+				<div class="fx-sep" aria-hidden="true"></div>
+				<button class="fx-previewbtn" id="fxPreviewMax" type="button">max</button>
+				<button class="fx-previewbtn" id="fxPreviewHide" type="button">hide</button>
+			</div>
+			<div class="fx-divider" aria-hidden="true"></div>
+			<iframe class="fx-previewframe" id="fxPreviewFrame" title="preview" src="./preview.html"></iframe>
+		</div>
+	</body>
+</html>

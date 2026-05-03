@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>preview</title>
+		<link rel="stylesheet" href="./media/styles/root.css" />
+		<script type="module" src="./media/scripts/rad.preview.js"></script>
+		<style>
+			body::before {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pv">
+			<header class="pv-top">
+				<div>
+					<div class="pv-title" id="pvTitle">preview</div>
+					<div class="pv-meta" id="pvMeta">...</div>
+				</div>
+				<div class="pv-actions">
+					<a class="pv-btn" id="pvRaw" href="#" target="_blank" rel="noreferrer">view raw</a>
+					<button class="pv-btn" id="pvCopy" type="button">copy link to</button>
+					<a class="pv-btn" id="pvDl" href="#" download>download</a>
+				</div>
+			</header>
+			<div class="pv-sep" aria-hidden="true"></div>
+			<main class="pv-body" id="pvBody"></main>
+		</div>
+	</body>
+</html>
