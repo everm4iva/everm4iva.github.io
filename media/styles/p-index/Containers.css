@@ -53,19 +53,19 @@
 .container.index blockquote {
 	animation: fadeInWords 0.3s ease-out forwards;
 	opacity: 0;
-	animation-delay: 1.4s;
+	animation-delay: 0.7s;
 }
 
 .container.index ul {
 	animation: fadeInWords 0.2s ease-out forwards;
 	opacity: 0;
-	animation-delay: 1.7s;
+	animation-delay: 0.7s;
 }
 
 .container.index p {
 	animation: fadeInWords 0.4s ease-out forwards;
 	opacity: 0;
-	animation-delay: 2s;
+	animation-delay: 0.7s;
 }
 
 @keyframes fadeInWords {

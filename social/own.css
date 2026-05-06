@@ -1,3 +1,5 @@
+@import url('../media/styles/root.css');
+
 html {
 	user-select: none;
 	-moz-user-select: none;
@@ -8,6 +10,11 @@ html {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scrollbar-width: auto;
+}
+* {
+	scrollbar-width: auto;
+	scrollbar-color: var(--pink) var(--bg-color);
 }
 
 a {
@@ -29,6 +36,8 @@ body {
 	justify-content: center;
 	padding: 20px;
 	background-color: rgb(0, 0, 0);
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 body:before {

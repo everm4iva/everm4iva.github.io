@@ -1,3 +1,13 @@
+# release 4.3.15 - (6 may 2026)
+- boosted version
+- created "diary" page, showed publicly finally
+- created sitemap (general improvement)
+- changed profile picture decor
+- improved design and display info in social media pages (in this website)
+- updated more links in the main sap page
+- faster loading animation
+- diary: added "raw thoughts (this website)"
+
 # release 4.3.14 - (25 apr 2026)
 - optimized some css styles
 - audio note -> text note

@@ -32,10 +32,13 @@
 }
 
 @media (max-width: 850px) {
+	.me {
+		display: none;
+	}
 	pre {
 		display: none;
 	}
-	
+
 	#featured-projects {
 		display: none;
 	}
@@ -52,9 +55,20 @@
 	.right-cont {
 		width: 100%;
 		flex: 0 0 auto;
+		overflow: unset;
 		border-top-style: solid;
 		border-top-color: var(--pink);
 		border-top-width: 1px;
+		background-color: var(--pink);
+	}
+
+	.right-cont h2 {
+		color: rgb(255, 236, 236);
+	}
+
+	.right-cont a {
+		color: var(--pink);
+		background-color: black;
 	}
 
 	#content-right {
@@ -62,10 +76,6 @@
 		flex-direction: row;
 		width: 100%;
 		height: 100%;
-	}
-	.pfp-class {
-		border-bottom-color: transparent;
-		border-bottom-width: 0px;
 	}
 	.audio-note {
 		display: none;
@@ -83,6 +93,7 @@
 	body {
 		font-size: 0.9rem;
 		overflow-x: hidden;
+		overflow-y: hidden;
 	}
 
 	section {
@@ -106,7 +117,7 @@
 	}
 
 	.right-cont {
-		overflow-x: hidden;
+		overflow: unset;
 	}
 
 	.pfp-class {
