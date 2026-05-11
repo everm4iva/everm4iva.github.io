@@ -1,3 +1,9 @@
+# release 4.3.16.2 - (11 may 2026)
+- updated css of manifest
+- added banner to index page!
+- new manifest: "Art vs System"
+- removed audio note + changed pfp decoration
+
 # release 4.3.16 - (11 may 2026)
 - bumped version
 - new category of drawings (artwork) in diary page!

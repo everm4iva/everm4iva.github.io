@@ -45,7 +45,6 @@
 
 .container.index .banner {
 	animation: widthExpand 0.4s ease-out forwards;
-	width: 30%;
 	opacity: 0;
 	animation-delay: 1.8s;
 }
@@ -81,14 +80,12 @@
 
 @keyframes widthExpand {
 	0% {
-		width: 30%;
 		opacity: 0;
 	}
 	80% {
 		opacity: 0.5;
 	}
 	100% {
-		width: 80%;
 		opacity: 1;
 
 	}
