@@ -1,3 +1,8 @@
+# release 4.3.16 - (11 may 2026)
+- bumped version
+- new category of drawings (artwork) in diary page!
+- added website favicons!
+
 # release 4.3.15 - (6 may 2026)
 - boosted version
 - created "diary" page, showed publicly finally
