@@ -1,0 +1,41 @@
+# Dataset of lasagna products collected from several supermarkets
+
+[Continente]
+- 3,29€ 600gr (5,48kg)
+- 4,49€ 1kg (4,49kg)
+- 2,49€ 400gr (6,23kg) (atum)
+- 2,49€ 400gr (6,23kg) (frango)
+- 2,49€ 400gr (6,23kg) (vegetais)
+- 2,49€ 400gr (6,23kg) (queijo)
+- 3,19€ 500gr (6,38kg)
+- 5,99€ 1,2kg (4,99kg)
+
+[Pingo Doce]
+- 2,79€ 350gr (7,97kg)
+- 3,49€ 500gr (6,98kg)
+- 4,29€ 750gr (5,72kg)
+- 1,99€ 250gr (7,96kg) (mini)
+- 3,99€ 900gr (4,43kg)
+
+[Lidl]
+- 2,59€ 400gr (6,48kg) (basic)
+- 3,89€ 500gr (7,78kg) (cheese)
+- 4,79€ 1kg (4,79kg)
+- 2,29€ 300gr (7,63kg)
+
+[Aldi]
+- 2,99€ 400gr (7,48kg)
+- 3,49€ 500gr (6,98kg)
+- 5,49€ 1kg (5,49kg)
+
+[Mercado Local]
+- 6,50€ 1,5kg (4,33kg) (artesanal)
+- 4,99€ 800gr (6,24kg) (caseiro)
+- 3,75€ 450gr (8,33kg)
+
+[Marcas Brancas]
+- 1,99€ 400gr (4,98kg) (budget)
+- 2,49€ 250gr (9,96kg) (snack)
+- 3,29€ 600gr (5,48kg)
+
+# End of dataset

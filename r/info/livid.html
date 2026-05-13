@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Livid - Info</title>
+    <link rel="shortcut icon" href="../../icons/@core/MyLittleIcon-Resources-v1.png" type="image/x-icon">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Livid - About">
+
+    <link rel="stylesheet" href="../../media/styles/p-resources/ap.infoview.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">About <mark>Livid</mark></h1>
+        </header>
+
+        <div class="project-info">
+            <p class="description">
+                Using <a href="OrianaTerminal.html">Oriana</a> i coded a 3d simulation game, that lets ai act, move, build and destroy things on their own will. It is experimental and won't go public so soon.
+                <p></p>
+            </p>
+
+            <div class="status">
+                <strong>Current Status:</strong> Project put to side (testing ended, won't be continued for now)
+            </div>
+
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-label">Created</div>
+                    <div class="detail-value">April 2024</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Developer</div>
+                    <div class="detail-value">everm4iva</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Project Type</div>
+                    <div class="detail-value">Experimental AI environment</div>
+                </div>
+            </div>
+
+        </div>
+
+        <section class="screenshots">
+            <h2 class="screenshots-title">Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item" onclick="openModal('modal1', './screenshots/dev-04042026-0239.PNG', 'Livid inside a wall')">
+                    <img src="./screenshots/dev-04042026-0239.PNG" alt="Livid inside a wall">
+                    <div class="screenshot-caption">Livid inside a wall</div>
+                </div>
+                <div class="screenshot-item" onclick="openModal('modal2', './screenshots/dev-04042026-0240.PNG', 'Livid building abstract stuff and calling it dragon')">
+                    <img src="./screenshots/dev-04042026-0240.PNG" alt="Livid building abstract stuff and calling it dragon">
+                    <div class="screenshot-caption">Livid building abstract stuff and calling it dragon</div>
+                </div>
+                                <div class="screenshot-item" onclick="openModal('modal2', './screenshots/dev-04042026-0241.PNG', 'Livid building a dream galaxy')">
+                    <img src="./screenshots/dev-04042026-0241.PNG" alt="Livid building a dream galaxy">
+                    <div class="screenshot-caption">Livid building a dream galaxy</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal for image viewing -->
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <div class="modal-content" onclick="event.stopPropagation()">
+            
+                <img id="modalImage" class="modal-image" src="" alt="">
+                <div id="modalCaption" class="modal-caption"></div>
+                <div class="modal-hint">Press SPACE to open in new tab & anywhere else to close</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../media/scripts/ap.infoview.js"></script>
+</body>
+</html>

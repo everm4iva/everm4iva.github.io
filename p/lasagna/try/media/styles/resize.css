@@ -1,0 +1,10 @@
+/* === Media Queries == */
+@media (max-width: 500px) {
+	.app {
+		margin: 12px auto;
+		padding: 0 12px;
+	}
+	.controls {
+		grid-template-columns: 1fr;
+	}
+}

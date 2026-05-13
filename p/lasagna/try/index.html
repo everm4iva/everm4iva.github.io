@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: https://ssl.gstatic.com; connect-src 'self' https://api.exchangerate.host https://api.metals.live; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:" />
+		<meta name="format-detection" content="telephone=yes" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover" />
+		<meta name="color-scheme" content="#ffffff" />
+		<link rel="stylesheet" href="media/styles/index.css" />
+		<link rel="shortcut icon" href="./shc/lasanha.png" type="image/png" />
+		<title>lasagna</title>
+	</head>
+	<body>
+		<div class="app">
+			<header class="app-header">
+				<h1 id="title">lasagna converter</h1>
+				<p class="subtitle" id="subtitle">Calculate your currency -> lasanha</p>
+				<nav class="tabs">
+					<button id="tabResults" class="tab active">Results</button>
+					<button id="tabSettings" class="tab">Settings</button>
+					<button id="tabManual" class="tab">Manual</button>
+					<button id="tabChart" class="tab">Chart</button>
+					<button id="tabAbout" class="tab">About</button>
+				</nav>
+			</header>
+
+			<main class="panel">
+				<section id="resultsTab">
+					<section class="controls">
+						<label
+							><span id="amountLabel">Amount</span>
+							<input id="amount" type="number" step="any" placeholder="0" />
+						</label>
+
+						<label
+							><span id="currencyLabel">Currency</span>
+							<select id="currency">
+								<option value="EUR" data-i18n="opt_currency_eur">€ — Euro</option>
+								<option value="USD" data-i18n="opt_currency_usd">$ — US Dollar</option>
+								<option value="BRL" data-i18n="opt_currency_brl">R$ — Brazilian Real</option>
+								<option value="GBP" data-i18n="opt_currency_gbp">£ — British Pound</option>
+								<option value="GOLD" data-i18n="opt_currency_gold">Gold (grams)</option>
+							</select>
+						</label>
+
+						<label
+							><span id="inputModeLabel">Input mode</span>
+							<select id="inputMode">
+								<option value="currency" data-i18n="opt_inputmode_currency">Currency amount</option>
+								<option value="lasagna" data-i18n="opt_inputmode_lasagna">Number of lasagnas</option>
+							</select>
+						</label>
+
+						<label
+							><span id="basisLabel">Calculate by</span>
+							<select id="basisSelect">
+								<option value="typical" data-i18n="opt_basis_typical">Typical (avg)</option>
+								<option value="cheapest_pkg" data-i18n="opt_basis_cheapest_pkg">
+									Cheapest (per package)
+								</option>
+								<option value="cheapest_kg" data-i18n="opt_basis_cheapest_kg">Cheapest (per kg)</option>
+								<option value="best_quality" data-i18n="opt_basis_best_quality">
+									Best quality (largest)
+								</option>
+							</select>
+						</label>
+
+						<button id="swapMode" title="Swap input/output" aria-label="Swap input/output">⇄</button>
+
+						<button id="calc">Calculate</button>
+						<label style="align-self: center"
+							><span id="compactLabel" class="hidden">Compact view</span>
+							<input id="compact" type="checkbox" checked class="hidden" />
+						</label>
+					</section>
+
+					<section class="results" id="results" aria-live="polite">
+						<div class="result-card" id="resultCard" aria-hidden="false">
+							<div class="big" id="bigResult">—</div>
+							<div class="small" id="bigSub">—</div>
+						</div>
+						<div id="summary">Loading data…</div>
+						<div class="stats" id="stats"></div>
+						<ul id="items" class="items"></ul>
+						<ul id="details" class="items"></ul>
+					</section>
+				</section>
+
+				<section id="settingsTab" style="display: none">
+					<h3 id="settingsTitle">Settings</h3>
+					<label>
+						<span id="langLabel">Language</span>
+						<select id="lang">
+							<option value="en">English</option>
+							<option value="pt">Português</option>
+						</select>
+					</label>
+
+					<label>
+						<span id="defaultViewLabel" class="hidden">Default view</span>
+						<select id="defaultView" class="hidden">
+							<option value="compact" data-i18n="opt_default_compact">Compact</option>
+							<option value="list" data-i18n="opt_default_list">List</option>
+						</select>
+					</label>
+
+					<label>
+						<span id="groupStepLabel">Grouping step (g)</span>
+						<select id="groupStep">
+							<option value="50">50 g</option>
+							<option value="100">100 g</option>
+						</select>
+					</label>
+
+					<div style="margin-top: 10px">
+						<button id="saveSettings">Save settings</button>
+						<button id="resetSettings">Reset defaults</button>
+					</div>
+				</section>
+
+				<section id="manualTab" class="manual" style="display: none">
+					<h3 id="manualTitle">Manual</h3>
+					<div id="manualContent"></div>
+				</section>
+
+				<section id="aboutTab" class="about" style="display: none">
+					<h3 id="aboutTitle">About</h3>
+					<div id="aboutContent"></div>
+				</section>
+
+				<section id="chartTab" class="chart" style="display: none">
+					<h3 id="chartTitle">Chart</h3>
+					<div class="chart-canvas">
+						<canvas id="chartCanvas" width="720" height="320" aria-label="Live price chart"></canvas>
+					</div>
+					<div class="chart-stats" aria-live="polite">
+						<div class="chart-stat">
+							<strong id="chartStatCurrencyLabel">Currency</strong> <span id="chartStatCurrency">—</span>
+						</div>
+						<div class="chart-stat">
+							<strong id="chartStatBasisLabel">Lasanha</strong> <span id="chartStatBasis">—</span>
+						</div>
+						<div class="chart-stat">
+							<strong id="chartStatAvgLabel">Average</strong> <span id="chartStatAvg">—</span>
+						</div>
+					</div>
+				</section>
+			</main>
+			<!-- <footer class="foot">Data cached locally. Rates from exchangerate.host.</footer> -->
+		</div>
+		<!-- <script src="cordova.js"></script> -->
+		<script src="scripts/app.ns.js"></script>
+		<script src="scripts/app.cache.js"></script>
+		<script src="scripts/app.i18n.js"></script>
+		<script src="scripts/app.data.js"></script>
+		<script src="scripts/app.chart.js"></script>
+		<script src="scripts/app.main.js"></script>
+	</body>
+</html>

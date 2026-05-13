@@ -1,0 +1,29 @@
+/* === Prefers == */
+@media screen and (prefers-color-scheme: dark) {
+}
+
+/* === Event == */
+.event {
+	border-radius: 4px;
+	color: var(--event-color);
+	font-size: 12px;
+	margin: 0px 30px;
+	padding: 2px 0px;
+}
+
+.event.listening {
+	background-color: var(--event-listening);
+	display: block;
+}
+
+.event.received {
+	background-color: var(--event-received);
+	display: none;
+}
+
+#deviceready.ready .event.listening {
+	display: none;
+}
+#deviceready.ready .event.received {
+	display: block;
+}

@@ -1,3 +1,10 @@
+# release 4.3.17 - (13 may 2026)
+- added new page: "LASAGNA" (web/mobile tool)
+- added new project: "Instance Browser" (web browser)
+- updated project page with new projects and info pages!
+- ordered projects by date, now you can see when they were created.
+- more artwork, yay!
+
 # release 4.3.16.2 - (11 may 2026)
 - updated css of manifest
 - added banner to index page!
