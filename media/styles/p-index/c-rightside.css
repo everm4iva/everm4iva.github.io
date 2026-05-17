@@ -159,7 +159,8 @@
 }
 
 .fproject {
-	width: 100%;
+	position: relative;
+	width:100%;
 	display: flex;
 	flex-direction: row;
 	gap: 2%;
@@ -169,17 +170,17 @@
 	border-color: var(--white);
 	padding: 0.8rem;
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: cover;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	transition: all 80ms ease;
 	cursor: pointer;
+	overflow: hidden;
 }
 
 .fproject:hover {
-	transform: translateY(-4px);
+	transform: translateY(-8px);
 	box-shadow: var(--white) 0px 4px 0px 0px;
 }
 
@@ -197,7 +198,35 @@
 	color: var(--white);
 }
 
+.fproject-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	opacity: 1;
+	filter: blur(10px);
+	z-index: -1;
+	overflow: hidden;
+}
+
 /* Project types */
+.p-instance {
+	border-color: var(--instance-pink);
+	overflow: hidden;
+	color: var(--instance-blue)
+}
+
+.p-instance .fproject-name {
+	color: var(--instance-pink);
+}
+
+.p-instance:hover{
+	box-shadow: var(--instance-pink) 0px 8px 0px 0px;
+}
+
 .p-fractal {
 	border-color: var(--fractal-p);
 }
@@ -207,7 +236,21 @@
 }
 
 .p-fractal:hover{
-	box-shadow: var(--fractal-p) 0px 4px 0px 0px;
+	box-shadow: var(--fractal-p) 0px 8px 0px 0px;
+}
+
+.p-lasagna {
+	border-color: var(--lasagna-s);
+	background-color: var(--black);
+	color: var(--lasagna-p);
+}
+
+.p-lasagna .fproject-name {
+	color: var(--lasagna-s);
+}
+
+.p-lasagna:hover{
+	box-shadow: var(--lasagna-s) 0px 8px 0px 0px;
 }
 
 .p-oceanboard {
@@ -219,7 +262,7 @@
 }
 
 .p-oceanboard:hover{
-	box-shadow: var(--oceanboard-p) 0px 4px 0px 0px;
+	box-shadow: var(--oceanboard-p) 0px 8px 0px 0px;
 }
 
 .p-simplyprivate {
@@ -231,7 +274,7 @@
 }
 
 .p-simplyprivate:hover{
-	box-shadow: var(--simplyprivate-s) 0px 4px 0px 0px;
+	box-shadow: var(--simplyprivate-s) 0px 8px 0px 0px;
 }
 
 .p-downsrc {
@@ -243,6 +286,6 @@
 }
 
 .p-downsrc:hover{
-	box-shadow: var(--downsrc-s) 0px 4px 0px 0px;
+	box-shadow: var(--downsrc-s) 0px 8px 0px 0px;
 }
 

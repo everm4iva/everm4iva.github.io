@@ -56,7 +56,7 @@ footer {
 
 .project-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
 	gap: 2rem;
 	width: 100%;
 }
@@ -66,12 +66,14 @@ footer {
 	justify-content: center;
 	align-items: center;
 	background: var(--gradient, #333);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-decoration: none;
-	transition: all 0.4s ease;
 	position: relative;
 	border-radius: 5px;
 	overflow: hidden;
-	transition: 0.2s ease-in-out;
+	transition: all 0.1s ease;
 	cursor: pointer;
 }
 
@@ -94,11 +96,12 @@ footer {
 }
 
 .project-tile:hover {
-	transform: scale(1.02) rotate(1deg);
-	filter: brightness(1.1);
+	transform: scale(1.08) rotate(1deg);
+	filter: brightness(1.2);
 	z-index: 10;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-	transition: 0.2s ease-in-out;
+	transition: all 0.2s ease;
+	border-radius: 15px;
 }
 
 .project-tile img {
@@ -156,7 +159,7 @@ footer {
 	}
 
 	.project-grid {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(2, 2fr);
 		gap: 0.8rem;
 	}
 

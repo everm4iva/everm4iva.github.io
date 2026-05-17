@@ -1,3 +1,16 @@
+# release 4.3.18 - (17 may 2026)
+> big update, new design, new projects, new art, new everything baby!!!!
+- changed color scheme again, make it fresh again.
+- new profile picture!! (also changed the decoration)
+- added "instance" browser to the featured projects section in the index page!
+- added "archi2" project to the projects page.
+- bug fix and small style polish.
+- ajusted some info in the index page.
+- 404 image changed to the new oc "me" with the new color scheme.
+- added exclusive art to diary page, including the process of the new profile picture and some sketches.
+- new aesthetic for the website! the core pages now have a cool background :O
+- new favicon all over the website. (favicon.ico / favicon.png)
+
 # release 4.3.17 - (13 may 2026)
 - added new page: "LASAGNA" (web/mobile tool)
 - added new project: "Instance Browser" (web browser)

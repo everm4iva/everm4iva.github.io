@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>M4iva's Web</title>
-		<link rel="shortcut icon" href="./media/icons/Star.bg.png" type="image/png" />
+		<link rel="shortcut icon" href="./favicon.png" type="image/png" />
 		<meta name="robots" content="index, follow, noarchive, nosnippet, translate" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="World's most boring page!" />
+		<map name="./sitemap.xml"></map>
 		<link rel="manifest" href="manifest.json" />
 		<!-- Styles -->
 		<link rel="stylesheet" href="./media/styles/p-index/index.css" />
@@ -70,14 +71,21 @@
 * ##         ## ##   ##       ##    ##  ##     ##       ##   ##    ## ##   ##     ##
 * ########    ###    ######## ##     ## ##     ##       ##  ####    ###    ##     ##   or just maiva, i guess...
 */
-- website, version <a href="./changelog.md">4.3.17</a> (last updated: 13 may 2026) | see <a href="./LICENSE.txt">LICENSE</a>
+- website, version <a href="./changelog.md">4.3.18</a> (last updated: 17 may 2026) | see <a href="./LICENSE.txt">LICENSE</a>
 - this is my personal website, where i share a bit of me and what i do. This is also a "repo" of my projects and resources.
                     </pre>
-					<div class="me" tabindex="1" role="button" aria-label="Draggable avatar" aria-grabbed="false"></div>
+					<div
+						class="me hidden"
+						tabindex="1"
+						role="button"
+						aria-label="Draggable avatar"
+						aria-grabbed="false"></div>
 					<h2 class="overcute header">Welcome to my little corner on the internet.</h2>
-					<div class="banner">
+					<div class="banner hidden">
 						<div class="banner-bg"></div>
-						<div class="banner-text">New projects avaliable to see & explore (lasagna + instance browser)</div>
+						<div class="banner-text">
+							New projects avaliable to see & explore (lasagna + instance browser)
+						</div>
 						<div class="banner-button"><a href="./p/index.html">Go to projects page</a></div>
 					</div>
 					<h2>☆======= About Me =========☆</h2>
@@ -99,8 +107,7 @@
 						<li>I'm Portuguese, live in Portugal.</li>
 						<li>Big fan of abstract, unhinged and supa random phrases. The more unusual, the better.</li>
 						<li>
-							Crazy things are attractive to me, crazy in objects, in people, is stories or whatever art.
-							Crazy good.. not crazy bad, i don't like that. Just be wild and brutally honest.
+							Crazy things are attractive to me.
 						</li>
 						<li>
 							I don't use pronouns. Tell me that i am a male or a female, call me whatever, i don't care
@@ -114,7 +121,6 @@
 							Linear approaches make me feel weak, confused and anxious. So.. i often do multiple projects
 							at the same time, rotating between them whenever i feel to.
 						</li>
-						<li>What is "having a schedule"?</li>
 						<li>I'm a mess in person, completely bipolar, btw.</li>
 						<li>
 							In a month... probably i will change some phrases or the whole color scheme of the website
@@ -148,13 +154,15 @@
 							Can't stand love. Not made for it, i want it, but eventually i will become even more
 							unstable emotionally.
 						</li>
-						<li>Im building "Ghostware" - projects that are spiritually finished but physically unmanifested.</li>
+						<li>
+							Im building "Ghostware" - projects that are spiritually finished but physically
+							unmanifested.
+						</li>
 					</ul>
 					<h2>☆======= Free time stuff =========☆</h2>
 					<ul>
 						<li>
-							Make playlists (over 200 tracks each) for specific things. Doesn't matter, one day imma go
-							mix it all.
+							Make playlists (over 600 tracks each) for specific things.
 						</li>
 						<li>Play games. (Minecraft, PEAK, SuperHOT, Friday Night Funkin' ...)</li>
 						<li>Explore and support indie animation artists on social media.</li>
@@ -225,17 +233,15 @@
 			<div class="right-cont">
 				<div class="pfp-class">
 					<div class="pfp" style="background-image: url('./media/images/me.jpg')">
-						<img class="pfp-overlay" src="./media/images/profiledecor/bubble.png" alt="" />
+						<img class="pfp-overlay" src="./media/images/profiledecor/circlingstar.png" alt="" />
 					</div>
 					<div class="pfp-info">
-						<div class="pfp-name">everm4iva</div>
-						<div>going crazy on purpose</div>
+						<div class="pfp-name">everm4iva ✦ </div>
+						<div>skipping goth phase</div>
 					</div>
 					<div class="audio-note hidden">
 						<div class="pop"></div>
-						<div class="audio-text">
-							this description could serve a purpose.
-						</div>
+						<div class="audio-text">this description could serve a purpose.</div>
 						<!-- <div class="audio-text">
 							<img class="play-toggle" src="./media/images/commonicons/play.white.svg" alt="Play" />
 							music playlist HERE!
@@ -284,9 +290,7 @@
 					<h2 style="margin: 0">Quick links:</h2>
 					<ul style="margin: 0">
 						<li>
-							<a href="./diary/" class="diary"
-								>☆ Diary ☆</a
-							>
+							<a href="./diary/" class="diary">☆ Diary ☆</a>
 						</li>
 						<li><a href="./r/">Resources Page</a></li>
 						<li><a href="./m/">Manifesto Page</a></li>
@@ -311,6 +315,14 @@
 				<section id="featured-projects">
 					<h2 style="margin: 0">Featured Projects:</h2>
 					<div class="fprojects">
+						<div class="fproject p-instance" onclick="window.open('https://github.com/everm4iva/instance')">
+							<div class="fproject-icon" style="background-image: url('./p/info/instance.png')"></div>
+							<!-- <div class="fproject-bg" style="background-image: url('./p/info/instance.png')"></div> -->
+							<div class="fproject-info">
+								<div class="fproject-name">Instance</div>
+								<div class="fproject-desc">2026 • browser</div>
+							</div>
+						</div>
 						<div
 							class="fproject p-downsrc"
 							onclick="window.open('https://github.com/everm4iva/downsrc')"
@@ -321,18 +333,6 @@
 							<div class="fproject-info">
 								<div class="fproject-name">downsrc</div>
 								<div class="fproject-desc">2026 • Terminal Tool</div>
-							</div>
-						</div>
-						<div
-							class="fproject p-fractal"
-							onclick="window.open('./p/fractal/')"
-							style="background-image: url('./media/base/@project-banner/fractalrelease.png')">
-							<div
-								class="fproject-icon"
-								style="background-image: url('./media/base/@projects/FRACTAL/fractal.png')"></div>
-							<div class="fproject-info">
-								<div class="fproject-name">FRACTAL</div>
-								<div class="fproject-desc">2025 • Web-Game • abstract shooter</div>
 							</div>
 						</div>
 						<div
