@@ -96,7 +96,7 @@ footer {
 }
 
 .project-tile:hover {
-	transform: scale(1.08) rotate(1deg);
+	transform: scale(1.09) rotate(1deg);
 	filter: brightness(1.2);
 	z-index: 10;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);

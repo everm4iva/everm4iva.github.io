@@ -1,14 +1,46 @@
 [
 	{
 		"service-title": "Archi2",
-		"service-description": "",
-		"service-area": "",
-		"service-type": ["api"],
-		"latest-ver": "0.1.0",
-		"latest-ver-id": "pr",
-		"latest-ver-id-humanread": "private release",
-		"param": "?",
-		"online": false,
-		"models": {}
+		"service-description": " A Logic-Optimized Reasoning Model/Platform",
+		"status": "private",
+		"github-repo": "https://github.com/archi2dev",
+		"models": {
+			"archi2-2:9b": {
+				"name": "Archi2 ",
+				"description": "archi2 is an 9B parameter language model fine-tuned on top of Ministral-8B, trained on a limited and curated dataset up to May 2024. It is optimized for raw logical reasoning, structured brainstorming, and high-quality human language expressiveness.",
+				"advanced-details": [
+					"- Base model: Ministral-8B",
+					"- Parameters: 9 billion",
+					"- License: PFF1.0 (Pure Freedom Forever)",
+					"- Context window: 128k tokens",
+					"- Function calling: Yes",
+					"- Vision: Yes (image understanding only)"
+				],
+				"capabilities": [
+					"Raw logic & logical deduction",
+					"Structured problem-solving and brainstorming",
+					"Expressive, nuanced language generation",
+					"Processing large documents and long-context tasks",
+					"Image understanding",
+					"Search and retrieval with context and filtering (truth and relevance)"
+				],
+				"limitations": [
+					"Real-time API or database integration (model is not designed for tool-augmented pipelines)",
+					"Audio or video understanding",
+					"Tasks requiring knowledge past May 2024",
+					"Advanced search and retrieval that requires up-to-date information or dynamic data sources"
+				],
+				"recommended-parameters": {
+					"temperature": "≤ 0.7 (less than)",
+					"top_p": "≤ 0.78 (less than)",
+					"frequency_penalty": " ~0.6"
+				},
+				"urls": {
+					"huggingface (download)": "https://huggingface.co/everm4iva/archi2-2-9b"
+				},
+				"latest-update": "20 may 2026"
+			}
+		},
+		"platforms": {}
 	}
 ]

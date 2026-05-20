@@ -1,3 +1,10 @@
+# release 4.3.18.2 (20 may 2026)
+- some typo fixes
+- described better the projects
+- made a whole file named "raw-list.md" with all the projects, including the ones that never got mentioned anywhere, and linked it in the project page.
+- added more details to "archi2" service on the sap page.
+- "archi2" project on projects page is now linked to the info page in sap, so you can check the details there.
+
 # release 4.3.18.1 (20 may 2026)
 - added new project in projects page: "xmlm"
 - "archi2" project is now on active development
