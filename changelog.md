@@ -1,3 +1,8 @@
+# release 4.3.18.1 (20 may 2026)
+- added new project in projects page: "xmlm"
+- "archi2" project is now on active development
+- new icon for missing icons in projects page, now you won't see broken images if i forget to add an image for a project.
+-
 # release 4.3.18 - (17 may 2026)
 > big update, new design, new projects, new art, new everything baby!!!!
 - changed color scheme again, make it fresh again.
