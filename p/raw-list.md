@@ -9,6 +9,12 @@ BUT! on the bottom of the file shows some extra ones that never got mentioned an
 ---
 
 # 2026 Projects:
+- STARL • local self-hosted music platform • may2026
+> BubblePlay, but fr this time, that was kind of a joke anyway.
+> This time it is going to be web, mobile. You can host your own server or use a public one (auth required if so).
+> All of this open-source and made with love.
+> Plotwist: This music app allows youtube videos & has no ads. :3
+
 - XMLM • small ai tool • may2026
 > Simple terminal tool that reads one or more .xml files, summarizes, fixes or compares them in natural language.
 

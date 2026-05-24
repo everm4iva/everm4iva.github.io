@@ -1,3 +1,8 @@
+# release 4.3.18.3 (24 may 2026)
+- added starl project!
+- starl sap too.
+- boosted version because im not dead yet.
+
 # release 4.3.18.2 (20 may 2026)
 - some typo fixes
 - described better the projects

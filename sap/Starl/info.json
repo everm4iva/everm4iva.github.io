@@ -1,0 +1,21 @@
+[
+	{
+		"service-title": "starl",
+		"service-description": "Starl Music service.",
+		"service-area": "server",
+		"online-status": false,
+		"global-domain": "none yet",
+		"status": "in development, active development",
+		"repository": "https://github.com/everm4iva/starl",
+		"status-page": "none yet",
+		"platforms": {
+			"mobile": {
+				"status": "in development",
+				"mode": "debug",
+				"source-url": ""
+			},
+			"desktop":{},
+			"web": {}
+		}
+	}
+]
