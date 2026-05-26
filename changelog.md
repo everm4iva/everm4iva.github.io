@@ -2,6 +2,7 @@
 - added starl project!
 - starl sap too.
 - boosted version because im not dead yet.
+- im reconsidering bringing the music bubble thing back.. hum...
 
 # release 4.3.18.2 (20 may 2026)
 - some typo fixes

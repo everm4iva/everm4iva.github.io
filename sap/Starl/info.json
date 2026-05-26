@@ -10,7 +10,7 @@
 		"status-page": "none yet",
 		"platforms": {
 			"mobile": {
-				"status": "in development",
+				"status": "in production",
 				"mode": "debug",
 				"source-url": ""
 			},
