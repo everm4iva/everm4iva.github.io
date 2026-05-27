@@ -4,7 +4,7 @@
 		"service-description": "Starl Music service.",
 		"service-area": "server",
 		"online-status": false,
-		"global-domain": "none yet",
+		"website": "https://starl.pages.dev/",
 		"status": "in development, active development",
 		"repository": "https://github.com/everm4iva/starl",
 		"status-page": "none yet",

@@ -1,3 +1,9 @@
+# release 4.3.18.4 (27 may 2026)
+- Fixed some inconsistencies in the stylesheets and quotes in the index page.
+- Project "Instance browser" is now considered unfinished
+- More info about "starl" in sap project + new icon on projects page.
+- Boosted version, Im working on something big!
+
 # release 4.3.18.3 (24 may 2026)
 - added starl project!
 - starl sap too.
