@@ -1,3 +1,6 @@
+# release 4.3.18.5 (04 jun 2026)
+- IM STILL ALIVE!!
+
 # release 4.3.18.4 (27 may 2026)
 - Fixed some inconsistencies in the stylesheets and quotes in the index page.
 - Project "Instance browser" is now considered unfinished
