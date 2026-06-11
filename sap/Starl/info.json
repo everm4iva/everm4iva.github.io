@@ -1,21 +1,36 @@
-[
-	{
-		"service-title": "starl",
-		"service-description": "Starl Music service.",
-		"service-area": "server",
-		"online-status": false,
-		"website": "https://starl.pages.dev/",
-		"status": "in development, active development",
-		"repository": "https://github.com/everm4iva/starl",
-		"status-page": "none yet",
-		"platforms": {
-			"mobile": {
-				"status": "in production",
-				"mode": "debug",
-				"source-url": ""
-			},
-			"desktop":{},
-			"web": {}
-		}
+{
+	"service-title": "starl",
+	"service-description": "Starl music service.",
+	"service-area": "info-page",
+	"online-status": true,
+	"website": "https://starl.pages.dev/",
+	"status": "in open alpha",
+	"repository": "https://github.com/everm4iva/starl",
+	"public-servers": {
+		"public": "blueberrymaniac.tail82eddd.ts.net/",
+		"development-unique": "bangsunsetdream.tail82eddd.ts.net/"
+	},
+	"platforms": {
+		"mobile": {
+			"status": "available, in production",
+			"source-url": "https://github.com/everm4iva/starl",
+			"editions": {
+				"stable": {
+					"status": "available, in production",
+					"description": "Stable edition of the Starl. Uses public servers."
+				},
+				"DU": {
+					"status": "available, in production",
+					"description": "Developer unique edition. Uses development server, more features, more speed but more instability."
+				},
+				"standalone": {
+					"status": "not available",
+					"description": "This item is planned, but not in development or production yet. It will be a mobile edition that has it's own server."
+				}
+			}
+		},
+		"desktop": {},
+		"web": {},
+		"selfhost-server": {}
 	}
-]
+}

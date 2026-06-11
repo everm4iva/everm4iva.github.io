@@ -3,6 +3,7 @@
  * root.css - Imports and variables for all styles!
  * ☆=========================================☆
 */
+
 @import url('../fonts/fonts.css');
 @import url('./Notation.css');
 @import url('./effectsystem.css');
@@ -36,7 +37,7 @@
 	--random-color-1: rgb(255, 255, 255);
 	--random-2: #8ff370;
 	--random-color:2 var(--black);
-	--random-3: #00ffe7;
+	--random-3: #ffffff;
 	--random-color-3: var(--white);
 
 	--white: #ffffff;
@@ -90,6 +91,8 @@
 	--instance-green: #62be54;
 	--instance-blue: #4384ab;
 	--instance-cyan: #40ac94;
+	--starl-white: #ffffff;
+	--starl-accent: #B039E4;
 }
 
 :root.dark-audionote {
@@ -118,7 +121,7 @@ html {
 	font-family: var(--MainFont);
 	line-height: var(--line-height-base);
 	box-sizing: border-box;
-	background-color: var(--bg-color);
+	background-color: black;
 }
 
 ::selection {
@@ -140,7 +143,7 @@ body::before {
 	background-position: center;
 	padding: 0;
 	margin: 0;
-	filter: blur(30px);
+	filter: blur(10px);
 	opacity: 0.2;
 	z-index: -1;
 	overflow: hidden;

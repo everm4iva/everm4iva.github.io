@@ -1,3 +1,12 @@
+# release 4.3.18.6 (10 jun 2026)
+- new shiny animated cutizy banner in the index page!! - starl music
+- micro adjustments to the design of projects.
+- more info about "starl" in sap page.
+- new pfp :3
+- added new resources in resources page: @starl & implemented project pages in @website.
+- SOO much more info in the index page: curiosities, free time stuff, principles, etc.. check it out!
+- diary page updated. no new stuff, just some fixes to paths.
+
 # release 4.3.18.5 (04 jun 2026)
 - IM STILL ALIVE!!
 

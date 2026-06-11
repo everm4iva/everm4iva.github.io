@@ -213,6 +213,16 @@
 }
 
 /* Project types */
+.p-starl {
+	border-color: var(--starl-white);
+	overflow: hidden;
+	color: var(--starl-white)
+}
+
+.p-starl .fproject-name {
+	color: var(--starl-white);
+}
+
 .p-instance {
 	border-color: var(--instance-pink);
 	overflow: hidden;

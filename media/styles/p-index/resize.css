@@ -32,8 +32,11 @@
 }
 
 @media (max-width: 850px) {
-	.banner{
+	.banner {
 		width: 98%;
+	}
+	.banner-img {
+		display: none;
 	}
 	.me {
 		display: none;
@@ -90,9 +93,20 @@
 }
 
 @media (max-width: 480px) {
-	.banner{
+	.banner {
 		display: none;
 	}
+
+	.banner-img {
+		display: flex;
+		width: 100%;
+	}
+
+	.banner-button {
+		font-size: 0.9rem;
+		margin: 0;
+	}
+
 	#featured-projects {
 		display: none;
 	}

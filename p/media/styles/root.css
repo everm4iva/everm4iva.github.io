@@ -72,6 +72,7 @@ footer {
 	text-decoration: none;
 	position: relative;
 	border-radius: 5px;
+	border-color: transparent;
 	overflow: hidden;
 	transition: all 0.1s ease;
 	cursor: pointer;
