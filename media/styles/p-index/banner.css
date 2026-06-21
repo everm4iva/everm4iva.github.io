@@ -27,7 +27,7 @@
 	background-repeat: no-repeat;
 	overflow: hidden;
 	position: relative;
-	border-radius: 15px;
+	/* border-radius: 15px; */
 }
 
 .banner-button a {
@@ -45,9 +45,15 @@
 	font-weight: 500;
 	border: none;
 	cursor: pointer;
-	transition: background-color 0.3s ease;
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 	margin-right: 2%;
 	margin-bottom: 2%;
+}
+
+
+.banner-button:hover {
+	transform: scale(1.15);
+	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .banner.hidden {
@@ -74,7 +80,7 @@
 .banner-img {
 	animation:
 		appear 2s ease,
-		bannerAnimation 15s ease infinite;
+		bannerAnimation 30s ease infinite;
 }
 
 .banner-text {

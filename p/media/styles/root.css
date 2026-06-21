@@ -111,6 +111,7 @@ footer {
 	object-fit: contain;
 	filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
 	transition: 0.2s ease-in-out;
+	image-rendering: pixelated;
 }
 
 .project-tile:hover img {

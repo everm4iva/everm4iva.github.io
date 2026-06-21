@@ -1,3 +1,6 @@
+# release 4.3.18.7 (19 jun 2026)
+- new content and update on starl info.
+
 # release 4.3.18.6 (10 jun 2026)
 - new shiny animated cutizy banner in the index page!! - starl music
 - micro adjustments to the design of projects.
