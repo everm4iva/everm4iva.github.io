@@ -36,8 +36,8 @@ a {
 }
 
 a.exclusive {
-	content: '☆ ';
-	color: var(--green);
+	content: '☆';
+	color: var(--cyan);
 	text-decoration: underline;
 	cursor: pointer;
 }

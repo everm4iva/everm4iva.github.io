@@ -1,3 +1,6 @@
+# release 4.3.18.8 (23 jun 2026)
+- added new music album to "/diary" page, check it out!
+
 # release 4.3.18.7 (19 jun 2026)
 - new content and update on starl info.
 
