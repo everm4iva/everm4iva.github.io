@@ -1,3 +1,6 @@
+# release 4.3.18.9 (29 jun 2026)
+- added funny letters! "/assets/funnyletters"
+  
 # release 4.3.18.8 (23 jun 2026)
 - added new music album to "/diary" page, check it out!
 

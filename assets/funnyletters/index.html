@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Funny Letters</title>
+		<link rel="shortcut icon" href="./funnyletters.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="./funnyletters.png" type="image/png" />
+		<style>
+			:root {
+				--letter-size: 8rem;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			@font-face {
+				font-family: Juxel;
+				src: url('./juxel.ttf');
+			}
+
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+				/* background: #0e0e16; */
+				background-color: rgb(255, 255, 255);
+				font-family: Juxel, 'Trebuchet MS', 'Segoe UI', system-ui, sans-serif;
+				cursor: default;
+				user-select: none;
+				font-weight: 600;
+				color: black;
+			}
+
+			#stage {
+				position: fixed;
+				inset: 0;
+				overflow: hidden;
+			}
+
+			.hint {
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: #3a3a52;
+				font-size: 1.4rem;
+				letter-spacing: 0.08em;
+				text-align: center;
+				pointer-events: none;
+				transition: opacity 0.5s ease;
+			}
+			.hint b {
+				color: #6a6a8a;
+			}
+
+			/* Each spawned character is a stack of layers absolutely positioned. */
+			.glyph {
+				position: absolute;
+				left: 0;
+				top: 0;
+				font-size: var(--letter-size);
+				font-weight: 900;
+				line-height: 1;
+				will-change: transform;
+				transform-origin: 50% 50%;
+				pointer-events: none;
+				white-space: pre;
+			}
+
+			/* The frontmost letter you actually "typed". */
+			.glyph.lead {
+				color: #ffffff;
+				text-shadow: 0 0 14px rgba(70, 10, 10, 0.35);
+			}
+
+			/* ---- Live debug panel ---- */
+			#debug {
+				position: fixed;
+				top: 16px;
+				right: 16px;
+				width: 270px;
+				max-height: 90vh;
+				overflow-y: auto;
+				background: rgba(18, 18, 28, 0.2);
+				-webkit-backdrop-filter: blur(8px);
+				backdrop-filter: blur(8px);
+				color: #cdd0e6;
+				font-family: 'Segoe UI', system-ui, sans-serif;
+				font-size: 12px;
+				font-weight: 400;
+				z-index: 9999;
+				display: none;
+			}
+			#debug.open {
+				display: block;
+			}
+			#debug .dbg-head {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 10px 12px;
+				cursor: move;
+				border-bottom: 1px solid #2c2c44;
+				position: sticky;
+				top: 0;
+				background: rgba(18, 18, 28, 0.97);
+			}
+			#debug .dbg-head h3 {
+				font-size: 13px;
+				font-weight: 700;
+				color: #fff;
+			}
+			#debug .dbg-head small {
+				color: #6a6a8a;
+			}
+			#debug .dbg-body {
+				padding: 6px 12px 4px;
+			}
+			#debug .row {
+				margin: 9px 0;
+			}
+			#debug .row label {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 3px;
+				color: #9aa0c4;
+			}
+			#debug .row .val {
+				color: #ffd166;
+				font-variant-numeric: tabular-nums;
+			}
+			#debug .row input[type='range'] {
+				width: 100%;
+				accent-color: #ff2d3f;
+			}
+			#debug .row input[type='number'] {
+				width: 100%;
+				margin-top: 3px;
+				background: #11111c;
+				border: 1px solid #2c2c44;
+				color: #e6e8f5;
+				padding: 3px 6px;
+				font-size: 12px;
+			}
+			#debug .dbg-actions {
+				display: flex;
+				gap: 8px;
+				padding: 4px 12px 12px;
+			}
+			#debug .dbg-actions button {
+				flex: 1;
+				padding: 7px;
+				background: #1c1c2c;
+				color: #cdd0e6;
+				cursor: pointer;
+				font-size: 12px;
+			}
+			#debug .dbg-actions button:hover {
+				background: #26263c;
+				border-color: #3a3a5a;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="stage"></div>
+		<div class="hint" id="hint">
+			Start typing - every key <b>jumps</b> with a passion
+			<p style="font-size: 0.8rem; opacity: 0.5; margin-top: 2%">
+				Press F2 or ctrl to open debug panel Home/Delete to clear all
+			</p>
+		</div>
+
+		<script>
+			(() => {
+				const stage = document.getElementById('stage');
+				const hint = document.getElementById('hint');
+
+				// --- Tunables (live-editable via the F2 / Left-Ctrl debug panel) ------
+				const CFG = {
+					LETTER_SIZE: 9, // base font size in rem
+					TRAIL_LAYERS: 4, // colored copies behind the lead letter
+					FRAME_DELAY: 1.9, // lag per layer, in frames (decimals OK; ~16.7ms each)
+					GRAVITY: 0.55, // px per frame^2
+					MIN_PEAK: 0.32, // peak height as fraction of screen height
+					MAX_PEAK: 0.98,
+					STRETCH_K: 0.018, // how strongly speed stretches the glyph
+					MAX_STRETCH: 1.9,
+					LAYER_SCALE: 1.15, // each layer back is this much BIGGER (compounds)
+					LAYER_FADE: 0.0, // how much each layer back dims (0 = fully solid)
+					EXTRA_FALL: 900, // px past the bottom before it de-spawns
+					DESCENT_SHRINK: 0.978, // per-frame shrink while falling (1 = no shrink)
+					DESCENT_MIN: 0.18, // smallest the stack collapses to on the way down
+					ASCENT_START: 0.81, // size at launch (then it swells as it rises)
+					ASCENT_GROW: 1.03, // per-frame growth while going UP (1 = no growth)
+					ASCENT_MAX: 1.15, // biggest the stack swells to near the apex
+				};
+
+				// Drives the debug panel rows: [key, label, min, max, step].
+				const PARAMS = [
+					['LETTER_SIZE', 'Base size (rem)', 1, 30, 0.5],
+					['TRAIL_LAYERS', 'Trail layers', 0, 40, 1],
+					['FRAME_DELAY', 'Layer delay (frames)', 0, 6, 0.1],
+					['GRAVITY', 'Gravity', 0.05, 3, 0.01],
+					['MIN_PEAK', 'Min jump height', 0, 1.2, 0.01],
+					['MAX_PEAK', 'Max jump height', 0, 1.2, 0.01],
+					['STRETCH_K', 'Stretch strength', 0, 0.1, 0.001],
+					['MAX_STRETCH', 'Max stretch', 1, 4, 0.05],
+					['LAYER_SCALE', 'Layer growth', 1, 2.5, 0.01],
+					['LAYER_FADE', 'Layer fade', 0, 0.3, 0.005],
+					['EXTRA_FALL', 'Extra fall (px)', 0, 2500, 50],
+					['DESCENT_SHRINK', 'Descent shrink', 0.9, 1, 0.001],
+					['DESCENT_MIN', 'Descent min size', 0.05, 1, 0.01],
+					['ASCENT_START', 'Launch size', 0.1, 2, 0.01],
+					['ASCENT_GROW', 'Ascent growth', 1, 1.15, 0.001],
+					['ASCENT_MAX', 'Ascent max size', 0.5, 4, 0.05],
+				];
+
+				// Apply the base font size now and whenever it changes.
+				function applyLetterSize() {
+					document.documentElement.style.setProperty('--letter-size', CFG.LETTER_SIZE + 'rem');
+				}
+				applyLetterSize();
+
+				let hintVisible = true;
+
+				// A bright, saturated random color.
+				function brightColor() {
+					const h = Math.floor(Math.random() * 360);
+					const s = 85 + Math.random() * 15;
+					const l = 52 + Math.random() * 12;
+					return `hsl(${h} ${s}% ${l}%)`;
+				}
+
+				class Letter {
+					constructor(char) {
+						const W = window.innerWidth;
+						const H = window.innerHeight;
+
+						this.char = char;
+						// Horizontal start: somewhere across the screen with a margin.
+						this.x = 60 + Math.random() * (W - 120);
+						this.y = H + 60; // start below the bottom edge
+
+						// Launch velocity to reach a random peak height.
+						const peak = H * (CFG.MIN_PEAK + Math.random() * (CFG.MAX_PEAK - CFG.MIN_PEAK));
+						this.vy = -Math.sqrt(2 * CFG.GRAVITY * peak);
+						this.vx = (Math.random() - 0.5) * 3.2; // gentle sideways drift
+						this.rot = (Math.random() - 0.5) * 14; // initial tilt (deg)
+						this.vrot = (Math.random() - 0.5) * 3.2; // spin per frame (deg)
+
+						this.history = []; // recent motion states
+						this.floorY = H + CFG.EXTRA_FALL; // dead once past this
+						this.scale = CFG.ASCENT_START; // swells rising, collapses falling
+
+						// Build the layer elements: deepest/biggest first, lead last (on top).
+						this.layers = [];
+						for (let i = CFG.TRAIL_LAYERS; i >= 1; i--) {
+							const el = document.createElement('div');
+							el.className = 'glyph';
+							el.textContent = char;
+							// First copy directly behind the lead is red; the rest are random.
+							el.style.color = i === 1 ? '#ff2d3f' : brightColor();
+							el.dataset.layer = i;
+							stage.appendChild(el);
+							this.layers.push(el);
+						}
+						this.lead = document.createElement('div');
+						this.lead.className = 'glyph lead';
+						this.lead.textContent = char;
+						stage.appendChild(this.lead);
+					}
+
+					step() {
+						// Physics for the lead glyph.
+						this.vy += CFG.GRAVITY;
+						this.x += this.vx;
+						this.y += this.vy;
+						this.rot += this.vrot;
+
+						// Squash & stretch: stretch along travel when fast, squash at the apex.
+						const speed = Math.abs(this.vy);
+						let sy = 1 + speed * CFG.STRETCH_K;
+						sy = Math.min(sy, CFG.MAX_STRETCH);
+						const sx = 1 / Math.sqrt(sy); // keep volume roughly constant
+
+						// Swell while rising (vy < 0), collapse while falling (vy > 0).
+						if (this.vy < 0) {
+							this.scale = Math.min(CFG.ASCENT_MAX, this.scale * CFG.ASCENT_GROW);
+						} else {
+							this.scale = Math.max(CFG.DESCENT_MIN, this.scale * CFG.DESCENT_SHRINK);
+						}
+						const g = this.scale;
+
+						// Record this frame's state for the trailing layers to replay.
+						this.history.unshift({x: this.x, y: this.y, rot: this.rot, sx, sy, g});
+						const maxHist = Math.ceil(CFG.TRAIL_LAYERS * CFG.FRAME_DELAY) + 2;
+						if (this.history.length > maxHist) this.history.pop();
+
+						// Render the lead.
+						this.lead.style.transform = transformFor(this.x, this.y, this.rot, sx, sy, g);
+
+						// Render the trailing layers from delayed history, each a bit bigger.
+						// this.layers is ordered deepest-first (layer 5) ... nearest (layer 1).
+						for (const el of this.layers) {
+							const i = +el.dataset.layer; // 1..TRAIL_LAYERS
+							const s = sampleHistory(this.history, i * CFG.FRAME_DELAY);
+							const grow = Math.pow(CFG.LAYER_SCALE, i) * s.g; // compounds, then collapses
+							el.style.transform = transformFor(s.x, s.y, s.rot, s.sx, s.sy, grow);
+							el.style.opacity = Math.max(0.15, 1 - i * CFG.LAYER_FADE);
+						}
+
+						// Alive until the whole stack has fallen off the bottom.
+						const deepest = this.history[this.history.length - 1];
+						return deepest.y < this.floorY;
+					}
+
+					destroy() {
+						this.lead.remove();
+						for (const el of this.layers) el.remove();
+					}
+				}
+
+				// Sample the motion history at a fractional frame offset (linear blend),
+				// so the per-layer delay can be a smooth decimal instead of whole frames.
+				function sampleHistory(history, t) {
+					const last = history.length - 1;
+					if (t <= 0) return history[0];
+					if (t >= last) return history[last];
+					const i0 = Math.floor(t);
+					const f = t - i0;
+					const a = history[i0],
+						b = history[i0 + 1];
+					return {
+						x: a.x + (b.x - a.x) * f,
+						y: a.y + (b.y - a.y) * f,
+						rot: a.rot + (b.rot - a.rot) * f,
+						sx: a.sx + (b.sx - a.sx) * f,
+						sy: a.sy + (b.sy - a.sy) * f,
+						g: a.g + (b.g - a.g) * f,
+					};
+				}
+
+				function transformFor(x, y, rot, sx, sy, grow) {
+					return (
+						`translate(${x}px, ${y}px) translate(-50%, -50%) ` +
+						`rotate(${rot}deg) scale(${sx * grow}, ${sy * grow})`
+					);
+				}
+
+				// --- Main loop --------------------------------------------------------
+				const live = new Set();
+
+				function tick() {
+					for (const letter of live) {
+						if (!letter.step()) {
+							letter.destroy();
+							live.delete(letter);
+						}
+					}
+					requestAnimationFrame(tick);
+				}
+				requestAnimationFrame(tick);
+
+				function spawn(char) {
+					if (hintVisible) {
+						hint.style.opacity = '0';
+						hintVisible = false;
+					}
+					live.add(new Letter(char));
+				}
+
+				// Instantly remove every letter currently on screen.
+				function clearAll() {
+					for (const letter of live) letter.destroy();
+					live.clear();
+				}
+
+				// --- Input ------------------------------------------------------------
+				window.addEventListener('keydown', (e) => {
+					if (e.target.closest && e.target.closest('#debug')) return; // typing in panel
+					if (e.metaKey || e.ctrlKey || e.altKey) return;
+					let ch = e.key;
+					if (ch === ' ') ch = ' '; // space -> non-breaking space glyph
+					if (ch.length !== 1) return; // ignore Shift, Enter, arrows, etc.
+					spawn(ch);
+				});
+
+				// Touch / click also drops a playful character.
+				window.addEventListener('pointerdown', (e) => {
+					if (e.target.closest && e.target.closest('#debug')) return; // clicking the panel
+					const pool = '!?*@#$%&~^|/'.split('');
+					spawn(pool[Math.floor(Math.random() * pool.length)]);
+				});
+
+				// --- Live debug panel (toggle with F2 or Left Ctrl) -------------------
+				function buildDebugPanel() {
+					const panel = document.createElement('div');
+					panel.id = 'debug';
+					panel.innerHTML =
+						'<div class="dbg-head"><h3>Debug menu</h3><small>F2 / L-Ctrl</small></div>' +
+						'<div class="dbg-body"></div>' +
+						'<div class="dbg-actions">' +
+						'<button data-act="copy">Copy values</button>' +
+						'<button data-act="reset">Reset</button>' +
+						'<button data-act="clear">Clear all</button>' +
+						'<p style="color: white">this is totally vibe-coded btw, i HATE VIBECODING - but i tried it for curiosity, dont blame me, im a human</p>' +
+						'</div>';
+					document.body.appendChild(panel);
+
+					const body = panel.querySelector('.dbg-body');
+					const defaults = {...CFG};
+					const setters = {};
+
+					for (const [key, label, min, max, step] of PARAMS) {
+						const row = document.createElement('div');
+						row.className = 'row';
+						row.innerHTML =
+							'<label>' +
+							label +
+							' <span class="val"></span></label>' +
+							'<input type="range"  min="' +
+							min +
+							'" max="' +
+							max +
+							'" step="' +
+							step +
+							'">' +
+							'<input type="number" min="' +
+							min +
+							'" max="' +
+							max +
+							'" step="' +
+							step +
+							'">';
+						const [range, num] = row.querySelectorAll('input');
+						const valSpan = row.querySelector('.val');
+						const set = (v) => {
+							v = Number(v);
+							if (Number.isNaN(v)) return;
+							CFG[key] = v;
+							range.value = v;
+							num.value = v;
+							valSpan.textContent = v;
+							if (key === 'LETTER_SIZE') applyLetterSize();
+						};
+						range.addEventListener('input', () => set(range.value));
+						num.addEventListener('input', () => set(num.value));
+						set(CFG[key]);
+						body.appendChild(row);
+						setters[key] = set;
+					}
+
+					panel.querySelector('[data-act="reset"]').addEventListener('click', () => {
+						for (const k in defaults) setters[k](defaults[k]);
+					});
+					panel.querySelector('[data-act="clear"]').addEventListener('click', clearAll);
+					panel.querySelector('[data-act="copy"]').addEventListener('click', (e) => {
+						navigator.clipboard && navigator.clipboard.writeText(JSON.stringify(CFG, null, 2));
+						e.target.textContent = 'Copied!';
+						setTimeout(() => (e.target.textContent = 'Copy values'), 900);
+					});
+
+					makeDraggable(panel, panel.querySelector('.dbg-head'));
+					return panel;
+				}
+
+				// Let the user drag the panel around by its header.
+				function makeDraggable(el, handle) {
+					handle.addEventListener('pointerdown', (e) => {
+						if (e.target.closest('button')) return;
+						e.preventDefault();
+						const r = el.getBoundingClientRect();
+						el.style.right = 'auto';
+						el.style.left = r.left + 'px';
+						el.style.top = r.top + 'px';
+						const offX = e.clientX - r.left;
+						const offY = e.clientY - r.top;
+						const move = (ev) => {
+							el.style.left = ev.clientX - offX + 'px';
+							el.style.top = ev.clientY - offY + 'px';
+						};
+						const up = () => {
+							window.removeEventListener('pointermove', move);
+							window.removeEventListener('pointerup', up);
+						};
+						window.addEventListener('pointermove', move);
+						window.addEventListener('pointerup', up);
+					});
+				}
+
+				const debugPanel = buildDebugPanel();
+
+				window.addEventListener('keydown', (e) => {
+					const inPanel = e.target.closest && e.target.closest('#debug');
+					if (e.key === 'F2' || e.code === 'ControlLeft') {
+						e.preventDefault();
+						debugPanel.classList.toggle('open');
+					} else if (!inPanel && (e.key === 'Home' || e.key === 'Delete')) {
+						e.preventDefault();
+						clearAll();
+					}
+				});
+			})();
+		</script>
+	</body>
+</html>
