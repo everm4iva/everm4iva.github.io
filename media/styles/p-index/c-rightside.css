@@ -163,11 +163,12 @@
 	width:100%;
 	display: flex;
 	flex-direction: row;
-	gap: 2%;
+	gap: 4%;
 	align-items: flex-start;
 	justify-content: flex-start;
-	border-style: dashed;
+	border-style:solid;
 	border-color: var(--white);
+	border-width: 1px;
 	padding: 0.8rem;
 	background-position: center;
 	background-size: cover;
@@ -214,13 +215,17 @@
 
 /* Project types */
 .p-starl {
-	border-color: var(--starl-white);
+	border-color: var(--starl-accent);
 	overflow: hidden;
 	color: var(--starl-white)
 }
 
 .p-starl .fproject-name {
 	color: var(--starl-white);
+}
+
+.p-starl:hover{
+	box-shadow: var(--starl-accent) 0px 8px 0px 0px;
 }
 
 .p-instance {

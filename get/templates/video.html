@@ -1,0 +1,71 @@
+<head>
+	<title>Get Point - video.mp4</title>
+	<meta name="description" content="video.mp4 | Preview-Only | 00:00:05" />
+	<link rel="shortcut icon" href="../get-icon.png" type="image/png" />
+</head>
+<style>
+	html,
+	body {
+		background-color: black;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	a {
+		color: yellow;
+	}
+	::selection {
+		background-color: yellow;
+		color: black;
+	}
+</style>
+<video width="100%" height="80%" controls>
+	<source src="https://everm4iva.github.io/get/templates/video.mp4" type="video/mp4" />
+	Your browser does not support the video tag.
+</video>
+<a href="#" id="downit">Download "video.mp4"</a>
+<pre>
+--- RAW REG ---
+GET point url: (url-to-file)
+Short file name: (file-name-inshort)
+Full file name: (full-file-name)
+File description: (desc-of-video)
+Size: 6 MB (6 141 22 bytes)
+Duration: 00:00:05
+-- video --
+Format: mpeg4
+Frame width: 1920
+Frame height: 1080
+Date rate: 14943kbps
+Total bitrate: 15137kbps
+Frame rate: 30.00 fps
+-- audio --
+Audio bitrate: 14943kbps
+Audio channels: 2 (stereo)
+Audio sample rate: 44.100 kHz
+- media -
+Year: (year)
+Genre: (genre)
+-- origin --
+Created in: 2026-07-08 16:23:24
+Created by: "(author)""
+Creator website: (author-website-url)
+Version: 1.0.0 (1.0.0.00)
+License: (license) (license-extended-name)
+Categories: ['tag1', 'tag2']
+--- END ---
+</pre>
+<script>
+	const preview_only = true; // change this to false and a download link will appear
+	const video_name = 'video.mp4';
+	const video_duration = '00:00:05';
+	const downit = document.getElementById('downit');
+
+	if (preview_only === true) {
+		document.title = "Get Point - " + video_name
+		downit.style.display = 'none';
+	} else {
+		document.title = video_name + ' ' + video_duration;
+		downit.style.display = 'inline';
+		downit.textContent = 'Download ' + video_name;
+	}
+</script>

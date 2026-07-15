@@ -1,6 +1,16 @@
+# release 4.3.18.10 (15 jul 2026)
+- I'M STILL ALIVE!!!
+- made some templates for GET POINT
+- "/get" (get point) now has a page explaining how it works.
+- updated starl icons to "b1.0"
+- updated starl and some additional info on "sap" page.
+- upgraded some visual details in index page.
+- updated social media links and improved design on them. (also on index page)
+- added new drawings and all unlisted/unreleased audios to diary page.
+
 # release 4.3.18.9 (29 jun 2026)
 - added funny letters! "/assets/funnyletters"
-  
+
 # release 4.3.18.8 (23 jun 2026)
 - added new music album to "/diary" page, check it out!
 

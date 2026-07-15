@@ -1,0 +1,60 @@
+<head>
+	<title>Get Point - File.exe</title>
+	<meta name="description" content="File.exe  | 12MB | 14 July 2026" />
+	<link rel="shortcut icon" href="../get-icon.png" type="image/png" />
+</head>
+<style>
+	html,
+	body {
+		background-color: black;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	a {
+		color: yellow;
+	}
+	::selection {
+		background-color: yellow;
+		color: black;
+	}
+</style>
+<a href="#" id="downit">Download "File.exe"</a>
+<p id="autoit">
+	The file should be downloaded automaticly, if not, click this url to download it:
+	<a href="#">Download "File.exe"</a>
+</p>
+<pre>
+--- RAW REG ---
+GET point url: (url-to-file)
+Size: 12 MB (12 91 211 bytes) + 1MB package
+Created in: 2026-07-14 12:16:11
+Created by: "(author)"
+Creator website: (author-website-url)
+Version: 1.0.0 (1.0.0.00)
+App-ID: com.(author).(app-id)
+App-Desc: "(app-desc)"
+App-Website: (app-website-url)
+Content-Provider: (company-provider: Github/Microsoft etc..)
+Repository: (url-to-repo)
+License: (license) (license-extended-name)
+Builder: (builder-platform) (packager-platform) (target-platform)
+Categories: ['tag1', 'tag2]
+--- END ---
+</pre>
+<script>
+	const autoDownload = false; // set to 'false' to let the user decide
+	const downit = document.getElementById('downit');
+	const autoit = document.getElementById('autoit');
+	const url_to_download = 'https://everm4iva.github.io/get/templates/file.exe'; // change url
+
+	if ((autoDownload === true)) {
+		console.log('Download will start automaticly');
+		downit.style.display = 'none';
+		autoit.style.display = 'inline';
+		window.open(url_to_download);
+	} else {
+		console.log('Download will start when user clicks in the link');
+		downit.style.display = 'inline';
+		autoit.style.display = 'none';
+	}
+</script>

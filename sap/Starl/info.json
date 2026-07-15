@@ -1,36 +1,12 @@
 {
 	"service-title": "starl",
 	"service-description": "Starl music service.",
-	"service-area": "info-page",
-	"online-status": true,
 	"website": "https://starl.pages.dev/",
-	"status": "in open alpha",
+	"status": "beta",
 	"repository": "https://github.com/everm4iva/starl",
+	"end-of-support": "false",
 	"public-servers": {
-		"public": "blueberrymaniac.tail82eddd.ts.net/",
-		"development-unique": "bangsunsetdream.tail82eddd.ts.net/"
-	},
-	"platforms": {
-		"mobile": {
-			"status": "available, in production",
-			"source-url": "https://github.com/everm4iva/starl",
-			"editions": {
-				"stable": {
-					"status": "available, in production",
-					"description": "Stable edition of the Starl. Uses public servers."
-				},
-				"DU": {
-					"status": "available, in production",
-					"description": "Developer unique edition. Uses development server, more features, more speed but more instability."
-				},
-				"standalone": {
-					"status": "not available",
-					"description": "This item is planned, but not in development or production yet. It will be a mobile edition that has it's own server."
-				}
-			}
-		},
-		"desktop": {},
-		"web": {},
-		"selfhost-server": {}
+		"1": {"url": "blueberrymaniac.tail82eddd.ts.net/", "status": "offline"},
+		"2": {"url": "bangsunsetdream.tail82eddd.ts.net/", "status": "offline"}
 	}
 }

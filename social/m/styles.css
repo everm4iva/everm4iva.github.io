@@ -16,11 +16,12 @@ body {
 	position: relative;
 	font-family: Outfit, 'Arial', sans-serif;
 	min-height: 100vh;
+	max-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
-	background-color: rgb(0, 0, 0);
+	background-color: transparent;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
@@ -29,13 +30,13 @@ body:before {
 	content: '';
 	position: absolute;
 	/* background-image: url('../../shared/v3/images/bgs/pan_forestview.jpg'); */
-	background-position: center;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	z-index: -2;
-	filter: blur(2px);
+	filter: blur(10px);
 	opacity: 0.4;
 }
 

@@ -7,8 +7,6 @@
 		"latest-ver": "1.7",
 		"latest-ver-id": "ub",
 		"global-servers": false,
-		"max-clients": 5,
-		"max-requests-per-min": "29",
 		"client-config": {
 			"bubbleplay": {
 				"latest-ver": "0.1.3",
