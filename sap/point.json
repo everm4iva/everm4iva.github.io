@@ -3,7 +3,7 @@
 		"Services": {
 			"everm4iva.github.io": "./website/info.json",
 			"Archi2": "./archi2/info.json",
-			"starl-service": "./Starl/info.json",
+			"starl-service": "./starl/info.json",
 			"RabiProject": "./RabiProject/info.json",
 			"Bubble": "./Bubble/info.json",
 			"Oriana": "./Oriana/info.json",

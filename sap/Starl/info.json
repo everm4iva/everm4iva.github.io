@@ -6,7 +6,19 @@
 	"repository": "https://github.com/everm4iva/starl",
 	"end-of-support": "false",
 	"public-servers": {
-		"1": {"url": "blueberrymaniac.tail82eddd.ts.net/", "status": "offline"},
-		"2": {"url": "bangsunsetdream.tail82eddd.ts.net/", "status": "offline"}
+		"1": {
+			"url": "blueberrymaniac.tail82eddd.ts.net/",
+			"status": "offline",
+			"server-name": "MANIAC.PUBLIC",
+			"version": "1.0.0",
+			"habilities": ["service", "routes", "storage"]
+		},
+		"2": {
+			"url": "bangsunsetdream.tail82eddd.ts.net/",
+			"status": "online",
+			"server-name": "DREAM.PUBLIC",
+			"version": "1.0.0",
+			"habilities": ["service", "routes", "share", "storage", "dev"]
+		}
 	}
 }
