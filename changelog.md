@@ -1,3 +1,8 @@
+# release 4.3.18.11 (18 jul 2026)
+- Updated starl things in sap and in index page :3
+- Updated the "stray audio" project (/diary) with new styles and covers.
+- I donno..
+  
 # release 4.3.18.10 (15 jul 2026)
 - I'M STILL ALIVE!!!
 - made some templates for GET POINT
