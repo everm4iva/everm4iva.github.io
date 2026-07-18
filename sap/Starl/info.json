@@ -28,7 +28,7 @@
 		},
 		"3": {
 			"url": "sugarParadize.tail82eddd.ts.net/",
-			"status": "Updating",
+			"status": "offline",
 			"server-name": "SUGAR.PUBLIC",
 			"version": "0.1.2",
 			"habilities": ["service", "routes", "storage"],
@@ -38,7 +38,7 @@
 		},
 		"4": {
 			"url": "southwetgrass.tail82eddd.ts.net/",
-			"status": "In repair",
+			"status": "In-Repair",
 			"server-name": "SOUTH.PUBLIC",
 			"version": "0.1.0",
 			"habilities": ["service"],
