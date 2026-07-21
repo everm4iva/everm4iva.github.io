@@ -39,7 +39,7 @@
 		},
 		"4": {
 			"url": "southwetgrass.tail82eddd.ts.net/",
-			"status": "in repair",
+			"status": "offline",
 			"server-name": "SOUTH.PUBLIC",
 			"version": "0.1.0",
 			"habilities": ["service"],
