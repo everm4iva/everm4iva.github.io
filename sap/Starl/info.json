@@ -9,7 +9,7 @@
 	"public-servers": {
 		"1": {
 			"url": "blueberrymaniac.tail82eddd.ts.net/",
-			"status": "online",
+			"status": "in repair",
 			"server-name": "MANIAC.PUBLIC (slow)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage"],
@@ -19,7 +19,7 @@
 		},
 		"2": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
-			"status": "in repair",
+			"status": "online",
 			"server-name": "DREAM.PUBLIC (fast)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage", "dev"],
