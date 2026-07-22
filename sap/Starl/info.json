@@ -9,7 +9,7 @@
 	"public-servers": {
 		"1": {
 			"url": "blueberrymaniac.tail82eddd.ts.net/",
-			"status": "online",
+			"status": "offline",
 			"server-name": "MANIAC.PUBLIC (slow)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage"],
