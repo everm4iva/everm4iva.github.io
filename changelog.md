@@ -1,3 +1,12 @@
+# release 4.3.19 (30 jul 2026)
+- Changed some colors and background image for the whole web
+- "Shush" album audio page re-designed (check in /diary)
+- "Shush" album included in the unlisted audios in /diary
+- Artwork and drawings has now a solo page! (check in /diary)
+- Re-designed projects page AND added a few more ones that i kept in private for a while, check them out!
+- Cleaned up some residual and unused files around the website.
+- Added a manifesto: "What do i think of PIRACY". (Check it out in /m)
+
 # release 4.3.18.12 (21 jul 2026)
 - Im still alive, focused on starl, that explains the weird updates that don't change anything but the starl info in sap page.
 

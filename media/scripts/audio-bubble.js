@@ -3,7 +3,7 @@
  * Audio Bubble - LOGIC
  * That note bubble on my profile (index page)...
  * ☆=========================================☆
-*/
+ */
 
 document.addEventListener('DOMContentLoaded', () => {
 	const pfp = document.querySelector('.pfp-class');
@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	let musicLibrary = [];
 	let currentTrack = null;
 
-	window.updateAudioNoteDisplay = function(track) {
+	window.updateAudioNoteDisplay = function (track) {
 		updateAudioDisplay(track);
 	};
 
 	async function loadMusicLibrary() {
 		try {
-			const response = await fetch('./media/json/music.json');
+			const response = await fetch('/media/json/music.json');
 			const data = await response.json();
 			musicLibrary = Object.entries(data[0]['music-panel'].library).map(([key, track]) => track);
 			console.log('Audio bubble: Music library loaded with', musicLibrary.length, 'tracks');
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.documentElement.style.setProperty('--audionote-image', imageUrlStr);
 		document.documentElement.style.setProperty('--audionote-color', trackColor);
 		document.documentElement.style.setProperty('--audionote-text-color', textColor);
-		
+
 		// console.log('CSS variables updated - color:', trackColor, 'lightMode:', trackLightMode);
 	}
 
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		const randomTrack = getRandomTrack();
 		// console.log('Random track selected:', randomTrack);
-		
+
 		if (randomTrack) {
 			audio.src = randomTrack['music-src'];
 			// console.log('Audio source set to:', audio.src);
@@ -146,6 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	toggles.forEach((btn) =>
 		btn.addEventListener('click', (e) => {
+			// Open the music panel showing playlists instead of autoplaying
+			if (window.toggleMusicPanel) {
+				window.toggleMusicPanel(true);
+				return;
+			}
 			if (audio.paused || audio.ended) {
 				showPlayer();
 			} else {

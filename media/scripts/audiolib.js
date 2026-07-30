@@ -1,7 +1,7 @@
 /**
  * ☆=========================================☆
  * Audio Lib - LOGIC
- * Dealing with music players is kinda tricky, ngl
+ * dealing with music players is kinda tricky, ngl
  * ☆=========================================☆
  */
 
@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 	const mpBtnPause = document.querySelector('.mp-btn-pause');
 	const mpBtnLink = document.querySelector('.mp-btn-link');
 	const mpBtnClose = document.querySelector('.mp-btn-close');
+	const mpBtnBack = document.querySelector('.mp-btn-back');
+	const mpBtnForward = document.querySelector('.mp-btn-forward');
 	const audioQueBtn = document.querySelector('.audio-btn[alt="Open Music Panel"]');
 
 	const audio = document.querySelector('.audio-element');
@@ -42,16 +44,173 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 	let currentTrack = null;
 	let tracks = [];
+	let playlists = [];
+	let historyStack = [];
+	let historyIndex = -1;
 
-	// Load music from JSON
+	// load music from JSON
 	async function loadMusicLibrary() {
 		try {
-			const response = await fetch('./media/json/music.json');
+			const response = await fetch('/media/json/music.json');
 			const data = await response.json();
-			tracks = Object.entries(data[0]['music-panel'].library).map(([key, track]) => track);
+			const panel = data[0]['music-panel'] || {};
+			tracks = Object.entries(panel.library || {}).map(([key, track]) => {
+				track.__key = key;
+				return track;
+			});
+			// build playlists if present (arrays of keys)
+			playlists = [];
+			if (panel.playlists) {
+				for (const [pname, items] of Object.entries(panel.playlists)) {
+					const ptracks = items
+						.map((k) =>
+							tracks.find((t) => t.title && (k === `${t.title} - ${t.artist}` || k === (t.__key || ''))),
+						)
+						.filter(Boolean);
+					playlists.push({name: pname, tracks: ptracks});
+				}
+			}
+			// most listened
+			window.__mostListenedKey = panel.mostListened || null;
 			console.log('Loaded', tracks.length, 'tracks');
 		} catch (error) {
 			console.error('Failed to load music library:', error);
+		}
+	}
+
+	function renderPlaylistsView() {
+		mpList.innerHTML = '';
+		// Most listened
+		const mostKey = window.__mostListenedKey;
+		if (mostKey) {
+			const mostTrack = tracks.find((t) => `${t.title} - ${t.artist}` === mostKey || t.__key === mostKey);
+			if (mostTrack) {
+				const el = document.createElement('div');
+				el.className = 'mp-most-listened';
+				el.innerHTML = `
+					<h3>Most listened this week</h3>
+					<div class="mp-most-item">
+						<div class="mp-list-item-cover" style="background-image: url('${mostTrack.cover}')"></div>
+						<div class="mp-list-item-details">
+							<div class="mp-list-item-title">${mostTrack.title}</div>
+							<div class="mp-list-item-artist">${mostTrack.artist}</div>
+						</div>
+					</div>
+				`;
+				el.querySelector('.mp-most-item').addEventListener('click', () => {
+					const idx = tracks.indexOf(mostTrack);
+					if (idx !== -1) selectTrack(idx, {autoPlay: true});
+				});
+				mpList.appendChild(el);
+			}
+		}
+
+		const grid = document.createElement('div');
+		grid.className = 'mp-playlists-grid';
+		playlists.forEach((p, i) => {
+			const count = p.tracks.length || 0;
+			const preview = p.tracks.slice(0, 4);
+			const card = document.createElement('div');
+			card.className = 'mp-playlist-card';
+			card.innerHTML = `
+				<div class="mp-playlist-name">${p.name}</div>
+				<div class="mp-playlist-preview"></div>
+				<div class="mp-playlist-count">${count} track(s)</div>
+			`;
+			const previewEl = card.querySelector('.mp-playlist-preview');
+			preview.forEach((t) => {
+				const thumb = document.createElement('div');
+				thumb.className = 'mp-playlist-thumb';
+				thumb.style.backgroundImage = `url('${t.cover}')`;
+				previewEl.appendChild(thumb);
+			});
+			card.addEventListener('click', () => {
+				pushHistory({type: 'playlist', name: p.name});
+				renderPlaylist(p);
+			});
+			grid.appendChild(card);
+		});
+		mpList.appendChild(grid);
+
+		// is there's an initial root history state so Back becomes available
+		if (historyStack.length === 0) {
+			pushHistory({type: 'root'});
+		}
+	}
+
+	function renderPlaylist(p) {
+		mpList.innerHTML = '';
+		const backHeader = document.createElement('div');
+		backHeader.className = 'mp-playlist-header';
+		backHeader.innerHTML = `<h3>${p.name}</h3><div class="mp-playlist-sub">${p.tracks.length} tracks</div>`;
+		mpList.appendChild(backHeader);
+		p.tracks.forEach((t, idx) => {
+			const item = document.createElement('div');
+			item.className = 'mp-list-item';
+			item.innerHTML = `
+				<div class="mp-list-item-cover" style="background-image: url('${t.cover}')"></div>
+				<div class="mp-list-item-details">
+					<div class="mp-list-item-title">${t.title}</div>
+					<div class="mp-list-item-artist">${t.artist}</div>
+				</div>
+			`;
+			item.addEventListener('click', () => {
+				const globalIndex = tracks.indexOf(t);
+				if (globalIndex !== -1) selectTrack(globalIndex, {autoPlay: true});
+			});
+			mpList.appendChild(item);
+		});
+	}
+
+	function pushHistory(state) {
+		// drop forward history
+		historyStack = historyStack.slice(0, historyIndex + 1);
+		historyStack.push(state);
+		historyIndex = historyStack.length - 1;
+		updateNavButtons();
+	}
+
+	function updateNavButtons() {
+		const back = document.querySelector('.mp-btn-back');
+		const forward = document.querySelector('.mp-btn-forward');
+		if (back) back.disabled = window.IS_MUSIC_PAGE ? false : historyIndex <= 0;
+		if (forward) forward.disabled = historyIndex >= historyStack.length - 1;
+	}
+
+	function goBack() {
+		// if on the standalone music page, go back to main site
+		if (window.IS_MUSIC_PAGE) {
+			window.location.href = '../../index.html';
+			return;
+		}
+		if (historyIndex > 0) {
+			historyIndex--;
+			const s = historyStack[historyIndex];
+			if (s.type === 'playlist') {
+				const p = playlists.find((pl) => pl.name === s.name);
+				if (p) renderPlaylist(p);
+			} else {
+				renderPlaylistsView();
+			}
+			updateNavButtons();
+		} else {
+			// if at start, show root
+			renderPlaylistsView();
+			historyStack = [];
+			historyIndex = -1;
+			updateNavButtons();
+		}
+	}
+
+	function goForward() {
+		if (historyIndex < historyStack.length - 1) {
+			historyIndex++;
+			const s = historyStack[historyIndex];
+			if (s.type === 'playlist') {
+				const p = playlists.find((pl) => pl.name === s.name);
+				if (p) renderPlaylist(p);
+			}
+			updateNavButtons();
 		}
 	}
 
@@ -265,7 +424,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 		}
 	}
 
-	// Control buttons
+	// control buttons
 	if (mpBtnPlay) {
 		mpBtnPlay.addEventListener('click', () => {
 			if (audio.paused) {
@@ -302,7 +461,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 		});
 	}
 
-	// Volume control
+	// bolume control
 	if (mpVolume) {
 		mpVolume.value = '0.8';
 		audio.volume = 0.8;
@@ -322,7 +481,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 		}
 	});
 
-	// Audio play/pause events
+	// audio play/pause events
 	audio.addEventListener('play', () => {
 		updatePlayPauseIcons(true);
 	});
@@ -331,20 +490,39 @@ document.addEventListener('DOMContentLoaded', async () => {
 		updatePlayPauseIcons(false);
 	});
 
-	// Queue button click - open music panel
+	// queue button click - open music panel
 	if (audioQueBtn) {
 		audioQueBtn.addEventListener('click', () => {
 			toggleMusicPanel(true);
 		});
 	}
 
-	// Initialize
+	if (mpBtnBack) mpBtnBack.addEventListener('click', goBack);
+	if (mpBtnForward) mpBtnForward.addEventListener('click', goForward);
+
+	// header back button on standalone page
+	const headerBack = document.getElementById('backBtn');
+	if (headerBack)
+		headerBack.addEventListener('click', () => {
+			window.location.href = '../../index.html';
+		});
+
+	// expose navigation and toggler globally for other scripts
+	window.toggleMusicPanel = toggleMusicPanel;
+	window.goBackInMusicPanel = goBack;
+	window.goForwardInMusicPanel = goForward;
+
+	// init
 	console.log('Initializing music library...');
 	await loadMusicLibrary();
 	console.log('Tracks loaded:', tracks.length, 'tracks');
 	if (tracks.length > 0) {
 		populateTracklist();
-		selectTrack(0, {autoPlay: false});
+		if (playlists.length > 0) {
+			renderPlaylistsView();
+		} else {
+			selectTrack(0, {autoPlay: false});
+		}
 		// console.log('Music library initialized, lightMode system active');
 	} else {
 		console.error('No tracks loaded from music library');

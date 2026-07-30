@@ -42,7 +42,7 @@ class EffectSystem {
 			this.audioElement.addEventListener('play', () => this.onAudioPlay());
 			this.audioElement.addEventListener('pause', () => this.onAudioPause());
 			this.audioElement.addEventListener('ended', () => this.onAudioEnded());
-			this.audioElement.addEventListener('play', () => this.retryWebAudioInit(), { once: true });
+			this.audioElement.addEventListener('play', () => this.retryWebAudioInit(), {once: true});
 		}
 
 		this.initAudioContext();
@@ -65,7 +65,7 @@ class EffectSystem {
 			console.warn('No audio element found for Web Audio API');
 			return;
 		}
-		
+
 		if (this.webAudioInitialized) {
 			console.log('Web Audio already initialized');
 			return;
@@ -74,19 +74,22 @@ class EffectSystem {
 		try {
 			const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 			console.log('AudioContext created:', audioCtx.state);
-			
+
 			// Resume context if suspended
 			if (audioCtx.state === 'suspended') {
-				audioCtx.resume().then(() => {
-					console.log('AudioContext resumed');
-				}).catch(e => {
-					console.warn('Could not resume AudioContext:', e);
-				});
+				audioCtx
+					.resume()
+					.then(() => {
+						console.log('AudioContext resumed');
+					})
+					.catch((e) => {
+						console.warn('Could not resume AudioContext:', e);
+					});
 			}
-			
-			const source = audioCtx.createMediaElementAudioSource(this.audioElement);
+
+			const source = audioCtx.createMediaElementSource(this.audioElement);
 			console.log('MediaElementAudioSource created');
-			
+
 			const analyser = audioCtx.createAnalyser();
 			console.log('Analyser created');
 
@@ -164,7 +167,7 @@ class EffectSystem {
 
 		// Get the actual waveform samples (NOT frequency data)
 		this.analyser.getByteTimeDomainData(this.timeDomainData);
-		
+
 		// Calculate RMS from waveform (true measure of loudness)
 		let sum = 0;
 		for (let i = 0; i < this.timeDomainData.length; i++) {
@@ -172,14 +175,14 @@ class EffectSystem {
 			const sample = (this.timeDomainData[i] - 128) / 128;
 			sum += sample * sample;
 		}
-		
+
 		let rms = Math.sqrt(sum / this.timeDomainData.length);
-		
+
 		// Apply aggressive power curve for dramatic sensitivity
 		rms = Math.pow(rms, 3);
-		
+
 		console.log('getOverallVolume:', rms.toFixed(4), 'analyser:', !!this.analyser);
-		
+
 		return Math.min(1, rms);
 	}
 
@@ -190,15 +193,21 @@ class EffectSystem {
 	 */
 	parseIntensity(config) {
 		const intensity = Math.max(0, Math.min(1, config.intensity || 0.5));
-		
+
 		// If min/max provided, use them; otherwise derive from intensity
-		const min = config.minIntensity !== undefined ? Math.max(0, Math.min(1, config.minIntensity)) : Math.max(0, intensity - 0.2);
-		const max = config.maxIntensity !== undefined ? Math.max(0, Math.min(1, config.maxIntensity)) : Math.min(1, intensity + 0.2);
-		
+		const min =
+			config.minIntensity !== undefined
+				? Math.max(0, Math.min(1, config.minIntensity))
+				: Math.max(0, intensity - 0.2);
+		const max =
+			config.maxIntensity !== undefined
+				? Math.max(0, Math.min(1, config.maxIntensity))
+				: Math.min(1, intensity + 0.2);
+
 		return {
 			min: Math.min(min, max), // Ensure min <= max
 			avg: intensity,
-			max: Math.max(min, max)
+			max: Math.max(min, max),
 		};
 	}
 
@@ -210,7 +219,7 @@ class EffectSystem {
 	getAudioEnergy(triggerType = 'bass') {
 		// Get overall volume (peak-based) - this has fallback for when analyser is unavailable
 		const volume = this.getOverallVolume();
-		
+
 		// Get frequency-based energy - this has fallback too
 		let frequencyEnergy = 0;
 		if (triggerType === 'beat') {
@@ -222,12 +231,19 @@ class EffectSystem {
 			// Default to bass
 			frequencyEnergy = this.getBassEnergy();
 		}
-		
+
 		// Improved combination: use max to ensure either frequency or volume can trigger effect
 		const combinedEnergy = Math.max(frequencyEnergy, frequencyEnergy * volume);
-		
-		console.log('getAudioEnergy:', combinedEnergy.toFixed(4), 'freq:', frequencyEnergy.toFixed(4), 'vol:', volume.toFixed(4));
-		
+
+		console.log(
+			'getAudioEnergy:',
+			combinedEnergy.toFixed(4),
+			'freq:',
+			frequencyEnergy.toFixed(4),
+			'vol:',
+			volume.toFixed(4),
+		);
+
 		return Math.min(1, combinedEnergy);
 	}
 
@@ -314,7 +330,7 @@ class EffectSystem {
 	addScreenshake(config) {
 		console.log('addScreenshake called with config:', config);
 		const intensities = this.parseIntensity(config);
-		
+
 		this.activeEffects.set('screenshake', {
 			intensities,
 			sensitivity: config.sensitivity !== undefined ? config.sensitivity : 1,
@@ -323,7 +339,7 @@ class EffectSystem {
 			startTime: Date.now(),
 			syncToAudio: config.syncToAudio !== false,
 			audioStartTime: this.audioElement?.currentTime || 0,
-			isConsistent: config.duration === 'consistent'
+			isConsistent: config.duration === 'consistent',
 		});
 
 		console.log('Screenshake effect added, activeEffects:', this.activeEffects.size);
@@ -345,23 +361,32 @@ class EffectSystem {
 		if (!this.isPlaying || (!shake.isConsistent && progress >= 1)) {
 			this.activeEffects.delete('screenshake');
 			document.documentElement.style.transform = '';
-			console.log('Screenshake animation ended: isPlaying=' + this.isPlaying + ', progress=' + progress.toFixed(2));
+			console.log(
+				'Screenshake animation ended: isPlaying=' + this.isPlaying + ', progress=' + progress.toFixed(2),
+			);
 			return;
 		}
 
 		// Ease-out for intensity (only if not consistent)
-		const easeProgress = shake.isConsistent ? 1 : (1 - progress);
+		const easeProgress = shake.isConsistent ? 1 : 1 - progress;
 		let intensity = shake.intensities.avg * easeProgress;
 
-		console.log('animateScreenshake running - syncToAudio:', shake.syncToAudio, 'analyser:', !!this.analyser, 'isPlaying:', this.isPlaying);
+		console.log(
+			'animateScreenshake running - syncToAudio:',
+			shake.syncToAudio,
+			'analyser:',
+			!!this.analyser,
+			'isPlaying:',
+			this.isPlaying,
+		);
 
 		// Sync with audio if enabled
 		if (shake.syncToAudio && this.analyser) {
 			const audioEnergy = this.getAudioEnergy(shake.triggerType);
 			const SILENCE_THRESHOLD = 0.04; // Lowered threshold for quicker response to subtle sounds
-			
+
 			console.log('audioEnergy:', audioEnergy.toFixed(4), 'threshold:', SILENCE_THRESHOLD);
-			
+
 			if (audioEnergy < SILENCE_THRESHOLD) {
 				// During silence, for consistent effects, stop early to prevent persistent effect
 				if (shake.isConsistent) {
@@ -401,9 +426,7 @@ class EffectSystem {
 			document.documentElement.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 		}
 
-		this.effectAnimationFrameId = requestAnimationFrame(() =>
-			this.animateScreenshake()
-		);
+		this.effectAnimationFrameId = requestAnimationFrame(() => this.animateScreenshake());
 	}
 
 	/**
@@ -425,7 +448,7 @@ class EffectSystem {
 			startTime: Date.now(),
 			syncToAudio: config.syncToAudio !== false,
 			element: null,
-			isConsistent
+			isConsistent,
 		});
 
 		const overlay = document.createElement('div');
@@ -506,7 +529,7 @@ class EffectSystem {
 			duration: durationMs,
 			startTime: Date.now(),
 			syncToAudio: config.syncToAudio !== false,
-			isConsistent
+			isConsistent,
 		});
 
 		if (!isConsistent && durationMs) {
@@ -528,11 +551,7 @@ class EffectSystem {
 	 */
 	addDistortion(config) {
 		const intensities = this.parseIntensity(config);
-		const freqMap = {
-			low: 100,
-			medium: 50,
-			high: 20
-		};
+		const freqMap = {low: 100, medium: 50, high: 20};
 		const baseFrequency = freqMap[config.frequency] || 50;
 		const durationMs = this.parseDuration(config.duration);
 		const isConsistent = config.duration === 'consistent';
@@ -546,7 +565,7 @@ class EffectSystem {
 			baseFrequency,
 			syncToAudio: config.syncToAudio !== false,
 			element: null,
-			isConsistent
+			isConsistent,
 		});
 
 		const distortionElement = document.createElement('div');
@@ -612,7 +631,7 @@ class EffectSystem {
 		let clipAmount = 5;
 		if (distortion.syncToAudio && this.analyser) {
 			const audioEnergy = this.getAudioEnergy(distortion.triggerType);
-			
+
 			// If silence, don't distort
 			if (audioEnergy < SILENCE_THRESHOLD) {
 				clipAmount = 0;
@@ -643,11 +662,7 @@ class EffectSystem {
 	 */
 	addPulse(config) {
 		const intensities = this.parseIntensity(config);
-		const speedMap = {
-			slow: 1,
-			medium: 0.5,
-			fast: 0.2
-		};
+		const speedMap = {slow: 1, medium: 0.5, fast: 0.2};
 		const speedSeconds = typeof config.speed === 'number' ? config.speed : speedMap[config.speed] || 0.5;
 		const color = config.color === 'color' ? `rgba(255, 100, 0, 1)` : `rgba(255, 255, 255, 1)`;
 		const durationMs = this.parseDuration(config.duration);
@@ -664,7 +679,7 @@ class EffectSystem {
 			syncToAudio: config.syncToAudio !== false,
 			element: null,
 			color,
-			isConsistent
+			isConsistent,
 		});
 
 		const pulseElement = document.createElement('div');
@@ -720,7 +735,7 @@ class EffectSystem {
 		const SILENCE_THRESHOLD = 0.08; // Energy below this is considered silence
 
 		// Calculate position in pulse cycle
-		let cyclePosition = (elapsed / 1000) / pulse.speedSeconds;
+		let cyclePosition = elapsed / 1000 / pulse.speedSeconds;
 		if (pulse.syncToAudio) {
 			// Sync with audio playback instead of wall time
 			const audioElapsed = (this.audioElement?.currentTime || 0) - pulse.audioStartTime;
@@ -735,7 +750,7 @@ class EffectSystem {
 		// Apply audio sync if enabled
 		if (pulse.syncToAudio && this.analyser) {
 			const audioEnergy = this.getAudioEnergy(pulse.triggerType);
-			
+
 			// If silence, no pulse
 			if (audioEnergy < SILENCE_THRESHOLD) {
 				opacity = 0;

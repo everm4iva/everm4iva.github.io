@@ -50,6 +50,9 @@
 	}
 	.container {
 		flex-direction: column;
+		padding: 0;
+		width: 100.5%;
+		margin-left: -0.5rem
 	}
 
 	.left-cont {
@@ -59,13 +62,14 @@
 	}
 
 	.right-cont {
-		width: 100%;
+		width: 97%;
 		flex: 0 0 auto;
 		overflow: unset;
 		border-top-style: solid;
 		border-top-color: var(--pink);
 		border-top-width: 1px;
 		background-color: var(--pink);
+		border-radius: 15px;
 	}
 
 	.right-cont h2 {
@@ -122,6 +126,8 @@
 
 	.container {
 		overflow-x: hidden;
+				width: 100.5%;
+		margin-left: -0.5rem
 	}
 
 	pre {
@@ -129,7 +135,7 @@
 	}
 
 	.left-cont {
-		width: 97%;
+		width: 100%;
 		flex: 1 1 auto;
 		min-height: 0;
 		overflow-x: hidden;

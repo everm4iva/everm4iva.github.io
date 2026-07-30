@@ -31,11 +31,49 @@
 		img {
 			max-width: 30%;
 		}
+
+		h3 {
+			margin-bottom: 2px;
+		}
+
+		p {
+			margin: 0;
+			font-size: 0.8rem;
+			color: #ffffffaa;
+		}
+
+		.track {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			margin-bottom: 10px;
+			width: 50%;
+			margin-left: 2%;
+		}
+
+		.cover {
+			width: 75px;
+			aspect-ratio: 1 / 1;
+			background: var(--cover);
+			background-size: cover;
+			background-position: center;
+			image-rendering: pixelated;
+			flex-shrink: 0;
+			border-radius: 4px;
+		}
+
+		.track-info {
+			flex: 1;
+		}
+
+		audio {
+			width: 100%;
+			height: 30px;
+		}
 	</style>
 
 	<h2>Shush (audio album)</h2>
 	<a href="../index.html">- go back</a>
-	<a href="./shush/license.txt">LICENSE</a>
 	<blockquote>
 		<p>5 tracks (total)</p>
 		<p>"i feel dysphoria, it destroys, but has changed me, maybe it belongs in me after all.."</p>
@@ -43,28 +81,43 @@
 	</blockquote>
 	<img src="./shush/shush.png" alt="shush artwork" width="70%" />
 
-	<h3>Track 1 - melt</h3>
-	<video controls name="media">
-		<source src="./shush/melt.mp3" type="audio/mpeg" />
-	</video>
+		<div class="track" style="--cover: url('./shush/shush.png')">
+		<div class="track-info">
+			<h3>melt</h3>
+						<p>Track 1 - "feel like i am melting, crushing"</p>
+			<audio controls src="./shush/melt.mp3"></audio>
+		</div>
+	</div>
 
-	<h3>Track 2 - sleep</h3>
-	<video controls name="media">
-		<source src="./shush/sleep.mp3" type="audio/mpeg" />
-	</video>
+			<div class="track" style="--cover: url('./shush/shush.png')">
+		<div class="track-info">
+			<h3>sleep</h3>
+			<p>Track 2 - "nights awake thinking about what i could be"</p>
+			<audio controls src="./shush/sleep.mp3"></audio>
+		</div>
+	</div>
 
-	<h3>Track 3 - NAUSEA</h3>
-	<video controls name="media">
-		<source src="./shush/NAUSEA.mp3" type="audio/mpeg" />
-	</video>
+				<div class="track" style="--cover: url('./shush/shush.png')">
+		<div class="track-info">
+			<h3>NAUSEA</h3>
+			<p>Track 3 - "losing control over reality and my own body, no pain"</p>
+			<audio controls src="./shush/NAUSEA.mp3"></audio>
+		</div>
+	</div>
 
-	<h3>Track 4 - content</h3>
-	<video controls name="media">
-		<source src="./shush/content.mp3" type="audio/mpeg" />
-	</video>
+					<div class="track" style="--cover: url('./shush/shush.png')">
+		<div class="track-info">
+			<h3>content</h3>
+			<p>Track 4 - "too much happening at once, victim of contents"</p>
+			<audio controls src="./shush/content.mp3"></audio>
+		</div>
+	</div>
 
-	<h3>Track 5 - it keeps happening</h3>
-	<video controls name="media">
-		<source src="./shush/it keeps happening.mp3" type="audio/mpeg" />
-	</video>
-</html>
+						<div class="track" style="--cover: url('./shush/shush.png')">
+		<div class="track-info">
+			<h3>It Keeps Happening</h3>
+			<p>Track 5 - "It's a cycle."</p>
+			<audio controls src="./shush/it keeps happening.mp3"></audio>
+		</div>
+	</div>
+

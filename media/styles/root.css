@@ -66,7 +66,7 @@
 	--audionote-text-color: var(--white);
 
 	/* Background & Images */
-	--bg-img: url('../images/background/star-canv.png');
+	--bg-img: url('../images/background/new/land-9387fd952f15d5eb54f9bcce9065e2f8.jpg');
 
 	/* Project Colors */
 	--fractal-p: #4714ff;
@@ -143,8 +143,8 @@ body::before {
 	background-position: center;
 	padding: 0;
 	margin: 0;
-	filter: blur(10px);
-	opacity: 0.2;
+	filter: blur(5px);
+	opacity: 0.4;
 	z-index: -1;
 	overflow: hidden;
 	overflow-y: auto;
@@ -174,4 +174,8 @@ img {
 	display: block;
 	max-width: 100%;
 	height: auto;
+}
+
+.marg0{
+	margin: 0;
 }

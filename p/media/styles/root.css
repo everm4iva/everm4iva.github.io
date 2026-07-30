@@ -8,7 +8,6 @@
 }
 
 body {
-	background-color: #111;
 	font-family: 'Outfit', sans-serif;
 	min-height: 100vh;
 	overflow-y: auto;
@@ -42,13 +41,13 @@ footer {
 .year-section {
 	width: 100%;
 	padding: 0 2rem 2rem 2rem;
-	max-width: 1600px;
 }
 
 .year-section h2 {
 	color: rgba(255, 255, 255, 0.5);
 	font-size: 1.5rem;
 	margin-bottom: 1rem;
+	text-align: center;
 	margin-top: 2rem;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 	padding-bottom: 0.5rem;
@@ -56,8 +55,8 @@ footer {
 
 .project-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+	/* gap: 2rem; */
 	width: 100%;
 }
 
@@ -65,28 +64,34 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: var(--gradient, #333);
+	background: var(--gradient, #c800ff12);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-decoration: none;
 	position: relative;
-	border-radius: 5px;
 	border-color: transparent;
 	overflow: hidden;
 	transition: all 0.1s ease;
 	cursor: pointer;
+	backdrop-filter: blur(10px);
 }
 
 .project-tile.indev{
-	border:3px solid var(--yellow);
+	border: 3px dashed var(--random-2);
 	animation: blink-indev 1s step-start infinite;
 }
 
 @keyframes blink-indev {
-	0% { border-color: var(--yellow); }
-	50% { border-color: transparent; }
-	100% { border-color: var(--yellow); }
+	0% {
+		border-color: var(	--random-2);
+	}
+	50% {
+		border-color: transparent;
+	}
+	100% {
+		border-color: var(--random-2);
+	}
 }
 .project-tile.unfinished {
 	filter: grayscale(100%) blur(2px);
@@ -97,7 +102,7 @@ footer {
 }
 
 .project-tile:hover {
-	transform: scale(1.09) rotate(1deg);
+	transform: scale(1.09) rotate(-1deg);
 	filter: brightness(1.2);
 	z-index: 10;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
@@ -114,9 +119,9 @@ footer {
 	image-rendering: pixelated;
 }
 
-.project-tile:hover img {
+/* .project-tile:hover img {
 	transform: scale(1.1);
-}
+} */
 
 .project-details {
 	position: absolute;
@@ -162,7 +167,7 @@ footer {
 
 	.project-grid {
 		grid-template-columns: repeat(2, 2fr);
-		gap: 0.8rem;
+		/* gap: 0.8rem; */
 	}
 
 	.project-tile {

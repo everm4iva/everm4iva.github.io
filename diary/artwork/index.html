@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Artwork and dumb stuff</title>
+		<link rel="stylesheet" href="../../media/styles/root.css" />
+		<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, translate" />
+		<style>
+			:root {
+				--panel: rgba(20, 20, 25, 0.65);
+				--panel-hover: rgba(28, 28, 35, 0.85);
+				--border: rgba(255, 255, 255, 0.1);
+				--text: #e2e8f0;
+				--text-dim: #71717a;
+				--accent: #a855f7;
+				--accent-dim: rgba(168, 85, 247, 0.2);
+			}
+
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				border-radius: 0 !important;
+			}
+
+			body {
+				color: var(--text);
+				min-height: 100vh;
+				padding: 1.5rem;
+				overflow-y: auto;
+			}
+
+			.grid {
+				column-count: 4;
+				column-gap: 1.25rem;
+				width: 100%;
+			}
+
+			@media (min-width: 900px) {
+				.grid {
+					column-count: 5;
+				}
+			}
+			@media (max-width: 800px) {
+				.grid {
+					column-count: 3;
+				}
+			}
+			@media (max-width: 600px) {
+				.grid {
+					column-count: 2;
+				}
+			}
+			@media (max-width: 480px) {
+				.grid {
+					column-count: 1;
+				}
+			}
+
+			.card {
+				break-inside: avoid;
+				margin-bottom: 1.25rem;
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
+				overflow: hidden;
+				transition:
+					transform 0.15s ease,
+					border-color 0.15s ease,
+					background-color 0.15s ease;
+			}
+
+			.card:hover {
+				transform: translateY(-2px);
+				border-color: var(--accent);
+			}
+
+			.card-image-wrap {
+				width: 100%;
+				display: block;
+			}
+
+			.card-image-wrap img {
+				width: 100%;
+				height: auto;
+				display: block;
+				opacity: 0.9;
+				transition: opacity 0.15s ease;
+			}
+
+			.card:hover .card-image-wrap img {
+				opacity: 1;
+			}
+
+			.card-body {
+				padding-left: 2%;
+				padding-right: 2%;
+				padding-bottom: 2%;
+				display: flex;
+				flex-direction: column;
+				/* position: absolute; */
+				gap: 0.5rem;
+				/* top: 100%;
+				left: 0;
+				transform: translate(-0%, -100%); */
+				background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+			}
+
+			.card-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: baseline;
+				gap: 0.5rem;
+			}
+
+			.card-name {
+				font-size: 0.9rem;
+				font-weight: 600;
+				color: var(--text);
+				letter-spacing: -0.01em;
+			}
+
+			.card-date {
+				font-size: 0.7rem;
+				color: var(--accent);
+				background: var(--accent-dim);
+				padding: 0.1rem 0.35rem;
+				white-space: nowrap;
+			}
+
+			.card-desc {
+				font-size: 0.8rem;
+				color: var(--text-dim);
+				line-height: 1.35;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Artwork and dumb stuff</h1>
+		<a href="../index.html" style="margin-bottom: 5% !important"><- go back</a>
+
+		<main class="grid">
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./emotion-complex.png" alt="emotion-complex.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">Emotion Complex</span>
+						<span class="card-date">2026.07.30</span>
+					</div>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="../audio/stray-audios/covers/outchies.png" alt="outchies" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">outchies</span>
+						<span class="card-date">2026.07.29</span>
+					</div>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./linear.png" alt="linear.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">Linear</span>
+						<span class="card-date">2026.07.10</span>
+					</div>
+					<p class="card-desc">Random character drawn on ms paint, doesn't have name or reference.</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./post.png" alt="post.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">Post</span>
+						<span class="card-date">2026.07.10</span>
+					</div>
+					<p class="card-desc">
+						Random character drawn on ms paint, doesn't have name or reference. - Sketch of "linear.png"
+					</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./identity.png" alt="identity.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">Identity</span>
+						<span class="card-date">2026.07.07</span>
+					</div>
+					<p class="card-desc">"WHAT AM I??!!..." - drawn during an dysphoric episode</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./void.png" alt="void.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">Void</span>
+						<span class="card-date">2026.06.25</span>
+					</div>
+					<p class="card-desc">
+						Tried to plan an animated episode of something, when i ditched the project, i still had this
+						image of a stickman going crazy...
+					</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./shush.png" alt="shush.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">shush</span>
+						<span class="card-date">2026.06.22</span>
+					</div>
+					<p class="card-desc">
+						For my music album "shush". It puts visually a bunch of phases of a normal dysphoric episode.
+						Includes the pain, the desbelief of the situation and identity-feeling melting.
+					</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./abs_colorpace.jpg" alt="abs_colorpace.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">Color pace</span>
+						<span class="card-date">2026.05.13</span>
+					</div>
+					<p class="card-desc">experimental abstract picture, just me goofing around with art syles</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./abs_demonvoid.jpg" alt="abs_demonvoid.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">Demon void</span>
+						<span class="card-date">2026.05.13</span>
+					</div>
+					<p class="card-desc">
+						experimental abstract picture, just me goofing around with art syles - this one has a demon :P
+					</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./wet-socks.png" alt="wet-socks.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">wet socks</span>
+						<span class="card-date">2026.05.10</span>
+					</div>
+					<p class="card-desc">"wet socks makes me remember there is still ground"</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./pushingpath.png" alt="pushingpath.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">pushing path</span>
+						<span class="card-date">2026.05.10</span>
+					</div>
+					<p class="card-desc">"in a field, helping what could be me get through"</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./drogas.gif" alt="drogas.gif" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">drogas</span>
+						<span class="card-date">2025.04.13</span>
+					</div>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./IntermalForest.png" alt="IntermalForest.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">Intermal Forest (mspaint)</span>
+						<span class="card-date">2025.04.13</span>
+					</div>
+					<p class="card-desc">unfinished visual representation of a dream: really hot forest.</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./dasalt.png" alt="dasalt.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">dasalt (mspaint)</span>
+						<span class="card-date">2025.04.06</span>
+					</div>
+					<p class="card-desc">limbo of a dry canyon having a sandstorm</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./creative-complex.png" alt="creative-complex.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">creative-complex</span>
+						<span class="card-date">2025.03.31</span>
+					</div>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./overclock.png" alt="overclock.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">overclock</span>
+						<span class="card-date">2025.01.04</span>
+					</div>
+					<p class="card-desc">Insolated in it's own void</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./a-float.webp" alt="a-float.webp" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">a-float</span>
+						<span class="card-date">2024.09.02</span>
+					</div>
+					<p class="card-desc">sweet floating minecraft house..</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./25-abril.jpg" alt="25-abril.jpg" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">25 abril</span>
+						<span class="card-date">2024.04.10</span>
+					</div>
+					<p class="card-desc">Paitinng canvas for 25th april, liberty day</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./bomb.png" alt="bomb.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">bomb</span>
+						<span class="card-date">2024.02.26</span>
+					</div>
+					<p class="card-desc">dream components</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./meadow.png" alt="meadow.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">meadow</span>
+						<span class="card-date">2023.06.05</span>
+					</div>
+					<p class="card-desc">test painting for my own paint program.. got deep</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./escadas.png" alt="escadas.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">escadas</span>
+						<span class="card-date">2023.04.25</span>
+					</div>
+					<p class="card-desc">peak 2023 comedy</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./2023-04-09.png" alt="2023-04-09.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">heavy annotations</span>
+						<span class="card-date">2023.04.09</span>
+					</div>
+					<p class="card-desc">note block app taking 1GB of ram</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./2023-04-06.png" alt="2023-04-06.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">zeva love</span>
+						<span class="card-date">2023.04.06</span>
+					</div>
+					<p class="card-desc">zeva admits her love for a stupid random internet stranger</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./do9era-edit.jpg" alt="do9era-edit.jpg" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">do9era edit</span>
+						<span class="card-date">2023.03.16</span>
+					</div>
+					<p class="card-desc">an image edit of an old minecraft server i hosted for friends...</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./grilo.png" alt="grilo.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">grilo</span>
+						<span class="card-date">2023.03.07</span>
+					</div>
+					<p class="card-desc">
+						everybody in the chat ignores a wild statement on purpose and makes it obvious.
+					</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./i-did-this-to-myself.png" alt="i-did-this-to-myself.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">i did this to myself</span>
+						<span class="card-date">2023.03.07</span>
+					</div>
+					<p class="card-desc">my minecraft character floating in the ocean water, completly dead ;3</p>
+				</div>
+			</article>
+
+			<!-- --- -->
+			<article class="card">
+				<div class="card-image-wrap">
+					<img src="./god.png" alt="god.png" />
+				</div>
+				<div class="card-body">
+					<div class="card-header">
+						<span class="card-name">god</span>
+						<span class="card-date">2023.03.06</span>
+					</div>
+					<p class="card-desc">"god" - "me"</p>
+				</div>
+			</article>
+		</main>
+	</body>
+</html>
