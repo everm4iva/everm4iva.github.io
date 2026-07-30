@@ -8,10 +8,10 @@
 	"end-of-support": "false",
 	"public-servers": {
 		"1": {
-			"url": "blueberrymaniac.tail82eddd.ts.net/",
-			"status": "offline",
-			"server-name": "MANIAC.PUBLIC (slow)",
-			"version": "1.0.1",
+			"url": "bangsunsetdream.tail82eddd.ts.net/",
+			"status": "online",
+			"server-name": "MANIAC.PUBLIC",
+			"version": "1.0.0",
 			"habilities": ["service", "routes", "storage"],
 			"country-code": "PT",
 			"memory": "8GB",
@@ -20,7 +20,7 @@
 		"2": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
 			"status": "online",
-			"server-name": "DREAM.PUBLIC (fast)",
+			"server-name": "DREAM.PUBLIC (fastest)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage", "dev"],
 			"country-code": "PT",
@@ -39,7 +39,7 @@
 		},
 		"4": {
 			"url": "southwetgrass.tail82eddd.ts.net/",
-			"status": "offline",
+			"status": "in repair",
 			"server-name": "SOUTH.PUBLIC",
 			"version": "0.1.0",
 			"habilities": ["service"],
