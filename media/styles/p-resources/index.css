@@ -205,7 +205,8 @@ input[type='search']::placeholder {
 
 @media (max-width: 800px) {
 	.container {
-		flex-direction: column;
+		flex-direction: row;
+		width: 95%;
 	}
 	.sidebar {
 		display: none;
@@ -213,5 +214,10 @@ input[type='search']::placeholder {
 	.results {
 		height: 85vh;
 		width: 100%;
+	}
+
+	#title{
+		padding-left: 1rem;
+		font-size: 1.2rem;
 	}
 }

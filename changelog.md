@@ -1,3 +1,13 @@
+# release 4.3.19.1 (03 aug 2026)
+- Fixed mobile social media scroll issues
+- Fixed typo in SAP page - now "starl" point is accessible (/sap)
+- Fixed links and labeled resources in resources page (/r)
+- Improved mobile responsiveness of resources page (/r)
+- Improved mobile responsiveness of audio pages (/diary)
+- Added new drawings to artwork page (/diary/artwork)
+- Added new marker to resources page (/r) - "GET POINT - PUBLIC FILES" - where i will share public files to download exclusive projects.
+This changelog seems corporate lol, not on purpose, i am sleepy as hell...
+
 # release 4.3.19 (30 jul 2026)
 - Changed some colors and background image for the whole web
 - "Shush" album audio page re-designed (check in /diary)
