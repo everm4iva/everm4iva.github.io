@@ -1,7 +1,7 @@
 {
-	"name": "everm4iva",
-	"short_name": "m4iva-web",
-	"description": "World's most boring page!",
+	"name": "zoeisrad web",
+	"short_name": "zoeisrad",
+	"description": "world's most boring page!",
 	"start_url": "./index.html",
 	"display": "standalone",
 	"background_color": "#0a0718",
@@ -22,7 +22,7 @@
 	"prefer_related_applications": false,
 	"protocol_handlers": [
 		{
-			"protocol": "web+m4iva",
+			"protocol": "web+zoeisrad",
 			"url": "./index.html?file=%s"
 		}
 	],
