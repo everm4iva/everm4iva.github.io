@@ -9,13 +9,13 @@
 	"public-servers": {
 		"1": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
-			"status": "online",
+			"status": "offline",
 			"server-name": "MANIAC.PUBLIC",
 			"version": "1.0.0",
 			"habilities": ["service", "routes", "storage"],
 			"country-code": "PT",
-			"memory": "8GB",
-			"storage": "1000GB"
+			"memory": "6GB",
+			"storage": "200GB"
 		},
 		"2": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
@@ -25,19 +25,29 @@
 			"habilities": ["service", "routes", "storage", "dev"],
 			"country-code": "PT",
 			"memory": "8GB",
-			"storage": "200GB"
+			"storage": "64GB"
 		},
 		"3": {
+			"url": "bangsunsetdream.tail82eddd.ts.net/",
+			"status": "online",
+			"server-name": "DREAM.PUBLIC (debug)",
+			"version": "1.0.2",
+			"habilities": ["service", "routes", "storage", "dev"],
+			"country-code": "PT",
+			"memory": "4GB",
+			"storage": "8GB"
+		},
+		"4": {
 			"url": "sugarParadize.tail82eddd.ts.net/",
 			"status": "offline",
 			"server-name": "SUGAR.PUBLIC",
 			"version": "0.1.2",
 			"habilities": ["service", "routes", "storage"],
 			"country-code": "FR",
-			"memory": "4GB",
+			"memory": "8GB",
 			"storage": "64GB"
 		},
-		"4": {
+		"5": {
 			"url": "southwetgrass.tail82eddd.ts.net/",
 			"status": "in repair",
 			"server-name": "SOUTH.PUBLIC",
