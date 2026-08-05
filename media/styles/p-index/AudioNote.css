@@ -52,29 +52,35 @@
 }
 
 .audio-text {
-	position: absolute;
-	top: 4%;
-	left: 6%;
+	position: relative; /* original: absolute */
+	/* top: 4%; */
+	left: 0%;
 	width: fit-content;
-	height: 2.5rem;
-	background-color: var(--audionote-border-color);
+	/* height: 2.5rem; */
+	/* background-color: var(--audionote-border-color); */
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 0% 4%;
+	/* padding: 0% 4%; */
 	justify-content: flex-start;
-	border-radius: 5px;
+	/* border-radius: 5px;
 	border-style: solid;
 	border-color: var(--bg-color);
-	border-width: 3px;
+	border-width: 3px; */
 	color: var(--audionote-text-color);
-	font-weight: 600;
+	font-weight: 400;
+	font-size: 1rem;
 	transition: color 200ms ease;
+	cursor: pointer;
+}
+
+.audio-text:hover {
+	text-decoration: underline;
 }
 
 .audio-text img {
-	width: 2rem;
-	height: 2rem;
+	width: 1rem;
+	height: 1rem;
 	cursor: pointer;
 }
 
@@ -83,21 +89,46 @@
 	background-color: var(--yellow);
 }
 
+/*blurred image bg*/
+.audio-class::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--audionote-color);
+	background-image: var(--audionote-image);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 0;
+	margin: 0;
+	opacity: 0.6;
+	z-index: -1;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
 .audio-class {
 	width: 92%;
 	height: 20%;
 	display: flex;
-	background-color: var(--audionote-color);
+	overflow: hidden;
+	background-color: #0000006e;
+	backdrop-filter: blur(10px);
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
-	border-style: solid;
+	border-radius: 10px;
+	/* border-style: solid;
 	border-color: var(--audionote-border-color);
-	border-width: 1px;
+	border-width: 1px; */
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	transition: all 280ms ease;
+	padding-left: 2%;
 }
 
 .audio-class.hidden {
@@ -114,27 +145,29 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: center;
 	gap: 1rem;
 }
 .audio-cover {
-	width: 5rem;
-	height: 5rem;
-	height: auto;
-	border-radius: 10px;
-	cursor:
-		url('../../images/rock-hand.png') 32 32,
-		auto;
+    max-height: 80%;
+    height: auto;
+    border-radius: 10px;
+    /* cursor: url(../../images/rock-hand.png) 32 32, auto; */
+    max-width: 40%;
+	image-rendering:optimizeQuality;
+	object-fit: cover;
+	object-position: center;
+	user-select: none;
 }
 
 .audio-title {
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	font-weight: bold;
 	color: var(--audionote-text-color);
 }
 
 .audio-artist {
-	font-size: 0.9rem;
+	font-size: 1rem;
 	color: var(--audionote-text-color);
 }
 
@@ -142,7 +175,7 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	margin-top: 1rem;
 	gap: 4%;
 	width: 100%;
@@ -152,10 +185,11 @@
 	width: 2rem;
 	height: 2rem;
 	cursor: pointer;
-	background-color: var(--pink);
+	/* background-color: var(--pink); */
 }
 
 .audio-btn:hover {
 	transform: scale(1.2);
-	background-color: var(--cyan);
+	filter: invert(0.1) sepia(0.8) saturate(10) hue-rotate(200deg);
+	/* background-color: var(--cyan); */
 }

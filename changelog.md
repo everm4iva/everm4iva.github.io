@@ -1,3 +1,11 @@
+# release 4.3.19.2 (05 aug 2026)
+- audio notes are back!!! check them on the profile section of the index page (/)
+- updated starl servers with new info
+- added new project: "sdm-tts" to the projects page (/p)
+- changed wallpaper
+- removed "oceanboard" from featured projects
+- added "lasagna" to featured projects
+
 # release 4.3.19.1 (03 aug 2026)
 - Fixed mobile social media scroll issues
 - Fixed typo in SAP page - now "starl" point is accessible (/sap)

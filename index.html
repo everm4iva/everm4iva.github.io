@@ -5,7 +5,7 @@
 		<title>m4iva's web</title>
 		<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 		<meta name="robots" content="index, follow, noarchive, nosnippet, translate" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=0.75" />
 		<meta name="description" content="World's most boring page!" />
 		<map name="./sitemap.xml"></map>
 		<link rel="stylesheet" href="./media/styles/p-index/index.css" />
@@ -69,7 +69,7 @@
  █████████░░██████ ░░██████  █████ ██████  █████    ░░████████░░████████
 ░░░░░░░░░  ░░░░░░   ░░░░░░  ░░░░░ ░░░░░░  ░░░░░      ░░░░░░░░  ░░░░░░░░
 
-- Website version: <a href="./changelog.md">4.3.19.1</a> (last updated: august 3 2026) | <a href="./LICENSE.txt">LICENSE</a>
+- Website version: <a href="./changelog.md">4.3.19.2</a> (last updated: august 5 2026) | <a href="./LICENSE.txt">LICENSE</a>
 - This is my personal website, where i share a bit of me and some shit i do.
 > Also a "repository" of my projects and their resources.
                     </pre>
@@ -136,9 +136,9 @@
 					<h2>☆======= Curiosities =========☆</h2>
 					<ul>
 						<li>
-							<a href="./full.html" style="text-decoration: none; color: white;">
-							Weekly or monthly, i randomly spend 1 to 5 days without entering any social media or message
-							apps. Due to emotional instability. So if i disapear.. i didn't kill myself.
+							<a href="./full.html" style="text-decoration: none; color: white">
+								Weekly or monthly, i randomly spend 1 to 5 days without entering any social media or
+								message apps. Due to emotional instability. So if i disapear.. i didn't kill myself.
 							</a>
 						</li>
 						<li>
@@ -299,48 +299,55 @@
 					</div>
 					<div class="pfp-info">
 						<div class="pfp-name">ZoeIsRad</div>
-						<div>Packed with emotion!</div>
+						<div class="audio-text play-toggle">
+							<img src="./media/images/commonicons/play.white.svg" alt="Play" />
+							Infohazard (by Ninajirachi)
+						</div>
 					</div>
 					<!-- <div class="audio-note">
 						<div class="pop"></div>
 						<div class="audio-text"></div>
 						<div class="audio-text">
 							<img class="play-toggle" src="./media/images/commonicons/play.white.svg" alt="Play" />
-							music playlist HERE!
+							Infohazard (by Ninajirachi)
 						</div>
 					</div> -->
 				</div>
 
 				<div class="audio-class hidden">
 					<div class="audio-details">
-						<img class="audio-cover" alt="" />
+						<img class="audio-cover" alt="" src="./media/audio/cover/infohazard.jpg" />
 						<div class="audio-info">
-							<div class="audio-title"></div>
-							<div class="audio-artist"></div>
+							<div class="audio-title">infohazard</div>
+							<div class="audio-artist">Ninajirachi</div>
+							<div class="audio-controls" aria-hidden="true">
+								<img
+									class="audio-btn play-toggle"
+									src="./media/images/commonicons/play.white.svg"
+									alt="Play"
+									role="button"
+									aria-pressed="false" />
+								<img
+									class="audio-btn"
+									src="./media/images/commonicons/link.diagonal.white.svg"
+									alt="Open in spotify"
+									role="button"
+									aria-pressed="false"
+									onclick="window.open('https://open.spotify.com/track/6CfromGdojo0R0vlgA7iU8')" />
+								<input
+									class="audio-c-volume"
+									type="range"
+									min="0"
+									max="1"
+									step="0.1"
+									value="0.5"
+									aria-label="Volume" />
+							</div>
 						</div>
 					</div>
-					<div class="audio-controls" aria-hidden="true">
-						<img
-							class="audio-btn play-toggle"
-							src="./media/images/commonicons/play.white.svg"
-							alt="Play"
-							role="button"
-							aria-pressed="false" />
-						<img
-							class="audio-btn"
-							src="./media/images/commonicons/queue.white.svg"
-							alt="Open Music Panel" />
-						<input
-							class="audio-c-volume"
-							type="range"
-							min="0"
-							max="1"
-							step="0.1"
-							value="0.5"
-							aria-label="Volume" />
-					</div>
+
 					<audio class="audio-element" preload="metadata">
-						<source type="audio/mpeg" src="./media/audio/Bad girls.mp3" />
+						<source type="audio/mpeg" src="./media/audio/Ninajirachi-Infohazard.mp3" />
 						Your browser does not support the audio element.
 					</audio>
 				</div>
@@ -408,16 +415,12 @@
 								<div class="fproject-desc">2026 • Terminal Tool</div>
 							</div>
 						</div>
-						<div
-							class="fproject p-oceanboard"
-							onclick="window.open('./p/OceanBoard/')"
-							style="background-image: url('./media/base/@project-banner/oceanboardstar.png')">
-							<div
-								class="fproject-icon"
-								style="background-image: url('./media/base/@projects/OceanBoard/Icon-pink.png')"></div>
+						<div class="fproject p-lasagna" onclick="window.open('./p/lasagna/index.html')">
+							<div class="fproject-icon" style="background-image: url('./p/lasagna/favicon.ico')"></div>
+							<div class="fproject-bg" style="background-image: url('./p/lasagna/favicon.ico')"></div>
 							<div class="fproject-info">
-								<div class="fproject-name">OceanBoard</div>
-								<div class="fproject-desc">2025 • Website • Writing/Creative tool</div>
+								<div class="fproject-name">Lasagna</div>
+								<div class="fproject-desc">2026 • Convert money to lasagna</div>
 							</div>
 						</div>
 					</div>
@@ -425,10 +428,10 @@
 			</div>
 		</div>
 
-		<!-- <script src="./media/scripts/audiolib.js" defer></script> -->
+		<script src="./media/scripts/audiolib.js" defer></script>
 		<script src="./media/scripts/resizer-index.js"></script>
-		<!-- <script src="./media/scripts/effectsystem.js" defer></script>
-		<script src="./media/scripts/audio-bubble.js" defer></script> -->
+		<!-- <script src="./media/scripts/effectsystem.js" defer></script> -->
+		<script src="./media/scripts/audio-bubble.js" defer></script>
 		<!-- <script src="./media/scripts/draggable.js" defer></script> -->
 		<!-- <script src="./media/scripts/pop-bounce.js" defer></script> -->
 	</body>

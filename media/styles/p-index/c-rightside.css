@@ -194,7 +194,7 @@
 }
 
 .fproject-name{
-	font-size: 1.25rem;
+	font-size: 1.3rem;
 	font-weight: bold;
 	color: var(--white);
 }
@@ -256,7 +256,6 @@
 
 .p-lasagna {
 	border-color: var(--lasagna-s);
-	background-color: var(--black);
 	color: var(--lasagna-p);
 }
 

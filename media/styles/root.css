@@ -60,13 +60,13 @@
 	--spacing-unit: 8px;
 
 	/* Audio Note */
-	--audionote-color: #1c0902;
+	--audionote-color: #2c484b;
 	--audionote-border-color: var(--pink);
-	--audionote-image: url('../../images/commonicons/audio-image.jpg');
+	--audionote-image: url('../../audio/cover/infohazard.jpg');
 	--audionote-text-color: var(--white);
 
 	/* Background & Images */
-	--bg-img: url('../images/background/new/land-9387fd952f15d5eb54f9bcce9065e2f8.jpg');
+	--bg-img: url('../images/background/new/city-f29a346ebe323caf534871a6db74d849.jpg');
 
 	/* Project Colors */
 	--fractal-p: #4714ff;
@@ -78,8 +78,8 @@
 	--downsrc-s: #c05d1b;
 	--sparky-p: #13085a;
 	--sparky-s: #3c194b;
-	--lasagna-p: #ffb293;
-	--lasagna-s: #ff3b6d;
+	--lasagna-p: #fff5f2;
+	--lasagna-s: #ffb13b;
 	--orianaterminal-p: #fc6cff;
 	--orianaterminal-s: #d3926b;
 	--aurelin-p: #6c82ff;
