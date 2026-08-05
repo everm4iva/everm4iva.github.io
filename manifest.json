@@ -1,7 +1,7 @@
 {
-	"name": "zoeisrad web",
-	"short_name": "zoeisrad",
-	"description": "world's most boring page!",
+	"name": "zoe's web'",
+	"short_name": "zoe's web'",
+	"description": "World's most boring website!",
 	"start_url": "./index.html",
 	"display": "standalone",
 	"background_color": "#0a0718",
@@ -9,7 +9,7 @@
 	"orientation": "any",
 	"scope": "./",
 	"lang": "en",
-	"categories": ["productivity", "utilities", "writing", "games", "code", "tools"],
+	"categories": ["productivity", "utilities", "games", "code", "tools"],
 	"icons": [
 		{
 			"src": "./favicon.ico",

@@ -822,6 +822,8 @@ class EffectSystem {
 
 // Create global instance when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
+	window.effectSystem = new EffectSystem(document.querySelector('.audio-element'));
+
 	const audioElement = document.querySelector('.audio-element');
 	if (audioElement) {
 		window.effectSystem = new EffectSystem(audioElement);
@@ -830,3 +832,4 @@ document.addEventListener('DOMContentLoaded', () => {
 		console.warn('Audio element not found for EffectSystem initialization');
 	}
 });
+

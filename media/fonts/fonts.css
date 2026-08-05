@@ -19,11 +19,6 @@
 }
 
 @font-face {
-	font-family: FleurDeLeah;
-	src: url(./FleurDeLeah/FleurDeLeah.ttf);
-}
-
-@font-face {
 	font-family: Jersey10;
 	src: url(./Jersey10/Jersey10.ttf);
 }
@@ -44,11 +39,6 @@
 }
 
 @font-face {
-	font-family: RubikMonoOne;
-	src: url(./RubikMonoOne/RubikMonoOne.ttf);
-}
-
-@font-face {
 	font-family: SourceCodePro;
 	src: url(./SourceCodePro/SourceCodePro.ttf);
 }
@@ -58,19 +48,10 @@
 	src: url(./WorkSans/WorkSans.ttf);
 }
 
-@font-face {
-	font-family: LubriFont;
-	src: url(./WDXLLubrifontSC/WDXLLubrifontSC.ttf);
-}
 
 @font-face {
 	font-family: Poppins;
 	src: url(./Poppins/Poppins-Regular.ttf);
-}
-
-@font-face {
-	font-family: LibertinusMono;
-	src: url(./LibertinusMono/LibertinusMono.ttf);
 }
 
 @font-face {
@@ -84,21 +65,52 @@
 }
 
 @font-face {
-	font-family: Rampart;
-	src: url(./Rampart_One/RampartOne-Regular.ttf);
-}
-
-@font-face {
-	font-family: Knewave;
-	src: url(./Knewave/Knewave-Regular.ttf);
-}
-
-@font-face {
-	font-family: Chewy;
-	src: url(./Chewy/Chewy-Regular.ttf);
-}
-
-@font-face {
 	font-family: Barriecito;
 	src: url(./Barriecito/Barriecito-Regular.ttf);
+}
+
+.arial {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.console {
+	font-family: 'Courier New', Courier, monospace;
+}
+.inter {
+	font-family: 'Inter', sans-serif;
+}
+.sourgummy {
+	font-family: 'SourGummy', cursive;
+}
+.dosis {
+	font-family: 'Dosis', sans-serif;
+}
+.outfit {
+	font-family: 'Outfit', sans-serif;
+}
+.poppins {
+	font-family: 'Poppins', sans-serif;
+}
+.quicksand {
+	font-family: 'Quicksand', sans-serif;
+}
+.rubik {
+	font-family: 'Rubik', sans-serif;
+}
+.sourcecodepro {
+	font-family: 'SourceCodePro', monospace;
+}
+.worksans {
+	font-family: 'Work Sans', sans-serif;
+}
+.jersey10 {
+	font-family: 'Jersey10', sans-serif;
+}
+.lxgwmarkergothic {
+	font-family: 'LXGWMarkerGothic', cursive;
+}
+.barriecito {
+	font-family: 'Barriecito', cursive;
+}
+.honk {
+	font-family: 'Honk', cursive;
 }

@@ -4,9 +4,32 @@
 			"title": "Infohazard",
 			"artist": "Ninajirachi",
 			"color": "#ffffff",
-			"url": "https://open.spotify.com/track/50gF43cRPzR5fvwX51cIGC",
+			"url": "https://open.spotify.com/track/6CfromGdojo0R0vlgA7iU8",
 			"cover": "./media/audio/cover/infohazard.jpg",
-			"music-src": "./media/audio/Ninajirachi-Infohazard.mp3"
+			"music-src": "./media/audio/Ninajirachi-Infohazard.mp3",
+			"lightMode": false,
+			"genre": "trance, electronic",
+			"effects": {
+				"distortion": {
+					"intensity": 0.8,
+					"minIntensity": 0.2,
+					"maxIntensity": 0.8,
+					"frequency": "low",
+					"duration": "consistent",
+					"sensitivity": 0.8,
+					"triggerType": "beat",
+					"syncToAudio": true
+				},
+				"screenshake": {
+					"intensity": 0.6,
+					"minIntensity": 0.2,
+					"maxIntensity": 0.8,
+					"duration": "consistent",
+					"sensitivity": 0.5,
+					"triggerType": "beat",
+					"syncToAudio": true
+				}
+			}
 		}
 	}
 ]

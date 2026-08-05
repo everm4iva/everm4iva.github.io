@@ -1,0 +1,67 @@
+All uncommented stuff on index.html
+It's wayy to poluted to be just there.
+I will still keep the scripts undocumented, to keep it easily accessible.
+
+		<!-- <div class="music-panel hidden-init">
+			<div class="music-panel-bg"></div>
+			<div class="mp-music">
+				<div class="mp-music-cover">
+					<div class="mp-music-cover-image"></div>
+					<div class="mp-music-cover-details">
+						<div class="mp-music-title">--</div>
+						<div class="mp-music-artist">--</div>
+					</div>
+				</div>
+				<div class="mp-music-controls">
+					<button class="mp-btn mp-btn-back" aria-label="Back" title="Back"><</button>
+					<button class="mp-btn mp-btn-forward" aria-label="Forward" title="Forward">></button>
+					<img
+						class="mp-btn mp-btn-play"
+						src="./media/images/commonicons/play.white.svg"
+						alt="Play"
+						role="button"
+						aria-pressed="false" />
+					<img
+						class="mp-btn mp-btn-pause"
+						src="./media/images/commonicons/pause.white.svg"
+						alt="Pause"
+						role="button"
+						aria-pressed="false" />
+					<img
+						class="mp-btn mp-btn-link"
+						src="./media/images/commonicons/link.diagonal.white.svg"
+						alt="Open in Spotify"
+						role="button"
+						aria-label="Open in Spotify" />
+					<input class="mp-volume" type="range" min="0" max="1" step="0.05" value="0.5" aria-label="Volume" />
+					<img
+						class="mp-btn mp-btn-close"
+						src="./media/images/commonicons/close.white.svg"
+						alt="Close"
+						role="button"
+						aria-pressed="false" />
+				</div>
+			</div>
+			<div class="mp-list">
+			</div>
+		</div> -->
+
+
+					<!-- <div class="banner-img" style="background-image: url('./p/info/starl/slate.jpg')">
+						<div class="banner-bg"></div>
+						<div class="banner-text">
+							STARL MUSIC APP IS OUT!
+						</div>
+						<div class="banner-button">
+							<a href="https://github.com/everm4iva/starl">Check github repo</a>
+						</div>
+					</div> -->
+
+					<!-- <div class="audio-note">
+						<div class="pop"></div>
+						<div class="audio-text"></div>
+						<div class="audio-text">
+							<img class="play-toggle" src="./media/images/commonicons/play.white.svg" alt="Play" />
+							Infohazard (by Ninajirachi)
+						</div>
+					</div> -->

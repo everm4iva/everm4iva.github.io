@@ -69,7 +69,7 @@
 		border-top-color: var(--pink);
 		border-top-width: 1px;
 		background-color: var(--pink);
-		border-radius: 15px;
+		border-radius: 15px 15px 0px 0px;
 	}
 
 	.right-cont h2 {

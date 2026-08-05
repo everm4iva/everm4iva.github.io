@@ -18,6 +18,7 @@
 	position: relative;
 	overflow-x: hidden;
 	overflow-y: auto;
+	transition: all 280ms ease;
 }
 
 #content-right {

@@ -48,9 +48,8 @@
 }
 
 /* Effect overlay containers */
-#effect-overlay-container {
-	/* Positioned in JS */
-}
+/* #effect-overlay-container {
+} */
 
 .effect-color-overlay {
 	/* Color and opacity set in JS */
@@ -65,19 +64,15 @@
 	background: rgba(0, 150, 255, 0.3);
 }
 
-.effect-image-overlay {
-	/* Image and blend mode set in JS */
+/* .effect-image-overlay {
 }
 
 .effect-distortion {
-	/* Set dynamically in JS */
 }
 
 .effect-pulse {
-	/* Set dynamically in JS */
-}
+} */
 
-/* Music panel screenshake readiness */
 .music-panel {
 	transition: transform 0.05s ease-out; /* Smooth screenshake */
 }

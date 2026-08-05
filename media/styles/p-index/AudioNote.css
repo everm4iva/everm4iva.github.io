@@ -112,7 +112,7 @@
 
 .audio-class {
 	width: 92%;
-	height: 20%;
+	height: fit-content;
 	display: flex;
 	overflow: hidden;
 	background-color: #0000006e;
@@ -192,4 +192,29 @@
 	transform: scale(1.2);
 	filter: invert(0.1) sepia(0.8) saturate(10) hue-rotate(200deg);
 	/* background-color: var(--cyan); */
+}
+
+@media (max-width: 768px) {
+	.pfp-class.hidden {
+		display: none;
+	}
+
+	:has(.pfp-class.hidden) .right-cont {
+	height: 25%;
+	overflow-y:auto;
+	background-color: var(--audionote-color);
+	border-color: transparent;
+	}
+
+	.audio-note {
+		left: 10%;
+		width: 20rem;
+	}
+
+	.audio-class {
+		height: 100%;
+	}
+	.audio-cover {
+		max-width: 30%;
+	}
 }
