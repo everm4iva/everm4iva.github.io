@@ -200,7 +200,7 @@
 	}
 
 	:has(.pfp-class.hidden) .right-cont {
-	height: 25%;
+	height: 55%;
 	overflow-y:auto;
 	background-color: var(--audionote-color);
 	border-color: transparent;

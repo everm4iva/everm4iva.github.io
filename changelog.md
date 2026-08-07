@@ -1,3 +1,9 @@
+# release 4.3.20.1 (07 aug 2026)
+- fixed some mobile design issues.
+- added new exclusive artwork (aka: drawings) to the diary page
+- added new music album "MY BODY MY SOFTWARE" to the diary page, even if is not finished yet lol...
+- boosted version.
+
 # release 4.3.20 (06 aug 2026)
 - added mobile design support for audio notes.
 - removed all gradients and old icons/folders (cleaned up the website)
