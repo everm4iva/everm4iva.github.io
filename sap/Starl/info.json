@@ -9,7 +9,7 @@
 	"public-servers": {
 		"1": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
-			"status": "online",
+			"status": "in repair",
 			"server-name": "BANG.PUBLIC (in testing)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage"],
@@ -19,7 +19,7 @@
 		},
 		"2": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
-			"status": "online",
+			"status": "in repair",
 			"server-name": "DREAM.PUBLIC (fastest)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage", "dev"],
@@ -39,7 +39,7 @@
 		},
 		"4": {
 			"url": "southwetgrass.tail82eddd.ts.net/",
-			"status": "in repair",
+			"status": "offline",
 			"server-name": "SOUTH.PUBLIC",
 			"version": "1.0.0",
 			"habilities": ["service"],
