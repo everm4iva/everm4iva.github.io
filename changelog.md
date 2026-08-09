@@ -1,3 +1,7 @@
+# release 4.3.20.2 (09 aug 2026)
+- added new artwork to the diary page
+- boosted version.
+
 # release 4.3.20.1 (07 aug 2026)
 - fixed some mobile design issues.
 - added new exclusive artwork (aka: drawings) to the diary page
