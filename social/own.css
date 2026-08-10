@@ -18,13 +18,17 @@ html {
 }
 
 a {
-	color: #ffa2bd;
+	color: var(--cyan);
 	font-size: 1rem;
 }
 
+.aliases{
+	color: var(--pink);
+}
+
 ::selection {
-	background-color: #ffa2bd;
-	color: #c44569;
+	background-color: var(--cyan);
+	color: var(--bg-color);
 }
 
 body {
@@ -57,7 +61,7 @@ body:before {
 .line {
 	width: 60%;
 	height: 2px;
-	background-color: #c44569;
+	background-color: var(--pink);
 }
 
 .container {
@@ -73,10 +77,10 @@ body:before {
 	/* background-color: rgba(255, 255, 255, 1); */
 	padding: 40px;
 	min-width: 350px;
-	color: #c44569;
+	color: var(--pink);
 	width: 40%;
 	backdrop-filter: blur(10px);
-	border: 2px #c44569 solid;
+	border: 2px var(--pink) solid;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -86,9 +90,9 @@ body:before {
 .avatar {
 	width: 140px;
 	height: 140px;
-	background: linear-gradient(45deg, #ff6b9d, #c44569);
+	background-color : var(--pink);
 	margin-bottom: 30px;
-	border: 2px #c44569 solid;
+	border: 2px var(--pink) solid;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -130,11 +134,11 @@ body:before {
 	text-align: left;
 	margin-top: 20px;
 	font-size: 0.9rem;
-	color: #c44569;
+	color: var(--pink);
 }
 
 .old-socials a {
-	color: #c44569;
+	color: var(--pink);
 	text-decoration: none;
 	margin-left: 5px;
 }

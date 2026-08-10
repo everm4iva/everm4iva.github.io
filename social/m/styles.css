@@ -40,7 +40,7 @@ body:before {
 }
 
 a {
-	color: #ffa2bd;
+	color: var(--cyan);
 	font-size: 1rem;
 }
 
@@ -59,9 +59,13 @@ a {
 	filter: brightness(0.6);
 }
 
+.aliases{
+	color: var(--pink);
+}
+
 ::selection {
-	background-color: #ffa2bd;
-	color: #c44569;
+	background-color: var(--cyan);
+	color: var(--bg-color);
 }
 
 .container {
@@ -81,14 +85,14 @@ a {
 	padding: 30px;
 	width: 96%;
 	height: 100%;
-	border: 1px solid rgb(255, 0, 115);
+	border: 1px solid var(--pink);
 	backdrop-filter: blur(25px);
 }
 
 .avatar {
 	width: 120px;
 	height: 120px;
-	background: linear-gradient(45deg, #ff6b9d, #c44569);
+	background-color: var(--pink);
 	margin: 0 auto 20px;
 	display: flex;
 	align-items: center;
@@ -97,18 +101,18 @@ a {
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
-	border: 1px solid rgb(255, 0, 115);
+	border: 1px solid var(--pink);
 }
 
 .username {
-	color: rgb(255, 0, 115);
+	color: var(--pink);
 	font-size: 32px;
 	font-weight: bold;
 	text-align: center;
 }
 
 .marks {
-	color: rgb(255, 0, 115);
+	color: var(--pink);
 	font-size: 1rem;
 	width: 100%;
 	text-align: center;

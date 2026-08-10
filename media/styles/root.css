@@ -21,19 +21,19 @@
 
 	--green: #8ff370;
 	--dead-green: #447435;
-	--pink: #db347a;
+	--pink: #971717;
 	--neon-purple: #9118be;
 	--soft-purple: #7f377f;
 	--soft-light-purple: #d37bd3;
 	--neon-purple-light: #e1a7e1;
 	--cute-pink: #ffa3bf;
 	--strong-pink: #ff00d4;
-	--yellow: #eeff00;
+	--yellow: #00ffea;
 	--dead-yellow: #f39200;
-	--cyan: #00ffe7;
-	--cyan-dead: #008d7f;
+	--cyan: #ffee00;
+	--cyan-dead: #695a00;
 
-	--random-1: #881e4a;
+	--random-1: #2e1e88;
 	--random-color-1: rgb(255, 255, 255);
 	--random-2: #8ff370;
 	--random-color:2 var(--black);
@@ -60,13 +60,13 @@
 	--spacing-unit: 8px;
 
 	/* Audio Note */
-	--audionote-color: #2c484b;
+	--audionote-color: #1f38b3;
 	--audionote-border-color: var(--pink);
-	--audionote-image: url('../../audio/cover/infohazard.jpg');
+	--audionote-image: url('../../audio/cover/sweetlittlehearts.png');
 	--audionote-text-color: var(--white);
 
 	/* Background & Images */
-	--bg-img: url('../images/background/new/city-f29a346ebe323caf534871a6db74d849.jpg');
+	--bg-img: url('../images/background/new/flower1905b08dcccdb7b8e72dff05001f7315.jpg');
 
 	/* Project Colors */
 	--fractal-p: #4714ff;

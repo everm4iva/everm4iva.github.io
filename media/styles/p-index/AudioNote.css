@@ -213,6 +213,8 @@
 
 	.audio-class {
 		height: 100%;
+		width: 98%;
+		display: flex;
 	}
 	.audio-cover {
 		max-width: 30%;

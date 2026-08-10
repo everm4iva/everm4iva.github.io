@@ -1,0 +1,29 @@
+[
+	{
+		"service-title": "gemserver",
+		"service-description": "private cloud server for my personal projects and apps.. only for my network and friends.",
+		"service-area": "server",
+		"service-type": ["manifest", "api"],
+		"latest-ver": "1.0.0",
+		"auth-method": "PIN",
+		"global-servers": false,
+		"user-types": ["admin"],
+		"default-user-access": {
+			"can-edit-files": true,
+			"can-edit-config": true,
+			"can-edit-users": true,
+			"can-edit-auth": true,
+			"can-upload-files": true,
+			"can-download-files": true,
+			"can-delete-files": true,
+			"can-rename-files": true,
+			"can-create-folders": true,
+			"can-delete-folders": true,
+			"can-rename-folders": true,
+			"can-shutdown": true,
+			"can-restart": true,
+			"can-scan-files": true,
+			"can-scan-folders": true
+		}
+	}
+]

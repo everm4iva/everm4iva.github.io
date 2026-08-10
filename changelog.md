@@ -1,3 +1,16 @@
+# release 4.3.20.3 (10 aug 2026)
+- added new artwork to the diary page
+- added new music "lara (goodbye to a friend)" to the album "MY BODY MY SOFTWARE" in the diary page
+- boosted version.
+- deleted some tracks..
+- changed starl server status.
+- new services "GemServers" to sap page.
+- changed audio note song to "Sweet Little Hearts" by The Velveteers.
+- changed some info in the index page - minor things.
+- changed root background image to a new one.
+- changed color scheme of root css. pink -> red | cyan -> yellow | yellow -> cyan
+- social media pages css tweak (hardcoded colors -> root colors)
+  
 # release 4.3.20.2 (09 aug 2026)
 - added new artwork to the diary page
 - boosted version.
@@ -16,7 +29,7 @@
 - added full changelog, including from the old website (umaera.github.io), scroll down to see it all!
 
 # release 4.3.19.2 (05 aug 2026)
-- audio notes are back!!! check them on the profile section of the index page (/)
+- audio notes are back!!! check them on the profile section of the index page - (Infohazard by Ninajirachi)
 - updated starl servers with new info
 - added new project: "sdm-tts" to the projects page (/p)
 - changed wallpaper

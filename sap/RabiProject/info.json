@@ -1,7 +1,7 @@
 [
 	{
 		"service-title": "RABI-PROJECT",
-		"service-description": "Embbedable ai model for apps and services.",
+		"service-description": "Embbedable ai model for apps and services",
 		"service-area": "api",
 		"service-type": ["manifest", "api", "server"],
 		"latest-ver": "1.0.0",

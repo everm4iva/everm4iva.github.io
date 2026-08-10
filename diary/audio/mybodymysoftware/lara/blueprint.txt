@@ -1,0 +1,129 @@
+lara (goodbye to a friend) BLUEPRINT
+
+this is not a prompt, this was not ai generated, 
+this is my structured thoughts AFTER i made the music.
+programs i used:
+- beepbox 4.2.2 (made into a offline desktop app with tauri)
+- audacity (bitcrush plugin by Nyquist)
+that's it.. no fancy tools... no fl studio or whatever..
+i just goof around
+
+[5 minutes]
+playing around with synths, effects
+
+[10 minutes]
+playing around with notes
+
+[18 minutes]
+found good notes + good instrument
+i played around with variations.. like if is TAN TAN TAN TAN repeatedly
+with same chord or.. something else.
+
+the notes are
+B3 D4, C4 B4, G3 B4, F#3 Bb4
+separated with "," per sequence
+
+[24 minutes]
+i set the original "song" to 176 bpm, it was the right speed.
+the main instrument is an FM, with high-pass filter, no fadeout (between square wave and saw wave)
+with bitcrush, slight echo and a lot of reverb... 
+
+[28 minutes]
+i decided the perfect pattern, not make a chord.
+just.. leave a gap for the note to echo, like
+1 = the note
+0 = silence (in this case, echo)
+2 = other note
+
+1 0 2 0 1 0 2 0... and play 3 times the note to start another sequence..
+That sounds nice and cozy :3
+
+[33 minutes]
+i was thinking about the theme of the song in the background, while ajusting some instrument
+settings...
+
+[35 minutes]
+i added new instrument, a "supersaw" (like a saw wave but E X P A N D E D)
+of course, with a bit of distortion and reverb.
+
+here is the notes (prolonged into the next sequence from the other instrument)
+B2, C3, F#2, G2.
+
+[48 minutes]
+at this time, i was just doing micro ajustments, nothing sounded.. RIGHT
+i remade the whole thing from scratch (the earlier info is still correct tho).
+
+[68 minutes / 1h8m]
+remade everything, put stuff in their place, now my mind accepted the imperfections.
+After the S U P E R S A W action, i decided to put a little silence
+to make a part 2, the first part.. peaceful, poetic.. whatever
+the second.. more agressive and agitated.
+
+now i have the theme.. it was marinating, now it's out.
+i remember.. my first relationship, romantic one, it was with a girl named "Lara".
+we were so close.. shared pizza, long walks in the park, of course we were like..  7
+but her mother didn't care, was always my mother watching out behind us.
+it was.. innocent, she kissed me, i kissed her.. until she didn't appear at school.
+she and her brother was abandoned for days in her house, while her mother got away from the country.
+leaving kids alone.. traumatized, dirty.. alone.. 
+i didn't heard about her ever since.
+
+looked at the best picture we have of us, me hugging my arms in a weird way around her.. and her.. her blank stare to the camera
+
+[72 minutes / 1h12m]
+second part rythm.. is like the first.. but at the same time, not
+each sequence note is now a chord.. played at the same time, no silence gaps.
+the same sequence played 6 times, then the another played.. 
+
+since it's like.. 4 sequences, i doubled and gave it to the next person (lol, just kidding)
+i made the 4 sequences repeat two times, like
+1 2 3 4 1 2 3 4
+and then an extra note, the first note of the first sequence, alone, for 2 seconds... then silence
+
+[84 hours / 1h24m]
+the S U P E R S A W thing cannot remain the same, it's supost to be intense.
+now instead of ONE NOTE per sequence, it's actually two at the same time, per sequence
+but this time is a little different
+
+B2 F#5, C3 B4, G2 G5, F#2 Bb5
+It's sligly different from the earlier notes, but it's meant to cause impact, difference, E X P A N T I O N
+ mueheheheh
+
+at this point the music is done in beepbox program, so i saved the .json for later and compressed the mp3
+time for audacity!
+
+[91 hours / 1h31m]
+
+Audacity open
+applied some low-pass effects, not to severe, just enough to not damage my ears.
+at this point, the lyrics are marinating in my head... 
+.. the track "sleep" from my music album "shush" has some really neat breakcore in the middle, i want the same for the second part.
+i got to a free sample website, picked a nice breakcore action thing and imported to audacity.
+got a low-pass filter (it was sharp as hell), bitcrushed a bit and made it repeat in the whole part 2.
+to not make it SUDDENT from part 1 to part 2.. i decided to apply a small fade-in.
+in the final part of the part 1, there was a fade in breakcore part and then.. silence (the between part 1 and part 2)
+
+[107 hours / 1h47m]
+
+TIME FOR LYRICS BABY! this was the most difficult part.
+I do know how to sing, but not make it sound GOOD on mic.
+
+Im a bit shy, so i distorted a little.. to make it more comfortable.
+Note block open, photo next to me, song playing in repeat.. 
+
+and words.. just got out, trial and error, some lyrics didn't go to the rythm
+some didn't go the way i intended.. and since it's about her, i scrapped all
+parts about me, expect "i was a boy" - no questions... deeper than me i guess.
+just the feeling and the concept of her...
+
+after the the lyrics was "done", it flowed nicely... didn't have to add some weird voice glitches, weird cuts
+or extra bit crush.. felt right..
+
+exported, decorated lyrics, made sure the project was recoverable.. and here we are.
+trying a new thing.. documenting a song... i am proud of this. i hope i do this well next time.
+
+enjoy.
+
+*total time: 2h19m* 
+by zoeisrad. for album "MY BODY, MY SOFTWARE"
+
