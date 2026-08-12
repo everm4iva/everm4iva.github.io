@@ -1,0 +1,50 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, notranslate" />
+		<title>media</title>
+		<link rel="stylesheet" href="./styles/root.css" />
+	</head>
+	<style>
+		body::before {
+			background-image: none;
+		}
+		body {
+			overflow-y: auto;
+		}
+		.img-block {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+		.img-block img {
+			margin: 0.5%;
+			flex: 1 1 30%;
+			max-width: 12%;
+			height: auto;
+			object-fit: contain;
+			background-color: var(--pink);
+		}
+		.img-block img:hover {
+			filter: opacity(0.7);
+		}
+		blockquote {
+			margin-top: 3%;
+		}
+	</style>
+	<body>
+		<h1>Indexed on <mark>/media</mark></h1>
+		<ul>
+			<p></p>
+			<li><a href="../">/..</a></li>
+			<li><a href="./base/">/base</a> - base files (only includes projects)</li>
+			<li><a href="./fonts/fonts.html">/fonts</a> - all fonts.</li>
+			<li><a href="./icons/">/icons</a> - general icons</li>
+			<li><a href="./images/">/images</a> - general images (not indexed yet)</li>
+			<li><a href="./styles/">/styles</a> - stylesheets files (not indexed yet)</li>
+		</ul>
+
+		<blockquote>! Some sources may be limited or not indexed. Be patient, next versions can include more contents.</blockquote>
+	</body>
+</html>

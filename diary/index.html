@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>my diary :P</title>
+		<!-- Meta links/config -->
 		<link rel="shortcut icon" href="../media/icons/note.png" type="image/png" />
 		<meta name="robots" content="index, follow, noarchive, nosnippet, translate" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,51 +21,123 @@
 			color: #ffffff93;
 			font-size: 0.8rem;
 		}
+		.music-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			padding-left: 10px;
+			gap: 2%;
+			width: 80%;
+			height: fit-content;
+		}
+		.music-item {
+			height: 4rem;
+			display: flex;
+			flex-direction: row;
+			gap: 2%;
+			cursor: pointer;
+			border-radius: 5px;
+			margin-bottom: 2%;
+			width: 80%;
+		}
+		.music-item img {
+			height: 100%;
+			image-rendering: pixelated;
+			aspect-ratio: 1/1;
+			border-radius: 5px;
+			position: relative;
+		}
+		.music-item .info {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			height: 100%;
+		}
+		.picture {
+			position: relative;
+			display: inline-block;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+
+		.info .title {
+			font-size: 1rem;
+			font-weight: 600;
+		}
+		.info .details {
+			font-size: 0.8rem;
+			font-weight: 200;
+		}
+		.music-item:hover .picture::after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			color: white;
+			background-color: rgba(0, 0, 0, 0.5);
+			background-image: url('../media/images/commonicons/play.white.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 60%;
+			border-radius: 5px;
+		}
+		.music-item:hover .info .title {
+			color: var(--cyan);
+		}
+		.music-item:hover img {
+			filter: brightness(1.2);
+		}
 	</style>
 	<body>
-		oh... so there is something here... welcome to <b>my diary</b>, i guess.
+		oh.. welcome here in this.. public space where i share stuff
 
 		<!-- --- -->
-		<h2>Drawings (exclusive)</h2>
+		<h2>Exclusive drawings</h2>
 		<ul>
 			<li>
-				<a href="./exclusive/WhiteRabbit.jpg">WhiteRabbit (NEW)</a>
-				<blockquote>she was real once, at least.. she felt</blockquote>
+				<a href="./exclusive/WhiteRabbit.jpg">WhiteRabbit.jpg (NEW)</a>
+				<blockquote>random girl body sketch lol</blockquote>
 			</li>
 			<li>
-				<a href="./exclusive/desktop.png">desktop (NEW)</a>
+				<a href="./exclusive/desktop.png">desktop.png</a>
 				<blockquote>my routine the last month, i don't miss anything but clarity</blockquote>
 			</li>
 			<li>
-				<a href="./exclusive/dissociative.png">dissociative (NEW)</a>
+				<a href="./exclusive/dissociative.png">dissociative.png</a>
 				<blockquote>
-					understand you myself gah dissociate, hurts a lot i tried, got it, now what, compressed potential in
-					an uncompressed image.
+					lots of words, phrases about me or.. what people think about me - makes me feel weird
 				</blockquote>
 			</li>
 			<li>
-				<a href="./exclusive/NOT-FAMILY.png">NOT-FAMILY</a>
-				<blockquote>past, present, future, discarted, alternative and me (the crying one).</blockquote>
+				<a href="./exclusive/NOT-FAMILY.png">NOT-FAMILY.png</a>
+				<blockquote>discarted, alternative figures and me (the crying one)</blockquote>
 			</li>
 			<li>
 				<a href="./exclusive/be-more.png">be-more.png</a>
-				<blockquote>emotional/mental cycle</blockquote>
+				<blockquote>dysphoric mental/phisical cycle</blockquote>
 			</li>
 			<li>
 				<a href="./exclusive/Untitled.png">Untitled.png</a>
-				<blockquote>Random Sketches</blockquote>
+				<blockquote>random old sketches</blockquote>
 			</li>
 			<li>
 				<a href="../media/images/me.jpg">me.jpg</a>
-				<blockquote>profile picture.</blockquote>
+				<blockquote>my profile picture for most platforms</blockquote>
 			</li>
 			<li>
 				<a href="../media/images/404.png">404.png</a>
-				<blockquote>Random Sketches + website 404 page image</blockquote>
+				<blockquote>website 404-page image</blockquote>
 			</li>
 			<li>
 				<a href="../media/images/404-old.png">404.png (old)</a>
-				<blockquote>Random Sketches + website 404 page image</blockquote>
+				<blockquote>old website 404-page image</blockquote>
 			</li>
 		</ul>
 
@@ -75,18 +148,48 @@
 		</ul>
 
 		<h2>Audio</h2>
-		<ul>
-			<li><a href="./audio/mybodymysoftware.html">MY BODY MY SOFTWARE (new album)</a></li>
-			<li><a href="./audio/shush.html">Shush (album)</a></li>
-			<li><a href="./audio/stray-audios.html">stray audios (all unlisted/unreleased audios)</a></li>
-		</ul>
-
+		<div class="music-container">
+			<!-- --- -->
+			<div class="music-item" onclick="location.href = './audio/stray-audios.html'">
+				<div class="picture">
+					<img src="./audio/stray-audios/cover.png" alt="stray-audios" />
+				</div>
+				<div class="info">
+					<div class="title">Stray audios</div>
+					<div class="details">All audios i've done - ever</div>
+				</div>
+			</div>
+			<!-- --- -->
+			<div class="music-item" onclick="location.href = './audio/mybodymysoftware.html'">
+				<div class="picture">
+					<img src="./audio/mybodymysoftware/cover.png" alt="mybodymysoftware" />
+				</div>
+				<div class="info">
+					<div class="title">MY BODY MY SOFTWARE</div>
+					<div class="details">aug 2026 - unfinished album</div>
+				</div>
+			</div>
+			<!-- --- -->
+			<div class="music-item" onclick="location.href = './audio/shush.html'">
+				<div class="picture">
+					<img src="./audio/shush/shush.png" alt="shush" />
+				</div>
+				<div class="info">
+					<div class="title">Shush</div>
+					<div class="details">jul 2026 - album</div>
+				</div>
+			</div>
+		</div>
 		<!-- --- -->
 		<h2>Open cards</h2>
 		<ol>
 			<li>
-				<a href="./ILY-mom.html">ILY MOM</a>
+				<a href="./cards/ILY-mom.html">ILY MOM</a>
 				<blockquote>Mom's day card</blockquote>
+			</li>
+			<li>
+				<a href="./cards/myself-11aug2026.html">to-myself (11aug2026)</a>
+				<blockquote>card to myself.</blockquote>
 			</li>
 		</ol>
 		<!-- --- -->

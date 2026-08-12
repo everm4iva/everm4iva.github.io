@@ -1,3 +1,15 @@
+# release 4.3.20.4 (12 aug 2026)
+- changed main color from dark-red to purple
+- change music note song to "AFRAID TO DIE" by Crawlers.
+- Changed/Added/Removed some texts in the index page. - For the sake of my image, i had some pretty embarassing stuff huh.
+- diary page now displays audio cover images.
+- re-wrote descriptions on the diary page.
+- added new card "myself-11aug2026" to the diary page.
+- updated website license.
+- cleaned changelog
+- indexed "media/icons" folder.
+- added more context to indexed media folders
+
 # release 4.3.20.3 (10 aug 2026)
 - added new artwork to the diary page
 - added new music "lara (goodbye to a friend)" to the album "MY BODY MY SOFTWARE" in the diary page
@@ -92,7 +104,7 @@ This changelog seems corporate lol, not on purpose, i am sleepy as hell...
 - diary page updated. no new stuff, just some fixes to paths.
 
 # release 4.3.18.5 (04 jun 2026)
-- IM STILL ALIVE!!
+> IM STILL ALIVE!!
 
 # release 4.3.18.4 (27 may 2026)
 - Fixed some inconsistencies in the stylesheets and quotes in the index page.
@@ -101,10 +113,10 @@ This changelog seems corporate lol, not on purpose, i am sleepy as hell...
 - Boosted version, Im working on something big!
 
 # release 4.3.18.3 (24 may 2026)
-- added starl project!
-- starl sap too.
-- boosted version because im not dead yet.
-- im reconsidering bringing the music bubble thing back.. hum...
+> boosted version because im not dead yet.
+> im reconsidering bringing the music bubble thing back.. hum...
+- added starl project + sap page info
+
 
 # release 4.3.18.2 (20 may 2026)
 - some typo fixes
@@ -169,7 +181,7 @@ This changelog seems corporate lol, not on purpose, i am sleepy as hell...
 |> applies to all colors and backgrounds!
 |> check out the css file in /sap or /r - i added history
 - 404 page has now a new hand-drawn design! (+ mobile friendly styles)
-- .me element (the little draggy character in index page) now has more animations
+- ".me" element (the little draggy character in index page) now has more animations
 |> Throw at the wall or swing it around to know more.
 - Little loading animation ahh in the index page!
 - Removed music panel effects! (Screenshake, sat, etc..)
@@ -183,7 +195,7 @@ This changelog seems corporate lol, not on purpose, i am sleepy as hell...
 - updated the drawing (diary entry: untitled.png)
 - fixed broken resource links in the project page (/p)
 - added "orianaTerminal" info page and ditched github repo.
--- Thanks @dhummy to warn me about those project page errors --
+> Thanks "@dhummy" to warn me about those project page errors
 
 # release 4.3.11 - (16 apr 2026)
 > minor update - version boost
@@ -203,7 +215,7 @@ This changelog seems corporate lol, not on purpose, i am sleepy as hell...
 - Added indexing to pages, for search engines and AIs to know this exists.
 
 # release 4.3.9 - (30 mar 2026)
-Haven't updated for a while, here we go, some polishes.
+> Haven't updated for a while, here we go, some polishes.
 - Added /manifesto - To manifest my feelings and goals about some of my strongest projects.
 - Added new project in /p (project page) - BlueBerry Browser!
 - Changed globally the name and icon of the project "SparkBunny" to "sparky" since the original project also changed name.
@@ -215,6 +227,7 @@ Haven't updated for a while, here we go, some polishes.
 - Organized music by genre!!
 
 # release 4.3.8 - (24 mar 2026)
+> minor update
 - Rounded pfp picute + decoration
 - Adjusted some info on index page
 - COLOR PALLETTE CHANGE!!!!!11!! (i told you about this.)
@@ -229,7 +242,7 @@ Haven't updated for a while, here we go, some polishes.
 - Changed some pages that didn't syncronize with the main theme.
 - Registered "world2" in (/sap)
 - project-list.md avaliable on (/r - resources) or (/p - projects).
--- Thanks @dhummy to give me some ideas through the process of this update. --
+> Thanks "@dhummy" to give me some ideas through the process of this update.
 
 # release 4.3.7 - (23 mar 2026)
 > Organized & Improved some stuff
@@ -281,12 +294,13 @@ Haven't updated for a while, here we go, some polishes.
 - skipped 3 versions, it just looks cool this way, you can still consider this 4.0
 - NEW DESIGN, LAYOUT, EVERYTHING! (also file structure - very important stuff)
 
-# Changelog: `umaera.github.io`
+# ---- Changelog: `umaera.github.io` ---- #
+> note: some changes may seem confuse, since this is a changelog of a website that was completely re-designed and re-structured. Some changes may not be reflected in the current version of the website, but they are still important to mention.
 
 ## release 3.9.6
-- I changed my website domain, now im doing what microsoft does and heavily migrate everything
-- I plan into making this website compleatly obsolete in a space of a few months (less than 6 months)
-- Here is my new thingy: https://everm4iva.github.io - or just open any page of this website lol
+> I changed my website domain, now im doing what microsoft does and heavily migrate everything
+> I plan into making this website compleatly obsolete in a space of a few months (less than 6 months)
+> Here is my new thingy: https://everm4iva.github.io - or just open any page of this website lol
 
 ## release 3.9.5
 - Added SubEraWeb - project info
@@ -420,22 +434,22 @@ Haven't updated for a while, here we go, some polishes.
 - SimplyPrivate Reached the end of it's support - announced
 
 ## release 3.1
-- Loading animations **Added** to every page of the website.
-- **Made** visual tweaks to button elements.
+- Loading animations added to every page of the website.
+- Made visual tweaks to button elements.
 - Buttons on Mobile-View now have text!
-- **Optimized** 404 page.
+- Optimized 404 page.
 - Mobile Social Media page fixed & new design like desktop page!
 - Visual tweaks to Social Media pages.
 - Visual Tweaks and font changes in changelog page.
-- **Added** a LOT of new fonts
-- **Polished** info pages, resources marker/project count & style
+- Added a LOT of new fonts
+- Polished info pages, resources marker/project count & style
 - Astrodist page now has an favicon (wow, compleatly relevant)
-- **Made** new website icon variations.
-- **Changed** some features in Cloud & Ruby pages.
+- Added new website icon variations.
+- Changed some features in Cloud & Ruby pages.
 
 ## release 3.0
-- TOTAL REDESING IS HERE!!!!!
-- **Updated** design, new layout, new animations, new everything.
+> TOTAL REDESING IS HERE!!!!!
+- Updated design, new layout, new animations, new everything.
 - Introducing Main Screen - cinematic and useful
 - Resources page is now on dark mode, and color coded.
 - Changelog page - a new space.
@@ -448,187 +462,186 @@ Haven't updated for a while, here we go, some polishes.
 - europia is here! with a new agent/g3.
 
 ## release 2.5.7
-- Still cooking something
-- **Removed** some resources from /resources and /assets.
-- **Cooked** a masterpiece: The SimplyPrivate Changelog page.
-- **Ajusted** image and animation structure from /assets.
-- **Updated** the Developers/Supporters profile picture.
+> Still cooking something
+- Removed some resources from /resources and /assets.
+- Cooked a masterpiece: The SimplyPrivate Changelog page.
+- Ajusted image and animation structure from /assets.
+- Updated the Developers/Supporters profile picture.
 - Some bipolar translations are going on, i'm working in a creative solution.
 
 ## release 2.5.6
-- new design coming soon.
-- **Added** "@Old-Websites" to "Resources", it displays (not all)the public websites that i created. They all are abandoned, so don't put any info or send any form.
+> new design coming soon.
+- Added "@Old-Websites" to "Resources", it displays (not all)the public websites that i created. They all are abandoned, so don't put any info or send any form.
 
 ## release 2.5.5
-- new design coming soon.
-- **Updated** resources page with new "StorageTest" Folder, a dedicated storage to test rendering and other logic.
+> new design coming soon.
+- Updated resources page with new "StorageTest" Folder, a dedicated storage to test rendering and other logic.
 
 ## release 2.5.4
-- new design coming soon.
-- **Updated** some resources
-- **Removed** unused pages and assets
-- **Changed** folder organization
-- **General bug fixed & polishing**
-- OVER 300 CHANGES?!
+> new design coming soon.
+- Updated some resources
+- Removed unused pages and assets
+- Changed folder organization
+- General bug fixed & polishing
+> OVER 300 CHANGES?!
 
 ## release 2.5.3
-- big big big update coming
-- **Removed** useless icons
-- **Updated** resources - styles
-- **Updated** resources - added "@EffectsEngine" & "@PuplProject"
-- **Added** icons for the new resources
-- **General bug fix & polishing**
-- **Added** a new shape in "asp" page, "LowResSphere" - a low resolution sphere that you can choose the number of sides.
+> big big big update coming
+- Removed useless icons
+- Updated resources - styles
+- Updated resources - added "@EffectsEngine" & "@PuplProject"
+- Added icons for the new resources
+- General bug fix & polishing
+- Added a new shape in "asp" page, "LowResSphere" - a low resolution sphere that you can choose the number of sides.
 
 
 ## release 2.5.2
-- yes! i'm still plotting
-- **Updated** SimplyPrivate Screens
-- **Updated** resources - @azayra & @simplyprivate
-- **General bug fix**
+> yes! i'm still plotting
+- Updated SimplyPrivate Screens
+- Updated resources - @azayra & @simplyprivate
+- General bug fix
 
 ## release 2.5.1
-- yes, i'm still plotting something
-- **Added** wiki-icons to "/assets"
+> yes, i'm still plotting something
+- Added wiki-icons to "/assets"
 
 ## release 2.5
-- **General bug fix**
-- **General polishing**
-- **Renamed** "services" to "resources"
-- **Moved** "RainOs" to Resources
-- **Moved** "astrodist" to Resources
+- General bug fix & polishing
+- Renamed "services" to "resources"
+- Moved "RainOs" to Resources
+- Moved "astrodist" to Resources
 - did some shady server-side stuff
-- **Removed**, **Updated** and **Added** new icons at "/assets"
-- still plotting something
+- Removed, updated and added new icons at "/assets"
+> still plotting something
 
 ## release 2.4.3
-- **General bug fix**
-- **Removed** /cloud for security reasons
+- General bug fix
+- Removed "/cloud" for security reasons
 - did some shady server-side stuff
-- **Added** images in "./assets"
-- plotting something
+- added images in "./assets"
+> plotting something
 
 ## release 2.4.2
-- **General bug fix**
-- **Added** random images at "./assets"
+- General bug fix
+- Added random images at "./assets"
 
 ## release 2.4.1
-- **General bug fix**
-- **Added** images at "./asp/credits.html", changed visuals, description, translations and more
-- **Added** random images in /assets and removed a few ones
-- **Added** better visuals and resources at "./apps"
+- General bug fix
+- Added images at "./asp/credits.html", changed visuals, description, translations and more
+- Added random images in /assets and removed a few ones
+- Added better visuals and resources at "./apps"
 
 ## release 2.4
-- **General bug fix**
-- **Added** New resources: @2025, @simplyprivate (previews), @world2
-- **Added** images at /assets and added highlights: image (blue), preview (yellow), special (purple)
-- **Removed** and added click functions to /assets
-- **Removed** heavy animations
-- **Removed** 2025 page
-- **Removed** quotes in the main screen
-- **Overall polishing**
+- General bug fix
+- Added New resources: @2025, @simplyprivate (previews), @world2
+- Added images at /assets and added highlights: image (blue), preview (yellow), special (purple)
+- Removed and added click functions to /assets
+- Removed heavy animations
+- Removed 2025 page
+- Removed quotes in the main screen
+- Overall polishing
 
 ## release 2.5.3
 - big big big update coming
-- **Removed** unused icons
-- **Changed** resources - styles
-- **Changed** resources - added "@EffectsEngine" & "@PuplProject"
-- **Added** icons for the new resources on resources page
-- **General bug fix**
-- **Added** randoms animations
-- **Added** a new shape in "asp" menu, "LowResSphere" - a low resolution sphere that you can choose the number of sides.
+- Removed unused icons
+- Changed resources - styles
+- Changed resources - added "@EffectsEngine" & "@PuplProject"
+- Added icons for the new resources on resources page
+- General bug fix
+- Added randoms animations
+- Added a new shape in "asp" menu, "LowResSphere" - a low resolution sphere that you can choose the number of sides.
 
 ## release 2.3.2
-- **General bug fix**
-- **Added** resources page
-- **Added** New helper to the credits board: soupreto123 - Cloud services developer
-- **Added** images at /assets
-- **Added** animations at credits page
-- **Added** new quotes in the page intro
-- **Warning**: 2025 page will deleted soon
+- General bug fix
+- Added resources page
+- Added New helper to the credits board: soupreto123 - Cloud services developer
+- Added images at /assets
+- Added animations at credits page
+- Added new quotes in the page intro
+- Warning: 2025 page will deleted soon
 
 ## release 2.3.1
-- **General bug fix**
-- **Added** random quotes in intro page
-- **Added** intro page design
-- **Fixed** general redirects
-- **Added** Screen size reactions to 2025 countdown page
-- **Added** Screen size reactions to index (main) page
-- **Added** redirect access button to changelog in the loading/intro page
+- General bug fix
+- Added random quotes in intro page
+- Added intro page design
+- Fixed general redirects
+- Added Screen size reactions to 2025 countdown page
+- Added Screen size reactions to index (main) page
+- Added redirect access button to changelog in the loading/intro page
 
 ## release 2.3
-- **Fixed** EraCloud design
-- **Added** 2025 countdown page
-- **General Bug fix**
-- **Added** icons added to asset page
+- Fixed EraCloud design
+- Added 2025 countdown page
+- General Bug fix
+- Added icons added to asset page
 
 ## release 2.2
-- **Added** WhiteWall Security Modules
-- **Added** ECSE Security Modules
-- **General Bug Fix**
-- **Changed** EraCloud addapted to public versions, insert token to access to projects and resources
-- **Added** Random Icons
+- Added WhiteWall Security Modules
+- Added ECSE Security Modules
+- General Bug Fix
+- Changed EraCloud addapted to public versions, insert token to access to projects and resources
+- Added Random Icons
 
 ## release 2.0 - TOTAL REDESIGN
 ## release 2.1
-- **Removed** some old pages
-- **Added** a shared folder with all css and js files to all pages
-- **Added** translations happen in the credits page as long with new images
-- **Changed** objects and formats in /asp as long with new design
-- **Added** hidden project "astrodist" is now accessible in projects menu
-- **Removed** all "open in new tab" links
-- **Added** a 404 error page
+- Removed some old pages
+- Added a shared folder with all css and js files to all pages
+- Added translations happen in the credits page as long with new images
+- Changed objects and formats in /asp as long with new design
+- Added hidden project "astrodist" is now accessible in projects menu
+- Removed all "open in new tab" links
+- Added a 404 error page
 
 ## release 1.9
-- **Added** extra paths to simplyprivate pages
-- **Changed** all website icons
-- **Added** "astrodist" project page
+- Added extra paths to simplyprivate pages
+- Changed all website icons
+- Added "astrodist" project page
 
 ## release 1.8
-- **Changed** shortcuts for every page like "assets/" goes to "assets.html"
-- **Redesigned** design of the assets page
-- **Removed** news page from asp
-- **Added** access to RainOS (i made a web version to work), access on /RainOs
-- **Fixed** some page descriptions and icons
+- Changed shortcuts for every page like "assets/" goes to "assets.html"
+- Redesigned design of the assets page
+- Removed news page from asp
+- Added access to RainOS (i made a web version to work), access on /RainOs
+- Fixed some page descriptions and icons
 
 ## release 1.7 - major update
-- **Changed** the popup2 into an welcome menssage and added secret links to it
-- **Added** a lot of images on assets.html
-- **Redesigned** the c3.6.0 screens
+- Changed the popup2 into an welcome menssage and added secret links to it
+- Added a lot of images on assets.html
+- Redesigned the c3.6.0 screens
 
 ## release 1.6
-- **Minor fixes**
+> Minor fixes
 
 ## release 1.5
-- **Added** version config
-- **Changed** Version board: Version 3.6 is 90% Complete
+- Added version config
+- Changed Version board: Version 3.6 is 90% Complete
 
 ## release 1.4
-- **Changed** Pop-up 1 was transformed into a Simplyprivate version info popup about version 3.6
-- **Changed** Popup 2 text was changed "Not Ready" to "Soon"
-- **General BugFix**
-- **Improved** Animation Smoothness
-- **Fixed** transition between pages
+- Changed Pop-up 1 was transformed into a Simplyprivate version info popup about version 3.6
+- Changed Popup 2 text was changed "Not Ready" to "Soon"
+- General BugFix
+- Improved Animation Smoothness
+- Fixed transition between pages
 
 ## release 1.3
-- **Improved** index page speed by deleting unused elements
-- **Improved** alerts to project buttons
-- **Changed** pop-up 1 text "Not Ready" to "Preparing..."
-- **Added** transition animation
-- **Changed** text font on SimplyPrivate page
-- **Changed** changed background color on SimplyPrivate page
-- **Added** bubble effect on SimplyPrivate page
-- **General BugFix**
+- Improved index page speed by deleting unused elements
+- Improved alerts to project buttons
+- Changed pop-up 1 text "Not Ready" to "Preparing..."
+- Added transition animation
+- Changed text font on SimplyPrivate page
+- Changed changed background color on SimplyPrivate page
+- Added bubble effect on SimplyPrivate page
+- General BugFix
 
 ## release 1.2
-- **Added** alerts to the project buttons
-- **Changed** pop-up text "soon" to "Not Ready"
-- **Removed** text selection
+- Added alerts to the project buttons
+- Changed pop-up text "soon" to "Not Ready"
+- Removed text selection
 
 ## release 1.1
-- **Added** intro animations
-- **Added** button animations
-- **Added** SimplyPrivate page and access button
+- Added intro animations
+- Added button animations
+- Added SimplyPrivate page and access button
 
 ## release 1.0
-- **Added** base website... EVERYTHING got born here
+- Added base website... EVERYTHING got born here

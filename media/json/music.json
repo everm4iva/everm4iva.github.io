@@ -1,12 +1,12 @@
 [
 	{
 		"audio-note": {
-			"title": "Sweet Little Hearts",
-			"artist": "The Velveteers",
+			"title": "AFRAID TO DIE",
+			"artist": "Crawlers",
 			"color": "#ffffff",
-			"url": "https://open.spotify.com/track/0V1ysdfmlxhRgNuHlDbnMy",
-			"cover": "./media/audio/cover/sweetlittlehearts.png",
-			"music-src": "./media/audio/Sweet-Little-Hearts.mp3",
+			"url": "https://open.spotify.com/track/6GiHYoRbplk9wYZ4TL3uw5",
+			"cover": "./media/audio/cover/afraid-to-die.png",
+			"music-src": "./media/audio/AFRAID-TO-DIE.mp3",
 			"lightMode": false,
 			"genre": "rock",
 			"effects": "none"

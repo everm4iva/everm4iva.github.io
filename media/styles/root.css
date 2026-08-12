@@ -21,7 +21,7 @@
 
 	--green: #8ff370;
 	--dead-green: #447435;
-	--pink: #971717;
+	--pink: #6315ac;
 	--neon-purple: #9118be;
 	--soft-purple: #7f377f;
 	--soft-light-purple: #d37bd3;
@@ -60,9 +60,9 @@
 	--spacing-unit: 8px;
 
 	/* Audio Note */
-	--audionote-color: #1f38b3;
+	--audionote-color: #ffffff11;
 	--audionote-border-color: var(--pink);
-	--audionote-image: url('../../audio/cover/sweetlittlehearts.png');
+	--audionote-image: url('../../audio/cover/afraid-to-die.png');
 	--audionote-text-color: var(--white);
 
 	/* Background & Images */

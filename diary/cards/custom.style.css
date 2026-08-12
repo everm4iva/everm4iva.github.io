@@ -1,0 +1,61 @@
+        html{
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: white;
+            color: black;
+            margin: 0;
+            overflow-y: auto;
+        }
+
+        body::before{
+            display: none;
+            background-color: white;
+        }
+
+        h1{
+            font-size: 2em;
+            text-align: center;
+            margin-top: 20vh;
+        }
+
+        .overcute{
+            width: 100%;
+        }
+        .blue{
+            color: blue;
+        }
+
+        .orange{
+            color: orange;
+        }
+
+        .red{
+            color: red;
+        }
+
+        .pink{
+            color: rgb(255, 48, 82);
+        }
+
+        .darkgreen{
+            color: darkgreen;
+        }
+
+        .purple{
+            color: purple;
+        }
+
+        .small-inline-img{
+            width: 50px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+        a{
+            color: var(--pink);
+        }
+        .marg0{
+            margin: 0;
+        }

@@ -16,7 +16,7 @@ and way more!
 I am constantly updating this website, feel free to explore it.
 
 - url: https://everm4iva.github.io
-- license: [Custom - SCRML-WEB-1.0](./license.txt)
+- license: [Custom - SCRML-WEB](./license.txt)
 - changelog: [changelog.md](./changelog.md)
 - official website icon: [favicon.png](./favicon.ico)
 - public profile picture: [me.png](./media/images/me.jpg)

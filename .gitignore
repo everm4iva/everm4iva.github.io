@@ -2,14 +2,4 @@
 tasks.md
 desktop.ini
 private/
-
-# Hide index media (not ready yet)
-media/*.html
-media/*/*.html
-media/*/*/*.html
-media/*/*/*/*.html
-media/*/*/*/*/*.html
-media/*/*/*/*/*/*.html
-
-# Show expecific files
-!media/fonts/fonts.html
+index.html.note
