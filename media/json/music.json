@@ -1,12 +1,12 @@
 [
 	{
 		"audio-note": {
-			"title": "AFRAID TO DIE",
-			"artist": "Crawlers",
+			"title": "bundy",
+			"artist": "wilt",
 			"color": "#ffffff",
-			"url": "https://open.spotify.com/track/6GiHYoRbplk9wYZ4TL3uw5",
-			"cover": "./media/audio/cover/afraid-to-die.png",
-			"music-src": "./media/audio/AFRAID-TO-DIE.mp3",
+			"url": "https://open.spotify.com/track/5hvImZJisZjze7PR3hO1LY",
+			"cover": "./media/audio/cover/bundy.jpg",
+			"music-src": "./media/audio/bundy-wilt.mp3",
 			"lightMode": false,
 			"genre": "rock",
 			"effects": "none"

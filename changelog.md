@@ -1,3 +1,10 @@
+# release 4.3.20.5 (14 aug 2026)
+- added zcam to projects page (even if is too soon)
+- added new audio "an yesterday (lost control)" to the album "MY BODY MY SOFTWARE"
+- added new audio "i try to sing (acoustic)" to stray audio playlist
+- boosted version because i am alive, SUPA SUPA alive.
+- changed music note song to "bundy" by wilt
+
 # release 4.3.20.4 (12 aug 2026)
 - changed main color from dark-red to purple
 - change music note song to "AFRAID TO DIE" by Crawlers.

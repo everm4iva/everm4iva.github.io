@@ -60,9 +60,9 @@
 	--spacing-unit: 8px;
 
 	/* Audio Note */
-	--audionote-color: #ffffff11;
+	--audionote-color: #180217e1;
 	--audionote-border-color: var(--pink);
-	--audionote-image: url('../../audio/cover/afraid-to-die.png');
+	--audionote-image: url('../../audio/cover/bundy.jpg');
 	--audionote-text-color: var(--white);
 
 	/* Background & Images */
