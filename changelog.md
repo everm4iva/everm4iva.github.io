@@ -4,6 +4,7 @@
 - added new audio "i try to sing (acoustic)" to stray audio playlist
 - boosted version because i am alive, SUPA SUPA alive.
 - changed music note song to "bundy" by wilt
+- added extra css thing to index page to prevent anoying flashes when loading
 
 # release 4.3.20.4 (12 aug 2026)
 - changed main color from dark-red to purple
