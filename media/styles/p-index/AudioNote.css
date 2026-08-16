@@ -99,9 +99,9 @@
 	height: 100%;
 	background-color: var(--audionote-color);
 	background-image: var(--audionote-image);
-	background-size: cover;
+	background-size: 150%;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 0% 35%;
 	padding: 0;
 	margin: 0;
 	opacity: 0.6;

@@ -1,3 +1,9 @@
+# release 4.3.20.6 (16 aug 2026)
+- changed my profile picture!
+- changed music note song to "Girl Like Me" by PinkPantheress.
+- theme color: purple -> mid-desaturated green
+- added music note banner position (in case there is artists or important elements to be highlighted in the cover image)
+
 # release 4.3.20.5 (14 aug 2026)
 - added zcam to projects page (even if is too soon)
 - added new audio "an yesterday (lost control)" to the album "MY BODY MY SOFTWARE"

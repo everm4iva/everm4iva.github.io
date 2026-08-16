@@ -21,7 +21,7 @@
 
 	--green: #8ff370;
 	--dead-green: #447435;
-	--pink: #6315ac;
+	--pink: #589b3e;
 	--neon-purple: #9118be;
 	--soft-purple: #7f377f;
 	--soft-light-purple: #d37bd3;
@@ -60,9 +60,9 @@
 	--spacing-unit: 8px;
 
 	/* Audio Note */
-	--audionote-color: #180217e1;
+	--audionote-color: #4d080880;
 	--audionote-border-color: var(--pink);
-	--audionote-image: url('../../audio/cover/bundy.jpg');
+	--audionote-image: url('../../audio/cover/GirlLikeMe.jpg');
 	--audionote-text-color: var(--white);
 
 	/* Background & Images */

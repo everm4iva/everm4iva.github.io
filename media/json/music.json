@@ -1,12 +1,12 @@
 [
 	{
 		"audio-note": {
-			"title": "bundy",
-			"artist": "wilt",
+			"title": "Girl Like Me",
+			"artist": "PinkPantheress",
 			"color": "#ffffff",
-			"url": "https://open.spotify.com/track/5hvImZJisZjze7PR3hO1LY",
-			"cover": "./media/audio/cover/bundy.jpg",
-			"music-src": "./media/audio/bundy-wilt.mp3",
+			"url": "https://open.spotify.com/track/7aYGCP34Xo6XujY7Ix1DxB",
+			"cover": "./media/audio/cover/GirlLikeMe.jpg",
+			"music-src": "./media/audio/PinkPantheress-Girl Like Me.mp3",
 			"lightMode": false,
 			"genre": "rock",
 			"effects": "none"
