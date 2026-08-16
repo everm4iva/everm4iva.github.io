@@ -9,8 +9,8 @@
 	"public-servers": {
 		"1": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
-			"status": "in repair",
-			"server-name": "BANG.PUBLIC (in dev)",
+			"status": "online",
+			"server-name": "BANG.PUBLIC (unstable)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage"],
 			"country-code": "PT",
