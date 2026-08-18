@@ -19,7 +19,7 @@
 		},
 		"2": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
-			"status": "online",
+			"status": "in repair",
 			"server-name": "DREAM.PUBLIC",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage", "dev"],
