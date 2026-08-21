@@ -32,6 +32,9 @@
 }
 
 @media (max-width: 850px) {
+		.video-box{
+		display:none;
+	}
 	.banner {
 		width: 98%;
 	}
@@ -97,6 +100,9 @@
 }
 
 @media (max-width: 480px) {
+	.video-box{
+		display:none;
+	}
 	.banner {
 		display: none;
 	}

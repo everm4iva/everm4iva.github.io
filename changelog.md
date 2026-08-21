@@ -1,3 +1,11 @@
+# release 4.3.20.7 (21 aug 2026)
+- changed music note song to "THOUGHTS AND PRAYERS" by Black Dresses.
+- changed theme color: mid-desaturated green -> desaturated dark-purple
+- added new text lines in the curiosity section about food and fruits!
+- removed old/outdated social media links in social media pages. (not like github or anything, just social medias i don't use anymore, i deleted some accounts and stuff)
+- added "dooors.png" image to diary page (for a youtube video i made)
+- added a custom little video panel in index page to display video projects! (not supported in mobile, i just.. don't how it looks.)
+
 # release 4.3.20.6 (16 aug 2026)
 - changed my profile picture!
 - changed music note song to "Girl Like Me" by PinkPantheress.

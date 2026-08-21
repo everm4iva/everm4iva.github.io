@@ -1,14 +1,14 @@
 [
 	{
 		"audio-note": {
-			"title": "Girl Like Me",
-			"artist": "PinkPantheress",
+			"title": "THOUGHTS AND PRAYERS",
+			"artist": "black Dresses",
 			"color": "#ffffff",
-			"url": "https://open.spotify.com/track/7aYGCP34Xo6XujY7Ix1DxB",
-			"cover": "./media/audio/cover/GirlLikeMe.jpg",
-			"music-src": "./media/audio/PinkPantheress-Girl Like Me.mp3",
+			"url": "https://open.spotify.com/track/0Bx9udvTskhdtegidkxr6e",
+			"cover": "./media/audio/cover/THOUGHTS-AND-PRAYERS.jpg",
+			"music-src": "./media/audio/THOUGHTS-AND-PRAYERS.mp3",
 			"lightMode": false,
-			"genre": "rock",
+			"genre": "digital noise",
 			"effects": "none"
 		}
 	}

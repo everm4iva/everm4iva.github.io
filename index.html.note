@@ -65,3 +65,6 @@ I will still keep the scripts undocumented, to keep it easily accessible.
 							Infohazard (by Ninajirachi)
 						</div>
 					</div> -->
+
+
+<div class="me hidden" tabindex="1" role="button" aria-label="Draggable avatar" aria-grabbed="false"></div>
