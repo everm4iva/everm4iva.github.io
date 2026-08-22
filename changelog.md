@@ -1,3 +1,8 @@
+# release 4.3.20.8 (22 aug 2026)
+- Updated the video section with a new video
+- Added secret thumbail for the new video in the diary exclusive section
+- fixed some minor css issues in the video section
+
 # release 4.3.20.7 (21 aug 2026)
 - changed music note song to "THOUGHTS AND PRAYERS" by Black Dresses.
 - changed theme color: mid-desaturated green -> desaturated dark-purple
