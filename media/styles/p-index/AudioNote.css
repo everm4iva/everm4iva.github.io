@@ -99,9 +99,9 @@
 	height: 100%;
 	background-color: var(--audionote-color);
 	background-image: var(--audionote-image);
-	background-size: 150%;
+	background-size: 125%;
 	background-repeat: no-repeat;
-	background-position: 0% 35%;
+	background-position: 0% 10%;
 	padding: 0;
 	margin: 0;
 	opacity: 0.6;
@@ -128,7 +128,7 @@
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	transition: all 280ms ease;
-	padding-left: 2%;
+	padding-left: 1%;
 }
 
 .audio-class.hidden {
@@ -190,7 +190,7 @@
 
 .audio-btn:hover {
 	transform: scale(1.2);
-	filter: invert(0.1) sepia(0.8) saturate(10) hue-rotate(200deg);
+	filter: invert(0.1) sepia(5) saturate(40) hue-rotate(150deg);
 	/* background-color: var(--cyan); */
 }
 

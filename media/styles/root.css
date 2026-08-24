@@ -60,9 +60,9 @@
 	--spacing-unit: 8px;
 
 	/* Audio Note */
-	--audionote-color: #42422480;
+	--audionote-color: #92929280;
 	--audionote-border-color: var(--pink);
-	--audionote-image: url('../../audio/cover/THOUGHTS-AND-PRAYERS.jpg');
+	--audionote-image: url('../../audio/cover/4aem.jpg');
 	--audionote-text-color: var(--white);
 
 	/* Background & Images */

@@ -1,3 +1,10 @@
+# release 4.3.20.9 (24 aug 2026)
+- added new video to the video section
+- changed music note song to "4ÆM" by Grimes.
+- changed music note button hover color from pink to cyan.
+- removed ".vscode" folder.
+- changed priorities of sitemap.xml to optimize google search engine indexing.
+
 # release 4.3.20.8 (22 aug 2026)
 - Updated the video section with a new video
 - Added secret thumbail for the new video in the diary exclusive section
