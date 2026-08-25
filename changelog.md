@@ -1,3 +1,6 @@
+# release 4.3.20.10 (25 aug 2026)
+- this whole update is just to post a new exclusive drawing in the diary page.
+
 # release 4.3.20.9 (24 aug 2026)
 - added new video to the video section
 - changed music note song to "4ÆM" by Grimes.
