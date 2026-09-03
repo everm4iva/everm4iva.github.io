@@ -1,0 +1,84 @@
+body {
+	overflow-y: auto;
+}
+blockquote {
+	margin-left: 5px;
+	padding-left: 10px;
+	color: #ffffff93;
+	font-size: 0.8rem;
+}
+.music-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 10px;
+	gap: 2%;
+	width: 100%;
+	height: fit-content;
+}
+.music-item {
+	height: 4rem;
+	display: flex;
+	flex-direction: row;
+	gap: 2%;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	width: 80%;
+}
+.music-item img {
+	height: 100%;
+	image-rendering: pixelated;
+	aspect-ratio: 1/1;
+	border-radius: 5px;
+	position: relative;
+	aspect-ratio: 1/1;
+}
+.music-item .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100%;
+}
+.picture {
+	position: relative;
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	aspect-ratio: 1/1;
+}
+
+.info .title {
+	font-size: 1rem;
+	font-weight: 600;
+}
+.info .details {
+	font-size: 0.8rem;
+	font-weight: 200;
+}
+.music-item:hover .picture::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url('../media/images/commonicons/play.white.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	border-radius: 5px;
+}
+.music-item:hover .info .title {
+	color: var(--cyan);
+}
+.music-item:hover img {
+	filter: brightness(1.2);
+}

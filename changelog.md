@@ -1,3 +1,13 @@
+# release 4.3.21 (03 sep 2026)
+- added new card ("card to someone i don't know") to the diary page
+- changed font of BrowserInfo (browserinfo.html) page.
+- changed music note song to "Sad Boys" by Dazey and the Scouts
+- fixed favicon across the website!
+- finally replaced that boring star with halo (old favicon) with a new one, a star with "zoe!" written in the middle (ms paint style muehehe) - that matches more with what i am.
+- ajusted root variables (background for the website + audio note cover image)
+- Instead of a "featured projects" panel, im just displaying currently active projects.
+- some css tweaks (to colors and video panel).
+
 # release 4.3.20.10 (25 aug 2026)
 - this whole update is just to post a new exclusive drawing in the diary page.
 

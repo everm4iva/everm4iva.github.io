@@ -10,6 +10,8 @@
 
 :root {
 	/* Basic Colors */
+	--bg-color-t: rgba(0, 0, 0, 0);
+
 	--bg-color: #160b20;
 	--bg-color-t1: rgba(22, 11, 32, 0.1);
 	--bg-color-t3: rgba(22, 11, 32, 0.3);
@@ -36,23 +38,13 @@
 	--random-1: #2e1e88;
 	--random-color-1: rgb(255, 255, 255);
 	--random-2: #8ff370;
-	--random-color:2 var(--black);
+	--random-color: 2 var(--black);
 	--random-3: #ffffff;
 	--random-color-3: var(--white);
 
 	--white: #ffffff;
 	--black: #000000;
 
-	/* History of colors
-	--v1-accent1: #db347a; Pink
-	--v1-accent2: #ffd000; Yellow
-	--v1-cyan: #00ffe7; Cyan
-	-----
-	--v2-accent1: #8ff370; Light-Green
-	--v2-accent2: #ff80a6; Cute Pink
-	--v2-accent3: #ff00d4; Strong Pink
-	--v2-accent4: #ffc400; Yellow
-	*/
 	/* Fonts */
 	--MainFont: 'SourGummy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	--font-size-base: 16px;
@@ -62,11 +54,17 @@
 	/* Audio Note */
 	--audionote-color: #92929280;
 	--audionote-border-color: var(--pink);
-	--audionote-image: url('../../audio/cover/4aem.jpg');
+	--audionote-image: url('../../audio/cover/sadboys.jpg');
 	--audionote-text-color: var(--white);
+	--audionote-bg-pos: 0% 50%;
+	--audionote-bg-size: 100%;
+	--audionote-opacity: 0.6;
+	--audionote-filter: blur(0px);
 
 	/* Background & Images */
 	--bg-img: url('../images/background/new/flower1905b08dcccdb7b8e72dff05001f7315.jpg');
+	--bg-filter: blur(0px);
+	--bg-opacity: 0.4;
 
 	/* Project Colors */
 	--fractal-p: #4714ff;
@@ -87,12 +85,14 @@
 	--lma-s: #0e3f44;
 	--simplyprivate-p: #330824;
 	--simplyprivate-s: #aa2fba;
-	--instance-pink:#a248a4;
+	--instance-pink: #a248a4;
 	--instance-green: #62be54;
 	--instance-blue: #4384ab;
 	--instance-cyan: #40ac94;
 	--starl-white: #ffffff;
-	--starl-accent: #B039E4;
+	--starl-accent: #b039e4;
+	--zcam-white: #ffffff;
+	--zcam-accent: #ee0089;
 }
 
 :root.dark-audionote {
@@ -143,8 +143,8 @@ body::before {
 	background-position: center;
 	padding: 0;
 	margin: 0;
-	filter: blur(5px);
-	opacity: 0.4;
+	filter: var(--bg-filter);
+	opacity: var(--bg-opacity);
 	z-index: -1;
 	overflow: hidden;
 	overflow-y: auto;
@@ -176,6 +176,6 @@ img {
 	height: auto;
 }
 
-.marg0{
+.marg0 {
 	margin: 0;
 }

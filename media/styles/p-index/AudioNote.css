@@ -99,12 +99,13 @@
 	height: 100%;
 	background-color: var(--audionote-color);
 	background-image: var(--audionote-image);
-	background-size: 125%;
+	background-size: var(--audionote-bg-size);
 	background-repeat: no-repeat;
-	background-position: 0% 10%;
+	background-position: var(--audionote-bg-pos);
 	padding: 0;
 	margin: 0;
-	opacity: 0.6;
+	filter: var(--audionote-filter);
+	opacity: var(--audionote-opacity);
 	z-index: -1;
 	overflow: hidden;
 	overflow-y: auto;

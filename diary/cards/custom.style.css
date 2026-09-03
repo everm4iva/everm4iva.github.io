@@ -1,61 +1,73 @@
-        html{
-            background-color: white;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: white;
-            color: black;
-            margin: 0;
-            overflow-y: auto;
-        }
+html {
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: white;
+	color: black;
+	margin: 0;
+	overflow-y: auto;
+}
 
-        body::before{
-            display: none;
-            background-color: white;
-        }
+body::before {
+	display: none;
+	background-color: white;
+}
 
-        h1{
-            font-size: 2em;
-            text-align: center;
-            margin-top: 20vh;
-        }
+h1 {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 20vh;
+}
 
-        .overcute{
-            width: 100%;
-        }
-        .blue{
-            color: blue;
-        }
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 20vh;
+}
 
-        .orange{
-            color: orange;
-        }
+.overcute {
+	width: 100%;
+}
+.blue {
+	color: blue;
+}
 
-        .red{
-            color: red;
-        }
+.orange {
+	color: orange;
+}
 
-        .pink{
-            color: rgb(255, 48, 82);
-        }
+.red {
+	color: red;
+}
 
-        .darkgreen{
-            color: darkgreen;
-        }
+.pink {
+	color: rgb(255, 48, 82);
+}
 
-        .purple{
-            color: purple;
-        }
+.darkgreen {
+	color: darkgreen;
+}
 
-        .small-inline-img{
-            width: 50px;
-            vertical-align: middle;
-            display: inline-block;
-        }
-        a{
-            color: var(--pink);
-        }
-        .marg0{
-            margin: 0;
-        }
+.purple {
+	color: purple;
+}
+
+.small-inline-img {
+	width: 50px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+a {
+	color: var(--pink);
+}
+
+.marg0 {
+	margin: 0;
+}
+
+p {
+	padding-left: 1%;
+}

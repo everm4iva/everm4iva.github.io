@@ -1,14 +1,14 @@
 [
 	{
 		"audio-note": {
-			"title": "4ÆM",
-			"artist": "Grimes",
+			"title": "Sad Boys",
+			"artist": "Dazey and the Scouts",
 			"color": "#ffffff",
-			"url": "https://open.spotify.com/track/4keclC0eBhQm8lFtYmX01K",
-			"cover": "./media/audio/cover/4aem.jpg",
-			"music-src": "./media/audio/4ÆM.mp3",
+			"url": "https://open.spotify.com/track/0Cy9tJc6lKK7MbRtON1Xu3",
+			"cover": "./media/audio/cover/sadboys.jpg",
+			"music-src": "./media/audio/SadBoys-DazeyAndTheScouts.mp3",
 			"lightMode": false,
-			"genre": "digital trance",
+			"genre": "rock",
 			"effects": "none"
 		}
 	}

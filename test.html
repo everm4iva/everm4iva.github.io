@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Videos</title>
+<style>
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: #fff;
+    color: #000;
+  }
+
+  /* The single horizontal row of videos */
+  .row {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    overflow-x: auto;       /* scroll if there are too many to fit */
+  }
+
+  /* Each video takes an equal portion of the row */
+  .video {
+    flex: 1 1 0;            /* grow, shrink, equal base width */
+    min-width: 180px;       /* prevents items from collapsing too small */
+  }
+
+  /* 16:9 thumbnail that covers the full width of the video item */
+  .thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    overflow: hidden;
+  }
+  .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* cover, may crop slightly */
+    display: block;
+  }
+
+  /* Time badge in the bottom-right corner of the thumbnail */
+  .time {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 2px;
+    line-height: 1;
+  }
+
+  /* Title under the thumbnail */
+  .title {
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+</style>
+</head>
+<body>
+
+  <div class="row">
+
+    <div class="video">
+      <div class="thumb">
+        <img src="https://picsum.photos/seed/video1/640/360" alt="">
+        <span class="time">17:22</span>
+      </div>
+      <p class="title">Introduction to the courseaaaaaaaa</p>
+    </div>
+
+    <div class="video">
+      <div class="thumb">
+        <img src="https://picsum.photos/seed/video2/640/360" alt="">
+        <span class="time">8:45</span>
+      </div>
+      <p class="title">Setting up your workspace</p>
+    </div>
+
+    <div class="video">
+      <div class="thumb">
+        <img src="https://picsum.photos/seed/video3/640/360" alt="">
+        <span class="time">23:10</span>
+      </div>
+      <p class="title">Writing your first component</p>
+    </div>
+
+    <div class="video">
+      <div class="thumb">
+        <img src="https://picsum.photos/seed/video4/640/360" alt="">
+        <span class="time">5:03</span>
+      </div>
+      <p class="title">Styling basics</p>
+    </div>
+
+    <div class="video">
+      <div class="thumb">
+        <img src="https://picsum.photos/seed/video5/640/360" alt="">
+        <span class="time">12:38</span>
+      </div>
+      <p class="title">Handling user input</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

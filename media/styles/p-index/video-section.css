@@ -1,22 +1,26 @@
 .video-box {
 	width: 100%;
 	height: 10rem;
-	margin-top: 1rem;
+	/* margin-top: 1rem;
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 1%;
+    padding-left: 1%; */
+	gap: 12px;
+	padding: 12px;
 	display: flex;
 	flex-direction: row;
 	user-select: none;
+	/* overflow-x: auto;
+	overflow-y: hidden; */
 }
 
 .video-item {
-    height: 100%;
-    width: 32dvh;
-    aspect-ratio: 16 / 9 !important;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+	flex: 1 1 0;
+	max-width: 220px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-decoration: none;
 }
 
 .vid-cover-contain {
@@ -34,25 +38,24 @@
 
 .vid-cover-contain .vid-time {
 	position: absolute;
-	height: fit-content;
-	width: fit-content;
-	padding: 0rem 0.1rem;
-	top: 75%;
-	left:78%;
-	background-color: var(--yellow);
-	color: black;
+	right: 6px;
+	bottom: 6px;
+	background: var(--yellow);
+	color: var(--black);
 	font-size: 1rem;
-	font-weight: bold;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	padding: 2px 5px;
+	border-radius: 2px;
+	line-height: 1;
+	font-weight: 700;
 }
 
 .video-item .vidinfo {
 	display: flex;
 	flex-direction: column;
-    width: 85%;
+	width: 85%;
 	align-items: flex-start;
+	color: white;
+	text-decoration: none;
 }
 
 .vidinfo .vidurls {
@@ -69,19 +72,19 @@
 	transition: none;
 }
 
-.video-item:hover{
-    transform: scale(1.05);
-    cursor: pointer;
+.video-item:hover {
+	transform: scale(1.05);
+	cursor: pointer;
 }
 
-.vid-cover-contain:hover .vidcover{
-    border-color: var(--pink);
+.vid-cover-contain:hover .vidcover {
+	border-color: var(--pink);
 }
-.vid-cover-contain:hover .vid-time{
-    background-color: var(--pink);
-    color: white;
+.vid-cover-contain:hover .vid-time {
+	background-color: var(--pink);
+	color: white;
 }
 
-.vidurls a:hover{
-    color: var(--cyan);
+.vidurls a:hover {
+	color: var(--cyan);
 }

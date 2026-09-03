@@ -65,11 +65,12 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 0; padding: 0;
+	margin: 0;
+	padding: 0;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
-	cursor:grab;
+	cursor: grab;
 }
 
 .pfp-overlay {
@@ -161,13 +162,13 @@
 
 .fproject {
 	position: relative;
-	width:100%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	gap: 4%;
 	align-items: flex-start;
 	justify-content: flex-start;
-	border-style:solid;
+	border-style: solid;
 	border-color: var(--white);
 	border-width: 1px;
 	padding: 0.8rem;
@@ -194,13 +195,13 @@
 	background-size: cover;
 }
 
-.fproject-name{
+.fproject-name {
 	font-size: 1.3rem;
 	font-weight: bold;
 	color: var(--white);
 }
 
-.fproject-bg{
+.fproject-bg {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -214,32 +215,46 @@
 	overflow: hidden;
 }
 
-/* Project types */
+/* project types */
+.p-zcam {
+	border-color: var(--zcam-accent);
+	overflow: hidden;
+	color: var(--zcam-white);
+}
+
+.p-zcam .fproject-name {
+	color: var(--zcam-white);
+}
+
+.p-zcam:hover {
+	box-shadow: var(--zcam-accent) 0px 8px 0px 0px;
+}
+
 .p-starl {
 	border-color: var(--starl-accent);
 	overflow: hidden;
-	color: var(--starl-white)
+	color: var(--starl-white);
 }
 
 .p-starl .fproject-name {
 	color: var(--starl-white);
 }
 
-.p-starl:hover{
+.p-starl:hover {
 	box-shadow: var(--starl-accent) 0px 8px 0px 0px;
 }
 
 .p-instance {
 	border-color: var(--instance-pink);
 	overflow: hidden;
-	color: var(--instance-blue)
+	color: var(--instance-blue);
 }
 
 .p-instance .fproject-name {
 	color: var(--instance-pink);
 }
 
-.p-instance:hover{
+.p-instance:hover {
 	box-shadow: var(--instance-pink) 0px 8px 0px 0px;
 }
 
@@ -251,7 +266,7 @@
 	color: var(--fractal-p);
 }
 
-.p-fractal:hover{
+.p-fractal:hover {
 	box-shadow: var(--fractal-p) 0px 8px 0px 0px;
 }
 
@@ -264,7 +279,7 @@
 	color: var(--lasagna-s);
 }
 
-.p-lasagna:hover{
+.p-lasagna:hover {
 	box-shadow: var(--lasagna-s) 0px 8px 0px 0px;
 }
 
@@ -276,7 +291,7 @@
 	color: var(--oceanboard-p);
 }
 
-.p-oceanboard:hover{
+.p-oceanboard:hover {
 	box-shadow: var(--oceanboard-p) 0px 8px 0px 0px;
 }
 
@@ -288,7 +303,7 @@
 	color: var(--simplyprivate-s);
 }
 
-.p-simplyprivate:hover{
+.p-simplyprivate:hover {
 	box-shadow: var(--simplyprivate-s) 0px 8px 0px 0px;
 }
 
@@ -300,7 +315,6 @@
 	color: var(--downsrc-s);
 }
 
-.p-downsrc:hover{
+.p-downsrc:hover {
 	box-shadow: var(--downsrc-s) 0px 8px 0px 0px;
 }
-

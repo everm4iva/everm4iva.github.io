@@ -1,5 +1,12 @@
-@old/
-tasks.md
+# system trash
 desktop.ini
-private/
+
+# deprecated stuff
+/@old/
+/rad/
+
+# development :O
+tasks.md
+/private/
 index.html.note
+/n/

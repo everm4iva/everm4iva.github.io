@@ -13,7 +13,7 @@
 	box-sizing: border-box;
 	display: flex;
 	align-items: flex-start;
-	scrollbar-color: var(--green) var(--bg-color);
+	scrollbar-color: var(--green) var(--bg-color-t);
 	scrollbar-width: medium;
 	overflow-x: hidden;
 	overflow-y: auto;
