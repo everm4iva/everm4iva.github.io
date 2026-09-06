@@ -61,6 +61,58 @@ blockquote {
 	font-size: 0.8rem;
 	font-weight: 200;
 }
+
+.music-item.locked:hover .picture::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: white;
+	background-color: rgba(255, 0, 0, 0.5);
+	background-image: url('../media/images/commonicons/lock.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	border-radius: 5px;
+	cursor:grab;
+}
+
+.music-item.incomplete:hover .picture::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url('../media/images/commonicons/dots.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	border-radius: 5px;
+	cursor:progress;
+}
+
+.music-item.favorite:hover .picture::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url('../media/images/commonicons/star-complete.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
 .music-item:hover .picture::after {
 	content: '';
 	width: 100%;

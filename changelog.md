@@ -1,3 +1,9 @@
+# release 4.3.21.1 (06 sep 2026)
+- added little status on hover on music card (albums/playlists)
+- added new exclusive art "sleepless.jpg" to the diary page
+- added new album "head down" to the diary page (still in the making tho, it's locked)
+- added and modified some quotes in the free time stuff section of the index page + edited game preferences.
+
 # release 4.3.21 (03 sep 2026)
 - added new card ("card to someone i don't know") to the diary page
 - changed font of BrowserInfo (browserinfo.html) page.

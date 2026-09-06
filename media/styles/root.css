@@ -122,6 +122,7 @@ html {
 	line-height: var(--line-height-base);
 	box-sizing: border-box;
 	background-color: black;
+	height: 100dvh;
 }
 
 ::selection {
@@ -152,7 +153,7 @@ body::before {
 
 body {
 	width: 100%;
-	min-height: 100vh;
+	max-height: 100dvh;
 	background-color: var(--bg-color-t1);
 	overflow-x: hidden;
 	font-family: 'SourGummy', 'Helvetica Neue', Helvetica, Arial, sans-serif;
