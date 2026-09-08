@@ -103,6 +103,10 @@
 	font-weight: bold;
 }
 
+.pfp-desc {
+	font-size: 1rem;
+}
+
 .content-right__summary::-webkit-details-marker {
 	display: none;
 }

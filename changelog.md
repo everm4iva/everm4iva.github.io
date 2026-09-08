@@ -1,3 +1,12 @@
+# release 4.3.21.2 (08 sep 2026)
+- released new music album "head down" in the diary page.
+- added new tracks to the Stray audio playlist.
+- changed some inner design things in the playlist styles.
+- no music note today, just the description "empty-headed" in the music note panel, because i am empty-headed today.
+- temporatily removed the video section from the index page, because i am not uploading videos for now.
+- added new album page to quick links in index page.
+- cleaned up development files and stuff, .gitignore updated to ignore some files that are not needed in the repository.
+
 # release 4.3.21.1 (06 sep 2026)
 - added little status on hover on music card (albums/playlists)
 - added new exclusive art "sleepless.jpg" to the diary page

@@ -2,11 +2,12 @@
 desktop.ini
 
 # deprecated stuff
-/@old/
-/rad/
+@old/
+radi/
+full.html
 
 # development :O
 tasks.md
-/private/
-index.html.note
-/n/
+private/
+index.note
+video-thing.txt
