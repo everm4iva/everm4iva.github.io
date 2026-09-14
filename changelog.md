@@ -1,3 +1,7 @@
+# release 4.3.22.1 (14 sep 2026)
+- added a new exclusive drawing to the diary page ("sketchnote-aug28.jpg")
+- updated as a new exclusive drawing the old "sleepless.jpg" drawing in the diary page. the improvement is insane... woah
+
 # release 4.3.22 (14 sep 2026)
 - adjusted zoom level of the website to 70%
 - brought back the "book project" from the old website, but updated design & some general info, the name is now "story project" and the link is now "/story" instead of "/book".
