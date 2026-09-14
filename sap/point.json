@@ -2,14 +2,14 @@
 	{
 		"Services": {
 			"everm4iva.github.io": "./website/info.json",
-			"Archi2 ": "./archi2/info.json",
 			"starl": "./starl/info.json",
+			"Archi2 ": "./archi2/info.json",
 			"GemServers": "./gem/info.json",
+			"Sparky": "./Sparky/info.json",
+			"world2": "./world2/info.json",
 			"RabiProject (abandoned)": "./RabiProject/info.json",
 			"Bubble (experiment closed)": "./Bubble/info.json",
-			"Oriana (abandoned)": "./Oriana/info.json",
-			"Sparky": "./Sparky/info.json",
-			"world2": "./world2/info.json"
+			"Oriana (abandoned)": "./Oriana/info.json"
 		}
 	}
 ]

@@ -80,8 +80,7 @@
 	}
 
 	.right-cont a {
-		color: var(--pink);
-		background-color: black;
+		background-color: rgb(0, 0, 0);
 	}
 
 	#content-right {

@@ -30,10 +30,10 @@
 3. Start creating and editing instantly!
 
 ## Project Structure
-- `editor/` — Main editor, classes, UI, docs, styles
-- `media/` — Images, icons, fonts, videos
-- `docs/` — Guides & documentation
-- `changelog/` — Version history
+- `editor/` - Main editor, classes, UI, docs, styles
+- `media/` - Images, icons, fonts, videos
+- `docs/` - Guides & documentation
+- `changelog/` - Version history
 
 ## License
 WTFPL – Do What the Fuck You Want to Public License

@@ -74,17 +74,23 @@ footer {
 	overflow: hidden;
 	transition: all 0.1s ease;
 	cursor: pointer;
+	filter: saturate(1);
 	backdrop-filter: blur(10px);
 }
 
-.project-tile.indev{
+.project-tile.indev {
 	border: 3px dashed var(--random-2);
 	animation: blink-indev 1s step-start infinite;
 }
 
+.project-tile.paused {
+	filter: saturate(0.1);
+	transition: all 0.1s ease;
+}
+
 @keyframes blink-indev {
 	0% {
-		border-color: var(	--random-2);
+		border-color: var(--random-2);
 	}
 	50% {
 		border-color: transparent;

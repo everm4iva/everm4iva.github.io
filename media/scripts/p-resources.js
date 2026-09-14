@@ -1,4 +1,4 @@
-/* p-resources.js — builds guide, groups sections and adds filtering/search/collapse */
+/* p-resources.js - builds guide, groups sections and adds filtering/search/collapse */
 document.addEventListener('DOMContentLoaded', () => {
 	const results = document.querySelector('.results');
 	if (!results) return;

@@ -17,7 +17,7 @@
 }
 
 .container.index pre {
-	animation: fadeInWords 0.6s ease-out forwards;
+	animation: fadeInWords 0.3s ease-in-out forwards;
 	opacity: 0;
 	animation-delay: 0s;
 }

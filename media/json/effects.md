@@ -101,8 +101,8 @@ Applies a warm (orange) or cold (blue) color tint with fade effects.
 ```
 
 **Colors:**
-- `"warm"`: `rgba(255, 100, 0, opacity)` — Orange/sunset tint
-- `"cold"`: `rgba(0, 150, 255, opacity)` — Blue/ice tint
+- `"warm"`: `rgba(255, 100, 0, opacity)` - Orange/sunset tint
+- `"cold"`: `rgba(0, 150, 255, opacity)` - Blue/ice tint
 
 **Behavior:**
 - Fades in with CSS animation
@@ -359,13 +359,13 @@ scaledEnergy = Math.pow(rawAudioEnergy, 2 - sensitivity)
 ### EffectSystem Class
 
 **Core Methods:**
-- `initAudioContext()` — Initializes Web Audio API and AnalyserNode
-- `getBassEnergy()` — Returns 0-1 value from bass frequencies
-- `getAudioEnergy(triggerType)` — Gets energy by trigger type
-- `parseIntensity(config)` — Converts min/avg/max to usable values
-- `applySensitivity(energy, sensitivity)` — Scales audio response
-- `applyEffects(track)` — Applies all effects from track config
-- `clearAllEffects()` — Removes all active effects on pause/end
+- `initAudioContext()` - Initializes Web Audio API and AnalyserNode
+- `getBassEnergy()` - Returns 0-1 value from bass frequencies
+- `getAudioEnergy(triggerType)` - Gets energy by trigger type
+- `parseIntensity(config)` - Converts min/avg/max to usable values
+- `applySensitivity(energy, sensitivity)` - Scales audio response
+- `applyEffects(track)` - Applies all effects from track config
+- `clearAllEffects()` - Removes all active effects on pause/end
 
 **Per-Effect Methods:**
 - `addScreenshake()`, `animateScreenshake()`
@@ -411,9 +411,6 @@ This effects system:
 - Provides responsive sensitivity scaling
 - Differentiates between bass and beat triggers
 - Works across all modern browsers with Web Audio API support
-
-The system is production-ready and extensible—add your own effect types by following the same patterns!
-
 ---
 
 **Last Updated:** March 14, 2026

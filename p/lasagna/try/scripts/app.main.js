@@ -39,7 +39,7 @@
 						: pluralize(g.count, 'item', 'items');
 				const li = document.createElement('li');
 				li.className = 'item';
-				li.innerHTML = `<strong>${k} g — ${g.count} ${itemWord}</strong><div>${App.tr(
+				li.innerHTML = `<strong>${k} g - ${g.count} ${itemWord}</strong><div>${App.tr(
 					'avgWord',
 				)} €${g.avgPrice.toFixed(2)} · €${g.avgPerKg.toFixed(2)}/kg</div>`;
 				el.appendChild(li);
@@ -82,7 +82,7 @@
 		const br = document.getElementById('bigResult');
 		const bs = document.getElementById('bigSub');
 		if (!br || !bs) return;
-		br.textContent = `—`;
+		br.textContent = `-`;
 		bs.textContent = `${App.tr('avgPkg')} €${d.avgPackagePrice.toFixed(2)} · ${App.tr('avgPerKg')} €${d.avgPerKg.toFixed(
 			2,
 		)}/kg`;
@@ -101,14 +101,14 @@
 		if (obj.bestItem)
 			push(
 				App.tr('details_bestPrice'),
-				`€${obj.bestItem.price.toFixed(2)} — ${obj.bestItem.weight} g · €${obj.bestItem.perKg.toFixed(2)}/kg · ${
+				`€${obj.bestItem.price.toFixed(2)} - ${obj.bestItem.weight} g · €${obj.bestItem.perKg.toFixed(2)}/kg · ${
 					obj.bestItem.desc || ''
 				} · ${obj.bestItem.source || ''}`,
 			);
 		if (obj.worstItem)
 			push(
 				App.tr('details_worstPrice'),
-				`€${obj.worstItem.price.toFixed(2)} — ${obj.worstItem.weight} g · €${obj.worstItem.perKg.toFixed(2)}/kg · ${
+				`€${obj.worstItem.price.toFixed(2)} - ${obj.worstItem.weight} g · €${obj.worstItem.perKg.toFixed(2)}/kg · ${
 					obj.worstItem.desc || ''
 				} · ${obj.worstItem.source || ''}`,
 			);
@@ -242,7 +242,7 @@
 					const avgPerKgText = formatAmountForDisplay(g.avgPerKg, cur, rates).text + '/kg';
 					const li = document.createElement('li');
 					li.className = 'item';
-					li.innerHTML = `<strong>${k} g — ${g.count} ${itemWord}</strong><div>${App.tr('avgWord')} ${avgPriceText} · ${avgPerKgText}</div>`;
+					li.innerHTML = `<strong>${k} g - ${g.count} ${itemWord}</strong><div>${App.tr('avgWord')} ${avgPriceText} · ${avgPerKgText}</div>`;
 					el.appendChild(li);
 				});
 		}
@@ -251,7 +251,7 @@
 			const br = document.getElementById('bigResult');
 			const bs = document.getElementById('bigSub');
 			if (!br || !bs) return;
-			br.textContent = `—`;
+			br.textContent = `-`;
 			const cur = elCurrency.value;
 			const pkgText = formatAmountForDisplay(avgPkg, cur, rates).text;
 			const perKgText = formatAmountForDisplay(avgKg, cur, rates).text + '/kg';

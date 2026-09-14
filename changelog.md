@@ -1,3 +1,13 @@
+# release 4.3.22 (14 sep 2026)
+- adjusted zoom level of the website to 70%
+- brought back the "book project" from the old website, but updated design & some general info, the name is now "story project" and the link is now "/story" instead of "/book".
+- redesigned a bit resources page (/r)
+- added new starl links to the resources page
+- tweaked animations for index page
+- did "a bit of this and that" in sap page (design-wise)
+- added the visual input "paused" to project tiles in project page (/p) when the project development is paused indefinitely.
+- updated some urls in the social media pages. (twitch)
+
 # release 4.3.21.2 (08 sep 2026)
 - released new music album "head down" in the diary page.
 - added new tracks to the Stray audio playlist.

@@ -15,28 +15,24 @@ html {
 body {
 	position: relative;
 	font-family: Outfit, 'Arial', sans-serif;
-	min-height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
 	background-color: transparent;
 	overflow-x: hidden;
 	overflow-y: auto;
+	padding: 2%
 }
 
 body:before {
 	content: '';
 	position: absolute;
 	/* background-image: url('../../shared/v3/images/bgs/pan_forestview.jpg'); */
-	background-position: top;
-	background-repeat: no-repeat;
+	background-position: center;
+	background-repeat: repeat;
 	background-size: cover;
 	width: 100%;
-	height: 100%;
-	z-index: -2;
+	height: 100vh;
 	filter: blur(10px);
-	opacity: 0.4;
+	opacity: 0.7;
+	overflow: hidden;
 }
 
 a {

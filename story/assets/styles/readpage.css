@@ -1,0 +1,136 @@
+@import url('https://umaera.github.io/shared/v2/-FONTS-/fonts.css');
+
+:root{
+    --accent-text: #ff0077;
+    --sec-text: rgb(95, 208, 69);
+    --text: #ffffff;
+    --background: #1a1a1a;
+}
+
+::selection{
+    background-color: #000000;
+    color: var(--accent-text);
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    font-family: Outfit, sans-serif;
+    transition: background 0.3s, color 0.3s;
+    overflow-x: hidden;
+    overflow-y: auto;
+    line-height: 1.6;
+    padding: 2rem;
+    font-size: 0.6rem;
+}
+
+h1 {
+    color:var(--accent-text);
+    font-size: 2.2rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+h4 {
+    text-align: left;
+    margin-top: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: white;
+    padding-bottom: 2%;
+}
+
+.reading-header {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-text);
+}
+
+.reading-content {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--accent-text);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+section {
+    background: var(--background);
+    padding: 2rem;
+    font-size: 1.2rem;
+    border-radius: 2px;
+}
+
+#pageNumElement {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: fit-content;
+  background: #000000;
+  padding: 10px;
+  z-index: 1000;
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+em {
+    font-style: italic;
+}
+
+.dialogue {
+    margin-left: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+
+blockquote {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--accent-text);
+  color: var(--text);
+}
+
+.green{
+    border-left: 3px solid rgb(63, 171, 63)
+}
+
+.blue{
+    border-left: 3px solid rgb(63, 171, 166)
+}
+
+/* --- Responsive --- */
+@media (max-width: 700px) {
+    body {
+        padding:0.5rem ;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 1rem;
+        font-size: 1.0rem;
+    }
+    .reading-header {
+        font-size: 1rem;
+    }
+    .reading-content {
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 12px;
+    }
+}

@@ -23,7 +23,7 @@
 
 	--green: #8ff370;
 	--dead-green: #447435;
-	--pink: #9b3e8f;
+	--pink: #812ee0;
 	--neon-purple: #9118be;
 	--soft-purple: #7f377f;
 	--soft-light-purple: #d37bd3;
@@ -35,7 +35,7 @@
 	--cyan: #ffee00;
 	--cyan-dead: #695a00;
 
-	--random-1: #2e1e88;
+	--random-1: #05040e;
 	--random-color-1: rgb(255, 255, 255);
 	--random-2: #8ff370;
 	--random-color: 2 var(--black);

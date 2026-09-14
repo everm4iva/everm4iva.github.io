@@ -1,4 +1,6 @@
+/* ## General stuff ## */
 @import url('../../media/styles/root.css');
+
 body {
 	font-family: 'SourceCodePro', Arial, sans-serif;
 	margin: 2em;
@@ -12,22 +14,37 @@ h1 {
 	margin-bottom: 1em;
 	font-size: 2rem;
 }
+
+a {
+	color: #ff0077;
+	cursor: pointer;
+	word-break: break-all;
+}
+::selection {
+	color: black;
+	background-color: #ff0077;
+}
+
+/* ## main elements ## */
 .service {
 	width: 95%;
-	border: 1px solid #ccc;
-	padding: 0.5em 1em 1em;
+	/* border: 1px solid #ccc; */
+	/* padding: 0.5em 1em 1em; */
 	margin-bottom: 1em;
 	border-radius: 4px;
 	/* background: #111; */
-	transition: background 0.2s;
+	transition: background 0.1s;
 }
+
 .service[open] {
 	background: var(--bg-color);
 }
+
 .line {
 	font-family: monospace;
 	font-size: 1rem;
 }
+
 .service > summary {
 	font-size: 1.4rem;
 	font-weight: bold;
@@ -40,9 +57,11 @@ h1 {
 	padding: 0.5em 0.5em 0.5em 1.4rem;
 	border-radius: 2px;
 }
+
 .service > summary:hover {
 	background: rgba(255, 0, 119, 0.1);
 }
+
 .service > summary::before,
 .line > summary::before {
 	content: '>';
@@ -51,19 +70,24 @@ h1 {
 	transition: transform 0.2s ease;
 	color: #ff0077;
 }
+
 .service[open] > summary::before,
 .line[open] > summary::before {
 	transform: rotate(90deg);
 }
+
 .line > summary {
 	font-size: 1.2rem;
 	font-weight: normal;
 	padding-left: 1.2em;
 }
+
 .service > summary::-webkit-details-marker,
 .line > summary::-webkit-details-marker {
 	display: none;
 }
+
+/* ## sub elements ## */
 .val-string {
 	color: #6fcf97;
 }
@@ -86,25 +110,19 @@ h1 {
 .service .line {
 	margin: 0.2em 0;
 }
+
 .service .line .key {
 	font-weight: bold;
 }
+
 .service .line .val {
 	margin-left: 0.3em;
 	color: #ff0077;
 	padding: 0 0.2em;
 	border-radius: 2px;
 }
-a {
-	color: #ff0077;
-	cursor: pointer;
-	word-break: break-all;
-}
-::selection {
-	color: black;
-	background-color: #ff0077;
-}
 
+/* ## screen resize thingy ## */
 @media (max-width: 768px) {
 	body {
 		margin: 1em;
