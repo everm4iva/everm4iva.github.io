@@ -1,3 +1,8 @@
+# release 4.3.22.2 (15 sep 2026)
+- added "frameless" project to projects page (/p)
+- added "frameless" to active projects on the index page
+- fixed some css issues and comments.
+
 # release 4.3.22.1 (14 sep 2026)
 - added a new exclusive drawing to the diary page ("sketchnote-aug28.jpg")
 - updated as a new exclusive drawing the old "sleepless.jpg" drawing in the diary page. the improvement is insane... woah

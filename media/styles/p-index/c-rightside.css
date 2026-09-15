@@ -1,4 +1,4 @@
-/**
+/*
  * ☆=========================================☆
  * c-rightside.css - Styles for the right side container!
  * ☆=========================================☆
@@ -220,6 +220,7 @@
 }
 
 /* project types */
+/* # zcam */
 .p-zcam {
 	border-color: var(--zcam-accent);
 	overflow: hidden;
@@ -234,6 +235,18 @@
 	box-shadow: var(--zcam-accent) 0px 8px 0px 0px;
 }
 
+/* # frameless */
+.p-frameless {
+	border-color: var(--frameless-accent);
+	overflow: hidden;
+	color: var(--white);
+}
+
+.p-frameless:hover {
+	box-shadow: var(--frameless-accent) 0px 8px 0px 0px;
+}
+
+/* # starl */
 .p-starl {
 	border-color: var(--starl-accent);
 	overflow: hidden;
@@ -248,6 +261,7 @@
 	box-shadow: var(--starl-accent) 0px 8px 0px 0px;
 }
 
+/* # instance */
 .p-instance {
 	border-color: var(--instance-pink);
 	overflow: hidden;
@@ -262,6 +276,7 @@
 	box-shadow: var(--instance-pink) 0px 8px 0px 0px;
 }
 
+/* # fractal */
 .p-fractal {
 	border-color: var(--fractal-p);
 }
@@ -274,6 +289,7 @@
 	box-shadow: var(--fractal-p) 0px 8px 0px 0px;
 }
 
+/* # lasagna */
 .p-lasagna {
 	border-color: var(--lasagna-s);
 	color: var(--lasagna-p);
@@ -287,6 +303,7 @@
 	box-shadow: var(--lasagna-s) 0px 8px 0px 0px;
 }
 
+/* # oceanboard */
 .p-oceanboard {
 	border-color: var(--oceanboard-p);
 }
@@ -299,6 +316,7 @@
 	box-shadow: var(--oceanboard-p) 0px 8px 0px 0px;
 }
 
+/* # simplyprivate */
 .p-simplyprivate {
 	border-color: var(--simplyprivate-s);
 }
@@ -311,6 +329,7 @@
 	box-shadow: var(--simplyprivate-s) 0px 8px 0px 0px;
 }
 
+/* # downsrc */
 .p-downsrc {
 	border-color: var(--downsrc-s);
 }

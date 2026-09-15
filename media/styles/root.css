@@ -93,6 +93,7 @@
 	--starl-accent: #b039e4;
 	--zcam-white: #ffffff;
 	--zcam-accent: #ee0089;
+	--frameless-accent: #fff000
 }
 
 :root.dark-audionote {
