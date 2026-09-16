@@ -9,59 +9,81 @@
 		<meta name="description" content="unfinished album - by zoeisrad" />
 		<!-- Styles -->
 		<link rel="stylesheet" href="../../media/styles/root.css" />
-		<link rel="stylesheet" href="./shared.css" />
-		<link rel="stylesheet" href="./music-album.css">
+		<link rel="stylesheet" href="./assets/styles.css" />
 	</head>
-	<style>
-		body::before {
-			background-image: url('./mybodymysoftware/cover.png');
-		}
-	</style>
 
-	<h2>MY BODY MY SOFTWARE (album)</h2>
-	<a href="../index.html">- go back</a>
-	<blockquote>
-		<p>4 tracks (until now)</p>
-		<p>no description</p>
-		<p>august 2026 - by zoeisrad</p>
-	</blockquote>
-	<img src="./mybodymysoftware/cover.png" alt="shush artwork" width="70%" />
-
-	<div class="track" style="--cover: url('./shush/shush.png')">
-		<div class="track-info">
-			<h3>ADSA</h3>
-			<p>Track 1 - "i always use my feelings as an excuse"</p>
-			<a href="./mybodymysoftware/ADSA/lyrics.txt" target="_blank">see lyrics</a>
-			<audio controls src="./mybodymysoftware/ADSA/ADSA.mp3"></audio>
+	<!-- ## HEAD ##-->
+	<div class="head">
+		<div class="artwork">
+			<img src="./mybodymysoftware/cover.png" alt="artwork" />
+		</div>
+		<div class="playlist-details">
+			<div class="title">MY BODY MY SOFTWARE (album)</div>
+			<div class="small-info">4 tracks (until now) - august 2026 - by zoeisrad</div>
+			<div class="urls">
+				<a href="../index.html">go back</a>
+			</div>
 		</div>
 	</div>
 
-	<div class="track" style="--cover: url('./shush/shush.png')">
-		<div class="track-info">
-			<h3>lara (goodbye to a friend)</h3>
-			<p>Track 2 - "my first love life"</p>
-			<a href="./mybodymysoftware/lara/lyrics.txt" target="_blank">see lyrics</a>
-			<a href="./mybodymysoftware/lara/blueprint.txt" target="_blank">blueprint</a>
-			<audio controls src="./mybodymysoftware/lara/lara.mp3"></audio>
+	<!-- ## LIST ##-->
+	<div class="list centered">
+<!-- ## ##-->
+		<div class="item" id="item1">
+			<div class="cover">
+				<img src="./mybodymysoftware/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">ADSA</div>
+				<div class="url">
+					<a href="./mybodymysoftware/lyrics/ADSA.txt" target="_blank">lyrics</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./mybodymysoftware/data/ADSA.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">1</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./shush/shush.png')">
-		<div class="track-info">
-			<h3>an yesterday (lost control)</h3>
-			<p>Track 3 - "head dump in the middle of a thought race about him"</p>
-			<a href="./mybodymysoftware/an-yesterday/lyrics.txt" target="_blank">see lyrics</a>
-			<audio controls src="./mybodymysoftware/an-yesterday/an-yesterday.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item2">
+			<div class="cover">
+				<img src="./mybodymysoftware/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">lara (goodbye to a friend)</div>
+				<div class="url">
+					<a href="./mybodymysoftware/lyrics/lara.txt" target="_blank">lyrics</a>
+					-
+					<a href="./mybodymysoftware/blueprints/lara.txt" target="_blank">blueprint</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./mybodymysoftware/data/lara.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">2</div>
 		</div>
-	</div>
-
-
-	<div class="track" style="--cover: url('./shush/shush.png')">
-		<div class="track-info">
-			<h3>lonet</h3>
-			<p>Track 4 - not finished</p>
+<!-- ## ##-->
+		<div class="item" id="item3">
+			<div class="cover">
+				<img src="./mybodymysoftware/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">an yesterday (lost control)</div>
+				<div class="url">
+					<a href="./mybodymysoftware/lyrics/an-yesterday.txt" target="_blank">lyrics</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./mybodymysoftware/data/an-yesterday.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">3</div>
 		</div>
+<!-- ## ##-->
+		<h3>NOTICE:</h3>
+		<blockquote>
+			tracks can be removed or added at any moment as this album is in development.
+		</blockquote>
 	</div>
-	<h3>NOTICE:</h3>
-	<blockquote>tracks can be removed or added at any moment, this album is in development, check out later</blockquote>
+<!-- ## ##-->
+<script src="./assets/music.js"></script>
 </html>

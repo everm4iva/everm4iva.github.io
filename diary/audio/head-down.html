@@ -4,57 +4,101 @@
 		<meta charset="UTF-8" />
 		<title>head down</title>
 		<link rel="shortcut icon" href="./head-down/cover.jpg" type="image/png" />
-		<meta name="robots" content="index, follow, noarchive, nosnippet, translate" />
+		<meta name="robots" content="index, nofollow, archive, nosnippet, translate" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="album by zoeisrad" />
 		<!-- Styles -->
 		<link rel="stylesheet" href="../../media/styles/root.css" />
-		<link rel="stylesheet" href="./shared.css" />
-		<link rel="stylesheet" href="./music-album.css" />
+		<link rel="stylesheet" href="./assets/styles.css" />
 	</head>
-	<style>
-		body::before {
-			background-image: url('./head-down/cover.jpg');
-		}
-	</style>
-	<h2>head down (album)</h2>
-	<a href="../index.html">- go back</a>
-	<blockquote>
-		<p>4 tracks (total)</p>
-		<p>september 2026 - by zoeisrad</p>
-	</blockquote>
-	<img src="./head-down/cover.jpg" alt="head-down artwork" width="70%" />
+	<style></style>
 
-	<div class="track">
-		<div class="track-info">
-			<h3>silly little frog</h3>
-			<p>Track 1 - <a href="./head-down/lyrics/silly-little-frog.txt" target="_blank">lyrics</a></p>
-			<audio controls src="./head-down/data/silly-little-frog.mp3"></audio>
+	<body>
+		<!-- ## HEAD ##-->
+		<div class="head">
+			<div class="artwork">
+				<img src="./head-down/cover.jpg" alt="artwork" />
+			</div>
+			<div class="playlist-details">
+				<div class="title">head down (album)</div>
+				<div class="small-info">4 tracks (total) - september 2026 - by zoeisrad</div>
+				<div class="quote">
+					<blockquote>second album released</blockquote>
+				</div>
+				<div class="urls">
+					<a href="../index.html">go back</a>
+					-
+					<a href="https://www.youtube.com/playlist?list=PLJWKQ06iOhZA" target="_blank">YouTube playlist</a>
+				</div>
+			</div>
 		</div>
-	</div>
-
-	<div class="track">
-		<div class="track-info">
-			<h3>staring at nothing</h3>
-			<p>Track 2 - <a href="./head-down/lyrics/staring-at-nothing.txt" target="_blank">lyrics</a></p>
-			<audio controls src="./head-down/data/staring at nothing.mp3"></audio>
+		<!-- ## LIST ##-->
+		<div class="list centered">
+			<!-- ## ##-->
+			<div class="item" id="item1">
+				<div class="cover">
+					<img src="./head-down/cover.jpg" alt="artwork" />
+				</div>
+				<div class="info">
+					<div class="title">silly little frog</div>
+					<div class="url">
+						<a href="./head-down/lyrics/silly-little-frog.txt" target="_blank">lyrics</a>
+					</div>
+					<div class="audio">
+						<audio controls src="./head-down/data/silly-little-frog.mp3"></audio>
+					</div>
+				</div>
+				<div class="number">1</div>
+			</div>
+			<!-- ## ##-->
+			<div class="item" id="item2">
+				<div class="cover">
+					<img src="./head-down/cover.jpg" alt="artwork" />
+				</div>
+				<div class="info">
+					<div class="title">staring at nothing</div>
+					<div class="url">
+						<a href="./head-down/lyrics/staring-at-nothing.txt" target="_blank">lyrics</a>
+					</div>
+					<div class="audio">
+						<audio controls src="./head-down/data/staring-at-nothing.mp3"></audio>
+					</div>
+				</div>
+				<div class="number">2</div>
+			</div>
+			<!-- ## ##-->
+			<div class="item" id="item3">
+				<div class="cover">
+					<img src="./head-down/cover.jpg" alt="artwork" />
+				</div>
+				<div class="info">
+					<div class="title">could take</div>
+					<div class="url">
+						<a href="./head-down/lyrics/could-take.txt" target="_blank">lyrics</a>
+					</div>
+					<div class="audio">
+						<audio controls src="./head-down/data/could-take.mp3"></audio>
+					</div>
+				</div>
+				<div class="number">3</div>
+			</div>
+			<!-- ## ##-->
+			<div class="item" id="item4">
+				<div class="cover">
+					<img src="./head-down/cover.jpg" alt="artwork" />
+				</div>
+				<div class="info">
+					<div class="title">stuck in places</div>
+					<div class="url"></div>
+					<div class="audio">
+						<audio controls src="./head-down/data/stuck-in-places.mp3"></audio>
+					</div>
+				</div>
+				<div class="number">4</div>
+			</div>
+			<!-- ## ##-->
 		</div>
-	</div>
-
-	<div class="track">
-		<div class="track-info">
-			<h3>could take</h3>
-			<p>Track 3 - <a href="./head-down/lyrics/could-take.txt" target="_blank">lyrics</a></p>
-			<audio controls src="./head-down/data/could take.mp3"></audio>
-		</div>
-	</div>
-
-	<div class="track">
-		<div class="track-info">
-			<h3>stuck in places</h3>
-			<p>Track 4</p>
-			<audio controls src="./head-down/data/stuck in places.mp3"></audio>
-		</div>
-	</div>
-	</div>
+		<!-- ## ##-->
+		<script src="./assets/music.js"></script>
+	</body>
 </html>

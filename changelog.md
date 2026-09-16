@@ -1,3 +1,9 @@
+# release 4.3.22.3 (16 sep 2026)
+- re-designed all music album/playlist page styles! (including mobile support), yayy, im really proud of this step-up on the visuals! in that same section in the diary i added a small comparation between the old and new design, check it out!
+- made a cute agressive message about ai in the index page.
+- adjusted sitemap.xml
+- added project "FunnyLetters" to the projects page (/p) - it was a project i vibecoded through june/july, not a real project tho. i have no excuse to do it and i am not proud of it - the point was to see what claude was capable of, it impressed me.
+
 # release 4.3.22.2 (15 sep 2026)
 - added "frameless" project to projects page (/p)
 - added "frameless" to active projects on the index page

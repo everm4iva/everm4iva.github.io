@@ -20,6 +20,11 @@
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
+    <url>
+    <loc>https://everm4iva.github.io/get/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
   <url>
     <loc>https://everm4iva.github.io/r/</loc>
     <priority>0.7</priority>
@@ -35,19 +40,9 @@
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
-  <url>
-    <loc>https://everm4iva.github.io/p/OceanBoard/</loc>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://everm4iva.github.io/p/Sparky/</loc>
-    <priority>0.5</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://everm4iva.github.io/p/simplyprivate/v1/</loc>
-    <priority>0.5</priority>
+    <url>
+    <loc>https://everm4iva.github.io/story/</loc>
+    <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>

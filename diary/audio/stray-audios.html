@@ -8,341 +8,577 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="cute playlist with all my songs!" />
 		<link rel="stylesheet" href="../../media/styles/root.css" />
-		<link rel="stylesheet" href="./shared.css" />
+		<link rel="stylesheet" href="./assets/styles.css" />
 	</head>
 
-	<style>
-		body::before {
-			background-image: url('./head-down/cover.jpg');
-		}
-	</style>
-
-	<h2>Stray audios (all audios in a playlist)</h2>
-	<a href="../index.html">- go back</a>
-
-	<blockquote>
-		<p>32 tracks (included)</p>
-		<p>
-			this is not an album, just some tracks i produced, ordered by year and release date (newest to oldest). Including some unfinished/unreleased ones.
-		</p>
-		<p>
-			This thing is kinda funny, see how much i envolved. Even though some audios after are bad and have
-			inconsistent quality - i was probably trying out new things, had bad mental heath or i forced myself to do
-			it resulting in bad quality
-		</p>
-		<p>There are some hidden pears here, enjoy i guess :3</p>
-		<p>2022-2026 - by zoeisrad (before that: saole, umaera, meyarazi)</p>
-	</blockquote>
-
-	<h3>--- 2026 ---</h3>
-
-		<div class="track" style="--cover: url('./head-down/cover.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>stuck in places</h3>
-			<p>09-2026 - published - head down (album)</p>
-			<audio controls src="./head-down/data/stuck in places.mp3"></audio>
+	<!-- ## HEAD ##-->
+	<div class="head">
+		<div class="artwork">
+			<img src="./stray-audios/cover.png" alt="artwork" />
+		</div>
+		<div class="playlist-details">
+			<div class="title">Stray audios (all audios in a playlist)</div>
+			<div class="small-info">32 tracks (included) - 2022 to 2026 - by zoeisrad
+				<blockquote>
+					<p>
+						this is not an album, just some tracks i produced, ordered by year and release date (newest to
+						oldest). Including some unfinished/unreleased ones.
+					</p>
+					<p>
+						This thing is kinda funny, see how much i envolved. Even though some audios after are bad and
+						have inconsistent quality - i was probably trying out new things, had bad mental heath or i
+						forced myself to do it resulting in bad quality
+					</p>
+					<p>There are some hidden pears here, enjoy i guess :3</p>
+					<p>2022-2026 - by zoeisrad (before that: saole, umaera, meyarazi)</p>
+				</blockquote>
+			</div>
+			<div class="urls">
+				<a href="../index.html">go back</a>
+			</div>
 		</div>
 	</div>
 
-	<div class="track" style="--cover: url('./head-down/cover.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>could take</h3>
-			<p>09-2026 - published - head down (album)</p>
-			<a href="./head-down/lyrics/could-take.txt" target="_blank">see lyrics</a>
-			<audio controls src="./head-down/data/could take.mp3"></audio>
+	<!-- ## LIST ##-->
+	<div class="list">
+		<h3>--- 2026 ---</h3>
+		<!-- ## ##-->
+		<div class="item" id="item1">
+			<div class="cover">
+				<img src="./head-down/cover.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">stuck in places</div>
+				<div class="url">
+					<p>09-2026 - published - head down (album)</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./head-down/data/stuck-in-places.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">4</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./head-down/cover.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>staring at nothing</h3>
-			<p>09-2026 - published - head down (album)</p>
-			<a href="./head-down/lyrics/staring-at-nothing.txt" target="_blank">see lyrics</a>
-			<audio controls src="./head-down/data/staring at nothing.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item2">
+			<div class="cover">
+				<img src="./head-down/cover.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">could take</div>
+				<div class="url">
+					<p>09-2026 - published - head down (album)</p>
+					<a href="./head-down/lyrics/could-take.txt" target="_blank">see lyrics</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./head-down/data/could-take.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">3</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./head-down/cover.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>silly little frog</h3>
-			<p>09-2026 - published - head down (album)</p>
-			<a href="./head-down/lyrics/silly-little-frog.txt" target="_blank">see lyrics</a>
-			<audio controls src="./head-down/data/silly-little-frog.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item3">
+			<div class="cover">
+				<img src="./head-down/cover.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">staring at nothing</div>
+				<div class="url">
+					<p>09-2026 - published - head down (album)</p>
+					<a href="./head-down/lyrics/staring-at-nothing.txt" target="_blank">see lyrics</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./head-down/data/staring-at-nothing.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">2</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/i-try-to-sing.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>i try to sing (acoustic)</h3>
-			<p>08-2026 - finished, not published</p>
-			<a href="./stray-audios/lyrics/i-try-to-sing.txt" target="_blank">see lyrics</a>
-			<audio controls src="./stray-audios/2026/i-try-to-sing.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item4">
+			<div class="cover">
+				<img src="./head-down/cover.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">silly little frog</div>
+				<div class="url">
+					<p>09-2026 - published - head down (album)</p>
+					<a href="./head-down/lyrics/silly-little-frog.txt" target="_blank">see lyrics</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./head-down/data/silly-little-frog.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">1</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./mybodymysoftware/cover.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>an yesterday (lost control)</h3>
-			<p>08-2026 - finished, not published</p>
-			<a href="./mybodymysoftware/an-yesterday/lyrics.txt" target="_blank">see lyrics</a>
-			<audio controls src="./mybodymysoftware/an-yesterday/an-yesterday.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item5">
+			<div class="cover">
+				<img src="./stray-audios/covers/i-try-to-sing.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">i try to sing</div>
+				<div class="url">
+					<p>08-2026 - finished, not published</p>
+					<a href="./stray-audios/lyrics/i-try-to-sing.txt" target="_blank">see lyrics</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2026/i-try-to-sing.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./mybodymysoftware/cover.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>lara (goodbye to a friend)</h3>
-			<p>08-2026 - finished, not published</p>
-			<a href="./mybodymysoftware/lara/lyrics.txt" target="_blank">see lyrics</a>
-			<a href="./mybodymysoftware/lara/blueprint.txt" target="_blank">blueprint</a>
-			<audio controls src="./mybodymysoftware/lara/lara.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item6">
+			<div class="cover">
+				<img src="./mybodymysoftware/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">an yesterday (lost control)</div>
+				<div class="url">
+					<p>08-2026 - finished, not published</p>
+					<a href="./mybodymysoftware/lyrics/an-yesterday.txt" target="_blank">see lyrics</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./mybodymysoftware/data/an-yesterday.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">3</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./mybodymysoftware/cover.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>ADSA</h3>
-			<p>08-2026 - finished, not published</p>
-			<a href="./mybodymysoftware/ADSA/lyrics.txt" target="_blank">see lyrics</a>
-			<audio controls src="./mybodymysoftware/ADSA/ADSA.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item7">
+			<div class="cover">
+				<img src="./mybodymysoftware/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">lara (goodbye to a friend)</div>
+				<div class="url">
+					<p>08-2026 - finished, not published</p>
+					<a href="./mybodymysoftware/lyrics/lara.txt" target="_blank">see lyrics</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./mybodymysoftware/data/lara.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">2</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/no-img.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>perfect good</h3>
-			<p>07-2026 - unfinished</p>
-			<audio controls src="./stray-audios/2026/perfect-good.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item8">
+			<div class="cover">
+				<img src="./mybodymysoftware/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">ADSA</div>
+				<div class="url">
+					<p>08-2026 - finished, not published</p>
+					<a href="./mybodymysoftware/lyrics/ADSA.txt" target="_blank">see lyrics</a>
+				</div>
+				<div class="audio">
+					<audio controls src="./mybodymysoftware/data/ADSA.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">1</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/no-img.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>async-o-fobic</h3>
-			<p>07-2026 - unfinished</p>
-			<audio controls src="./stray-audios/2026/async-o-fobic.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item9">
+			<div class="cover">
+				<img src="./stray-audios/covers/no-img.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">perfect good</div>
+				<div class="url">
+					<p>07-2026 - unfinished</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2026/perfect-good.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/no-img.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>too much</h3>
-			<p>07-2026 - unfinished</p>
-			<audio controls src="./stray-audios/2026/too-much.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item10">
+			<div class="cover">
+				<img src="./stray-audios/covers/no-img.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">async-o-fobic</div>
+				<div class="url">
+					<p>07-2026 - unfinished</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2026/async-o-fobic.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/outchies.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>It Keeps Happening (alternative)</h3>
-			<p>07-2026 - published</p>
-			<audio controls src="./stray-audios/2026/it-keeps-happening-alt.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item33">
+			<div class="cover">
+				<img src="./stray-audios/covers/no-img.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">too much</div>
+				<div class="url">
+					<p>07-2026 - unfinished</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2026/too-much.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/no-img.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>digital pain</h3>
-			<p>06-2026 - deleted</p>
+<!-- ## ##-->
+		<div class="item" id="item11">
+			<div class="cover">
+				<img src="./stray-audios/covers/outchies.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">It Keeps Happening (alternative)</div>
+				<div class="url">
+					<p>07-2026 - published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2026/it-keeps-happening-alt.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./shush/shush.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>It Keeps Happening</h3>
-			<p>06-2026 - published - shush (album)</p>
-			<audio controls src="./shush/it keeps happening.mp3"></audio>
+<!-- ## ##-->
+		<div class="item deleted" id="item12">
+			<div class="cover">
+				<img src="./stray-audios/covers/no-img.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">digital pain</div>
+				<div class="url">
+					<p>06-2026 - deleted</p>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./shush/shush.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>content</h3>
-			<p>06-2026 - published - shush (album)</p>
-			<audio controls src="./shush/content.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item13">
+			<div class="cover">
+				<img src="./shush/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">It Keeps Happening</div>
+				<div class="url">
+					<p>06-2026 - published - shush (album)</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./shush/data/it-keeps-happening.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">5</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./shush/shush.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>NAUSEA</h3>
-			<p>06-2026 - published - shush (album)</p>
-			<audio controls src="./shush/NAUSEA.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item14">
+			<div class="cover">
+				<img src="./shush/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">content</div>
+				<div class="url">
+					<p>06-2026 - published - shush (album)</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./shush/data/content.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">4</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./shush/shush.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>sleep</h3>
-			<p>06-2026 - published - shush (album)</p>
-			<audio controls src="./shush/sleep.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item15">
+			<div class="cover">
+				<img src="./shush/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">NAUSEA</div>
+				<div class="url">
+					<p>06-2026 - published - shush (album)</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./shush/data/NAUSEA.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">3</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./shush/shush.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>melt</h3>
-			<p>06-2026 - published - shush (album)</p>
-			<audio controls src="./shush/melt.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item16">
+			<div class="cover">
+				<img src="./shush/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">sleep</div>
+				<div class="url">
+					<p>06-2026 - published - shush (album)</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./shush/data/sleep.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">2</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/influence.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>wet-socks</h3>
-			<p>05-2026 - finished, not published</p>
-			<audio controls src="./stray-audios/2026/wet-socks.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item17">
+			<div class="cover">
+				<img src="./shush/cover.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">melt</div>
+				<div class="url">
+					<p>06-2026 - published - shush (album)</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./shush/data/melt.mp3"></audio>
+				</div>
+			</div>
+			<div class="number">1</div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/influence.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>influence</h3>
-			<p>05-2026 - published</p>
-			<audio controls src="./stray-audios/2026/influence.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item18">
+			<div class="cover">
+				<img src="./stray-audios/covers/influence.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">wet-socks</div>
+				<div class="url">
+					<p>05-2026 - finished, not published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2026/wet-socks.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/cursive.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>cursive</h3>
-			<p>02-2026 - published</p>
-			<audio controls src="./stray-audios/2026/cursive.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item19">
+			<div class="cover">
+				<img src="./stray-audios/covers/influence.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">influence</div>
+				<div class="url">
+					<p>05-2026 - finished, not published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2026/influence.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/inertia.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>inertia</h3>
-			<p>02-2026 - published</p>
-			<audio controls src="./stray-audios/2026/inertia.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item20">
+			<div class="cover">
+				<img src="./stray-audios/covers/cursive.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">cursive</div>
+				<div class="url">
+					<p>02-2026 - published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2026/cursive.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<h3>--- 2025 ---</h3>
-	<!-- ====== 2025 ======= -->
-
-	<div class="track" style="--cover: url('./stray-audios/covers/moonsing.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>moonsing</h3>
-			<p>11-2025 - published</p>
-			<audio controls src="./stray-audios/2025/moonsing.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item21">
+			<div class="cover">
+				<img src="./stray-audios/covers/inertia.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">inertia</div>
+				<div class="url">
+					<p>02-2026 - published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2026/inertia.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
 
-	<div class="track" style="--cover: url('./stray-audios/covers/coneco.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>coneco</h3>
-			<p>11-2025 - published</p>
-			<audio controls src="./stray-audios/2025/coneco.mp3"></audio>
+<h3>--- 2025 ---</h3>
+<!-- ## ##-->
+		<div class="item" id="item24">
+			<div class="cover">
+				<img src="./stray-audios/covers/moonsing.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">moonsing</div>
+				<div class="url">
+					<p>11-2025 - published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2025/moonsing.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/most-of-it-is-blue.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>most of it is blue</h3>
-			<p>06-2025 - published</p>
-			<audio controls src="./stray-audios/2025/most-of-it-is-blue.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item25">
+			<div class="cover">
+				<img src="./stray-audios/covers/coneco.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">coneco</div>
+				<div class="url">
+					<p>11-2025 - published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2025/coneco.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/no-img.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>diante</h3>
-			<p>05-2025 - unfinished</p>
-			<audio controls src="./stray-audios/2025/diante.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item26">
+			<div class="cover">
+				<img src="./stray-audios/covers/most-of-it-is-blue.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">most of it is blue</div>
+				<div class="url">
+					<p>06-2025 - published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2025/most-of-it-is-blue.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/no-img.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>get it</h3>
-			<p>04-2025 - unfinished</p>
-			<audio controls src="./stray-audios/2025/get-it.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item27">
+			<div class="cover">
+				<img src="./stray-audios/covers/no-img.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">diante</div>
+				<div class="url">
+					<p>05-2025 - unfinished</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2025/diante.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/no-img.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>LOOP72</h3>
-			<p>??-2025 - unfinished</p>
-			<audio controls src="./stray-audios/2025/LOOP72.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item28">
+			<div class="cover">
+				<img src="./stray-audios/covers/no-img.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">get it</div>
+				<div class="url">
+					<p>04-2025 - unfinished</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2025/get-it.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/no-img.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>KITE</h3>
-			<p>??-2025 - ????</p>
-			<audio controls src="./stray-audios/2025/KITE.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item29">
+			<div class="cover">
+				<img src="./stray-audios/covers/no-img.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">LOOP72</div>
+				<div class="url">
+					<p>??-2025 - UNFINISHED</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2025/LOOP72.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/no-img.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>lognon</h3>
-			<p>??-2025 - ????</p>
-			<audio controls src="./stray-audios/2025/lognon.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item30">
+			<div class="cover">
+				<img src="./stray-audios/covers/no-img.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">KITE</div>
+				<div class="url">
+					<p>??-2025 - ????</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2025/KITE.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<h3>--- 2022 ---</h3>
-	<!-- ====== 2022 ======= -->
-
-	<div class="track" style="--cover: url('./stray-audios/covers/throne.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>throne</h3>
-			<p>09-2022 - published</p>
-			<audio controls src="./stray-audios/2022/throne.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item31">
+			<div class="cover">
+				<img src="./stray-audios/covers/no-img.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">logon</div>
+				<div class="url">
+					<p>??-2025 - ????</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2025/lognon.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
 
-	<div class="track" style="--cover: url('./stray-audios/covers/shoot-that.jpg')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>shoot that</h3>
-			<p>09-2022 - published</p>
-			<audio controls src="./stray-audios/2022/shoot-that.mp3"></audio>
+<h3>--- 2022 ---</h3>
+<!-- ## ##-->
+		<div class="item" id="item32">
+			<div class="cover">
+				<img src="./stray-audios/covers/throne.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">throne</div>
+				<div class="url">
+					<p>09-2022 - published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2022/throne.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
-	</div>
-
-	<div class="track" style="--cover: url('./stray-audios/covers/sae-combo.png')">
-		<div class="cover"></div>
-		<div class="track-info">
-			<h3>sae combo</h3>
-			<p>08-2022 - published, first official music</p>
-			<audio controls src="./stray-audios/2022/sae-combo.mp3"></audio>
+<!-- ## ##-->
+		<div class="item" id="item33">
+			<div class="cover">
+				<img src="./stray-audios/covers/shoot-that.jpg" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">shoot that</div>
+				<div class="url">
+					<p>09-2022 - published</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2022/shoot-that.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
 		</div>
+<!-- ## ##-->
+		<div class="item" id="item34">
+			<div class="cover">
+				<img src="./stray-audios/covers/sae-combo.png" alt="artwork" />
+			</div>
+			<div class="info">
+				<div class="title">sae combo</div>
+				<div class="url">
+					<p>08-2022 - published, first official music</p>
+				</div>
+				<div class="audio">
+					<audio controls src="./stray-audios/2022/sae-combo.mp3"></audio>
+				</div>
+			</div>
+			<div class="number"></div>
+		</div>
+<!-- ## ##-->
+<script src="./assets/music.js"></script>
 	</div>
 </html>
