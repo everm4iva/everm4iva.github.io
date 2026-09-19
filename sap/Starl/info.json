@@ -18,14 +18,14 @@
 			"storage": "200GB"
 		},
 		"2": {
-			"url": "bangsunsetdream.tail82eddd.ts.net/",
-			"status": "offline",
-			"server-name": "DREAM.PUBLIC (unstable)",
+			"url": "fluffygreenpillow.tail82eddd.ts.net/",
+			"status": "online",
+			"server-name": "FLUFFY.PILLOW (unstable)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage", "dev"],
 			"country-code": "PT",
-			"memory": "8GB",
-			"storage": "64GB"
+			"memory": "4GB",
+			"storage": "12GB"
 		},
 		"3": {
 			"url": "sugarParadize.tail82eddd.ts.net/",
