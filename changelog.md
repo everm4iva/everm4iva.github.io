@@ -1,3 +1,9 @@
+# release 4.3.22.4 (20 sep 2026)
+- new category in diary page: "Poems / Texts" + added text file to it.
+- added a few new lines to the curiosity section in the index page
+- starl project is now unpaused!
+im going to rest now. It's been a complicated weekend, maybe watch the "pantheon" series... it's my comfort stuff.
+
 # release 4.3.22.3 (16 sep 2026)
 - re-designed all music album/playlist page styles! (including mobile support), yayy, im really proud of this step-up on the visuals! in that same section in the diary i added a small comparation between the old and new design, check it out!
 - made a cute agressive message about ai in the index page.
