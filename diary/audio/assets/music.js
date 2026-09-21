@@ -11,12 +11,18 @@ document.addEventListener('DOMContentLoaded', () => {
 		const audioEl = item.querySelector('.audio');
 		const audioTag = audioEl ? audioEl.querySelector('audio') : null;
 
-		// 1. prevent clicks on <a> tags inside .url from triggering the parent item's logic
+		// 1. prevent clicks on links/audio controls inside the item from triggering the row toggle
 		if (urlEl) {
 			urlEl.addEventListener('click', function (e) {
-				if (e.target.tagName === 'A') {
+				if (e.target.closest && e.target.closest('a')) {
 					e.stopPropagation();
 				}
+			});
+		}
+
+		if (audioEl) {
+			audioEl.addEventListener('click', function (e) {
+				e.stopPropagation();
 			});
 		}
 
@@ -24,7 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (!audioTag) return;
 
 		// 2. click listener for the item itself
-		item.addEventListener('click', function () {
+		item.addEventListener('click', function (e) {
+			if (e.target.closest('a, .url, .audio, audio')) {
+				return;
+			}
+
 			// if clicking the item that is ALREADY active
 			if (this === activeItem) {
 				if (this.classList.contains('playing')) {

@@ -1,3 +1,9 @@
+# release 4.3.22.5 (21 sep 2026)
+- corrected some typos and added new lines to the poem/text "there-is-more-him.txt" in the diary page.
+- added poem/text "pure.txt" in the diary page.
+- made lyrics button clickable in audio pages.
+- big fixes in audio pages stylesheets (number indicator + audio element)
+
 # release 4.3.22.4 (20 sep 2026)
 - new category in diary page: "Poems / Texts" + added text file to it.
 - added a few new lines to the curiosity section in the index page

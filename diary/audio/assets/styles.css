@@ -196,7 +196,7 @@ h3 {
 
 .number {
 	position: absolute;
-	width: 90%;
+	width: 98%;
 	height: 100%;
 	display: flex;
 	justify-content: flex-end;
@@ -208,11 +208,25 @@ h3 {
 
 .info {
 	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 
 .info .title {
 	font-size: 1rem;
 	font-weight: 500;
+}
+
+.info .url {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	padding: 2px 4px;
+}
+
+.info .url a {
+	position: relative;
+	z-index: 3;
 }
 
 .info .url a:hover {
@@ -225,9 +239,8 @@ h3 {
 }
 
 .audio audio {
-	width: 90% !important;
+	width: 98% !important;
 	max-height: 30px;
-	background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* ## DESKTOP ## */
@@ -259,10 +272,10 @@ h3 {
 	.list {
 		overflow-y: auto;
 		overflow-x: hidden;
-			gap: 30px;
+		gap: 30px;
 	}
 
 	.list.centered {
-	justify-content: center;
-}
+		justify-content: center;
+	}
 }
