@@ -1,3 +1,6 @@
+# release 4.3.22.6 (21 sep 2026)
+- update in the same day, huh? anyway i added two songs in the stray audio playlist, go see it!
+
 # release 4.3.22.5 (21 sep 2026)
 - corrected some typos and added new lines to the poem/text "there-is-more-him.txt" in the diary page.
 - added poem/text "pure.txt" in the diary page.
