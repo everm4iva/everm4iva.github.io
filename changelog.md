@@ -1,3 +1,7 @@
+# release 4.3.22.7 (26 sep 2026)
+- lauched a little EP called "outwinds" for a game/series im developing.
+- added the updated drawing of "sketch-note-aug28.jpg" to the diary page.
+
 # release 4.3.22.6 (21 sep 2026)
 - update in the same day, huh? anyway i added two songs in the stray audio playlist, go see it!
 
