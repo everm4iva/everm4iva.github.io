@@ -1,0 +1,76 @@
+{
+    "service-title": "archi",
+    "service-description": "A Logic-Optimized small language ai models",
+    "models":{
+        "archi2": {
+            "description": "Optimized for raw logic, expressive language, content filtering, logical deduction and generally neutral.",
+            "avaliable": true,
+            "urls": {
+                "huggingface.co": "https://huggingface.co/everm4iva/archi2-2-9b",
+                "github": "",
+                "ollama.com": ""
+            },
+            "category": "fine-tuned",
+            "params": ["9B"],
+            "arch": ["mistral3"],
+            "context-window": ["8k", "16k", "32k", "64k", "128k"],
+            "license": "PFF1.0",
+            "base-model":{
+                "name": "Ministral",
+                "params": ["8B"],
+                "arch": ["mistral3"]
+            },
+            "vision": true,
+            "audio": false,
+            "search": true,
+            "browse": false,
+            "has-agent": false,
+            "is-agent": true,
+            "MoE": false,
+            "opt-languages": ["english"],
+            "format": ["GGUF"],
+            "function-calling": true,
+            "recommended-opts": {
+                "temperature": 0.7,
+                "top-p": 0.78,
+                "frequency_penalty": 0.6
+            },
+            "last-update": "may 20, 2026"
+    },
+    "archi3": {
+            "description": "Optimized for logic-faced tasks, raw expressiveness and creative tasks",
+            "avaliable": false,
+            "urls": {
+                "huggingface.co": "",
+                "github": "",
+                "ollama.com": ""
+            },
+            "category": "fine-tuned",
+            "params": ["30B"],
+            "arch": ["F32"],
+            "context-window": ["8k", "16k", "32k", "64k", "128k", "256k", "512k", "1M"],
+            "license": "PFF1.0",
+            "base-model":{
+                "name": "Nemotron-3-Nano",
+                "params": ["30B"],
+                "arch": ["F32"]
+            },
+            "vision": true,
+            "audio": true,
+            "search": true,
+            "browse": true,
+            "has-agent": true,
+            "is-agent": true,
+            "MoE": true,
+            "opt-languages": ["english", "Spanish", "French", "Portuguese"],
+            "format": ["-"],
+            "function-calling": true,
+            "recommended-opts": {
+                "temperature": 0.7,
+                "top-p": 0.74,
+                "frequency_penalty": 0.64
+            },
+            "last-update": "sep 27, 2026"
+    }
+}
+}

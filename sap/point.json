@@ -3,7 +3,7 @@
 		"Services": {
 			"everm4iva.github.io": "./website/info.json",
 			"starl": "./starl/info.json",
-			"Archi2 ": "./archi2/info.json",
+			"archi ": "./archi/info.json",
 			"GemServers": "./gem/info.json",
 			"Sparky": "./Sparky/info.json",
 			"world2": "./world2/info.json",

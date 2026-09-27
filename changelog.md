@@ -1,3 +1,7 @@
+# release 4.3.22.8 (27 sep 2026)
+- marked "archi" project as active and changed a few details in it's sap page
+IM FINETUNING ANOTHER AI MODEL, BABY!! this is fun heheh
+
 # release 4.3.22.7 (26 sep 2026)
 - lauched a little EP called "outwinds" for a game/series im developing.
 - added the updated drawing of "sketch-note-aug28.jpg" to the diary page.
