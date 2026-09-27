@@ -48,7 +48,7 @@
             "category": "fine-tuned",
             "params": ["30B"],
             "arch": ["F32"],
-            "context-window": ["8k", "16k", "32k", "64k", "128k", "256k", "512k", "1M"],
+            "context-window": ["32k", "64k", "128k", "256k", "512k", "1M"],
             "license": "PFF1.0",
             "base-model":{
                 "name": "Nemotron-3-Nano",
