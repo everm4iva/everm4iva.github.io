@@ -1,3 +1,10 @@
+# release 4.3.22.9 (02 oct 2026)
+- dropped 3 new poems: "the-world-is-so-loud.txt", "jobless.txt" & "beautiful-body.txt"
+- did a bunch of starl SAP configurations to support older clients.
+- re-added music note - song is "Sad Boys" by Dazey and the Scouts
+- changed main color: purple -> active pink
+that's it, i been so occupied recently...
+
 # release 4.3.22.8 (27 sep 2026)
 - marked "archi" project as active and changed a few details in it's sap page
 IM FINETUNING ANOTHER AI MODEL, BABY!! this is fun heheh
