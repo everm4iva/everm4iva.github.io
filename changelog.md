@@ -1,3 +1,13 @@
+# 4.3.23 (05 oct 2026)
+- Changed global wallpaper: flower field -> purple pre-night city clear-moon-sky view
+- Changed theme colors:
+|- Scrollbar: green -> Slighly desaturated pink
+|- Header-text: Yellow -> Light purple
+|- Links/Url elements: deep cyan -> desaturated yellow
+- Removed "frameless" from featured projects (no-longer-active)
+- 404 image redrawn (you can still see the old one in diary page tho)
+that's it!
+
 # release 4.3.22.9 (02 oct 2026)
 - dropped 3 new poems: "the-world-is-so-loud.txt", "jobless.txt" & "beautiful-body.txt"
 - did a bunch of starl SAP configurations to support older clients.

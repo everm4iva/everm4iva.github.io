@@ -21,19 +21,19 @@
 	--box-color-hover: #911768c0;
 	--box-color-selected: #911768ff;
 
-	--green: #8ff370;
-	--dead-green: #447435;
-	--pink: #be4bbe;
+	--green: #f380b0;
+	--dead-green: #85405d;
+	--pink: #5ebe4b;
 	--neon-purple: #9118be;
 	--soft-purple: #7f377f;
 	--soft-light-purple: #d37bd3;
 	--neon-purple-light: #e1a7e1;
 	--cute-pink: #ffa3bf;
 	--strong-pink: #ff00d4;
-	--yellow: #00ffea;
-	--dead-yellow: #f39200;
-	--cyan: #ffee00;
-	--cyan-dead: #695a00;
+	--yellow: #fdee60;
+	--dead-yellow: #adac49;
+	--cyan: #c88eff;
+	--cyan-dead: #5e3686;
 
 	--random-1: #05040e;
 	--random-color-1: rgb(255, 255, 255);
@@ -62,9 +62,9 @@
 	--audionote-filter: blur(0px);
 
 	/* Background & Images */
-	--bg-img: url('../images/background/new/flower1905b08dcccdb7b8e72dff05001f7315.jpg');
+	--bg-img: url('../images/background/new/aa5d537ab9ddf77a82cf35b5d69e9996.jpg');
 	--bg-filter: blur(0px);
-	--bg-opacity: 0.4;
+	--bg-opacity: 0.3;
 
 	/* Project Colors */
 	--fractal-p: #4714ff;
@@ -142,7 +142,7 @@ body::before {
 	background-image: var(--bg-img);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	padding: 0;
 	margin: 0;
 	filter: var(--bg-filter);

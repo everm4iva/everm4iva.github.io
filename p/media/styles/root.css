@@ -80,12 +80,27 @@ footer {
 
 .project-tile.indev {
 	border: 3px dashed var(--random-2);
-	animation: blink-indev 1s step-start infinite;
+	animation: blink-indev 1.5s step-start infinite;
 }
 
 .project-tile.paused {
 	filter: saturate(0.1);
+	border: 2px dotted gray;
 	transition: all 0.1s ease;
+	animation: blink-paused 1.5s step-start infinite;
+	cursor:progress;
+}
+
+@keyframes blink-paused {
+	0% {
+			filter: saturate(0.1);
+	}
+	50% {
+			filter: saturate(0.6);
+	}
+	100% {
+			filter: saturate(0.1);
+	}
 }
 
 @keyframes blink-indev {
