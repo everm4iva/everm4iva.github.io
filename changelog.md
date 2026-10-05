@@ -1,3 +1,10 @@
+# 4.3.23.1 (06 oct 2026)
+- updated audio pages design (weird padding issues, inconsistent header info, invisible songs for spacing)
+- updated diary page (welcome text to be more warm and explanative, header texts to be more clear, removed highlighted text...)
+- added text/poem "kab.txt" to diary page.
+- improved overflow and small-screen situations in "/get" page
+- made a colorful header change in 404 page!
+
 # 4.3.23 (05 oct 2026)
 - Changed global wallpaper: flower field -> purple pre-night city clear-moon-sky view
 - Changed theme colors:

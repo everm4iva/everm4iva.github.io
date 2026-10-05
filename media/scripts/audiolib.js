@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 	function renderPlaylistsView() {
 		mpList.innerHTML = '';
-		// Most listened
+		// most listened
 		const mostKey = window.__mostListenedKey;
 		if (mostKey) {
 			const mostTrack = tracks.find((t) => `${t.title} - ${t.artist}` === mostKey || t.__key === mostKey);
@@ -398,7 +398,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 					(t) => t.title === bubbleTrack.title && t.artist === bubbleTrack.artist,
 				);
 				if (trackIndex !== -1) {
-					// console.log('Found audio bubble track in library at index:', trackIndex);
+					// console.log('Found audio bubble track in library at index:', trackIndex); :P
 					selectTrack(trackIndex);
 				}
 			} else if (!currentTrack) {
@@ -471,7 +471,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 		});
 	}
 
-	// Audio end event
+	// audio end event
 	audio.addEventListener('ended', () => {
 		const currentIndex = tracks.indexOf(currentTrack);
 		if (currentIndex < tracks.length - 1) {

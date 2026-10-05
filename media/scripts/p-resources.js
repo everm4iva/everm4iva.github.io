@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const results = document.querySelector('.results');
 	if (!results) return;
 
-	// Group existing h4 + blockquotes into sections
+	// group existing h4 + blockquotes into sections
 	const children = Array.from(results.children);
 	const sections = [];
 	let current = null;
@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
-	// Replace results content with new sections
+	// replace results content with new sections
 	results.innerHTML = '';
 	sections.forEach((s) => results.appendChild(s));
 
-	// Build guide list: All sections + every top-level section
+	// build guide list: All sections + every top-level section
 	const guideList = document.getElementById('guide-list');
 	if (!guideList) return;
 
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	guideList.appendChild(makeGuideItem('All sections', 'all'));
 	sections.forEach((s) => guideList.appendChild(makeGuideItem(s.dataset.title, s.dataset.title)));
 
-	// Helpers
+	// helpers
 	const guideItems = () => Array.from(guideList.querySelectorAll('.guide-item'));
 
 	function selectGuide(item) {
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 
-	// Interactions for guide
+	// interactions for guide
 	guideList.addEventListener('click', (e) => {
 		const item = e.target.closest('.guide-item');
 		if (!item) return;
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const allItem = guideList.querySelector('.guide-item[data-filter="all"]');
 	if (allItem) selectGuide(allItem);
 
-	// Collapse/expand handlers
+	// collapse/expand handlers
 	results.addEventListener('click', (e) => {
 		const header = e.target.closest('.section-header');
 		if (!header) return;
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	});
 
-	// Search: filters items by title and inner text + highlights
+	// search: filters items by title and inner text + highlights
 	const search = document.getElementById('search');
 	if (!search) return;
 

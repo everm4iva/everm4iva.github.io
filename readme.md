@@ -1,6 +1,6 @@
 My personal website!
 ---
-This project is the whole source code of my personal website, which is hosted on GitHub Pages. It is built using HTML, CSS, and JavaScript - purely.
+This project is the whole source code of my personal website, which is hosted on GitHub Pages. It is built using HTML, CSS, and JavaScript - purely raw!
 
 It showcases:
 - general info about me as a person

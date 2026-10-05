@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	toggles.forEach((btn) =>
 		btn.addEventListener('click', (e) => {
-			// Open the music panel showing playlists instead of autoplaying
+			// open the music panel showing playlists instead of autoplaying
 			if (window.toggleMusicPanel) {
 				window.toggleMusicPanel(true);
 				return;

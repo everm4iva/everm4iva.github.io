@@ -37,7 +37,7 @@ class EffectSystem {
 		`;
 		document.body.appendChild(this.overlayContainer);
 
-		// Listen to audio playback
+		// listen to audio playback
 		if (this.audioElement) {
 			this.audioElement.addEventListener('play', () => this.onAudioPlay());
 			this.audioElement.addEventListener('pause', () => this.onAudioPause());
@@ -48,18 +48,14 @@ class EffectSystem {
 		this.initAudioContext();
 	}
 
-	/**
-	 * Retry Web Audio initialization after user interaction
-	 */
+	// retry Web Audio initialization after user interaction
 	retryWebAudioInit() {
 		if (this.webAudioInitialized) return;
 		console.log('Retrying Web Audio initialization after user interaction');
 		this.initAudioContext();
 	}
 
-	/**
-	 * Initialize Web Audio API for frequency analysis
-	 */
+	// initialize Web Audio API for frequency analysis
 	initAudioContext() {
 		if (!this.audioElement) {
 			console.warn('No audio element found for Web Audio API');
@@ -75,7 +71,7 @@ class EffectSystem {
 			const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
 			console.log('AudioContext created:', audioCtx.state);
 
-			// Resume context if suspended
+			// resume context if suspended
 			if (audioCtx.state === 'suspended') {
 				audioCtx
 					.resume()
@@ -112,21 +108,19 @@ class EffectSystem {
 		}
 	}
 
-	/**
-	 * Get current frequency/bass energy from audio
-	 */
+	// gets current frequency/bass energy from audio (in a super rad way)
 	getBassEnergy() {
 		if (!this.analyser) {
-			// Fallback: estimate based on audio element play state and time
+			// fallback: estimate based on audio element play state and time
 			if (this.audioElement && !this.audioElement.paused) {
-				// Audio is playing but Web Audio not ready - return minimal energy to prevent complete silence
+				// audio is playing but Web Audio not ready - return minimal energy to prevent complete silence
 				return 0.1;
 			}
 			return 0;
 		}
 
 		this.analyser.getByteFrequencyData(this.frequencyData);
-		// Get bass frequencies (first ~15 bins represent bass - expanded range for better detection)
+		// get bass frequencies (first ~15 bins represent bass - expanded range for... more wide detection, i guess)
 		let bassSum = 0;
 		for (let i = 0; i < 15; i++) {
 			bassSum += this.frequencyData[i];
@@ -136,9 +130,7 @@ class EffectSystem {
 		return energy;
 	}
 
-	/**
-	 * Get mid-range frequency energy
-	 */
+	// get mid-range frequency energy
 	getMidEnergy() {
 		if (!this.analyser) return 0;
 
@@ -153,32 +145,30 @@ class EffectSystem {
 		return midSum / ((endBin - startBin) * 255);
 	}
 
-	/**
-	 * Get overall volume/amplitude from waveform (true loudness detection)
-	 */
+	// get overall volume/amplitude from waveform (true loudness detection)
 	getOverallVolume() {
 		if (!this.analyser) {
-			// Fallback: if audio is playing, assume some volume
+			// fallback: if audio is playing, assume some volume
 			if (this.audioElement && !this.audioElement.paused) {
 				return Math.random() * 0.3 + 0.2; // 0.2-0.5 baseline for playing audio
 			}
 			return 0;
 		}
 
-		// Get the actual waveform samples (NOT frequency data)
+		// get the actual waveform samples (NOT frequency data!!!!!11!!)
 		this.analyser.getByteTimeDomainData(this.timeDomainData);
 
-		// Calculate RMS from waveform (true measure of loudness)
+		// calculate RMS from waveform (true measure of loudness)
 		let sum = 0;
 		for (let i = 0; i < this.timeDomainData.length; i++) {
-			// Normalize from 0-255 range to -1 to 1 range (128 is silence)
+			// normalize from 0-255 range to -1 to 1 range (128 is silence)
 			const sample = (this.timeDomainData[i] - 128) / 128;
 			sum += sample * sample;
 		}
 
 		let rms = Math.sqrt(sum / this.timeDomainData.length);
 
-		// Apply aggressive power curve for dramatic sensitivity
+		// apply aggressive power curve for dramatic sensitivity
 		rms = Math.pow(rms, 3);
 
 		console.log('getOverallVolume:', rms.toFixed(4), 'analyser:', !!this.analyser);
@@ -186,15 +176,10 @@ class EffectSystem {
 		return Math.min(1, rms);
 	}
 
-	/**
-	 * Parse intensity range - converts single intensity or min/max to usable values
-	 * @param {Object} config - {intensity: number, minIntensity?: number, maxIntensity?: number}
-	 * @returns {Object} {min: 0-1, avg: 0-1, max: 0-1}
-	 */
 	parseIntensity(config) {
 		const intensity = Math.max(0, Math.min(1, config.intensity || 0.5));
 
-		// If min/max provided, use them; otherwise derive from intensity
+		// if min/max provided, use them; otherwise derive from intensity
 		const min =
 			config.minIntensity !== undefined
 				? Math.max(0, Math.min(1, config.minIntensity))
@@ -205,34 +190,29 @@ class EffectSystem {
 				: Math.min(1, intensity + 0.2);
 
 		return {
-			min: Math.min(min, max), // Ensure min <= max
+			min: Math.min(min, max), // ensure min <= max
 			avg: intensity,
 			max: Math.max(min, max),
 		};
 	}
 
-	/**
-	 * Get audio energy based on trigger type (incorporates both frequency and volume)
-	 * @param {string} triggerType - 'bass' or 'beat'
-	 * @returns {number} 0-1 energy level
-	 */
 	getAudioEnergy(triggerType = 'bass') {
-		// Get overall volume (peak-based) - this has fallback for when analyser is unavailable
+		// get overall volume (peak-based) - this has fallback for when analyser is unavailable
 		const volume = this.getOverallVolume();
 
-		// Get frequency-based energy - this has fallback too
+		// get frequency-based energy - this has fallback too
 		let frequencyEnergy = 0;
 		if (triggerType === 'beat') {
-			// Beat detection: combine bass and mid frequencies
+			// beat detection: combine bass and mid-ew frequencies
 			const bass = this.getBassEnergy();
 			const mid = this.getMidEnergy() * 0.5;
 			frequencyEnergy = Math.min(1, bass + mid);
 		} else {
-			// Default to bass
+			// fefault to bass
 			frequencyEnergy = this.getBassEnergy();
 		}
 
-		// Improved combination: use max to ensure either frequency or volume can trigger effect
+		// improved combination: use max to ensure either frequency or volume can trigger effect
 		const combinedEnergy = Math.max(frequencyEnergy, frequencyEnergy * volume);
 
 		console.log(
@@ -247,39 +227,24 @@ class EffectSystem {
 		return Math.min(1, combinedEnergy);
 	}
 
-	/**
-	 * Apply sensitivity scaling to audio response
-	 * @param {number} audioEnergy - Raw audio energy 0-1
-	 * @param {number} sensitivity - Sensitivity 0-1 (0=no response, 1=full response)
-	 * @returns {number} Scaled response 0-1
-	 */
 	applySensitivity(audioEnergy, sensitivity = 1) {
 		const sens = Math.max(0, Math.min(1, sensitivity || 1));
-		// Exponential scaling so small sensitivities feel responsive
+		// exponential scaling so small sensitivities feel responsive heheh
 		return Math.pow(audioEnergy, 2 - sens);
 	}
 
-	/**
-	 * Parse duration - converts seconds or 'consistent' to milliseconds
-	 * @param {number|string} duration - Seconds, 'consistent', or undefined
-	 * @returns {number|null} Milliseconds if number/limited, null if 'consistent'
-	 */
 	parseDuration(duration) {
 		if (duration === 'consistent') {
-			return null; // Signals infinite duration
+			return null; // signals infinite duration
 		}
 		if (typeof duration === 'number') {
-			return duration * 1000; // Convert seconds to ms
+			return duration * 1000; // convert seconds to ms
 		}
 		return null;
 	}
 
-	/**
-	 * Apply effects based on track data
-	 * @param {Object} track - Track object from music library
-	 */
 	applyEffects(track) {
-		this.currentTrack = track; // Store track for pause/resume
+		this.currentTrack = track; // store track for pause/resume
 		this.clearAllEffects();
 
 		if (!track || !track.effects) {
@@ -292,41 +257,38 @@ class EffectSystem {
 		const effects = track.effects;
 		if (effects === 'none') return;
 
-		// Handle screenshake
+		// handle screenshake
 		if (effects.screenshake) {
 			console.log('Adding screenshake');
 			this.addScreenshake(effects.screenshake);
 		}
 
-		// Handle color overlay (warm/cold)
+		// handle color overlay (warm/cold)
 		if (effects.colorOverlay) {
 			console.log('Adding colorOverlay');
 			this.addColorOverlay(effects.colorOverlay);
 		}
 
-		// Handle image overlay
+		// handle image overlay
 		if (effects.imageOverlay) {
 			console.log('Adding imageOverlay');
 			this.addImageOverlay(effects.imageOverlay);
 		}
 
-		// Handle distortion/glitch effects
+		// handle distortion/glitch effects
 		if (effects.distortion) {
 			console.log('Adding distortion');
 			this.addDistortion(effects.distortion);
 		}
 
-		// Handle pulsing/strobe
+		// handle pulsing/strobe
 		if (effects.pulse) {
 			console.log('Adding pulse');
 			this.addPulse(effects.pulse);
 		}
 	}
 
-	/**
-	 * Screenshake effect synced with audio
-	 * @param {Object} config - {intensity: 0-1 (avg), minIntensity?: 0-1, maxIntensity?: 0-1, duration: seconds|'consistent', syncToAudio: boolean, sensitivity?: 0-1, triggerType?: 'bass'|'beat'}
-	 */
+	// screenshake effect synced with audio
 	addScreenshake(config) {
 		console.log('addScreenshake called with config:', config);
 		const intensities = this.parseIntensity(config);
@@ -346,9 +308,7 @@ class EffectSystem {
 		this.animateScreenshake();
 	}
 
-	/**
-	 * Animate screenshake synced with audio playback
-	 */
+	// animate screenshake synced with audio playback
 	animateScreenshake() {
 		if (!this.activeEffects.has('screenshake')) return;
 
@@ -357,7 +317,7 @@ class EffectSystem {
 		const elapsed = currentTime - shake.startTime;
 		const progress = shake.isConsistent ? 0 : elapsed / shake.duration;
 
-		// Stop if audio not playing or duration expired
+		// stop if audio not playing or duration expired
 		if (!this.isPlaying || (!shake.isConsistent && progress >= 1)) {
 			this.activeEffects.delete('screenshake');
 			document.documentElement.style.transform = '';
@@ -367,7 +327,7 @@ class EffectSystem {
 			return;
 		}
 
-		// Ease-out for intensity (only if not consistent)
+		// ease-out for intensity (only if not consistent)
 		const easeProgress = shake.isConsistent ? 1 : 1 - progress;
 		let intensity = shake.intensities.avg * easeProgress;
 
@@ -380,22 +340,22 @@ class EffectSystem {
 			this.isPlaying,
 		);
 
-		// Sync with audio if enabled
+		// sync with audio if enabled
 		if (shake.syncToAudio && this.analyser) {
 			const audioEnergy = this.getAudioEnergy(shake.triggerType);
-			const SILENCE_THRESHOLD = 0.04; // Lowered threshold for quicker response to subtle sounds
+			const SILENCE_THRESHOLD = 0.04; // lowered threshold for quicker response to subtle sounds (it's so sensitive ohhh godddd!!!)
 
 			console.log('audioEnergy:', audioEnergy.toFixed(4), 'threshold:', SILENCE_THRESHOLD);
 
 			if (audioEnergy < SILENCE_THRESHOLD) {
-				// During silence, for consistent effects, stop early to prevent persistent effect
+				// during silence, for consistent effects, stop early to prevent persistent effect
 				if (shake.isConsistent) {
-					// Track silence duration
+					// track silence duration
 					if (!shake.silenceStartTime) {
 						shake.silenceStartTime = Date.now();
 					}
 					const silenceDuration = Date.now() - shake.silenceStartTime;
-					// If silent for more than 200ms, clear the effect
+					// if silent for more than 200ms, clear the effect like a good boy
 					if (silenceDuration > 200) {
 						console.log('Screenshake stopped due to extended silence');
 						this.activeEffects.delete('screenshake');
@@ -405,21 +365,21 @@ class EffectSystem {
 				}
 				intensity = 0;
 			} else {
-				// Reset silence timer when sound is detected
+				// reset silence timer when sound is detected
 				shake.silenceStartTime = null;
 				const scaledEnergy = this.applySensitivity(audioEnergy, shake.sensitivity);
-				// Lerp between min and max based on audio energy
+				// lerp between min and max based on audio energy!!
 				intensity = shake.intensities.min + (shake.intensities.max - shake.intensities.min) * scaledEnergy;
 				intensity *= easeProgress;
 			}
 		}
 
-		// If intensity is effectively zero, clear transform but keep looping for reactive response
+		// jf intensity is effectively zero, clear transform but keep looping for reactive response
 		if (intensity < 0.01) {
 			document.documentElement.style.transform = '';
 		} else {
-			// Random shake with synchronized intensity - increased amplitude for better visibility
-			const maxShake = 60; // Increased from 20 to 60 for more noticeable shake
+			// rand shake with synchronized intensity - increased amplitude for better visibility
+			const maxShake = 60;
 			const offsetX = (Math.random() - 0.5) * maxShake * intensity;
 			const offsetY = (Math.random() - 0.5) * maxShake * intensity;
 
@@ -428,11 +388,7 @@ class EffectSystem {
 
 		this.effectAnimationFrameId = requestAnimationFrame(() => this.animateScreenshake());
 	}
-
-	/**
-	 * Color overlay with audio sync
-	 * @param {Object} config - {type: 'warm'|'cold', intensity: 0-1 (avg), minIntensity?: 0-1, maxIntensity?: 0-1, duration: seconds|'consistent', syncToAudio: boolean, sensitivity?: 0-1, triggerType?: 'bass'|'beat'}
-	 */
+	// color overlay with audio sync
 	addColorOverlay(config) {
 		const intensities = this.parseIntensity(config);
 		const type = config.type || 'warm';
@@ -474,7 +430,7 @@ class EffectSystem {
 		this.overlayContainer.appendChild(overlay);
 		this.activeEffects.get('colorOverlay').element = overlay;
 
-		// Auto-remove after duration (unless consistent) or when audio stops
+		// auto-remove after duration (unless consistent) or when audio stops
 		if (!isConsistent && durationMs) {
 			setTimeout(() => {
 				if (this.activeEffects.has('colorOverlay')) {
@@ -488,10 +444,7 @@ class EffectSystem {
 		}
 	}
 
-	/**
-	 * Image overlay effect
-	 * @param {Object} config - {imageSrc: string, intensity: 0-1 (avg), minIntensity?: 0-1, maxIntensity?: 0-1, mode: 'screen'|'multiply'|'overlay', duration: seconds|'consistent', syncToAudio?: boolean, sensitivity?: 0-1, triggerType?: 'bass'|'beat'}
-	 */
+	// Img overlay effect
 	addImageOverlay(config) {
 		const imageSrc = config.imageSrc;
 		const intensities = this.parseIntensity(config);
@@ -545,10 +498,7 @@ class EffectSystem {
 		}
 	}
 
-	/**
-	 * Distortion/glitch synced with frequency
-	 * @param {Object} config - {intensity: 0-1 (avg), minIntensity?: 0-1, maxIntensity?: 0-1, duration: seconds|'consistent', frequency: 'low'|'medium'|'high', syncToAudio: boolean, sensitivity?: 0-1, triggerType?: 'bass'|'beat'}
-	 */
+	// distortion/glitch synced
 	addDistortion(config) {
 		const intensities = this.parseIntensity(config);
 		const freqMap = {low: 100, medium: 50, high: 20};
@@ -605,9 +555,7 @@ class EffectSystem {
 		}
 	}
 
-	/**
-	 * Animate distortion based on audio
-	 */
+	// animate distortion based on audio
 	animateDistortion() {
 		if (!this.activeEffects.has('distortion')) return;
 
@@ -624,15 +572,15 @@ class EffectSystem {
 			return;
 		}
 
-		const SILENCE_THRESHOLD = 0.08; // Energy below this is considered silence
+		const SILENCE_THRESHOLD = 0.08;
 
-		// Sync frequency response to audio
+		// sync frequency response to audioo
 		let frequency = distortion.baseFrequency;
 		let clipAmount = 5;
 		if (distortion.syncToAudio && this.analyser) {
 			const audioEnergy = this.getAudioEnergy(distortion.triggerType);
 
-			// If silence, don't distort
+			// jf silence, don't distort
 			if (audioEnergy < SILENCE_THRESHOLD) {
 				clipAmount = 0;
 				frequency = distortion.baseFrequency;
@@ -656,10 +604,7 @@ class EffectSystem {
 		requestAnimationFrame(() => this.animateDistortion());
 	}
 
-	/**
-	 * Pulse/strobe synced with audio
-	 * @param {Object} config - {intensity: 0-1 (avg), minIntensity?: 0-1, maxIntensity?: 0-1, speed: 'slow'|'medium'|'fast'|number (seconds), color: 'white'|'color', duration: seconds|'consistent', syncToAudio: boolean, sensitivity?: 0-1, triggerType?: 'bass'|'beat'}
-	 */
+	// Pulse/strobe/plop/boom/csh synced with audio
 	addPulse(config) {
 		const intensities = this.parseIntensity(config);
 		const speedMap = {slow: 1, medium: 0.5, fast: 0.2};
@@ -713,9 +658,7 @@ class EffectSystem {
 		}
 	}
 
-	/**
-	 * Animate pulse synced with audio
-	 */
+	// animate pulse synced with audioa
 	animatePulse() {
 		if (!this.activeEffects.has('pulse')) return;
 
@@ -732,26 +675,26 @@ class EffectSystem {
 			return;
 		}
 
-		const SILENCE_THRESHOLD = 0.08; // Energy below this is considered silence
+		const SILENCE_THRESHOLD = 0.08;
 
-		// Calculate position in pulse cycle
+		// calculate position in pulse cycle (bc i need nerdy things)
 		let cyclePosition = elapsed / 1000 / pulse.speedSeconds;
 		if (pulse.syncToAudio) {
-			// Sync with audio playback instead of wall time
+			// sync with audio playback instead of wall time
 			const audioElapsed = (this.audioElement?.currentTime || 0) - pulse.audioStartTime;
 			cyclePosition = (audioElapsed / pulse.speedSeconds) % 1;
 		} else {
 			cyclePosition = cyclePosition % 1;
 		}
 
-		// Sine wave for smooth pulse
+		// sine wave for smooth pulse (sinewaves are cool asf)
 		let opacity = Math.abs(Math.sin(cyclePosition * Math.PI));
 
-		// Apply audio sync if enabled
+		// apply audio sync if enabled
 		if (pulse.syncToAudio && this.analyser) {
 			const audioEnergy = this.getAudioEnergy(pulse.triggerType);
 
-			// If silence, no pulse
+			// if silence, no pulse
 			if (audioEnergy < SILENCE_THRESHOLD) {
 				opacity = 0;
 			} else {
@@ -759,7 +702,7 @@ class EffectSystem {
 				const minIntensity = pulse.intensities.min;
 				const maxIntensity = pulse.intensities.max;
 				const dynIntensity = minIntensity + (maxIntensity - minIntensity) * scaledEnergy;
-				opacity = opacity * dynIntensity; // Enhanced pulse with dynamic intensity range
+				opacity = opacity * dynIntensity;
 			}
 		}
 
@@ -770,17 +713,15 @@ class EffectSystem {
 		requestAnimationFrame(() => this.animatePulse());
 	}
 
-	/**
-	 * Clear all active effects
-	 */
+	// Clear all active effects like a good boy heheh
 	clearAllEffects() {
-		// Stop screenshake animation
+		// stop screenshake animation!
 		if (this.effectAnimationFrameId) {
 			cancelAnimationFrame(this.effectAnimationFrameId);
 		}
 		document.documentElement.style.transform = '';
 
-		// Clear all overlays and effects
+		// clear all overlays and effects!
 		for (const [key, effect] of this.activeEffects.entries()) {
 			if (effect.element?.parentNode) {
 				effect.element.remove();
@@ -789,20 +730,18 @@ class EffectSystem {
 
 		this.overlayContainer.innerHTML = '';
 		this.activeEffects.clear();
-		this.currentTrack = null; // Clear track reference to prevent effects from persisting
+		this.currentTrack = null;
 		console.log('All effects cleared, currentTrack reset to null');
 	}
 
-	/**
-	 * Audio playback lifecycle
-	 */
+	// audio playback lifecycle
 	onAudioPlay() {
 		console.log('Audio play event triggered');
 		this.isPlaying = true;
 		if (this.audioContext && this.audioContext.state === 'suspended') {
 			this.audioContext.resume();
 		}
-		// Re-apply effects when resuming from pause
+		// re-apply effects when resuming from pause
 		if (this.currentTrack) {
 			console.log('Re-applying effects for:', this.currentTrack.title);
 			this.applyEffects(this.currentTrack);
@@ -820,7 +759,7 @@ class EffectSystem {
 	}
 }
 
-// Create global instance when DOM is ready
+// create global instance when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
 	window.effectSystem = new EffectSystem(document.querySelector('.audio-element'));
 
@@ -832,4 +771,3 @@ document.addEventListener('DOMContentLoaded', () => {
 		console.warn('Audio element not found for EffectSystem initialization');
 	}
 });
-

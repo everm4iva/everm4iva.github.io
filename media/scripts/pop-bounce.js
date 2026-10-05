@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		pop.setAttribute('aria-pressed', 'false');
 	}
 
-	// Hide the pop when collected by the .me element
+	// hide the pop when collected by the .me element
 	function hidePopCollected() {
 		collectedByMe = true;
 		// stop motion and hide
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			if (Math.abs(vx) < 0.02) vx *= 0.5;
 		}
 
-		// collision effects (possible stick)
+		// collision effects (possible sticky situation)
 		if (collided) {
 			// decide whether it sticks: higher chance on bottom collisions, avoid sticking to walls
 			const speed = Math.sqrt(vx * vx + vy * vy);
