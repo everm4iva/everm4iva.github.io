@@ -19,7 +19,7 @@
 		},
 		"2": {
 			"url": "flufflygreenpillow.tail82eddd.ts.net/",
-			"status": "in repair",
+			"status": "online",
 			"server-name": "FLUFFLY.PILLOW (unstable)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage", "dev"],
