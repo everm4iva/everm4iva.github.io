@@ -1,7 +1,16 @@
+# 4.3.23.3 (12 oct 2026)
+- revised and changed a bit the structure of some existing phases.
+|- added section about "human art" and "machine art".
+- adjusted a bit the fonts preview page
+- sap page changes
+|- fixed starl json linking
+|- added archi3-mini base info to archi service
+|- removed "RabiProject" as a service.
+thank you @dhummy for the help with some context errors in the index page.
+
 # 4.3.23.2 (12 oct 2026)
 - updated/changed a few quotes in the index page - to be more clear and easy to understand, here is the main changes
 |- changed game preferences
-|- added my age
 |- added new casual activities "Argumenting and marketing..."
 |- added... umm russian attractiveness stuff?
 |- added section about that "flirting-condition" thing.

@@ -5,10 +5,9 @@
 			"starl": "./starl/info.json",
 			"archi ": "./archi/info.json",
 			"GemServers": "./gem/info.json",
-			"Sparky": "./Sparky/info.json",
-			"world2": "./world2/info.json",
-			"RabiProject (abandoned)": "./RabiProject/info.json",
-			"Bubble (experiment closed)": "./Bubble/info.json",
+			"Sparky (abandoned)": "./Sparky/info.json",
+			"world2 (abandoned)": "./world2/info.json",
+			"Bubble (abandoned)": "./Bubble/info.json",
 			"Oriana (abandoned)": "./Oriana/info.json"
 		}
 	}

@@ -12,17 +12,8 @@
 			"global-assets": "https://everm4iva.github.io/assets/",
 			"license": "https://everm4iva.github.io/LICENSE.txt",
 			"sitemap": "https://everm4iva.github.io/sitemap.xml",
-			"sap-point": "https://everm4iva.github.io/sap/point.json"
-		},
-		"sap-links": {
-			"everm4iva-website": "https://everm4iva.github.io/sap/Website/info.json",
-			"starl": "https://everm4iva.github.io/sap/Starl/info.json",
-			"Bubble": "https://everm4iva.github.io/sap/Bubble/info.json",
-			"RabiProject": "https://everm4iva.github.io/sap/RabiProject/info.json",
-			"Oriana": "https://everm4iva.github.io/sap/Oriana/info.json",
-			"Sparky": "https://everm4iva.github.io/sap/Sparky/info.json",
-			"World2": "https://everm4iva.github.io/sap/world2/info.json",
-			"archi2": "https://everm4iva.github.io/sap/archi2/info.json"
+			"sap-point": "https://everm4iva.github.io/sap/point.json",
+			"sap-website": "https://everm4iva.github.io/sap/Website/info.json"
 		},
 		"design-links": {
 			"main": "https://everm4iva.github.io/media/styles/root.css",
