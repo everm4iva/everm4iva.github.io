@@ -1,3 +1,6 @@
+# 4.3.23.4 (13 oct 2026)
+- added little easter-egg thing in /media! (old screenshots of the website) - go see it!
+
 # 4.3.23.3 (12 oct 2026)
 - revised and changed a bit the structure of some existing phases.
 |- added section about "human art" and "machine art".
@@ -447,7 +450,7 @@ This changelog seems corporate lol, not on purpose, i am sleepy as hell...
 
 # release 4.3 (13 feb 2026)
 - NEW WEBSITE! umaera.github.io -> everm4iva.github.io
-- skipped 3 versions, it just looks cool this way, you can still consider this 4.0
+- skipped 3 versions, it just looks cool this way.
 - NEW DESIGN, LAYOUT, EVERYTHING! (also file structure - very important stuff)
 
 # ---- Changelog: `umaera.github.io` ---- #
