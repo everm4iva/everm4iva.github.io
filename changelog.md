@@ -1,4 +1,4 @@
-# 4.3.23.2 (12 oct 2026) 
+# 4.3.23.2 (12 oct 2026)
 - updated/changed a few quotes in the index page - to be more clear and easy to understand, here is the main changes
 |- changed game preferences
 |- added my age
