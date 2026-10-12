@@ -1,23 +1,25 @@
-My personal website!
+my personal website ⸜( ˶>ᴗ<˶)⸝♡
 ---
 This project is the whole source code of my personal website, which is hosted on GitHub Pages. It is built using HTML, CSS, and JavaScript - purely raw!
 
 It showcases:
-- general info about me as a person
+- overview of my as a person
+- my interests, intimate stuff and quirks
 - my projects & their resources
 - my social media links
 - articles (i call it manifestos)
 - work in progress
-- artwork (music or visual)
+- artwork (music or digital art)
 - public api's
 
 and way more!
 
 I am constantly updating this website, feel free to explore it.
 
-- url: https://everm4iva.github.io
-- license: [Custom - SCRML-WEB](./license.txt)
-- changelog: [changelog.md](./changelog.md)
-- official website icon: [favicon.png](./favicon.ico)
-- public profile picture: [me.png](./media/images/me.jpg)
-- total dev time: +3 years (this repo + old one)
+- **url:** https://everm4iva.github.io
+- **media-url:** https://everm4iva.github.io/media/index.html
+- **license:** [Custom - SCRML-WEB](./license.txt)
+- **changelog:** [changelog.md](./changelog.md)
+- **official website icon:** [favicon.png](./favicon.ico)
+  **public profile picture:** [me.png](./media/images/me.jpg)
+- **total dev time**: +3 years (this repo + old one)

@@ -1,3 +1,15 @@
+# 4.3.23.2 (12 oct 2026) 
+- updated/changed a few quotes in the index page - to be more clear and easy to understand, here is the main changes
+|- changed game preferences
+|- added my age
+|- added new casual activities "Argumenting and marketing..."
+|- added... umm russian attractiveness stuff?
+|- added section about that "flirting-condition" thing.
+|- added about 2 sections talking about very mature philosophical stuff, bc why not dump things i am excited about?
+- added new file named "flirting-condition" documenting my personal experience with an old disorder i have. (deeply personal).
+- attached the official website source code github repo to website header.
+- changed a bit the readme of the website repository.
+
 # 4.3.23.1 (06 oct 2026)
 - updated audio pages design (weird padding issues, inconsistent header info, invisible songs for spacing)
 - updated diary page (welcome text to be more warm and explanative, header texts to be more clear, removed highlighted text...)
