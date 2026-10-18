@@ -1,14 +1,13 @@
 [
 	{
 		"audio-note": {
-			"title": "Sad Boys",
-			"artist": "Dazey and the Scouts",
-			"color": "#ffffff",
-			"url": "https://open.spotify.com/track/0Cy9tJc6lKK7MbRtON1Xu3",
-			"cover": "./media/audio/cover/sadboys.jpg",
-			"music-src": "./media/audio/SadBoys-DazeyAndTheScouts.mp3",
+			"title": "Lincoln's Licorice",
+			"artist": "Rain on Fridays",
+			"url": "https://open.spotify.com/track/10BhY2FwLKCNT7WfGiCMGQ",
+			"cover": "./media/audio/cover/lincolslicorice.jpg",
+			"music-src": "./media/audio/Lincoln's-Licorice.mp3",
 			"lightMode": false,
-			"genre": "rock",
+			"genre": "grunge",
 			"effects": "none"
 		}
 	}

@@ -21,9 +21,9 @@
 	--box-color-hover: #911768c0;
 	--box-color-selected: #911768ff;
 
-	--green: #f380b0;
+	--green: #8ff370;
 	--dead-green: #85405d;
-	--pink: #5ebe4b;
+	--pink: #dd80a7;
 	--neon-purple: #9118be;
 	--soft-purple: #7f377f;
 	--soft-light-purple: #d37bd3;
@@ -32,7 +32,7 @@
 	--strong-pink: #ff00d4;
 	--yellow: #fdee60;
 	--dead-yellow: #adac49;
-	--cyan: #c88eff;
+	--cyan: #95a5ff;
 	--cyan-dead: #5e3686;
 
 	--random-1: #05040e;
@@ -52,14 +52,14 @@
 	--spacing-unit: 8px;
 
 	/* Audio Note */
-	--audionote-color: #92929280;
+	--audionote-color: #000000;
 	--audionote-border-color: var(--pink);
-	--audionote-image: url('../../audio/cover/sadboys.jpg');
+	--audionote-image: url('../../audio/cover/lincolslicorice.jpg');
 	--audionote-text-color: var(--white);
 	--audionote-bg-pos: 0% 50%;
 	--audionote-bg-size: 100%;
-	--audionote-opacity: 0.6;
-	--audionote-filter: blur(0px);
+	--audionote-opacity: 0.3;
+	--audionote-filter: blur(5px);
 
 	/* Background & Images */
 	--bg-img: url('../images/background/new/aa5d537ab9ddf77a82cf35b5d69e9996.jpg');

@@ -54,8 +54,8 @@ body:before {
 	width: 100%;
 	height: 100%;
 	z-index: -2;
-	filter: blur(10px);
-	opacity: 0.3;
+	filter: blur(5px);
+	opacity: 0.6;
 }
 
 .line {
@@ -79,8 +79,8 @@ body:before {
 	min-width: 350px;
 	color: var(--pink);
 	width: 40%;
-	backdrop-filter: blur(10px);
-	border: 2px var(--pink) solid;
+	/* backdrop-filter: blur(10px); */
+	/* border: 2px var(--pink) solid; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -167,7 +167,7 @@ body:before {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	border: 3px solid rgba(0, 0, 0, 0.5);
+	border: 3px solid rgba(0, 0, 0, 0);
 	transition: all 0.3s ease;
 	cursor: pointer;
 	text-decoration: none;

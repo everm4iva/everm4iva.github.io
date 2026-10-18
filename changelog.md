@@ -1,3 +1,13 @@
+# 4.3.23.5 (19 oct 2026)
+- Revised and changed the index paragraphs a bit. Natural language changes overtime, right?
+- re-added music note - song is "Lincoln's Licorice" by Rain on Fridays
+- re-drawn social media tile animated images.
+- uploaded a couple exclusive images in diary page.
+- Changed theme colors:
+|- Scrollbar: Slighly desaturated pink -> green
+|- Header-text: green -> light pink
+|- Links/Url elements: desaturated yellow -> cyan
+
 # 4.3.23.4 (13 oct 2026)
 - added little easter-egg thing in /media! (old screenshots of the website) - go see it!
 
