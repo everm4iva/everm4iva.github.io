@@ -42,17 +42,17 @@
   </url>
     <url>
     <loc>https://everm4iva.github.io/story/</loc>
-    <priority>0.6</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>https://everm4iva.github.io/assets/</loc>
     <priority>0.7</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://everm4iva.github.io/assets/</loc>
+    <priority>0.5</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://everm4iva.github.io/sap/</loc>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

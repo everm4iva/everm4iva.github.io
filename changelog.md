@@ -1,3 +1,8 @@
+# 4.3.23.6 (20 oct 2026)
+- fixed all css file decorative headers.
+- changed page's priority in sidemap.xml
+- kept music note the same.
+
 # 4.3.23.5 (19 oct 2026)
 - Revised and changed the index paragraphs a bit. Natural language changes overtime, right?
 - re-added music note - song is "Lincoln's Licorice" by Rain on Fridays
