@@ -1,4 +1,9 @@
+# 4.3.23.7 (23 oct 2026)
+- added "sillyguy" to projects page
+- removed music note, added quote.
+
 # 4.3.23.6 (20 oct 2026)
+- added direct point.json link to sap page (+ removed old/not working links)
 - fixed all css file decorative headers.
 - changed page's priority in sidemap.xml
 - kept music note the same.
