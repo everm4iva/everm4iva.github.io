@@ -4,10 +4,8 @@
  * ☆=========================================☆
 */
 
-/* Native */
 blockquote {
 	margin: 0;
-	/* background-color: var(--bg-color-t6); */
 	border-left-style: solid;
 	border-left-color: var(--yellow);
 	border-left-width: 1px;
@@ -46,7 +44,6 @@ a.old {
 	color: var(--dead-yellow);
 }
 
-/* Classes */
 .overcyan {
 	color: var(--bg-color);
 	width: fit-content;
@@ -98,3 +95,4 @@ a.old {
 		width: 100%;
 	}
 }
+

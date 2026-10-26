@@ -1,0 +1,43 @@
+/*
+ * ☆=========================================☆
+ * custom-color.css - customize element colors...
+ * ☆=========================================☆
+*/
+
+:root {
+	/* red section */
+	--color-red-thisbloodneedsmoreo2: #330808;
+
+	/* pink section */
+	--color-pink-cottoncandy: #ffa3bf;
+	--color-pink-hungrystrawberrypie: #dd80a7;
+	--color-pink-almostfolly: #ff00d4;
+	--color-pink-isthisfollyimconfused: #ee0089;
+	--color-pink-beet: #330824;
+	--color-pink-finewine: #360b1c;
+	--color-pink-wedontmessaround: #fc6cff;
+
+	/* purple section */
+	--color-purple-fairydust: #7f377f;
+	--color-purple-deadradioactivecomponent: #85405d;
+	--color-purple-hungryfashionmodelseyeshadowmakeup: #5e3686;
+
+	/* yellow section */
+	--color-yellow-softbabystar: #fdee60;
+	--color-yellow-swampmucus: #adac49;
+
+	/* blue/cyan section*/
+	--color-cyan-babypillow: #95a5ff;
+	--color-blue-ithinkmycrushlikesthisone: #40ac94;
+
+	/* green section */
+	--color-green-themostpurepeaoftheworld: #8ff370;
+
+	/* others... */
+	--color-brown-pinecone: #794c32;
+	--color-brown-momjustmadeachocolatecakeandletmelickthebowl: #d3926b;
+}
+
+.overcute.pinecone::before {
+	background-color: var(--color-brown-pinecone);
+}

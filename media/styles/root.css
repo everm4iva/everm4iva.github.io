@@ -5,6 +5,7 @@
 */
 
 @import url('../fonts/fonts.css');
+@import url('./custom-color.css');
 @import url('./Notation.css');
 @import url('./effectsystem.css');
 
@@ -21,7 +22,7 @@
 	--box-color-hover: #911768c0;
 	--box-color-selected: #911768ff;
 
-	--green: #8ff370;
+	--green: #794c32;
 	--dead-green: #85405d;
 	--pink: #dd80a7;
 	--neon-purple: #9118be;

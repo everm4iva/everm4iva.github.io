@@ -1,3 +1,11 @@
+# 4.3.23.8 (26 oct 2026)
+- changed profile picture (+1 generation)
+- ajusted a bit of "old content" directory/filename order and names.
+- changed profile picture decoration to "fall-season" (falling leaves)
+- color changes!
+|- scroll-bar color: bright green -> brown (like the pinecones)
+|- made a little color file: https://everm4iva.github.io/media/styles/custom-color.css
+
 # 4.3.23.7 (23 oct 2026)
 - added "sillyguy" to projects page
 - removed music note, added quote.

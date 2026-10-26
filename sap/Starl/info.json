@@ -10,7 +10,7 @@
 		"1": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
 			"status": "in repair",
-			"server-name": "BANG.PUBLIC (preparing)",
+			"server-name": "BANG.PUBLIC (in repair)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage"],
 			"country-code": "PT",
@@ -19,7 +19,7 @@
 		},
 		"2": {
 			"url": "flufflygreenpillow.tail82eddd.ts.net/",
-			"status": "online",
+			"status": "in repair",
 			"server-name": "FLUFFLY.PILLOW (unstable)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage", "dev"],
