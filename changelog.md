@@ -1,4 +1,7 @@
-# 4.3.23.8 (26 oct 2026)
+# 4.3.23.8 (26->27 oct 2026)
+> first transitional update of the website... where i publish and then change the same update between days (midnight)
+- ajusted the number statistics in the project pages
+- removed starl from active project in index page
 - changed profile picture (+1 generation)
 - ajusted a bit of "old content" directory/filename order and names.
 - changed profile picture decoration to "fall-season" (falling leaves)
