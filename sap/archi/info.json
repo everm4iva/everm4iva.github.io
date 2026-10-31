@@ -25,7 +25,7 @@
 			"recommended-opts": {"temperature": 0.7, "top-p": 0.78, "frequency_penalty": 0.6},
 			"last-update": "may 20, 2026"
 		},
-		"archi3.mini": {
+		"archi3-mini": {
 			"avaliable": false,
 			"urls": {"huggingface.co": "", "github": "", "ollama.com": ""},
 			"category": "fine-tuned",

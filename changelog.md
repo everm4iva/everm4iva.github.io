@@ -1,3 +1,7 @@
+# 4.3.23.9 (31 oct 2026)
+- Changed date format around all of manifesto page.
+- revised typos in index page.
+
 # 4.3.23.8 (26->27 oct 2026)
 > first transitional update of the website... where i publish and then change the same update between days (midnight)
 - ajusted the number statistics in the project pages
