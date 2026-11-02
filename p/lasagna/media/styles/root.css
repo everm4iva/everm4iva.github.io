@@ -165,7 +165,7 @@ button:active {
 .creator-pfp {
 	width: 50px;
 	height: 50px;
-	background-image: url('../images/saols.png');
+	background-image: url('https://everm4iva.github.io/media/images/me.jpg');
 	background-size: cover;
 	background-position: center;
 }
@@ -199,6 +199,10 @@ button:active {
 		left: 50%;
 		height: 70%;
 	}
+
+	.credit{
+		display: none;
+	}
 }
 
 @media (max-width: 568px) {
@@ -209,7 +213,7 @@ button:active {
 	.preview-screen {
 		top: 80%;
 		left: 50%;
-		height: 50%;
+		height: 75%;
 	}
 
 	button {

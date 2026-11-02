@@ -15,12 +15,17 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
+	width: 100%;
+}
+
+main{
+	width: 100%;
 }
 
 header {
 	width: 100%;
 	padding: 2rem 2rem 0 2rem;
-	max-width: 1600px;
+	max-width: 100%;
 }
 
 header h2 {

@@ -1,3 +1,9 @@
+# 4.3.23.10 (02 nov 2026)
+> emergency update
+- fixed lasagna page reactive styling (media query)
+- fixed project page width (tile contents + header)
+- improved projects descriptions on project page :3
+
 # 4.3.23.9 (31 oct 2026)
 - Changed date format around all of manifesto page.
 - revised typos in index page.

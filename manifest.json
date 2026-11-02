@@ -9,7 +9,7 @@
 	"orientation": "any",
 	"scope": "./",
 	"lang": "en",
-	"categories": ["productivity", "utilities", "games", "code", "tools"],
+	"categories": ["productivity", "utilities", "games", "code", "tools", "diary", "informative", "journal"],
 	"icons": [
 		{
 			"src": "./favicon.ico",
