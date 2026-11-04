@@ -51,7 +51,7 @@
 						style="--gradient: linear-gradient(135deg, #e900ff 0%, #ee0089 100%)">
 						<img src="./info/zcam.png" alt="no-img" />
 						<div class="project-details">
-							<div class="p-title">zcam (experiement)</div>
+							<div class="p-title">zcam (experiment)</div>
 							<div class="p-details">august • stream phone camera in computer</div>
 						</div>
 					</a>
@@ -390,4 +390,9 @@
 			<!-- <p>Public ideas file: <a href="./project-list.md">project-list.md</a></p> -->
 		</footer>
 	</body>
+	<script>
+document.querySelectorAll('.project-tile').forEach((tile, i) => {
+  tile.style.setProperty('--delay', `${i * 0.05}s`);
+});
+	</script>
 </html>

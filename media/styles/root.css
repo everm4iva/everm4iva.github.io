@@ -8,6 +8,7 @@
 @import url('./custom-color.css');
 @import url('./Notation.css');
 @import url('./effectsystem.css');
+@import url('./animations.css');
 
 :root {
 	/* Basic Colors */
@@ -22,7 +23,7 @@
 	--box-color-hover: #911768c0;
 	--box-color-selected: #911768ff;
 
-	--green: #794c32;
+	--green: #883c3c;
 	--dead-green: #85405d;
 	--pink: #dd80a7;
 	--neon-purple: #9118be;
@@ -31,10 +32,10 @@
 	--neon-purple-light: #e1a7e1;
 	--cute-pink: #ffa3bf;
 	--strong-pink: #ff00d4;
-	--yellow: #fdee60;
-	--dead-yellow: #adac49;
-	--cyan: #95a5ff;
-	--cyan-dead: #5e3686;
+	--yellow: #d4adf8;
+	--dead-yellow: #8b62b1;
+	--cyan: #a4ee72;
+	--cyan-dead: #76b34d;
 
 	--random-1: #05040e;
 	--random-color-1: rgb(255, 255, 255);

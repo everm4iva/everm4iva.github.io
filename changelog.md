@@ -1,3 +1,11 @@
+# 4.3.23.11 (04 nov 2026)
+- fixed some typos on project tiles
+- added animations to profile picture element
+- Changed theme colors:
+|- Scrollbar: brown -> wallnut dark red
+|- Header-text: yellow -> green
+|- Links/Url elements: cyan -> pink
+
 # 4.3.23.10 (02 nov 2026)
 > emergency update
 - fixed lasagna page reactive styling (media query)

@@ -1,0 +1,12 @@
+pre{
+    cursor:crosshair;
+}
+
+pre::selection{
+    background-color: var(--pink);
+}
+
+a::selection{
+    background-color: black;
+    color: white;
+}

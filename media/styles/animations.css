@@ -1,0 +1,35 @@
+/*
+ * ☆=========================================☆
+ * animations.css - default animations
+ * ☆=========================================☆
+*/
+
+@keyframes opacityBlink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes widthUp{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: inherit;
+    }
+}
+
+@keyframes scaleYup {
+    0%{
+        transform:scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}

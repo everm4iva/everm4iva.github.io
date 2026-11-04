@@ -71,9 +71,22 @@
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	cursor: grab;
+	transition: ease 0.2s;
+}
+
+.pfp:active {
+	cursor: grabbing;
+	transform: scale(1.1) rotate(-5deg);
+	transition: ease 0.1s;
+}
+
+.pfp:hover .pfp-overlay {
+	opacity: 0.5;
+	transition: ease 0.2s;
 }
 
 .pfp-overlay {
+	transition: ease 0.2s;
 	position: absolute;
 	width: 6rem;
 	max-width: 6rem;
