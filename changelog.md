@@ -1,3 +1,10 @@
+# 4.3.23.12 (10 nov 2026)
+- fixed some css issues across the website
+- background image has now more... opacity? i guess...
+- un-indexed some notes in diary page.
+- added new upcoming album in diary page - "winter girl".
+- new statistic to projects page.
+
 # 4.3.23.11 (04 nov 2026)
 - fixed some typos on project tiles
 - added animations to profile picture element

@@ -1,0 +1,6 @@
+online
+maintenence
+in repair
+offline
+unavaliable
+updating

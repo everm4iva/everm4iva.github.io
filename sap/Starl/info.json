@@ -9,8 +9,8 @@
 	"public-servers": {
 		"1": {
 			"url": "bangsunsetdream.tail82eddd.ts.net/",
-			"status": "in repair",
-			"server-name": "BANG.PUBLIC (in repair)",
+			"status": "offline",
+			"server-name": "BANG.PUBLIC",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage"],
 			"country-code": "PT",
@@ -19,7 +19,7 @@
 		},
 		"2": {
 			"url": "flufflygreenpillow.tail82eddd.ts.net/",
-			"status": "offline",
+			"status": "in repair",
 			"server-name": "FLUFFLY.PILLOW (unstable)",
 			"version": "1.0.1",
 			"habilities": ["service", "routes", "storage", "dev"],
@@ -39,9 +39,9 @@
 		},
 		"4": {
 			"url": "southwetgrass.tail82eddd.ts.net/",
-			"status": "offline",
+			"status": "in repair",
 			"server-name": "SOUTH.PUBLIC",
-			"version": "1.0.0",
+			"version": "0.1.3",
 			"habilities": ["service"],
 			"country-code": "ES",
 			"memory": "2GB",

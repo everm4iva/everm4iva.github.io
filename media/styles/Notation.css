@@ -96,3 +96,22 @@ a.old {
 	}
 }
 
+.mark-new{
+	background-color: yellow;
+	color: rgb(68, 68, 0);
+}
+
+.mark-deleted{
+	background-color: red;
+	color: rgb(56, 0, 0);
+}
+
+.mark-de{
+	background-color: black;
+	color: var(--pink);
+}
+
+.mark-accent{
+	background-color: var(--pink);
+	color: white;
+}

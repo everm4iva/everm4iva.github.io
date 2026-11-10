@@ -1,0 +1,15 @@
+# Active projects (listed)
+- PuplBrowser
+
+# Paused
+- Starl
+- Archi
+
+# Cooking (in the making)
+- PuplBrowser
+- mooli
+- valency
+- SAB
+- bubbly
+
+Other tags or projects may not be listed on purpose.

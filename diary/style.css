@@ -2,6 +2,7 @@ body {
 	overflow-y: auto;
 	padding-bottom: 2%;
 }
+
 blockquote {
 	margin-left: 5px;
 	padding-left: 10px;
@@ -80,6 +81,23 @@ blockquote {
 	cursor:grab;
 }
 
+.music-item.soon:hover .picture::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: white;
+	background-color: var(--pink);
+	background-image: url('../media/images/commonicons/eyes.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	border-radius: 5px;
+	cursor: wait;
+}
+
 .music-item.incomplete:hover .picture::after {
 	content: '';
 	width: 100%;
@@ -129,9 +147,15 @@ blockquote {
 	background-size: 60%;
 	border-radius: 5px;
 }
+
+.music-item.soon:hover .info .title {
+	color: var(--pink);
+}
+
 .music-item:hover .info .title {
 	color: var(--cyan);
 }
+
 .music-item:hover img {
 	filter: brightness(1.2);
 }
