@@ -9,26 +9,28 @@ blockquote {
 	color: #ffffff93;
 	font-size: 0.8rem;
 }
+
 .music-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 	padding-left: 10px;
-	gap: 2%;
 	width: 100%;
 	height: fit-content;
 }
+
 .music-item {
 	height: 4rem;
 	display: flex;
 	flex-direction: row;
-	gap: 2%;
+	gap: 12px;
 	cursor: pointer;
 	border-radius: 5px;
-	margin-bottom: 2%;
+	margin-bottom: 12px;
 	width: 80%;
 }
+
 .music-item img {
 	height: 100%;
 	image-rendering: pixelated;

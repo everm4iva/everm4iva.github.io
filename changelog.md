@@ -1,3 +1,8 @@
+# 4.3.23.13 (11 nov 2026)
+- tiny css/style fixes to diary page
+- added 4 new songs to stray audios playlist
+- new exclusive drawing in diary page (about dysphoria)
+
 # 4.3.23.12 (10 nov 2026)
 - fixed some css issues across the website
 - background image has now more... opacity? i guess...

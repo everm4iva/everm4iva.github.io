@@ -60,6 +60,7 @@ h3 {
 .playlist-details .small-info {
 	font-size: 0.9rem;
 	opacity: 0.6;
+	width: 95%;
 }
 
 .playlist-details .urls {
@@ -83,7 +84,7 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	transition: 0.2s ease;
-	gap: 30px;
+	gap: 12px;
 }
 
 .list.centered {
@@ -114,7 +115,7 @@ h3 {
 
 .item .cover {
 	width: fit-content;
-	min-width: 50px;
+	min-width: 60px;
 	aspect-ratio: 1 / 1;
 	background-color: rgba(0, 0, 0, 0.315);
 	position: relative;
@@ -134,6 +135,7 @@ h3 {
 	width: 100%;
 	aspect-ratio: 1 / 1;
 	max-height: 100%;
+	image-rendering:optimizeQuality;
 }
 
 .list .item:hover .cover::after {
@@ -272,7 +274,7 @@ h3 {
 	.list {
 		overflow-y: auto;
 		overflow-x: hidden;
-		gap: 30px;
+		gap: 12px;
 	}
 
 	.list.centered {
