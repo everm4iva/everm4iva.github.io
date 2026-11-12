@@ -49,7 +49,7 @@ body{
 	gap: 2%;
 	flex-wrap: wrap;
 	align-items: center;
-    justify-content: center;
+  justify-content: center;
 	white-space: pre-line;
 	padding-bottom: 3%;
 }
@@ -58,11 +58,14 @@ body{
 	margin-bottom: 20px;
 	display: flex;
 	flex-direction: column;
+	justify-self: start;
+	align-self: start;
 	padding: 1%;
 	width: 45%;
 	border: 3px dashed var(--pink);
 	cursor: pointer;
 	color: var(--white);
+	height: 175px;
 }
 
 .item:hover {
@@ -73,7 +76,6 @@ body{
 .item .title {
 	font-size: 1.2rem;
 	font-weight: bold;
-	margin-bottom: 10px;
 	color: var(--cyan);
 }
 
@@ -86,7 +88,6 @@ body{
 .item .tags {
 	font-size: 0.9rem;
 	color: var(--yellow);
-	margin-top: 10px;
 }
 
 .item .tags .tag {

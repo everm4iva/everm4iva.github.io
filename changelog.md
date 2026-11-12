@@ -1,3 +1,7 @@
+# 4.3.23.14 (12 nov 2026)
+- new manifesto page "Types of modular systems".
+- tiny css/style fixes to manifesto pages
+
 # 4.3.23.13 (11 nov 2026)
 - tiny css/style fixes to diary page
 - added 4 new songs to stray audios playlist
