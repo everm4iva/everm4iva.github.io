@@ -60,7 +60,7 @@ footer {
 
 .project-grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+	grid-template-columns: repeat(auto-fit, minmax(260px, 2fr));
 	/* gap: 2rem; */
 	width: 100%;
 }
@@ -154,7 +154,7 @@ footer {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	padding: 1rem;
+	padding: 0.9rem;
 	color: #fff;
 	background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
 	text-align: left;
@@ -168,13 +168,13 @@ footer {
 }
 
 .p-title {
-	font-weight: 700;
-	font-size: 2rem;
+	font-weight: 800;
+	font-size: 1.2rem;
 }
 
 .p-details {
 	font-weight: 400;
-	font-size: 1rem;
+	font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {

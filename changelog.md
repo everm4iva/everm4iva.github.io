@@ -1,3 +1,10 @@
+# 4.3.24 (14 nov 2026)
+- added a little sidebar to projects page - containing all basic info about the clicked project.
+- removed some songs from diary page - also the upcoming album since im unsure of it's release date.
+- tiny css/style fixes to diary page & manifesto pages
+- fixed background black background height box bug
+- changed "head-down" from album to EP since it's too short on tracks to be considered an album.
+
 # 4.3.23.14 (12 nov 2026)
 - new manifesto page "Types of modular systems".
 - tiny css/style fixes to manifesto pages

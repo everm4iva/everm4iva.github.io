@@ -1,36 +1,48 @@
+<!-- @format -->
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Projects</title>
-		<meta name="robots" content="index, follow, noarchive, nosnippet, translate" />
-		<link rel="shortcut icon" href="../favicon.png" type="image/png" />
-		<!-- Stylesheets-->
-		<link rel="stylesheet" href="./media/styles/root.css" />
-	</head>
-	<body>
-		<header>
-			<h2>Projects</h2>
-			<blockquote>
-				Note: blinking-border project tiles are the projects in active development and those with saturation blinks are paused, the remaining are "finished" or just  not active.
-			</blockquote>
-				<p>
-				[ published: 28 | documented: +50 | paused: 2 | active: 1 | cooking: 5 ]
-				</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
+    <title>Projects</title>
+    <meta
+      name="robots"
+      content="index, nofollow, noarchive, nosnippet, translate"
+    />
+    <link rel="shortcut icon" href="../favicon.png" type="image/png" />
+    <!-- files -->
+    <link rel="stylesheet" href="./root.css" />
+		<script src="script.js" defer></script>
+  </head>
+  <body>
+		<!-- ### left ### -->
+    <div class="p-left" id="p-left">
+      <header>
+        <h2>Projects</h2>
+        <blockquote>
+          Note: blinking-border project tiles are the projects in active
+          development and those with saturation blinks are paused, the remaining
+          are "finished" or just not active.
+        </blockquote>
+        <p>
+          [ published: 28 | documented: +50 | paused: 2 | active: 1 | cooking: 5
+          ]
+        </p>
 
-				<p>
-			<a href="../index.html"><- go back</a> / <a href="./states.txt">see states</a>
-			</p>
-			<!-- <a href="./raw-list.md">View Raw Project list (includes more that doesn't show here)</a> -->
-		</header>
-		<main>
+        <p>
+          <a href="../index.html"><- go back</a> /
+          <a href="./states.txt">See states (txt)</a> /
+					<a href="./states.json">See states (Json)</a>
+        </p>
+        <!-- <a href="./raw-list.md">View Raw Project list (includes more that doesn't show here)</a> -->
+      </header>
+					<main>
 			<section class="year-section">
 				<h2>2026 (14)</h2>
 				<div class="project-grid">
 					<a
-						href="https://github.com/everm4iva/sillyguy"
-						class="project-tile">
+						class="project-tile" onclick="openproject('sillyguy'); return false">
 						<img src="./info/sillyguy.png" alt="no-img" />
 						<div class="project-details">
 							<div class="p-title">sillyguy</div>
@@ -38,7 +50,7 @@
 						</div>
 					</a>
 					<a
-						href="https://github.com/everm4iva/frameless"
+						onclick="openproject('frameless'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #fff000 0%, #fff000 100%)">
 						<img src="./info/frameless.png" alt="no-img" />
@@ -48,7 +60,7 @@
 						</div>
 					</a>
 					<a
-						href="https://github.com/everm4iva/zcam"
+						onclick="openproject('zcam'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #e900ff 0%, #ee0089 100%)">
 						<img src="./info/zcam.png" alt="no-img" />
@@ -57,27 +69,27 @@
 							<div class="p-details">august • stream phone camera in computer</div>
 						</div>
 					</a>
-					<a href="https://github.com/everm4iva/sdm-tts" class="project-tile">
+					<a class="project-tile" onclick="openproject('sdm-tts'); return false">
 						<img src="../media/base/@projects/other/sdm-tts.png" alt="no-img" />
 						<div class="project-details">
 							<div class="p-title">sdm-tts (experiment)</div>
 							<div class="p-details">august • text to speech comand tool</div>
 						</div>
 					</a>
-					<a href="https://github.com/everm4iva/FunnyLetters" class="project-tile">
+					<a class="project-tile" onclick="openproject('funnyletters'); return false">
 						<img src="./info/funnyletters.png" alt="no-img" />
 						<div class="project-details">
 							<div class="p-title">FunnyLetters</div>
 							<div class="p-details">june • type and see letters jumping</div>
 						</div>
-					<a href="https://starl.pages.dev" class="project-tile paused">
+					<a class="project-tile paused" onclick="openproject('starl'); return false">
 						<img src="../media/base/@projects/starl/GlitterMadness-t.png" alt="no-img" />
 						<div class="project-details">
 							<div class="p-title">starl</div>
 							<div class="p-details">may • open, streaming music platform</div>
 						</div>
 					</a>
-					<a href="https://github.com/everm4iva/xmlm-cli" class="project-tile">
+					<a onclick="openproject('xmlm-cli'); return false" class="project-tile">
 						<img src="./info/had-icon.PNG" alt="no-img" />
 						<div class="project-details">
 							<div class="p-title">xmlm-cli</div>
@@ -85,7 +97,7 @@
 						</div>
 					</a>
 					<a
-						href="./lasagna/index.html"
+						onclick="openproject('lasagna'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #ffb293 0%, #ff3b6d 100%)">
 						<img src="./lasagna/favicon.ico" alt="lasagna" />
@@ -105,7 +117,7 @@
 						</div>
 					</a> -->
 					<a
-						href="../sap/archi/info.json"
+						onclick="openproject('archi'); return false"
 						class="project-tile paused"
 						style="background-image: url('./info/Archi2-bg.png')">
 						<img src="../media/base/@projects/archi/archi2.png" alt="archi" />
@@ -115,7 +127,7 @@
 						</div>
 					</a>
 					<a
-						href="../r/info/livid.html"
+						href="" onclick="openproject('livid'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #333333 0%, #333333 100%)">
 						<img src="../media/base/@projects/other/livid.png" alt="Livid" />
@@ -124,7 +136,7 @@
 							<div class="p-details">april • AI 3d/ambient builder</div>
 						</div>
 					</a>
-					<a class="project-tile" style="--gradient: linear-gradient(135deg, #000000 0%, #000000 100%)">
+					<a class="project-tile" style="--gradient: linear-gradient(135deg, #000000 0%, #000000 100%)" onclick="openproject('blueberry'); return false">
 						<img
 							src="../media/base/@projects/BlueBerry/BlueBerry-browser-nobg-colored.svg"
 							alt="blue berries punk" />
@@ -134,7 +146,7 @@
 						</div>
 					</a>
 					<a
-						href="https://github.com/everm4iva/downsrc"
+						onclick="openproject('downsrc'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #ff7f27 0%, #ff7f27 100%)">
 						<img src="../media/base/@projects/downsrc/downsrc.png" alt="downsrc" />
@@ -152,14 +164,14 @@
 							<div class="p-details">february • desktop tool • 2d Animator & audio editor</div>
 						</div>
 					</a> -->
-					<a href="https://github.com/everm4iva/puplbrowser" class="project-tile indev">
+					<a onclick="openproject('puplbrowser'); return false" class="project-tile indev">
 						<img src="./info/noimg.png" alt="no-img" />
 						<div class="project-details">
 							<div class="p-title">puplbrowser (in dev)</div>
 							<div class="p-details">january • big project, planning phase...</div>
 						</div>
 					</a>
-					<a class="project-tile" style="--gradient: linear-gradient(135deg, #ff00dd 0%, #01ff11 100%)">
+					<a class="project-tile" onclick="openproject('star'); return false" style="--gradient: linear-gradient(135deg, #ff00dd 0%, #01ff11 100%)">
 						<img src="../media/base/@projects/other/StarMusic.png" alt="starmusic" />
 						<div class="project-details">
 							<div class="p-title">Star (experiment)</div>
@@ -172,7 +184,7 @@
 				<h2>2025 (8)</h2>
 				<div class="project-grid">
 					<a
-						href="./fractal/index.html"
+						onclick="openproject('fractal'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #4714ff 0%, #4714ff 100%)">
 						<img src="../media/base/@projects/FRACTAL/fractal.png" alt="FRACTAL" />
@@ -182,7 +194,7 @@
 						</div>
 					</a>
 					<a
-						href="./OceanBoard/index.html"
+						onclick="openproject('oceanboard'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #9b2a48 0%, #e43967 100%)">
 						<img src="../media/base/@projects/OceanBoard/Icon-pink.png" alt="OceanBoard" />
@@ -192,7 +204,7 @@
 						</div>
 					</a>
 					<a
-						href="./BubblePlay/index.html"
+						onclick="openproject('bubbleplay'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #ae52c5 0%, #ac50c3 99%, #fefefe 100%)">
 						<img src="../media/base/@projects/BubblePlay/Play.cute.rounded@4x.png" alt="BubblePlay" />
@@ -201,7 +213,7 @@
 							<div class="p-details">october • web music player prototype</div>
 						</div>
 					</a>
-					<a class="project-tile">
+					<a class="project-tile" onclick="openproject('winded'); return false">
 						<img src="./info/noimg.png" alt="Winded" />
 						<div class="project-details">
 							<div class="p-title">Winded</div>
@@ -209,17 +221,27 @@
 						</div>
 					</a>
 					<a
-						href="./Sparky/index.html"
+						onclick="openproject('sparky'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #000000 0%, #000000 100%)">
 						<img src="../media/base/@projects/Sparky/Sparky-B&C.svg" alt="Sparky" />
 						<div class="project-details">
 							<div class="p-title">Sparky</div>
-							<div class="p-details">october •  vibecoded shooter/retro 3d Game</div>
+							<div class="p-details">october • shooter/retro 3d Game</div>
 						</div>
 					</a>
 					<a
-						href="https://github.com/everm4iva/Room21"
+						onclick="openproject('oriana'); return false"
+						class="project-tile"
+						style="--gradient: linear-gradient(135deg, #fc6cff 0%, #d3926b 100%)">
+						<img src="../media/base/@projects/Oriana/Oriana.png" alt="OrianaTerminal" />
+						<div class="project-details">
+							<div class="p-title">OrianaTerminal</div>
+							<div class="p-details">july • desktop app, self-host development framework</div>
+						</div>
+					</a>
+					<a
+						onclick="openproject('room21'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #8432a9 0%, #59336e 100%)">
 						<img src="../media/base/@projects/Room21/Room21.png" alt="Room21" />
@@ -228,20 +250,10 @@
 							<div class="p-details">march • self-hosted anonimous chat website</div>
 						</div>
 					</a>
-					<a
-						href="../r/info/OrianaTerminal.html"
-						class="project-tile"
-						style="--gradient: linear-gradient(135deg, #fc6cff 0%, #d3926b 100%)">
-						<img src="../media/base/@projects/Oriana/Oriana.png" alt="OrianaTerminal" />
-						<div class="project-details">
-							<div class="p-title">OrianaTerminal</div>
-							<div class="p-details">july • desktop app, self-host multi-model development framework</div>
-						</div>
-					</a>
-					<a class="project-tile">
+					<a class="project-tile" onclick="openproject('aurelin'); return false">
 						<img src="./info/noimg.png" alt="no-img" />
 						<div class="project-details">
-							<div class="p-title">Aurelin</div>
+							<div class="p-title">aurelin (experiment)</div>
 							<div class="p-details">february • visual Coding framework</div>
 						</div>
 					</a>
@@ -252,7 +264,7 @@
 				<h2>2024 (4)</h2>
 				<div class="project-grid">
 					<a
-						href="https://youtu.be/-JSLFRz1zII"
+						onclick="openproject('lma'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #a62164 0%, #0e3f44 100%)">
 						<img src="../media/base/@projects/other/LMA.png" alt="LMA" />
@@ -262,7 +274,7 @@
 						</div>
 					</a>
 					<a
-						href="../r/info/world2.html"
+						onclick="openproject('world2'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #6c7e44 0%, #6e8249 100%)">
 						<img src="../media/base/@projects/other/world2.jpg" alt="World2" />
@@ -272,7 +284,7 @@
 						</div>
 					</a>
 					<a
-						href="../r/astrodist/"
+						onclick="openproject('astrodist'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #000000 0%, #000000 100%)">
 						<img src="../media/base/@projects/other/earth.png" alt="Astrodist" />
@@ -282,7 +294,7 @@
 						</div>
 					</a>
 					<a
-						href="../r/info/RiusBrowser.html"
+						onclick="openproject('riusbrowser'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #04531a 0%, #0b7328 100%)">
 						<img src="../media/base/@projects/other/Rius.ico" alt="Rius Browser" />
@@ -297,15 +309,15 @@
 			<section class="year-section">
 				<h2>2023 (5)</h2>
 				<div class="project-grid">
-					<a class="project-tile">
-						<img src="./info/noimg.png" alt="Streamify" />
+					<a class="project-tile" onclick="openproject('rubysearch'); return false">
+						<img src="./info/noimg.png" alt="rubysearch" />
 						<div class="project-details">
 							<div class="p-title">Ruby Search (experimental)</div>
 							<div class="p-details">december • website - ai based search engine</div>
 						</div>
 					</a>
 					<a
-						href="https://github.com/notyarazi/SimplyPrivate"
+						onclick="openproject('simplyprivate'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #330824 0%, #3e0346 100%)">
 						<img src="../media/base/@projects/SimplyPrivate/mdcut-flowerW.png" alt="SimplyPrivate" />
@@ -315,7 +327,7 @@
 						</div>
 					</a>
 					<a
-						href="../r/info/streamify.html"
+						onclick="openproject('streamify'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #71001e 0%, #690d1a 100%)">
 						<img src="../media/base/@projects/Streamify/StreamifyIcon.png" alt="Streamify" />
@@ -325,7 +337,7 @@
 						</div>
 					</a>
 					<a
-						href="../r/rainOs/info.html"
+						onclick="openproject('rainos'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #ffffff 0%, #ffffff 100%)">
 						<img src="../media/base/@projects/other/rainos.png" alt="RainOs" />
@@ -335,7 +347,7 @@
 						</div>
 					</a>
 					<a
-						href="../r/rubyAi/"
+						onclick="openproject('ruby'); return false"
 						class="project-tile"
 						style="--gradient: linear-gradient(135deg, #861121 0%, #690d1a 100%)">
 						<img src="../media/base/@projects/Ruby/ruby2.png" alt="RubyAi" />
@@ -391,10 +403,46 @@
 			</p>
 			<!-- <p>Public ideas file: <a href="./project-list.md">project-list.md</a></p> -->
 		</footer>
-	</body>
-	<script>
-document.querySelectorAll('.project-tile').forEach((tile, i) => {
-  tile.style.setProperty('--delay', `${i * 0.05}s`);
-});
-	</script>
+    </div>
+		<!-- ### right ### -->
+    <div class="p-right empty" id="p-right">
+			<div class="empty">
+				<div class="e-detail">click a project to see more about it</div>
+			</div>
+			<div class="preview">
+				<div class="header">
+					<div class="icon-container">
+						<img src="./info/sillyguy.png" alt="">
+					</div>
+					<div class="info">
+						<div class="title">sillyguy (active)</div>
+						<div class="mininfo">october 2026 • mobile app</div>
+						<div class="description">
+							<p>Yea... putting it simply: cordova-based web-app that just displays a blank white screen with a silly dancing figure named "silly guy".
+							</p>
+						</div>
+						<div class="languages">
+							<div class="item js" title="Language: JavaScript"></div>
+							<div class="item java" title="Language: Java"></div>
+							<div class="item py" title="Language: Python"></div>
+							<div class="item asm" title="Language: Assembly"></div>
+							<div class="item css" title="Language: CSS"></div>
+							<div class="item cpp" title="Language: C++"></div>
+							<div class="item cs" title="Language: C#"></div>
+							<div class="item c" title="Language: C"></div>
+							<div class="item rust" title="Language: Rust"></div>
+							<div class="item ts" title="Language: Typescript"></div>
+						</div>
+					</div>
+				</div>
+				<div class="body">
+					<h2>Links</h2>
+					<div class="list">
+						<ul></ul>
+					</div>
+				</div>
+				<div class="no-links">no links here lol</div>
+			</div>
+		</div>
+  </body>
 </html>

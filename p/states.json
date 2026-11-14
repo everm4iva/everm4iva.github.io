@@ -1,0 +1,677 @@
+{
+  "sillyguy": {
+    "state": "non",
+    "icon-src": "./info/sillyguy.png",
+    "title": "sillyguy",
+    "mininfo": "October 2026 • mobile app",
+    "description": "Yea... putting it simply: android app that just displays a blank white screen with a silly dancing figure.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": true,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/sillyguy"
+    }
+  },
+  "frameless": {
+    "state": "non",
+    "icon-src": "./info/frameless.png",
+    "title": "frameless",
+    "mininfo": "September 2026 • template",
+    "description": "This is my 'template' of a electron project, with the bare essencial to start a project quickly :3",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": true,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/frameless"
+    }
+  },
+  "zcam": {
+    "state": "non",
+    "icon-src": "./info/zcam.png",
+    "title": "zcam (experiment)",
+    "mininfo": "August 2026 • web app + server",
+    "description": "use your phone's camera in your pc :3",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/zcam"
+    }
+  },
+  "sdm-tts": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/other/sdm-tts.png",
+    "title": "sdm-tts (experiment)",
+    "mininfo": "August 2026 • CLI tool",
+    "description": "The most simple TTS in existence! Basically, you record the sounds, and the program stitches them together. Just like a puzzle but with audio.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/sdm-tts"
+    }
+  },
+  "funnyletters": {
+    "state": "non",
+    "icon-src": "./info/funnyletters.png",
+    "title": "FunnyLetters",
+    "mininfo": "June 2026 • web game",
+    "description": "You click, a character jumps from the bottom of your screen, does this trail funny thing then gravity does it's job and falls off the screen again, simple as that.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/FunnyLetters"
+    }
+  },
+  "starl": {
+    "state": "paused",
+    "icon-src": "../media/base/@projects/starl/GlitterMadness-t.png",
+    "title": "starl",
+    "mininfo": "May 2026 • mobile web app + server",
+    "description": "Free and open-source music player - no ads, no algorithms you don't control, no subscriptions. you own your music and your data.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": true,
+      "py": true,
+      "asm": false,
+      "java": true,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/starl",
+      "Website": "https://starl.pages.dev/"
+    }
+  },
+  "xmlm-cli": {
+    "state": "non",
+    "icon-src": "./media/noicon.gif",
+    "title": "xmlm-cli",
+    "mininfo": "May 2026 • CLI tool",
+    "description": "Simple terminal tool that reads one or more .xml files, summarizes, fixes or compares them in natural language.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/xmlm-cli"
+    }
+  },
+  "lasagna": {
+    "state": "non",
+    "icon-src": "./lasagna/favicon.ico",
+    "title": "lasagna",
+    "mininfo": "May 2026 • web app",
+    "description": "Lasagna is a simple web application that converts your boring currency to lasagna!",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/lasagna",
+      "Website": "https://everm4iva.github.io/p/lasagna/index.html"
+    }
+  },
+  "archi": {
+    "state": "paused",
+    "icon-src": "../media/base/@projects/archi/archi2.png",
+    "title": "archi",
+    "mininfo": "April 2026 • SLM AI model collection",
+    "description": "AI models finetuned and optimized for raw logic, expressive language, content filtering, logical deduction and generally neutral.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "SAP": "https://everm4iva.github.io/sap/archi/info.json"
+    }
+  },
+  "livid": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/other/livid.png",
+    "title": "livid (experiment)",
+    "mininfo": "April 2026 • AI model + web game",
+    "description": "An AI controls a flying bubble character in-game that can build stuff freely.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "Website": "https://everm4iva.github.io/r/info/livid.html"
+    }
+  },
+  "blueberry": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/BlueBerry/BlueBerry-browser-nobg-colored.svg",
+    "title": "blueberry",
+    "mininfo": "March 2026 • web-browser",
+    "description": "SimplyPrivate browser but with agentic features (AI tools)",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {}
+  },
+  "downsrc": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/downsrc/downsrc.png",
+    "title": "downsrc",
+    "mininfo": "February 2026 • CLI Tool",
+    "description": "A simple, cute command-line tool for downloading files and websites.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/downsrc"
+    }
+  },
+  "puplbrowser": {
+    "state": "active",
+    "icon-src": "./media/noicon.gif",
+    "title": "PuplBrowser",
+    "mininfo": "January 2026 • Browser",
+    "description": "Hypermodular open web-browser system.",
+    "languages": {
+      "js": true,
+      "rust": true,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": true,
+      "py": true,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/puplbrowser"
+    }
+  },
+  "star": {
+    "state": "non",
+    "icon-src": "./media/noicon.gif",
+    "title": "star (experiment)",
+    "mininfo": "January 2026 • mobile app",
+    "description": "local music app prototype for starl",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": true,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {}
+  },
+  "fractal": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/FRACTAL/fractal.png",
+    "title": "fractal",
+    "mininfo": "December 2025 • web game",
+    "description": "Chaotic arena shooter game in your browser.. but brutal.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/Fractal",
+      "Website": "https://everm4iva.github.io/p/fractal/index.html"
+    }
+  },
+  "oceanboard": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/OceanBoard/Icon-pink.png",
+    "title": "OceanBoard",
+    "mininfo": "November 2025 • web app",
+    "description": "A beautiful creative writing tool designed for authors, worldbuilders, and storytellers. Organize characters, locations, episodes, and more with a cute markdown editor.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": true,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/OceanBoard",
+      "Website": "https://everm4iva.github.io/p/OceanBoard/index.html"
+    }
+  },
+  "bubbleplay": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/BubblePlay/Play.cute.rounded@4x.png",
+    "title": "BubblePlay (experiment)",
+    "mininfo": "October 2025 • desktop web app",
+    "description": "Tracking free, local, audio streaming desktop app.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": true,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "Website": "https://everm4iva.github.io/p/BubblePlay/index.html"
+    }
+  },
+  "winded": {
+    "state": "non",
+    "icon-src": "./media/noicon.gif",
+    "title": "winded",
+    "mininfo": "October 2025 • desktop game",
+    "description": "Horror game: you're in a brige far into the sky, find a way out.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {}
+  },
+  "sparky": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/Sparky/Sparky-B&C.svg",
+    "title": "sparky",
+    "mininfo": "October 2025 • web game",
+    "description": "3d shooter arena with shaders & levels - like wolfenstein... yea, that's it, very basic.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "ts": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false
+    },
+    "urls": {
+      "Website": "https://everm4iva.github.io/p/Sparky/index.html"
+    }
+  },
+  "room21": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/Room21/Room21.png",
+    "title": "room21",
+    "mininfo": "March 2025 • website",
+    "description": "A modern, secure and anonymous real-time chat app.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": true,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/everm4iva/Room21"
+    }
+  },
+  "oriana": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/Oriana/Oriana.png",
+    "title": "Oriana",
+    "mininfo": "July 2025 • desktop app",
+    "description": "Self-hosting, terminal-like code/chat AI app.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "Website": "https://everm4iva.github.io/r/info/OrianaTerminal.html"
+    }
+  },
+  "aurelin": {
+    "state": "non",
+    "icon-src": "./media/noicon.gif",
+    "title": "aurelin (experiment)",
+    "mininfo": "February 2025 • desktop app",
+    "description": "An visual-based programming language studio inspired by blender's shading tools.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {}
+  },
+  "lma": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/other/LMA.png",
+    "title": "LMA",
+    "mininfo": "November 2024 • desktop app",
+    "description": "Generate 3d models or whole presentations about a topic with a cloud ai. Builds executable files with outputs.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": true,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "YouTube": "https://www.youtube.com/watch?v=-JSLFRz1zII"
+    }
+  },
+  "world2": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/other/world2.jpg",
+    "title": "world2",
+    "mininfo": "September 2024 • desktop game",
+    "description": "Interdimentional survival 3d game that my friends and i made to play toguether.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": true,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "Website": "https://everm4iva.github.io/r/info/world2.html",
+      "SAP": "https://everm4iva.github.io/sap/world2/info.json"
+    }
+  },
+  "astrodist": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/other/earth.png",
+    "title": "astrodist",
+    "mininfo": "June 2024 • mobile game",
+    "description": "A little space shooter game i made in a class challenge.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "Website": "https://everm4iva.github.io/r/astrodist/index.html"
+    }
+  },
+  "riusbrowser": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/other/Rius.ico",
+    "title": "RiusBrowser",
+    "mininfo": "March 2024 • web-browser",
+    "description": "A little SimplyPrivate clone that supports experimental shaders and can freeze websites.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "Website": "https://everm4iva.github.io/r/info/RiusBrowser.html"
+    }
+  },
+  "rubysearch": {
+    "state": "non",
+    "icon-src": "./media/noicon.gif",
+    "title": "Ruby Search (experimental)",
+    "mininfo": "December 2023 • website",
+    "description": "AI search engine",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {}
+  },
+  "simplyprivate": {
+    "state": "legend",
+    "icon-src": "../media/base/@projects/SimplyPrivate/mdcut-flowerW.png",
+    "title": "SimplyPrivate (LEGEND)",
+    "mininfo": "October 2023 • web-browser",
+    "description": "An oversimplified browser that deletes all data upon exit.",
+    "languages": {
+      "js": true,
+      "rust": false,
+      "c": false,
+      "cpp": true,
+      "cs": false,
+      "css": true,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "GitHub": "https://github.com/notyarazi/SimplyPrivate"
+    }
+  },
+  "streamify": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/Streamify/StreamifyIcon.png",
+    "title": "Streamify",
+    "mininfo": "June 2023 • desktop app",
+    "description": "Custom local image and video player.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": true,
+      "asm": false,
+      "java": false,
+      "ts": true
+    },
+    "urls": {
+      "Website": "https://everm4iva.github.io/r/info/streamify.html"
+    }
+  },
+  "rainos": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/Streamify/StreamifyIcon.png",
+    "title": "RainOs",
+    "mininfo": "February 2023 • webOS",
+    "description": "A simple base web operating system.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {
+      "Website": "https://everm4iva.github.io/r/rainOs/info.html"
+    }
+  },
+  "ruby": {
+    "state": "non",
+    "icon-src": "../media/base/@projects/Ruby/ruby2.png",
+    "title": "Ruby",
+    "mininfo": "February 2023 • SLM AI model",
+    "description": "a self-trained ai model build from scratch.",
+    "languages": {
+      "js": false,
+      "rust": false,
+      "c": false,
+      "cpp": false,
+      "cs": false,
+      "css": false,
+      "py": false,
+      "asm": false,
+      "java": false,
+      "ts": false
+    },
+    "urls": {}
+  }
+}

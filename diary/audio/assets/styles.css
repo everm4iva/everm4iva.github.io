@@ -84,7 +84,7 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	transition: 0.2s ease;
-	gap: 12px;
+	gap: 18px;
 }
 
 .list.centered {
@@ -274,7 +274,7 @@ h3 {
 	.list {
 		overflow-y: auto;
 		overflow-x: hidden;
-		gap: 12px;
+	gap: 18px;
 	}
 
 	.list.centered {
