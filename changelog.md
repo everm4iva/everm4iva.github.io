@@ -1,3 +1,6 @@
+# 4.3.24.1 (14 nov 2026)
+- new song "winter girl" released to stray audios.
+-
 # 4.3.24 (14 nov 2026)
 - added a little sidebar to projects page - containing all basic info about the clicked project.
 - removed some songs from diary page - also the upcoming album since im unsure of it's release date.
