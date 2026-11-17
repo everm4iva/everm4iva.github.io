@@ -1,3 +1,7 @@
+# 4.3.24.3 (17 nov 2026)
+- new song "bitch dumb laugh" added to stray audios playlist
+- new "old" poem dropped, without the "new" tag. I just wanna put it there like it was always there.
+
 # 4.3.24.2 (15 nov 2026)
 - new poem: "failing-him.txt"
 
