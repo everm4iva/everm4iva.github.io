@@ -1,3 +1,7 @@
+# 4.3.24.4 (20 nov 2026)
+- Quick design fix: projects page with mobile support.
+- updated profile quote
+
 # 4.3.24.3 (17 nov 2026)
 - new song "bitch dumb laugh" added to stray audios playlist
 - new "old" poem dropped, without the "new" tag. I just wanna put it there like it was always there.

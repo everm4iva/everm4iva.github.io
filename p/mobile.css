@@ -1,0 +1,201 @@
+.sheet-backdrop,
+.sheet-handle,
+.sheet-close {
+  display: none;
+}
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 768px) {
+  :root {
+    --sheet-height: 100vh;
+  }
+
+  .p-left,
+  body:has(.p-right.empty) .p-left {
+    width: 100%;
+    height: 100dvh;
+  }
+
+  .p-right,
+  .p-right.empty {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60vh;
+    max-height: var(--sheet-height);
+    z-index: 50;
+    transform: translateY(105%);
+    visibility: hidden;
+    overflow: hidden;
+    border-radius: 18px 18px 0 0;
+    background-color: var(--bg-color);
+    box-shadow: 0 -14px 40px rgba(0, 0, 0, 0.5);
+    transition:
+      transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
+      visibility 0.35s;
+  }
+
+  .p-right:not(.empty) {
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  body:has(.p-right.empty) .preview {
+    display: flex;
+  }
+
+  body:has(.p-right.empty) .p-right > .empty {
+    display: none;
+  }
+
+  .sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    display: block;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+  }
+
+  .sheet-backdrop.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .sheet-handle {
+    position: absolute;
+    top: 0.55rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: block;
+    width: 42px;
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.35);
+  }
+
+  .sheet-close {
+    position: absolute;
+    top: 0.85rem;
+    right: 0.9rem;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 0.8rem;
+    border-style: none;
+    background: rgb(255, 255, 255);
+    color: #000;
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .preview {
+    overflow: hidden;
+  }
+
+  .preview,
+  .p-right > .empty {
+    height: auto;
+    min-height: 0;
+    flex: 1 1 auto;
+    overflow-y: auto;
+  }
+
+  .preview .header {
+    height: 75%;
+    min-height: 240px;
+    padding: 3.2rem 1rem 1.2rem;
+  }
+
+  .preview .body {
+    background: transparent;
+  }
+
+  .header .info {
+    min-height: 170px;
+    background: transparent;
+  }
+
+  .icon-container img {
+    width: 42%;
+    min-width: 76px;
+    max-width: 180px;
+  }
+
+  .preview .body,
+  .no-links {
+    height: auto;
+    padding: 1rem;
+  }
+
+  .mininfo {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* ---------- phones ---------- */
+
+@media (max-width: 480px) {
+  :root {
+    --sheet-height: 86dvh;
+  }
+
+  header {
+    padding: 1rem 0.9rem 0;
+  }
+
+  .year-section {
+    padding: 0 0.9rem 1rem;
+  }
+
+  .project-grid {
+    gap: 0.5rem;
+  }
+
+  .project-tile {
+    min-height: 176px;
+  }
+
+  .project-details {
+    padding: 0.6rem;
+  }
+
+  .p-title {
+    font-size: 1rem;
+  }
+
+  .p-details {
+    font-size: 0.7rem;
+  }
+
+  .languages {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 5px;
+  }
+
+  .item {
+    width: 30px;
+    height: 30px;
+  }
+
+  .preview .body ul {
+    width: 100%;
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;
+  }
+
+  .info .description {
+    font-size: 0.9rem;
+  }
+}

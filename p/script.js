@@ -11,7 +11,9 @@ const linksEl = preview.querySelector(".body ul");
 const noLinksEl = preview.querySelector(".no-links");
 
 // project info, loaded once and reused for every click
-const statesPromise = fetch("./states.json").then((response) => response.json());
+const statesPromise = fetch("./states.json").then((response) =>
+  response.json(),
+);
 
 // clicker: opens the sidebar for one project
 async function openproject(project) {
